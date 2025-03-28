@@ -1,0 +1,95 @@
+<Units>
+    <Unit name="HAND" nameUI="[REDACTED]" description="They got lied to, they got betrayed, they got left behind. Now they're back, and they're going to make sure that never happens again." flagTex="data/textures/the_HAND_squad_bg.dds" flagColor="f5f5f5" rndNameEntry="@squadnameHAND" voicepack="commander_eng" incapacitationChance="50" incapacitationChanceCrit="25">
+        <Classes>
+            <!-- After Timeline -->
+            <Class name="Thumb" nameUI="The Thumb" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_nowheraki_leader.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
+            <Class name="Index" nameUI="The Index" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
+            <Class name="Middle" nameUI="The Middle" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
+            <Class name="Ring" nameUI="The Ring" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
+            <Class name="Pinky" nameUI="The Pinky" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_marksman.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
+
+            <!-- Before Timeline -->
+            <Class name="Spear" nameUI="Spear" description="Assault and containment" numSlots="7" supply="100" iconTex="data/textures/gui/deploy/class_icon_spear.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="Dagger" nameUI="Dagger" description="Stealth and intel" numSlots="5" supply="100" iconTex="data/textures/gui/deploy/class_icon_dagger.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="Chalice" nameUI="Chalice" description="Medical and support" numSlots="3" supply="100" iconTex="data/textures/gui/deploy/class_icon_chalice.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="Shield" nameUI="Shield" description="Defense and protection" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_shield.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="Hammer" nameUI="Hammer" description="Supply and logistics" numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_hammer.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+        </Classes>
+        <TrooperRanks>
+            <Rank name="@HAND_rank_0" xpNeeded="0" badgeTex="data/textures/gui/customization/cia_rank_01.dds"/>
+            <Rank name="@HAND_rank_1" xpNeeded="560" badgeTex="data/textures/gui/customization/cia_rank_02.dds"/>
+            <Rank name="@HAND_rank_2" xpNeeded="1600" badgeTex="data/textures/gui/customization/cia_rank_03.dds"/>
+            <Rank name="@HAND_rank_3" xpNeeded="4480" badgeTex="data/textures/gui/customization/cia_rank_04.dds"/>
+            <Rank name="@HAND_rank_4" xpNeeded="12800" badgeTex="data/textures/gui/customization/cia_rank_05.dds"/>
+            <Rank name="@HAND_rank_5" xpNeeded="36000" badgeTex="data/textures/gui/customization/cia_rank_06.dds"/>
+            <Rank name="@HAND_rank_6" xpNeeded="100000" badgeTex="data/textures/gui/customization/cia_rank_07.dds"/>
+            <Rank name="@HAND_rank_7" xpNeeded="128000" badgeTex="data/textures/gui/customization/cia_rank_08.dds"/>
+            <Rank name="@HAND_rank_8" xpNeeded="160000" badgeTex="data/textures/gui/customization/cia_rank_09.dds"/>
+            <Rank name="@HAND_rank_9" xpNeeded="200000" badgeTex="data/textures/gui/customization/cia_rank_10.dds"/>
+        </TrooperRanks>
+        <Ranks>
+            <Rank xpNeeded="0" badgeTex=""/> 
+            <Rank xpNeeded="1600" badgeTex=""/>
+            <Rank xpNeeded="6800" badgeTex=""/> 
+            <Rank xpNeeded="15360" badgeTex=""/> 
+            <Rank xpNeeded="27200" badgeTex=""/> 
+            <Rank xpNeeded="42400" badgeTex=""/>  
+            <Rank xpNeeded="61200" badgeTex=""/>  
+            <Rank xpNeeded="83600" badgeTex=""/> 
+            <Rank xpNeeded="108800" badgeTex=""/> 
+            <Rank xpNeeded="137600" badgeTex=""/>
+            <Rank xpNeeded="170000" badgeTex=""/>  
+            <Rank xpNeeded="206000" badgeTex=""/> 
+            <Rank xpNeeded="245600" badgeTex=""/>   
+            <Rank xpNeeded="288800" badgeTex=""/>  
+            <Rank xpNeeded="335600" badgeTex=""/>   
+            <Rank xpNeeded="386000" badgeTex=""/> 
+            <Rank xpNeeded="440000" badgeTex=""/>  
+            <Rank xpNeeded="497600" badgeTex=""/>  
+            <Rank xpNeeded="558800" badgeTex=""/>
+            <Rank xpNeeded="623600" badgeTex=""/> 
+            <Rank xpNeeded="692000" badgeTex=""/>   
+            <Rank xpNeeded="764000" badgeTex=""/>  
+            <Rank xpNeeded="839600" badgeTex=""/>
+            <Rank xpNeeded="918800" badgeTex=""/> 
+            <Rank xpNeeded="996000" badgeTex=""/> 
+            <Rank xpNeeded="1000000" badgeTex=""/> 
+        </Ranks>
+        <Doctrine doctrinePointsPerSquadLevel="1">
+            <!-- Spear (SP): Offensive -->
+            <Node name="HAND_SP_OffensiveBuff"/>
+            <Node name="HAND_SP_DefensiveBuff"/>
+            <Node name="HAND_SP_EnemyDebuff"/>
+            <Node name="HAND_SP_SkillSetA"/>
+            <Node name="HAND_SP_SkillSetB"/>
+
+            <!-- Dagger (DG): Stealth -->
+            <Node name="HAND_DG_OffensiveBuff"/>
+            <Node name="HAND_DG_DefensiveBuff"/>
+            <Node name="HAND_DG_EnemyDebuff"/>
+            <Node name="HAND_DG_SkillSetA"/>
+            <Node name="HAND_DG_SkillSetB"/>
+
+            <!-- Chalice (CH): Support and Healing -->
+            <Node name="HAND_CH_OffensiveBuff"/>
+            <Node name="HAND_CH_EfficiencyBuff"/>
+            <Node name="HAND_CH_EnemyDebuff"/>
+            <Node name="HAND_CH_SkillSetA"/>
+            <Node name="HAND_CH_SkillSetB"/>
+
+            <!-- Shield (SH): Defensive -->
+            <Node name="HAND_SH_OffensiveBuff"/>
+            <Node name="HAND_SH_DefensiveBuff"/>
+            <Node name="HAND_SH_EnemyDebuff"/>
+            <Node name="HAND_SH_SkillSetA"/>
+            <Node name="HAND_SH_SkillSetB"/>
+
+            <!-- Hammer (HA): Utility -->
+            <Node name="HAND_HA_OffensiveBuff"/>
+            <Node name="HAND_HA_EfficiencyBuff"/>
+            <Node name="HAND_HA_EnemyDebuff"/>
+            <Node name="HAND_HA_SkillSetA"/>
+            <Node name="HAND_HA_SkillSetB"/>
+        </Doctrine>
+    </Unit>
+</Units>

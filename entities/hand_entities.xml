@@ -1,0 +1,11 @@
+<Entities>
+
+	<!-- Ring's color -->
+	<Entity name="FX_HAND_dust_large" type="BasicEntity" editorAutoHeight="false" initialHeight="1.1" editorTags="fx">
+		<PhysicalParams solid="false"/>
+		<RenderObject2D texture="data/textures/fx/atmospheric_fog.dds" blendMode="add" color="cca300" sizeX="10" sizeY="10" disableDepthTest="true">
+			<TextureAnimation frameWidth="64" frameHeight="64" startFrame="0" endFrame="47" animationTimeMS="3072" numLoops="-1" randomizeStartTime="true"/>
+		</RenderObject2D>
+	</Entity>
+
+</Entities>

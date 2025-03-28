@@ -1,0 +1,188 @@
+<GUIItems>
+    <Item name="#HAND_DoctrineTree" align="i" hidden="true">
+        <Button name="#template_doctrine_button" hidden="true">
+            <RenderObject2D texture="data/textures/gui/doctrines/doctrine_empty_normal.dds"/>
+            <OnHover>
+                <RenderObject2D texture="data/textures/gui/doctrines/doctrine_empty_hover.dds"/>
+            </OnHover>
+            <OnClick>
+                <Action type="PlaySound" target="gui_customize_equip"/>
+                <Action type="TriggerEvent" target="GUI_GAME_DOCTRINE_SELECT"/>
+            </OnClick>
+            <OnRClickDown>
+                <Action type="PlaySound" target="gui_customize_equip"/>
+                <Action type="TriggerEvent" target="GUI_GAME_DOCTRINE_REMOVE"/>
+            </OnRClickDown>
+            <StaticImage name="#doctrinenode_disabled">
+                <RenderObject2D texture="data/textures/gui/doctrines/doctrine_empty_normal.dds" color="928a7c" />
+            </StaticImage>
+            <StaticImage name="#doctrinenode_full">
+                <RenderObject2D texture="data/textures/gui/doctrines/doctrine_empty_hover.dds" />
+            </StaticImage>
+            <StaticImage name="#doctrinenode_active">
+                <RenderObject2D texture="data/textures/gui/doctrines/doctrine_active.dds" sizeX="124" sizeY="124"/>
+            </StaticImage>
+            <Item name="#doctrinenode_does_not_pass_requirements" hidden="true"/>
+            <StaticImage name="#doctrinenode_num_levels_bg" align="lb" origin="0 0">
+                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="44" sizeY="36" color="40392be6"/>
+                <StaticText name="#doctrinenode_num_levels" text="4" font="header_5" textColor="ffffff">
+                    <StaticText hidden="true" name="#doctrinenode_num_levels_color_full" textColor="f97b03"/>
+                    <StaticText hidden="true" name="#doctrinenode_num_levels_color_part" textColor="ffffff"/>
+                </StaticText>
+            </StaticImage>
+        </Button>
+
+        <!-- === Spear (Top Row - Left) === -->
+        <Item name="spear" align="lt" sizeX="400" sizeY="600" origin="20 -70">
+            <StaticImage origin="0 0" align="lt">
+                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="600" color="211e1d80"/>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" sizeX="400" sizeY="400" color="0000004d"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="72" color="f5f5f5cc"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" sizeX="190" sizeY="75" color="0c0b0b33"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="rt">
+                    <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" flipX="true" sizeX="190" sizeY="75" color="0c0b0b33"/>
+                </StaticImage>
+                <Item sizeX="400" sizeY="72" align="lt">
+                    <StaticText text="@HAND_doctrine_branch_spear" font="header_3" fontAutoDownsize="false" textColor="000000"/>
+                </Item>
+            </StaticImage>
+            <Item name="HAND_SP_OffensiveBuff" origin="80 -160" align="lt"/>
+            <Item name="HAND_SP_DefensiveBuff" origin="-80 -160" align="rt"/>
+            <Item name="HAND_SP_EnemyDebuff" origin="80 -335" align="lt"/>
+            <Item name="HAND_SP_SkillSetA" origin="-80 -335" align="rt"/>
+            <Item name="HAND_SP_SkillSetB" origin="0 -510" align="ct"/>
+        </Item>
+
+        <!-- === Dagger (Top Row - Middle) === -->
+        <Item name="dagger" align="t" sizeX="400" sizeY="600" origin="0 -70">
+            <StaticImage origin="0 0" align="t">
+                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="600" color="211e1d80"/>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" sizeX="400" sizeY="400" color="0000004d"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="72" color="f5f5f5cc"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" sizeX="190" sizeY="75" color="0c0b0b33"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="rt">
+                    <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" flipX="true" sizeX="190" sizeY="75" color="0c0b0b33"/>
+                </StaticImage>
+                <Item sizeX="400" sizeY="72" align="lt">
+                    <StaticText text="@HAND_doctrine_branch_dagger" font="header_3" fontAutoDownsize="false" textColor="000000"/>
+                </Item>
+            </StaticImage>
+            <Item name="HAND_DG_OffensiveBuff" origin="80 -160" align="lt"/>
+            <Item name="HAND_DG_DefensiveBuff" origin="-80 -160" align="rt"/>
+            <Item name="HAND_DG_EnemyDebuff" origin="80 -335" align="lt"/>
+            <Item name="HAND_DG_SkillSetA" origin="-80 -335" align="rt"/>
+            <Item name="HAND_DG_SkillSetB" origin="0 -510" align="ct"/>
+        </Item>
+
+        <!-- === Shield (Top Row - Right) === -->
+        <Item name="shield" align="rt" sizeX="400" sizeY="600" origin="-20 -70">
+            <StaticImage origin="0 0" align="lt">
+                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="600" color="211e1d80"/>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" sizeX="400" sizeY="400" color="0000004d"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="400" sizeY="72" color="f5f5f5cc"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" sizeX="190" sizeY="75" color="0c0b0b33"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="rt">
+                    <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" flipX="true" sizeX="190" sizeY="75" color="0c0b0b33"/>
+                </StaticImage>
+                <Item sizeX="400" sizeY="72" align="lt">
+                    <StaticText text="@HAND_doctrine_branch_shield" font="header_3" fontAutoDownsize="false" textColor="000000"/>
+                </Item>
+            </StaticImage>
+            <Item name="HAND_SH_OffensiveBuff" origin="80 -160" align="lt"/>
+            <Item name="HAND_SH_DefensiveBuff" origin="-80 -160" align="rt"/>
+            <Item name="HAND_SH_EnemyDebuff" origin="80 -335" align="lt"/>
+            <Item name="HAND_SH_SkillSetA" origin="-80 -335" align="rt"/>
+            <Item name="HAND_SH_SkillSetB" origin="0 -510" align="ct"/>
+        </Item>
+
+        <!-- === Hammer (Bottom Row - Left) === -->
+        <Item name="hammer" align="l" origin="20 -300" sizeX="600" sizeY="550">
+            <StaticImage origin="0 0" align="lt">
+                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="610" sizeY="540" color="211e1d80"/>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" sizeX="610" sizeY="360" color="0000004d"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="610" sizeY="90" color="f5f5f5cc"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lb">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="610" sizeY="8" color="211e1d40"/>
+                </StaticImage>
+                <StaticImage origin="0 -90" align="lt">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="442" color="211e1d40"/>
+                </StaticImage>
+                <StaticImage origin="0 -90" align="rt">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="442" color="211e1d40"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" sizeX="190" sizeY="95" color="0c0b0b33"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="rt">
+                    <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" flipX="true" sizeX="190" sizeY="95" color="0c0b0b33"/>
+                </StaticImage>
+                <Item sizeX="610" sizeY="100" origin="0 5" align="t">
+                    <StaticText text="@HAND_doctrine_branch_hammer" font="header_3" fontAutoDownsize="true" textColor="000000"/>
+                </Item>
+            </StaticImage>
+            <Item name="HAND_HA_OffensiveBuff" origin="100 -180" align="lt"/>
+            <Item name="HAND_HA_EfficiencyBuff" origin="0 -180" align="ct"/>
+            <Item name="HAND_HA_EnemyDebuff" origin="-100 -180" align="rt"/>
+            <Item name="HAND_HA_SkillSetA" origin="100 -360" align="lt"/>
+            <Item name="HAND_HA_SkillSetB" origin="-100 -360" align="rt"/>
+        </Item>
+
+        <!-- === Chalice (Bottom Row - Right) === -->
+        <Item name="chalice" align="r" origin="-30 -300" sizeX="600" sizeY="550">
+            <StaticImage origin="0 0" align="lt">
+                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="610" sizeY="540" color="211e1d80"/>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/squads/rangers_bg_01.dds" sizeX="610" sizeY="360" color="0000004d"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="610" sizeY="90" color="f5f5f5cc"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lb">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="610" sizeY="8" color="211e1d40"/>
+                </StaticImage>
+                <StaticImage origin="0 -90" align="lt">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="442" color="211e1d40"/>
+                </StaticImage>
+                <StaticImage origin="0 -90" align="rt">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="442" color="211e1d40"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="lt">
+                    <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" sizeX="190" sizeY="95" color="0c0b0b33"/>
+                </StaticImage>
+                <StaticImage origin="0 0" align="rt">
+                    <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" flipX="true" sizeX="190" sizeY="95" color="0c0b0b33"/>
+                </StaticImage>
+                <Item sizeX="610" sizeY="100" origin="0 5" align="t">
+                    <StaticText text="@HAND_doctrine_branch_chalice" font="header_3" fontAutoDownsize="true" textColor="000000"/>
+                </Item>
+            </StaticImage>
+            <Item name="HAND_CH_OffensiveBuff" origin="100 -180" align="lt"/>
+            <Item name="HAND_CH_EfficiencyBuff" origin="0 -180" align="ct"/>
+            <Item name="HAND_CH_EnemyDebuff" origin="-100 -180" align="rt"/>
+            <Item name="HAND_CH_SkillSetA" origin="100 -360" align="lt"/>
+            <Item name="HAND_CH_SkillSetB" origin="-100 -360" align="rt"/>
+        </Item>
+    </Item>
+</GUIItems>

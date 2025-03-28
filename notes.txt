@@ -1,0 +1,241 @@
+Current stoled assets:Blank Portraits, Black Fatigue uniform textures, and 2 airstrike bombs codes, medpack codes.
+Will add in: custom portraits, custom textures(lowpriority), and 2 models for the airstrikes and medpack, and the waypoint ui too..
+Checklist: portraits, custom right HAND squad logo
+textures is fine, for now
+got rids of unneeded waypoints dds
+now the only things left are the uniform textures
+Paralax background
+Custom Helmet and armors, and weapons
+  Note: for weapons, change their names and their attacktypes only
+
+  Todo:Custom GUI deploy and doctrines
+  AFAIK, doctrines need 3 files, doctrines and unit nodes in Units folder, and a GUI
+
+A faceless female soldier in a dark, moody battlefield setting. She wears a soft-black vest with pouches and straps, and her white hair is tied up in a loose bun. Her face is fully obscured by pitch black shadow, distortion, and glitchy effects, making her features unrecognizable. The atmosphere is gritty and cinematic, with a smoky background adding depth. The lighting is dramatic. The art style is painterly. Chest-up.
+A dark, glitchy, and grim battlefield environment covered in countless injured and lifeless corpses. The setting is dystopian and eerie, with heavy fog and a bloodstained landscape. The background is shadowy, with faint, ominous structures or ruins barely visible through the haze. There are no soldiers or creatures in this image—only the abandoned, horrific battlefield. The atmosphere is unsettling, with distortion and glitch effects enhancing the nightmare-like feel. The image is heavily blurred and designed for a parallax effect. This is the background layer. The aspect ratio is 3:2 landscape.
+
+tear-gas grenade, decoy grenade, rpgs, maybe some six barrels grenade launchers?
+A shield, yes, a shield
+Maybe a gas grenade and a gas mask?
+Lol and a drone, let's see if i can make it blow itself up too
+A package of slap charge
+A proper first aid kit from (Federal buereau of investigation team)
+
+
+first:Define units (Entities, Unit, Identities)
+Second: Equipment 
+Third: Portraits, Custom Deploy GUI
+
+Reminder:
+NULL Task Force Key Info:
+- Divisions: 
+  - Spear (SP): Assault/Containment, 40%, AR,
+  - Dagger (DA): Stealth/Intel, 24%, SMG, 
+  - Chalice (CH): Medical/Support, 16%, DMR,
+  - Shield (SH): Defense/Protect, 12%, LMG/Shield,
+  - Hammer (HA): Supply/Logistics, 8%, Shotgun,
+- Operator Roles: C (Commander), A (Analyst), I (Infiltrator), D (Medic), B (Breacher), L (Logistician), H (Heavy Gunner), S (Scout), M (Marksman), E (Engineer)
+- Survivors: SP-84-C (Alexander Varga), DA-67-I (Jules Fontaine), SP-15-H (Samuel Alvarez), SH-47-B (Elias Becker), CH-55-M (Rika Hanazawa)
+- Traitor: SP-02-A (Mason Carter) - alive, betrayed NULL, seeking extraction or elimination of survivors
+- Total Personnel: ~2,500 operatives, 56 black sites worldwide
+- Lore: NULL Task Force collapsed, 5 survivors (not human?), hunting Mason Carter, tied to Directorate (Right Wing, Left Wing, The Eye, H-Corp, K-Corp)
+
+Change doctrines UI colors to white
+
+----
+*<DamageArea />*
+	radius				- in meters
+	damage				- same as Equipment
+	damageType			- same as Equipment
+	armorPenetration	- same as Equipment
+	pushForce			- same as Equipment
+	knockbackDistance	- same as Equipment
+	suppressionScale	- same as Equipment
+	stunTimeMs			- same as Equipment
+	burnTimeMs			- same as Equipment
+	triggerAtSpawn - auto-trigger when "true"
+
+Shit, it is possible for a flamethrower, check the ngf asset mod, also possible to spawn cover(movement block entities) out, check usaf, it is not possible to slow enemies down, but we can "pin" them down by supression param
+
+A device that intervally stun enemies in a big radius?
+A grenade that pushes enemies away far (currently unable to push shits, maybe just stunlock hold them in place is enough i guess)
+Air Support (USAF MOD, we don't such good sounds though...but maybe we can focus on the visual and explosion part, and borrow some assets online)
+Flare gun (USAF MOD, used for light at night, or just some glowsticks is fine too)
+A super strong gun with limited bullet (best if it can dig wall, maybe both a sniper and a rpg version)
+2 tiers medkit.
+A god damn megaphone to evacuate a whole zone of civilian (and attract enemies attention, of course)
+Some drones, maybe a suicide drone, and an intel gatherer drone, annnnd maybe a drone that can shoot?
+
+Where possible, applies spawn entities of a black flame to represent unique material used to fight anomallies
+
+Tông màu tổng thể:
+
+🔵 Xanh lam tím → Hiệu ứng anomaly energy (thực tại bị bóp méo)
+
+⚫ Đen khói → Chất liệu đặc biệt để xử anomaly, như "Void Metal"
+
+🟠 Cam cháy → Explosion, hỏa lực mạnh
+
+🟣 Tím hắc ám → Stun, suppression, mind disruption
+
+Everything is focus on long supress duration-area controlling
+
+
+I’ve analyzed your request to create a streamlined list of firearm and ammo categories for a tactical game, ensuring every type serves a unique purpose without bloating the list with redundancy. The goal is to cover all tactical scenarios—like long-range sniping, close-quarters combat, suppression, breaching, and anti-materiel—while avoiding weapons or ammo that overlap in function. I’ve drawn from real-world weaponry and their distinct roles, keeping heavy shields as requested but excluding melee options. Here’s the concise, comprehensive list:
+
+---
+
+### Firearm Categories and Their Roles
+
+#### 1. Rifles
+- **Assault Rifle (AR)**  
+  - *Purpose*: Versatile, medium-range combat.  
+  - *Real-World Basis*: M4, AK-47. Full-auto capability for flexibility.  
+  - *Ammo*: 5.56mm (standard), 7.62mm (higher damage), Armor-Piercing (AP), Incendiary.  
+
+- **Designated Marksman Rifle (DMR)**  
+  - *Purpose*: Precision at longer ranges, semi-auto for controlled shots.  
+  - *Real-World Basis*: M14 EBR, SVD. Bridges AR and sniper roles.  
+  - *Ammo*: 7.62mm Match-Grade (accuracy), AP, Explosive-Tip (light breaching).  
+
+- **Sniper Rifle (SR)**  
+  - *Purpose*: Extreme range, anti-materiel, one-shot kills.  
+  - *Real-World Basis*: Barrett M82, AW338.  
+  - *Ammo*: .338 Lapua (long-range), .50 BMG (anti-materiel), AP Tungsten, High-Explosive Incendiary AP (HEIAP).  
+
+*Why No Overlap?* AR is full-auto for general use, DMR offers precision at medium-long range, and SR excels at extreme distances with heavier rounds. A "Battle Rifle" (e.g., FN FAL) would overlap with AR/DMR in range and purpose.
+
+---
+
+#### 2. Machine Guns
+- **Light Machine Gun (LMG)**  
+  - *Purpose*: Mobile suppression, sustained fire.  
+  - *Real-World Basis*: M249, RPK. Lighter, faster to reposition.  
+  - *Ammo*: 5.56mm (high capacity), 7.62mm, Tracer (aim assist), Overpressure (increased stopping power).  
+
+- **Heavy Machine Gun (HMG)**  
+  - *Purpose*: Static, high-damage suppression, anti-light vehicles.  
+  - *Real-World Basis*: M2 Browning. Mounted or bipod-deployed.  
+  - *Ammo*: .50 BMG, Depleted Uranium (AP), High-Explosive, Incendiary.  
+
+*Why No Overlap?* LMG is portable for squad support, HMG is stationary with devastating power. A "General-Purpose Machine Gun" (e.g., M60) blends the two but isn’t distinct enough to justify inclusion.
+
+---
+
+#### 3. Close-Quarters Weapons
+- **Submachine Gun (SMG)**  
+  - *Purpose*: Fast, agile fire in tight spaces.  
+  - *Real-World Basis*: MP5, UMP45. High rate of fire, low recoil.  
+  - *Ammo*: 9mm (standard), .45ACP (stopping power), 5.7mm (light AP), Subsonic (stealth).  
+
+- **Shotgun (SG)**  
+  - *Purpose*: High burst damage, close-range dominance.  
+  - *Real-World Basis*: Remington 870, Benelli M4.  
+  - *Ammo*: Buckshot (spread), Slug (single target), Dragon’s Breath (fire), Flechette Shells (penetration).  
+
+- **Breaching Shotgun**  
+  - *Purpose*: Specialized for doors and barriers.  
+  - *Real-World Basis*: Modified Mossberg 500 with breaching rounds.  
+  - *Ammo*: Slug (standard), AP Slug (armored doors), HE Slug (explosive entry).  
+
+*Why No Overlap?* SMG prioritizes rapid fire, SG delivers burst damage, and Breaching SG focuses on entry. A "Personal Defense Weapon" (e.g., P90) mimics SMG with 5.7mm ammo, making it redundant.
+
+---
+
+#### 4. Pistols
+- **Semi-Auto Pistol**  
+  - *Purpose*: Standard sidearm, reliable backup.  
+  - *Real-World Basis*: Glock 17, M1911.  
+  - *Ammo*: 9mm (standard), .45ACP (power), AP, Hollow-Point (HP, unarmored targets).  
+
+- **Silenced Pistol**  
+  - *Purpose*: Stealth operations.  
+  - *Real-World Basis*: Walther PPK, HK45C with suppressor.  
+  - *Ammo*: 9mm Subsonic, .45ACP Subsonic, AP.  
+
+- **Revolver**  
+  - *Purpose*: High-damage backup for emergencies.  
+  - *Real-World Basis*: S&W Model 29.  
+  - *Ammo*: .357 Magnum (balanced), .44 Magnum (heavy), AP, Explosive-Tip.  
+
+*Why No Overlap?* Semi-auto is all-purpose, Silenced is for stealth, and Revolver packs a punch. A "Machine Pistol" (e.g., Glock 18) overlaps with SMG in rapid-fire role.
+
+---
+
+#### 5. Heavy Weapons
+- **Anti-Materiel Rifle (AMR)**  
+  - *Purpose*: Precision anti-vehicle/structure shots.  
+  - *Real-World Basis*: NTW-20. Larger calibers than SR.  
+  - *Ammo*: .50 BMG, 20mm, AP Tungsten, HEIAP.  
+
+- **Grenade Launcher (GL)**  
+  - *Purpose*: Versatile utility and area damage.  
+  - *Real-World Basis*: M203, Milkor MGL.  
+  - *Ammo*: HE (damage), Incendiary, Smoke (cover), Flashbang (stun), EMP (tech disable), Gas (crowd control).  
+
+- **Rocket Launcher (RL)**  
+  - *Purpose*: Anti-tank, area denial.  
+  - *Real-World Basis*: RPG-7, Javelin.  
+  - *Ammo*: HE (general), Tandem-HEAT (armor), Thermobaric (bunker-busting).  
+
+- **Flamethrower**  
+  - *Purpose*: Area denial, psychological impact.  
+  - *Real-World Basis*: M2 Flamethrower (historical), modern prototypes.  
+  - *Ammo*: Napalm Fuel (liquid fire), Gel-Based Incendiary (sticky burn).  
+
+*Why No Overlap?* AMR is precision-based, GL offers utility, RL delivers raw explosive power, and Flamethrower provides unique fire-based control.
+
+---
+
+#### 6. Defensive Tools
+- **Ballistic Shield**  
+  - *Purpose*: Frontline protection in tactical ops.  
+  - *Real-World Basis*: SWAT shields.  
+  - *Add-Ons*: Stun gun (melee range), flash launcher (disorient).  
+
+- **Riot Shield**  
+  - *Purpose*: Crowd control, lighter defense.  
+  - *Real-World Basis*: Police riot gear.  
+  - *Add-Ons*: Baton (melee range), non-lethal launchers (rubber rounds).  
+
+*Why No Overlap?* Ballistic Shield is heavy-duty for combat, Riot Shield is lighter for non-lethal scenarios.
+
+---
+
+### Ammo Types by Function
+- **Standard Rounds**: 5.56mm, 7.62mm, 9mm, .45ACP, etc. → General-purpose.  
+- **Armor-Piercing (AP)**: Penetrates armored targets or vehicles.  
+- **Incendiary**: Ignites targets, denies areas (e.g., Dragon’s Breath, Napalm).  
+- **Explosive**: Breaches or damages areas (e.g., HE, Explosive-Tip).  
+- **Subsonic**: Reduces noise for stealth.  
+- **Tracer**: Improves aim, especially for machine guns or snipers.  
+- **Specialty**:  
+  - *Hollow-Point (HP)*: Max damage to unarmored targets.  
+  - *Flechette*: Penetrating darts for shotguns/SMGs.  
+  - *EMP/Gas/Smoke/Flashbang*: Utility effects from GL.
+
+*Why No Overlap?* Each ammo type serves a distinct tactical need: AP for armor, Incendiary for fire, Subsonic for silence, etc. Overpressure or Depleted Uranium enhances specific weapons without duplicating roles.
+
+---
+
+### Tactical Scenarios Covered
+- **Long-Range**: SR, DMR.  
+- **Medium-Range**: AR, LMG.  
+- **Close-Range**: SMG, SG, Pistols.  
+- **Suppression**: LMG, HMG.  
+- **Breaching**: Breaching SG, GL (HE).  
+- **Anti-Materiel**: AMR, RL.  
+- **Utility**: GL (Smoke, EMP, Gas), Shields.  
+- **Stealth**: Silenced Pistol, Subsonic ammo.  
+
+---
+
+### Eliminating Redundancy
+I’ve researched real-world weapons and ammo to ensure no categories overlap:  
+- **No Carbines**: AR covers short-barreled rifle needs.  
+- **No Machine Pistols**: SMG fulfills rapid-fire close-range role.  
+- **No GPMG**: LMG and HMG split the spectrum cleanly.  
+- **No PDWs**: SMG with 5.7mm ammo suffices.  
+- **No Duplicate Calibers Unless Distinct**: E.g., 9mm in SMG (rapid) vs. Pistol (backup).  
+
+This list avoids bloat while covering every situation. If you want niche additions (e.g., crossbows for silent sniping), they’re optional but not core. This setup keeps it tight and tactical, bro! Let me know if you want adjustments.
