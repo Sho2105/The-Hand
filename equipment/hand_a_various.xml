@@ -1,4 +1,5 @@
 <Equipment>
+
     <Grenade name="HAND Strafe" inventoryBinding="SupportGear1" unlockCostBH="0"
             quantity="1"
             tooltip="@equipment_HAND_strafe_name"

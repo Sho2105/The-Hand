@@ -192,7 +192,7 @@ Buffs and debuffs - Apply doctrine effects to other humans, permanent or tempora
         <Enable name="PriorityBombers" targetClass="Shield"/>
     </Node>
 
-    <!-- Chalice Division (Support/Medic - DMR & Pistol) - Infinite Range (0-999) -->
+    <!-- Chalice Division (Support/Medic - DMR & Pistol) - Long Range (50-100) -->
     <Node name="HAND_CH_OffensiveBuff" nameUI="@HAND_CH_OffensiveBuff_name" description="@HAND_CH_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_long_range_aim_speed">
         <GiveBuff nodeName="HAND_AimTimeBuff_L" when="kill" target="self" targetClass="Chalice" durationMs="2500"/>
         <GiveBuff nodeName="HAND_ResetTimeBuff_L" when="kill" target="self" targetClass="Chalice" durationMs="2500"/>

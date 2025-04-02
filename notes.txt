@@ -91,3 +91,6 @@ And
 If i find some good sound packages online
 Imma add gun sounds
 explosion sounds
+Straw hat, Scarf, Backpack
+Hostage blind fold, and gas masks, also redraw textures
+Redo Ring's breacher into a bigger explosion that does NOT kill, turn Middle's into a nuke
