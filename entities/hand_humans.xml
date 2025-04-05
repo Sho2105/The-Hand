@@ -2,7 +2,7 @@
     <!-- After Timeline (Fingers) -->
     <Entity name="ThumbTemplateHuman" type="Human" editorAutoHeight="false">
         <RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/attachments/stars.dds"/> 
-        <RenderObject3D model="data/models/humans/attachments/rattan.khm" diffuseTex="data/models/humans/attachments/marble.dds" attachSlot="Bip001 Head"> 
+        <RenderObject3D model="data/models/humans/attachments/rattan.khm" diffuseTex="data/models/humans/attachments/fabric.dds" attachSlot="Bip001 Head"> 
             <Specular shininess="8" intensity="1.3"/>
         </RenderObject3D>
         <Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>

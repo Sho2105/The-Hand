@@ -1,8 +1,4 @@
-Current stoled assets:Blank Portraits, Black Fatigue uniform textures, and 2 airstrike bombs codes, medpack codes.
-Will add in: custom portraits, custom textures(lowpriority), and 2 models for the airstrikes and medpack, and the waypoint ui too..
-Checklist: portraits, custom right HAND squad logo
-textures is fine, for now
-got rids of unneeded waypoints dds
+
 now the only things left are the uniform textures
 Paralax background
 Custom Helmet and armors, and weapons
@@ -13,6 +9,7 @@ Custom Helmet and armors, and weapons
 
 A faceless female soldier in a dark, moody battlefield setting. She wears a soft-black vest with pouches and straps, and her white hair is tied up in a loose bun. Her face is fully obscured by pitch black shadow, distortion, and glitchy effects, making her features unrecognizable. The atmosphere is gritty and cinematic, with a smoky background adding depth. The lighting is dramatic. The art style is painterly. Chest-up.
 A dark, glitchy, and grim battlefield environment covered in countless injured and lifeless corpses. The setting is dystopian and eerie, with heavy fog and a bloodstained landscape. The background is shadowy, with faint, ominous structures or ruins barely visible through the haze. There are no soldiers or creatures in this image—only the abandoned, horrific battlefield. The atmosphere is unsettling, with distortion and glitch effects enhancing the nightmare-like feel. The image is heavily blurred and designed for a parallax effect. This is the background layer. The aspect ratio is 3:2 landscape.
+dozens of faceless persons in a dark, moody setting. all black, some wear bullet proof vest, some wear lab coat, some wear simple t shirt . Their face is fully obscured by pitch black shadow, distortion, and glitchy effects, making their features unrecognizable. The atmosphere is gritty and cinematic, with a smoky background adding depth. The lighting is dramatic. Each one in different square frame, chest up.
 
 tear-gas grenade, decoy grenade, rpgs, maybe some six barrels grenade launchers?
 A shield, yes, a shield
@@ -68,17 +65,12 @@ Some drones, maybe a suicide drone, and an intel gatherer drone, annnnd maybe a 
 
 Where possible, applies spawn entities of a black flame to represent unique material used to fight anomallies
 
-Tông màu tổng thể:
-
-🔵 Xanh lam tím → Hiệu ứng anomaly energy (thực tại bị bóp méo)
-
-⚫ Đen khói → Chất liệu đặc biệt để xử anomaly, như "Void Metal"
-
-🟠 Cam cháy → Explosion, hỏa lực mạnh
-
-🟣 Tím hắc ám → Stun, suppression, mind disruption
-
-Everything is focus on long supress duration-area controlling
+IMPORTANT!!!
+Import texture by:
+select the model, unwrap it
+create a new image in shader, copy for every material, select that node in every tab
+then slect that image in UV editing, bake to that image (Cycles engine, Diffuse bake type, no direct or indirect light, then bake)
+Also looks like the weapon's textures does not require to be flipped when export to dds
 
 
 I’ve analyzed your request to create a streamlined list of firearm and ammo categories for a tactical game, ensuring every type serves a unique purpose without bloating the list with redundancy. The goal is to cover all tactical scenarios—like long-range sniping, close-quarters combat, suppression, breaching, and anti-materiel—while avoiding weapons or ammo that overlap in function. I’ve drawn from real-world weaponry and their distinct roles, keeping heavy shields as requested but excluding melee options. Here’s the concise, comprehensive list:
@@ -94,3 +86,4 @@ explosion sounds
 Straw hat, Scarf, Backpack
 Hostage blind fold, and gas masks, also redraw textures
 Redo Ring's breacher into a bigger explosion that does NOT kill, turn Middle's into a nuke
+MIddle's lmg will be able to spray non stop

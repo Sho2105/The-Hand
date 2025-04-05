@@ -1,0 +1,22 @@
+- mass bake export all textures to png.
+- mass convert them to dds
+- mass resize-attach helpers-collision box
+- mass export to khm
+- also generate UI for them with ComfyUI
+- create the flamethrower model or just use the grenade launcher-whatever-then generate the UI using online image
+- same with the shield
+- start working on the code,  make the guns appear in game as 6 categories, so does the shield
+- rework The Hand's attacktypes, and their gears
+- some quick balance to gun stats
+- in general, make weapon models works, then code it, then make the UI, balance can wait, prioritize functional shits first
+- finally works on the gears, then i guess we can release the update...this is gonna be a long shit
+--- 
+- rework doctrine tree, create new upgradable
+- redraw uniform, vest, helmets textures
+- redraw rank icons
+---
+- add new sounds
+- add custom enemies (which include custom behavior, models, textures, sounds)
+- add custom campaign
+- finally, focus on the story and world building and polish everything
+- along the way, always remember to come back and polish sounds and visual fx, as your 3d skill is ass
