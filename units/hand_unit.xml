@@ -2,18 +2,18 @@
     <Unit name="HAND" nameUI="[REDACTED]" description="They got lied to, they got betrayed, they got left behind. Now they're back, and they're going to make sure that never happens again." flagTex="data/textures/the_HAND_squad_bg.dds" flagColor="f5f5f5" rndNameEntry="@squadnameHAND" voicepack="commander_eng" incapacitationChance="50" incapacitationChanceCrit="25">
         <Classes>
             <!-- After Timeline -->
-            <Class name="Thumb" nameUI="The Thumb" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_nowheraki_leader.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
-            <Class name="Index" nameUI="The Index" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_undercover.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
-            <Class name="Middle" nameUI="The Middle" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_support.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
-            <Class name="Ring" nameUI="The Ring" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_grenadier.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
-            <Class name="Pinky" nameUI="The Pinky" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_marksman.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
+            <Class name="Thumb" nameUI="The Thumb" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_spear.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
+            <Class name="Index" nameUI="The Index" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_dagger.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
+            <Class name="Middle" nameUI="The Middle" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_shield.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
+            <Class name="Ring" nameUI="The Ring" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_hammer.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
+            <Class name="Pinky" nameUI="The Pinky" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_chalice.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
 
             <!-- Before Timeline -->
-            <Class name="Spear" nameUI="Spear" description="Assault and containment" numSlots="7" supply="100" iconTex="data/textures/gui/deploy/class_icon_spear.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
-            <Class name="Dagger" nameUI="Dagger" description="Stealth and intel" numSlots="5" supply="100" iconTex="data/textures/gui/deploy/class_icon_dagger.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
-            <Class name="Chalice" nameUI="Chalice" description="Medical and support" numSlots="3" supply="100" iconTex="data/textures/gui/deploy/class_icon_chalice.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
-            <Class name="Shield" nameUI="Shield" description="Defense and protection" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_shield.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
-            <Class name="Hammer" nameUI="Hammer" description="Supply and logistics" numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_hammer.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="Spear" nameUI="Spear" description="Unused" numSlots="7" supply="100" iconTex="data/textures/gui/deploy/class_icon_spear.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="Dagger" nameUI="Dagger" description="Unused" numSlots="5" supply="100" iconTex="data/textures/gui/deploy/class_icon_dagger.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="Chalice" nameUI="Chalice" description="Unused" numSlots="3" supply="100" iconTex="data/textures/gui/deploy/class_icon_chalice.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="Shield" nameUI="Shield" description="Unused" numSlots="4" supply="100" iconTex="data/textures/gui/deploy/class_icon_shield.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
+            <Class name="Hammer" nameUI="Hammer" description="Unused" numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_hammer.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
         </Classes>
         <TrooperRanks>
             <Rank name="@HAND_rank_0" xpNeeded="0" badgeTex="data/textures/gui/customization/cia_rank_01.dds"/>

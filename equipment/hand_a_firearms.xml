@@ -27,7 +27,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             animationSet="rifle">
         <MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
         <ConcealmentModifier add="-3"/>
-        <RenderObject3D model="data/models/weapons/m4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m4.dds"/>
+        <RenderObject3D model="data/models/weapons/a_ar.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/a_ar.dds"/>
         <ModifiableParams
             numPellets="1"
             roundsPerMagazine="30"
@@ -59,7 +59,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             <AttackType name="HAND_AR_Med" inCoverOverride="HAND_AR_MedMounted" rangeMeters="20"/>    
             <AttackType name="HAND_AR_Long" inCoverOverride="HAND_AR_LongMounted" rangeMeters="999"/>            
         </AttackTypes>        
-        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="HAND_Tracer_AR">
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
@@ -70,7 +70,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             <Unequip name="rifle_neqp"/>
             <Reload name="rifle_reld"/>
             <ReloadEmpty name="rifle_reldempt"/>
-            <Fire name="m4_fire"/>
+            <Fire name="l75_fire"/>
             <ShellDrop name="rifle_shell_drop"/>
             <Empty name="gen_empty"/>
         </Sounds>
@@ -96,7 +96,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             animationSet="rifle">
         <MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="0"/>
         <ConcealmentModifier add="-4"/>
-        <RenderObject3D model="data/models/weapons/m4.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m4.dds"/>
+        <RenderObject3D model="data/models/weapons/a_ar.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/a_ar.dds"/>
         <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
         <ModifiableParams
             numPellets="1"
@@ -130,7 +130,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             <AttackType name="HAND_AR_Med" inCoverOverride="HAND_AR_MedMounted" rangeMeters="23"/>    
             <AttackType name="HAND_AR_Long" inCoverOverride="HAND_AR_LongMounted" rangeMeters="999"/>            
         </AttackTypes>                
-        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="HAND_Tracer_AR_Silenced">
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
@@ -165,7 +165,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             animationSet="rifle">
         <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
         <ConcealmentModifier add="-3" />
-        <RenderObject3D model="data/models/weapons/mp5a3.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mp5a3.dds"/>
+        <RenderObject3D model="data/models/weapons/a_smg.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/a_smg.dds"/>
         <ModifiableParams
             numPellets="1"
             roundsPerMagazine="30"
@@ -197,7 +197,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
         <AttackType name="HAND_SMG_Med" inCoverOverride="HAND_SMG_MedMounted" rangeMeters="15"/>    
         <AttackType name="HAND_SMG_Long" inCoverOverride="HAND_SMG_LongMounted" rangeMeters="999"/>            
         </AttackTypes>            
-        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="HAND_Tracer_SMG">
             <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
             <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
             <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
@@ -231,7 +231,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             animationSet="rifle">
         <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
         <ConcealmentModifier add="-4" />
-        <RenderObject3D model="data/models/weapons/mp5a3.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mp5a3.dds"/>
+        <RenderObject3D model="data/models/weapons/a_smg.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/a_smg.dds"/>
         <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
         <ModifiableParams
             numPellets="1"
@@ -265,7 +265,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             <AttackType name="HAND_SMG_Med" inCoverOverride="HAND_SMG_MedMounted" rangeMeters="17"/>    
             <AttackType name="HAND_SMG_Long" inCoverOverride="HAND_SMG_LongMounted" rangeMeters="999"/>            
         </AttackTypes>                
-        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="HAND_Tracer_SMG_Silenced">
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
@@ -297,7 +297,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             animationSet="rifle">
         <MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-5"/>
         <ConcealmentModifier add="-4" />
-        <RenderObject3D model="data/models/weapons/m249.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m249.dds"/>
+        <RenderObject3D model="data/models/weapons/a_hmg.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/a_hmg.dds"/>
         <ModifiableParams
             numPellets="1"
             roundsPerMagazine="200"
@@ -331,7 +331,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             <AttackType name="HAND_LMG_Med" inCoverOverride="HAND_LMG_MedMounted" rangeMeters="17"/>
             <AttackType name="HAND_LMG_Long" inCoverOverride="HAND_LMG_LongMounted" rangeMeters="999"/>
         </AttackTypes>
-        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_LMG">
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="HAND_Tracer_LMG">
             <Flare particles="FX_MUZZLE_FLASH_LMG_01" />
             <Flare particles="FX_MUZZLE_FLASH_LMG_02" />
             <Flare particles="FX_MUZZLE_FLASH_LMG_03" />
@@ -362,7 +362,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             animationSet="rifle">
         <MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-6"/>
         <ConcealmentModifier add="-5" />
-        <RenderObject3D model="data/models/weapons/m249.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m249.dds"/>
+        <RenderObject3D model="data/models/weapons/a_hmg.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/a_hmg.dds"/>
         <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01b.dds"/>
         <ModifiableParams
             numPellets="1"
@@ -398,7 +398,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             <AttackType name="HAND_LMG_Med" inCoverOverride="HAND_LMG_MedMounted" rangeMeters="21"/>
             <AttackType name="HAND_LMG_Long" inCoverOverride="HAND_LMG_LongMounted" rangeMeters="999"/>
         </AttackTypes>
-        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_LMG">
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="HAND_Tracer_LMG_Silenced">
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
@@ -428,7 +428,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             img="data/models/weapons/m1014_ui.dds"
             animationSet="shotgun_m1014">
         <MobilityModifiers moveSpeedModifierPercent="-8" turnSpeedModifierPercent="-2"/>
-        <RenderObject3D model="data/models/weapons/m1014.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m1014.dds"/>
+        <RenderObject3D model="data/models/weapons/a_sg.khm" attachSlot="prop_front_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/a_sg.dds"/>
         <ModifiableParams
             numPellets="9"
             roundsPerMagazine="7"
@@ -440,7 +440,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             changeOutTime="0"
             readyTime="450" 
             guardTime="200" 
-            accuracyStart="130"
+            accuracyStart="150"
             accuracyEnd="10"
             accuracyStartDist="0"
             accuracyEndDist="100"
@@ -458,7 +458,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             <AttackType name="HAND_SG_Med" inCoverOverride="HAND_SG_MedMounted" rangeMeters="14"/>
             <AttackType name="HAND_SG_Long" inCoverOverride="HAND_SG_LongMounted" rangeMeters="999"/>
         </AttackTypes>
-        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Pistol">
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="HAND_Tracer_SG">
             <Flare particles="FX_MUZZLE_FLASH_SHOTGUN_01" />
             <Flare particles="FX_MUZZLE_FLASH_SHOTGUN_02" />
             <Flare particles="FX_MUZZLE_FLASH_SHOTGUN_03" />
@@ -495,7 +495,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             img="data/models/weapons/mk20_ssr_ui.dds"
             animationSet="rifle">
         <MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-2"/>
-        <RenderObject3D model="data/models/weapons/mk20ssr.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk20ssr.dds"/>
+        <RenderObject3D model="data/models/weapons/a_sr.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/a_sr.dds"/>
         <ModifiableParams
             numPellets="1"
             roundsPerMagazine="20"
@@ -527,7 +527,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             <AttackType name="HAND_DMR_Med" inCoverOverride="HAND_DMR_MedMounted" rangeMeters="8"/>
             <AttackType name="HAND_DMR_Long" inCoverOverride="HAND_DMR_LongMounted" rangeMeters="999"/>
         </AttackTypes>
-        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+        <MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="HAND_Tracer_DMR">
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
@@ -563,7 +563,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             img="data/models/weapons/mk20_ssr_ui.dds"
             animationSet="rifle">
         <MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-2"/>
-        <RenderObject3D model="data/models/weapons/mk20ssr.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mk20ssr.dds"/>
+        <RenderObject3D model="data/models/weapons/a_sr.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/a_sr.dds"/>
         <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
         <ModifiableParams
             numPellets="1"
@@ -597,7 +597,7 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
             <AttackType name="HAND_DMR_Med" inCoverOverride="HAND_DMR_MedMounted" rangeMeters="11"/>
             <AttackType name="HAND_DMR_Long" inCoverOverride="HAND_DMR_LongMounted" rangeMeters="999"/>
         </AttackTypes>
-        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Rifle">
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="HAND_Tracer_DMR_Silenced">
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
@@ -614,128 +614,5 @@ the 5 fingers use their own category to avoid over buffing the squad : HAND_ar/s
         </Sounds>
     </Firearm>
 
-    <!-- HK45CT (Pistol) for all members -->
-    <Bind eqp="HAND_PISTOL">
-        <to name="45FMJM1911_1911 Pistol"/>
-        <to name="45JHP185GR_Pistol"/>
-        <to name="45JHP160GR_Pistol"/>
-        <to name="IronSights_Pistol"/>
-    </Bind>
-    <Firearm name="HAND_PISTOL" inventoryBinding="SecondaryWeapon" category="HAND_pistol" unlockCost="0"
-            tooltip="@firearm_HAND_PISTOL_name"
-            description="@firearm_HAND_PISTOL_desc"
-            img="data/models/weapons/hk45ct_mag_ui.dds"
-            animationSet="pistol">
-        <MobilityModifiers moveSpeedModifierPercent="-1.6" turnSpeedModifierPercent="0"/>
-        <ConcealmentModifier add="-1.5"/>
-        <RenderObject3D model="data/models/weapons/hk45ct.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/hk45ct.dds" skipGOSSAO="true"/>
-        <ModifiableParams
-            numPellets="1"
-            roundsPerMagazine="10"
-            closedBolt="1"
-            cyclicReload="0"
-            reloadTime="1550"
-            reloadEmptyTime="1600"
-            changeInTime="750"
-            changeOutTime="1100"
-            readyTime="130"
-            guardTime="100"
-            accuracyStart="130"
-            accuracyEnd="60"
-            accuracyStartDist="7"
-            accuracyEndDist="15"/>
-        <Params
-            caliberInfoText="@firearm_caliber_45acp_name"
-            operationInfoText="@firearm_operation_semiauto_name"
-            ejectingShellEntity="BulletCasingSmall"
-            magazineEntity="pm63_mag"
-            suppressedSwitch="HAND_PISTOL_Sup"
-            ai_rangeMin="1.0"
-            ai_rangeOptimal="3.0"
-            ai_rangeMax="15.0"
-            ai_stopWhenShooting="false"/>
-        <AttackTypes>        
-            <AttackType name="HAND_PISTOL_Close" inCoverOverride="HAND_PISTOL_CloseMounted" rangeMeters="1.5"/>
-            <AttackType name="HAND_PISTOL_Med" inCoverOverride="HAND_PISTOL_MedMounted" rangeMeters="8"/>
-            <AttackType name="HAND_PISTOL_Long" inCoverOverride="HAND_PISTOL_LongMounted" rangeMeters="999"/>        
-        </AttackTypes>                        
-        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
-            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
-        </MuzzleFlash>
-        <Sounds> 
-            <Equip name="pistol_eqp"/>
-            <Unequip name="pistol_neqp"/>
-            <Reload name="pistol_reld"/>
-            <ReloadEmpty name="pistol_reldempt"/>
-            <Fire name="hk45_fire"/>
-            <ShellDrop name="pistol_shell_drop"/>
-            <Empty name="gen_empty"/>
-        </Sounds>
-    </Firearm>
 
-    <Bind eqp="HAND_PISTOL_Sup">
-        <to name="45FMJM1911_SuppressedPistol"/>
-        <to name="45JHP185GR_SuppressedPistol"/>
-        <to name="45JHP160GR_SuppressedPistol"/>
-        <to name="IronSights_Pistol"/>
-    </Bind>
-    <Firearm name="HAND_PISTOL_Sup" inventoryBinding="SecondaryWeaponMuzzle" category="HAND_pistol" unlockCost="0"
-            tooltip="@firearm_HAND_PISTOLsup_name"
-            description="@firearm_HAND_PISTOLsup_desc"
-            img="data/models/weapons/hk45ct_mag_ui.dds"
-            animationSet="pistol">
-        <MobilityModifiers moveSpeedModifierPercent="-1.6" turnSpeedModifierPercent="0"/>
-        <ConcealmentModifier add="-2.5"/>
-        <RenderObject3D model="data/models/weapons/hk45ct.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/hk45ct.dds" skipGOSSAO="true"/>
-        <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
-        <ModifiableParams
-            numPellets="1"
-            roundsPerMagazine="10"
-            closedBolt="1"
-            cyclicReload="0"
-            reloadTime="1660"
-            reloadEmptyTime="1700"
-            changeInTime="1000"
-            changeOutTime="1300"
-            readyTime="140"
-            guardTime="110"
-            accuracyStart="130"
-            accuracyEnd="60"
-            accuracyStartDist="7"
-            accuracyEndDist="15"/>
-        <Params
-            caliberInfoText="@firearm_caliber_45acp_name"
-            operationInfoText="@firearm_operation_semiauto_name"
-            ejectingShellEntity="BulletCasingSmall"
-            magazineEntity="pm63_mag"
-            suppressedSwitch="HAND_PISTOL"
-            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
-            ai_rangeMin="1.0"
-            ai_rangeOptimal="3.0"
-            ai_rangeMax="15.0"
-            ai_stopWhenShooting="false"/>
-        <AttackTypes>        
-            <AttackType name="HAND_PISTOL_Close" inCoverOverride="HAND_PISTOL_CloseMounted" rangeMeters="1.5"/>
-            <AttackType name="HAND_PISTOL_Med" inCoverOverride="HAND_PISTOL_MedMounted" rangeMeters="10"/>
-            <AttackType name="HAND_PISTOL_Long" inCoverOverride="HAND_PISTOL_LongMounted" rangeMeters="999"/>        
-        </AttackTypes>                
-        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="Tracer_Pistol">
-            <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
-            <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
-            <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
-            <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
-        </MuzzleFlash>
-        <Sounds> 
-            <Equip name="pistol_eqp"/>
-            <Unequip name="pistol_neqp"/>
-            <Reload name="pistol_reld"/>
-            <ReloadEmpty name="pistol_reldempt"/>
-            <Fire name="hk45sup_fire"/>
-            <ShellDrop name="pistol_shell_drop"/>
-            <Empty name="gen_empty"/>
-        </Sounds>
-    </Firearm>
 </Equipment>

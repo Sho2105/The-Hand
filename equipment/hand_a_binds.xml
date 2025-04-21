@@ -9,7 +9,6 @@ HAND = The whole unit.
     <!-- === Null's Gear (After Team: Thumb, Index, Middle, Ring, Pinky) === -->
     
     <!-- Primary Weapons -->
-    <Bind eqp="Black Hole Grenade" to="Thumb"/>
     <Bind eqp="HAND_AR" to="Thumb"/>
     <Bind eqp="HAND_AR_Sup" to="Thumb"/>
     <Bind eqp="HAND_SMG" to="Index"/>

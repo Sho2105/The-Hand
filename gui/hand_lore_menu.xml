@@ -1,0 +1,560 @@
+<GUIItems>
+    <!-- Custom Scrollable Menu Guide:
+        How to Add a New Page (e.g., LorePage3):
+        1. Content Area: Under LorePagesContainer, copy LorePage2 and rename it to LorePage3.
+           - Update ItemList name to LoreList3.
+           - Adjust content (StaticText, StaticImage) as needed.
+           - For StaticText items:
+             - Set origin x to -1000, align="l".
+             - Space normal lines (header_4) 50 pixels apart in y-direction (e.g., y = 440, next at y = 390).
+             - Space headers (header_3) 100 pixels apart from the next line (e.g., header at y = 190, next line at y = 90).
+           Example for LorePage3:
+           <Item name="LorePage3" origin="0 0" hidden="true">
+               <ItemList name="LoreList3" align="c" origin="0 0" direction="y" sizeX="2300" sizeY="1180" clipChildren="true">
+                   <ButtonGraphics align="r" origin="40 0">
+                       <RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="64" color="f97b0340"/>
+                       <OnHover><RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="64" color="f97b03ff"/></OnHover>
+                       <OnClick><RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="64" color="f97b03ff"/></OnClick>
+                   </ButtonGraphics>
+                   <StaticImage origin="0 540" sizeY="70">
+                       <RenderObject2D texture="data/textures/gui/square.tga" sizeX="2300" sizeY="70" color="00000050"/>
+                       <StaticText text="Episode 3: New Page" font="header_3" textColor="f97b03" align="l"/>
+                   </StaticImage>
+                   <Item origin="-1000 440"><StaticText text="Line 1 of new page." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                   <Item origin="-1000 390"><StaticText text="Line 2 of new page." font="header_4" textColor="f0e3cc" align="l"/></Item>
+               </ItemList>
+           </Item>
+        2. Navigation Bar: Under PageNavigationList, copy Page2Button and rename it to Page3Button.
+           - Update text to "3".
+           - Set origin y = previous button's y - 50 (e.g., Page2Button at y = 450, so Page3Button at y = 400).
+           - Update OnClick to hide all other pages and show LorePage3.
+           Example for Page3Button:
+           <Button name="Page3Button" sizeX="60" sizeY="40" origin="0 400">
+               <ButtonText origin="0 0" text="3" font="header_3" textColor="f0e3cc"/>
+               <OnHover>
+                   <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f97b03" sizeX="60" sizeY="40"/>
+                   <ButtonText origin="0 0" text="3" font="header_3" textColor="211e1d"/>
+               </OnHover>
+               <OnClick>
+                   <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" sizeX="60" sizeY="40"/>
+                   <Action type="Hide" target="LorePage1"/>
+                   <Action type="Hide" target="LorePage2"/>
+                   <Action type="Show" target="LorePage3"/>
+               </OnClick>
+           </Button>
+           - Update existing buttons' OnClick to hide LorePage3:
+             Page1Button: Add <Action type="Hide" target="LorePage3"/> before <Action type="Show" target="LorePage1"/>.
+             Page2Button: Add <Action type="Hide" target="LorePage3"/> before <Action type="Show" target="LorePage2"/>.
+        3. OnOpen/OnClose Events: In Custom_Scrollable_Menu, add hide actions for LorePage3.
+           Example:
+           <OnOpen>
+               <Action type="TriggerEvent" target="GUI_CAPTURE_INPUT"/>
+               <Action type="Hide" target="LorePage1"/>
+               <Action type="Hide" target="LorePage2"/>
+               <Action type="Hide" target="LorePage3"/>
+           </OnOpen>
+           <OnClose>
+               <Action type="TriggerEvent" target="GUI_RELEASE_INPUT"/>
+               <Action type="Hide" target="LorePage1"/>
+               <Action type="Hide" target="LorePage2"/>
+               <Action type="Hide" target="LorePage3"/>
+           </OnClose>
+        4. Dummy Item: Update the dummy item's origin y to last button's y - 100 (e.g., Page3Button at y = 400, so dummy item at y = 300).
+           Example:
+           <Item origin="0 300">
+               <StaticText text="" font="header_4" textColor="f0e3cc"/>
+           </Item>
+    -->
+
+    <EventActionBatch name="GAME_GUI_OPEN_MAIN_MENU">
+        <Action type="Show" target="Menu_Main"/>
+        <Action type="Show" target="Custom_MainMenu_Button"/>
+    </EventActionBatch>
+
+    <EventActionBatch name="GAME_GUI_HIDE_MAIN_MENU">
+        <Action type="Hide" target="Menu_Main"/>
+        <Action type="Hide" target="Custom_MainMenu_Button"/>
+    </EventActionBatch>
+
+    <Item name="Menu_Main" origin="0 0" hidden="true">
+        <OnOpen>
+            <Action type="TriggerEvent" target="GUI_CAPTURE_INPUT"/>
+            <Action type="TriggerEvent" target="GUI_GAME_MAIN_MENU_OPENED"/>
+            <Action type="Show" target="Menu_Main_Buttons"/>
+            <Action type="Hide" target="Menu_Main_CoopButtons"/>
+            <Action type="AddChild" target="Menu_Main_Blurred_Background"/>
+            <Action type="Show" target="Menu_Main_Blurred_Background"/>
+        </OnOpen>
+        <OnClose>
+            <Action type="Hide" target="Menu_Main_Blurred_Background"/>
+            <Action type="TriggerEvent" target="GUI_RELEASE_INPUT"/>
+        </OnClose>
+    </Item>
+
+    <Item name="Custom_MainMenu_Button" origin="875 -640" align="bsv" hidden="true">
+        <OnOpen>
+            <Action type="AddMeToParent" target="Menu_Main"/>
+            <Action type="SetForeground" target="Custom_MainMenu_Button"/>
+        </OnOpen>
+        <StaticImage name="CustomButtonBackground" origin="0 0">
+            <RenderObject2D texture="data/textures/gui/square.tga" color="0c0b0b40" sizeX="76" sizeY="76"/>
+        </StaticImage>
+        <Button name="CustomButton" origin="0 0" sizeX="72" sizeY="72" tooltip="@menu_lore">
+            <RenderObject2D texture="data/textures/gui/menu/menu_terminal_hover.dds" blendMode="normal" color="f1e3cb10"/>
+            <OnHover>
+                <RenderObject2D texture="data/textures/gui/menu/menu_terminal_normal.dds" blendMode="normal" color="f1e3cbff"/>
+            </OnHover>
+            <OnClick>
+                <RenderObject2D texture="data/textures/gui/menu/menu_terminal_normal.dds" scaleX="0.95" scaleY="0.95" blendMode="normal" color="f1e3cbff"/>
+                <Action type="Hide" target="Menu_Main"/>
+                <Action type="Show" target="Custom_Scrollable_Menu"/>
+            </OnClick>
+        </Button>
+    </Item>
+
+    <Item name="Custom_Scrollable_Menu" origin="0 0" hidden="true">
+        <OnKeyDown key0="27">
+            <Action type="Click" target="Custom_Menu_Back"/>
+        </OnKeyDown>
+        <OnOpen>
+            <Action type="TriggerEvent" target="GUI_CAPTURE_INPUT"/>
+            <Action type="Hide" target="LorePage1"/>
+            <Action type="Hide" target="LorePage2"/>
+        </OnOpen>
+        <OnClose>
+            <Action type="TriggerEvent" target="GUI_RELEASE_INPUT"/>
+            <Action type="Hide" target="LorePage1"/>
+            <Action type="Hide" target="LorePage2"/>
+        </OnClose>
+
+
+        <StaticImage origin="0 0">
+            <RenderObject2D texture="data/textures/gui/square.tga" sizeX="99999" sizeY="99999" color="0c0b0b80"/>
+        </StaticImage>
+        <StaticImage origin="0 0">
+            <RenderObject2D texture="data/textures/gui/bg_texture.dds" sizeX="7680" color="f0e3cc26" sizeY="1920" texRepeatX="3" texRepeatY="1"/>
+        </StaticImage>
+        <StaticImage name="ScreenBg" origin="0 0">
+            <RenderObject2D texture="data/textures/gui/square.tga" sizeX="2560" sizeY="9999" color="0c0b0bbf"/>
+            <StaticImage align="l" origin="-128 0">
+                <RenderObject2D texture="data/textures/gui/bg_edge.tga" flipX="true"/>
+            </StaticImage>
+            <StaticImage align="r" origin="128 0">
+                <RenderObject2D texture="data/textures/gui/bg_edge.tga" flipY="true"/>
+            </StaticImage>
+        </StaticImage>
+
+        <Item sizeX="4000" sizeY="1200" origin="0 110">
+            <StaticImage align="t" name="TitleBg" origin="0 10">
+                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="99999" sizeY="120" color="f97b03"/>
+                <StaticText origin="0 0" text="@menu_lore_page" font="header_2" textColor="201f1b" align="c"/>
+            </StaticImage>
+
+            <StaticImage align="t" origin="-100 -120">
+                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="2300" sizeY="1180" color="211e1dB3"/>
+                <StaticImage align="r" origin="40 0">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="1180" color="211e1dB3"/>
+                </StaticImage>
+
+                <Item name="LorePagesContainer" origin="0 0">
+                    <StaticImage origin="0 0">
+                        <RenderObject2D texture="data/textures/gui/menu/grunge_overlay.dds" sizeX="2320" sizeY="1180"/>
+                    </StaticImage>
+                    <Item name="LorePage1" origin="0 0" hidden="true">
+                        <ItemList name="LoreList1" align="c" origin="0 0" direction="y" sizeX="2300" sizeY="1180" clipChildren="true">
+                            <ButtonGraphics align="r" origin="40 0">
+                                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="64" color="f97b0340"/>
+                                <OnHover>
+                                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="64" color="f97b03ff"/>
+                                </OnHover>
+                                <OnClick>
+                                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="64" color="f97b03ff"/>
+                                </OnClick>
+                            </ButtonGraphics>
+                            <StaticImage origin="0 540" sizeY="70">
+                                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="2300" sizeY="70" color="00000050"/>
+                                <StaticText text="[REDACTED] REPORT" font="header_3" textColor="f97b03" align="c"/>
+                            </StaticImage>
+                                <!-- Report Header -->
+                                <Item origin="-1000 440"><StaticText text="FROM: Mason Carter (SP-02-A)" font="header_4" align="l" textColor="f0e3cc"/></Item>
+                                <Item origin="-1000 390"><StaticText text="TO: [REDACTED]" font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 340"><StaticText text="SUBJECT: Post-Incident Intel & Contingency Proposal" font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 290"><StaticText text="DATE: [REDACTED]" font="header_4" textColor="f0e3cc" align="l"/></Item>
+
+                                <!-- Executive Summary -->
+                                <Item origin="-1000 190"><StaticText text="EXECUTIVE SUMMARY" font="header_3" textColor="f97b03" align="l"/></Item>
+                                <Item origin="-1000 90"><StaticText text="Sir, it’s done. NULL Task Force is eliminated." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 40"><StaticText text="…But oh, fuck me." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -10"><StaticText text="I think my blood pressure is hitting the roof." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -60"><StaticText text="Something is not right. I saw them die." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -110"><StaticText text="All of them." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -160"><StaticText text="But goddammit, I wish I was blind, because I swear I just saw one of them again." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -210"><StaticText text="Distorted." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -260"><StaticText text="But still them." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -310"><StaticText text="I know SP-84-C is dead. I saw him fucking bleed out." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -360"><StaticText text="But that thing out there—the one shooting, screaming, tearing through black sites like a goddamn phantom?" font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -410"><StaticText text="It’s either him, or it has his fucking voice." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -460"><StaticText text="Sir, you better send EVERYTHING YOU'VE GOT, or I’m next." font="header_4" textColor="f0e3cc" align="l"/></Item>
+
+                                <!-- NULL DIVISIONS Table -->
+                                <Item origin="-1000 -560"><StaticText text="NULL DIVISIONS" font="header_3" textColor="f97b03" align="l"/></Item>
+                                <Item origin="-1000 -660">
+                                    <StaticText text="CODE" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="DIVISION" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="250 0" text="ROLE" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="550 0" text="SIZE" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -710">
+                                    <StaticText text="SP" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Spear" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="250 0" text="Assault & Containment" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="550 0" text="40%" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -760">
+                                    <StaticText text="DA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Dagger" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="250 0" text="Stealth & Intel" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="550 0" text="24%" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -810">
+                                    <StaticText text="CH" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Chalice" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="250 0" text="Medical & Support" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="550 0" text="16%" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -860">
+                                    <StaticText text="SH" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Shield" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="250 0" text="Defense & Protection" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="550 0" text="12%" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -910">
+                                    <StaticText text="HA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Hammer" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="250 0" text="Supply & Logistics" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="550 0" text="8%" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -960"><StaticText text="Total Personnel: ~2,500 operatives" font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -1010"><StaticText text="Black Sites: 56 worldwide" font="header_4" textColor="f0e3cc" align="l"/></Item>
+
+                                <!-- OPERATOR ROLES Table -->
+                                <Item origin="-1000 -1110"><StaticText text="OPERATOR ROLES" font="header_3" textColor="f97b03" align="l"/></Item>
+                                <Item origin="-1000 -1210">
+                                    <StaticText text="CODE" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="ROLE" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="260 0" text="CODE" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="350 0" text="ROLE" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1260">
+                                    <StaticText text="C" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Commander" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="260 0" text="A" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="350 0" text="Analyst" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1310">
+                                    <StaticText text="I" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Infiltrator" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="260 0" text="D" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="350 0" text="Medic" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1360">
+                                    <StaticText text="B" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Breacher" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="260 0" text="L" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="350 0" text="Logistician" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1410">
+                                    <StaticText text="H" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Heavy Gunner" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="260 0" text="S" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="350 0" text="Scout" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1460">
+                                    <StaticText text="M" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Marksman" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="260 0" text="E" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="350 0" text="Engineer" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+
+                                <!-- NULL OPERATORS Table -->
+                                <Item origin="-1000 -1560"><StaticText text="NULL OPERATORS (PRE-INCIDENT)" font="header_3" textColor="f97b03" align="l"/></Item>
+                                <Item origin="-1000 -1660">
+                                    <StaticText text="ID" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="NAME" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="STATUS" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="GENDER" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1710">
+                                    <StaticText text="SP-84-C" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Alexander Varga" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="???" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1760">
+                                    <StaticText text="DA-67-I" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Jules Fontaine" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="???" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1810">
+                                    <StaticText text="SP-15-H" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Samuel Alvarez" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="???" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1860">
+                                    <StaticText text="SH-47-B" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Elias Becker" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="???" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1910">
+                                    <StaticText text="CH-55-M" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Rika Hanazawa" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="???" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Female" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -1960">
+                                    <StaticText text="SP-02-A" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Mason Carter" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="ACTIVE" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2010">
+                                    <StaticText text="CH-09-D" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Noa Kim" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Female" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2060">
+                                    <StaticText text="SP-25-B" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Omar Rahal" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2110">
+                                    <StaticText text="SP-38-M" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Carlos Gutierrez" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2160">
+                                    <StaticText text="SP-19-H" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Marco Lombardi" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2210">
+                                    <StaticText text="DA-22-S" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Sophie Langley" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Female" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2260">
+                                    <StaticText text="DA-44-I" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Jin Zhang" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2310">
+                                    <StaticText text="DA-71-A" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Rahul Patel" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2360">
+                                    <StaticText text="CH-31-E" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Gabriella Moreau" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Female" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2410">
+                                    <StaticText text="SH-06-S" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Leon Müller" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2460">
+                                    <StaticText text="SH-12-B" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Thomas O'Connor" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2510">
+                                    <StaticText text="SH-01-C" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Yusuf Hassan" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2560">
+                                    <StaticText text="HA-17-E" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Dmitri Ivanov" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2610">
+                                    <StaticText text="HA-88-L" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Ethan Clarke" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2660">
+                                    <StaticText text="SP-93-B" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Liam Kessler" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Male" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2710">
+                                    <StaticText text="DA-95-S" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="100 0" text="Aisha Nadeem" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="300 0" text="KIA" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="400 0" text="Female" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+
+                                <!-- DIRECTORATE INFRASTRUCTURE Table -->
+                                <Item origin="-1000 -2810"><StaticText text="DIRECTORATE INFRASTRUCTURE" font="header_3" textColor="f97b03" align="l"/></Item>
+                                <Item origin="-1000 -2910">
+                                    <StaticText text="COMPANY NAME" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="200 0" text="INDUSTRY" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="520 0" text="REVENUE (EST.)" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="720 0" text="EMPLOYEES" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="870 0" text="FUNCTION" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -2960">
+                                    <StaticText text="Right Wing" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="200 0" text="Defense & Aerospace" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="520 0" text="$18.2B" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="720 0" text="24,500" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="870 0" text="Weapons, AI Systems" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -3010">
+                                    <StaticText text="Left Wing" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="200 0" text="Private Security" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="520 0" text="$9.5B" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="720 0" text="12,800" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="870 0" text="PMC Operations" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -3060">
+                                    <StaticText text="The Eye" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="200 0" text="Cybersecurity & Data Mining" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="520 0" text="$6.3B" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="720 0" text="8,400" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="870 0" text="Intelligence & Surveillance" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -3110">
+                                    <StaticText text="H-Corp" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="200 0" text="Biotech & Medical Research" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="520 0" text="$4.1B" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="720 0" text="5,200" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="870 0" text="Human Enhancement" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -3160">
+                                    <StaticText text="K-Corp" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="200 0" text="Logistics & Infrastructure" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="520 0" text="$3.7B" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="720 0" text="6,900" font="header_4" textColor="f0e3cc" align="l"/>
+                                    <StaticText origin="870 0" text="Black Site Operations" font="header_4" textColor="f0e3cc" align="l"/>
+                                </Item>
+                                <Item origin="-1000 -3210"><StaticText text="These are fronts—but they’re functional." font="header_4" textColor="f0e3cc" align="l"/></Item>
+
+                                <!-- CONTINGENCY PLAN -->
+                                <Item origin="-1000 -3310"><StaticText text="CONTINGENCY PLAN" font="header_3" textColor="f97b03" align="l"/></Item>
+                                <Item origin="-1000 -3410"><StaticText text="I’m gonna say this one more time—that thing is NOT stopping." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -3460"><StaticText text="If that’s Alex… fuck it. Alex or not, you’re gonna need more than a task force to take him down." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -3510"><StaticText text="And sure as hell, I can’t do it alone." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -3560"><StaticText text="So you better pull my ass out. NOW." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -3610"><StaticText text="Because if I die, you will never get that encryption key." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -3660"><StaticText text="Good luck." font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -3710"><StaticText text="— Mason Carter" font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -3760"><StaticText text="SP-02-A" font="header_4" textColor="f0e3cc" align="l"/></Item>
+                                <Item origin="-1000 -3810"><StaticText text="" font="header_4" textColor="f0e3cc" align="l"/></Item>
+                        </ItemList>
+                    </Item>
+
+                    <Item name="LorePage2" origin="0 0" hidden="true">
+                        <ItemList name="LoreList2" align="c" origin="0 0" direction="y" sizeX="2300" sizeY="1180" clipChildren="true">
+                            <ButtonGraphics align="r" origin="40 0">
+                                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="64" color="f97b0340"/>
+                                <OnHover>
+                                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="64" color="f97b03ff"/>
+                                </OnHover>
+                                <OnClick>
+                                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="32" sizeY="64" color="f97b03ff"/>
+                                </OnClick>
+                            </ButtonGraphics>
+                            <StaticImage origin="0 540" sizeY="70">
+                                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="2300" sizeY="70" color="00000050"/>
+                                <StaticText text="UNRECOVERED" font="header_3" textColor="f97b03" align="C"/>
+                            </StaticImage>
+                            <Item origin="-1000 440"><StaticText text="Decrypting..." font="header_2" textColor="f0e3cc" align="l"/></Item>
+                        </ItemList>
+                    </Item>
+                </Item>
+            </StaticImage>
+
+            <Item origin="1175 -115">
+                <StaticImage origin="0 0">
+                    <RenderObject2D texture="data/textures/gui/square.tga" sizeX="150" sizeY="1200" color="211e1dB3"/>
+                </StaticImage>
+                <ItemList name="PageNavigationList" align="c" origin="0 0" direction="y" sizeX="150" sizeY="1200" clipChildren="true">
+                    <ButtonGraphics align="r" origin="20 0">
+                        <RenderObject2D texture="data/textures/gui/square.tga" sizeX="16" sizeY="64" color="f97b0340"/>
+                        <OnHover>
+                            <RenderObject2D texture="data/textures/gui/square.tga" sizeX="16" sizeY="64" color="f97b03ff"/>
+                        </OnHover>
+                        <OnClick>
+                            <RenderObject2D texture="data/textures/gui/square.tga" sizeX="16" sizeY="64" color="f97b03ff"/>
+                        </OnClick>
+                    </ButtonGraphics>
+                    <Button name="Page1Button" sizeX="60" sizeY="40" origin="0 500">
+                        <ButtonText origin="0 0" text="1" font="header_3" textColor="f0e3cc"/>
+                        <OnHover>
+                            <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f97b03" sizeX="60" sizeY="40"/>
+                            <ButtonText origin="0 0" text="1" font="header_3" textColor="211e1d"/>
+                        </OnHover>
+                        <OnClick>
+                            <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" sizeX="60" sizeY="40"/>
+                            <Action type="Hide" target="LorePage2"/>
+                            <Action type="Show" target="LorePage1"/>
+                        </OnClick>
+                    </Button>
+
+                    <Button name="Page2Button" sizeX="60" sizeY="40" origin="0 450">
+                        <ButtonText origin="0 0" text="2" font="header_3" textColor="f0e3cc"/>
+                        <OnHover>
+                            <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f97b03" sizeX="60" sizeY="40"/>
+                            <ButtonText origin="0 0" text="2" font="header_3" textColor="211e1d"/>
+                        </OnHover>
+                        <OnClick>
+                            <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" sizeX="60" sizeY="40"/>
+                            <Action type="Hide" target="LorePage1"/>
+                            <Action type="Show" target="LorePage2"/>
+                        </OnClick>
+                    </Button>
+
+                    <Item origin="0 350">
+                        <StaticText text="" font="header_4" textColor="f0e3cc"/>
+                    </Item>
+                </ItemList>
+            </Item>
+        </Item>
+
+        <Item align="sv" origin="0 -688">
+            <StaticImage name="ScreenFooter" align="b" origin="0 -32">
+                <RenderObject2D texture="data/textures/gui/square.tga" sizeX="99999" sizeY="120" color="211e1d"/>
+            </StaticImage>
+            <Button name="Custom_Menu_Back" align="lb" origin="-1200 -4">
+                <ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="f0e3cc"/>
+                <OnHover>
+                    <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="f0e3cc" flipX="false"/>
+                    <ButtonText align="l" origin="20 0" text="@menu_generic_back" font="header_2" textColor="211e1d"/>
+                </OnHover>
+                <OnClick>
+                    <RenderObject2D texture="data/textures/gui/button_hover_01.tga" color="40392b" flipX="false"/>
+                    <Action type="Hide" target="Custom_Scrollable_Menu"/>
+                    <Action type="Show" target="Menu_Main"/>
+                </OnClick>
+            </Button>
+        </Item>
+    </Item>
+</GUIItems>

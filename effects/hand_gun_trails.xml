@@ -1,0 +1,339 @@
+<Particles>
+
+    <ParticleSystem name="HAND_Tracer_AR" poolSize="120">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
+            <Particle lifetime="0.350" lifetimeMax="0.500"/>
+            <Initial sizeX="0.140" sizeZ="0.800"/>
+            <Movement scaleEnd="3.500" velocity="110.0"/>
+            <Tracer segmentLength="0.10" maxLength="-1" fadeOutTime="0.14" lengthScale="1.2" minLength="0.4"/>
+            <Material softThickness="0.400" fadeIn="0.015" fadeOut="0.150" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="00121AFF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.150" uvDistortY="0.400" distortAmount="1.6"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.350"/>
+            <Initial scale="1.500" sizeX="1.500" sizeZ="1.500" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="1.000" scaleEnd="2.500"/>
+            <Material softThickness="0.300" fadeIn="0.070" fadeOut="0.550" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="00121AFF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="0.8"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.020" emitCount="8" spawnOffsetY="0.800">
+            <Particle lifetime="0.280" lifetimeMax="0.400"/>
+            <Initial scale="0.400" scaleMax="0.600" sizeZ="0.120" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="4.000" speedXMax="8.000" speedY="0.800" speedYMax="2.200" scaleStart="3.200" scaleEnd="0.180" direction="orient"/>
+            <Material fadeIn="0.220" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="00121AFF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_SMG" poolSize="80">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
+            <Particle lifetime="0.200" lifetimeMax="0.300"/>
+            <Initial sizeX="0.060" sizeZ="0.500"/>
+            <Movement scaleEnd="1.800" velocity="120.0"/>
+            <Tracer segmentLength="0.05" maxLength="-1" fadeOutTime="0.08" lengthScale="0.8" minLength="0.2"/>
+            <Material softThickness="0.200" fadeIn="0.005" fadeOut="0.100" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="0C0018FF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.200" uvDistortY="0.300" distortAmount="1.8"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.250"/>
+            <Initial scale="1.000" sizeX="1.000" sizeZ="1.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.800" scaleEnd="1.500"/>
+            <Material softThickness="0.250" fadeIn="0.050" fadeOut="0.450" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="0C0018FF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="1.2"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.020" emitCount="6" spawnOffsetY="0.700">
+            <Particle lifetime="0.220" lifetimeMax="0.350"/>
+            <Initial scale="0.350" scaleMax="0.500" sizeZ="0.100" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="3.500" speedXMax="7.000" speedY="0.700" speedYMax="1.800" scaleStart="2.800" scaleEnd="0.150" direction="orient"/>
+            <Material fadeIn="0.180" fadeOut="0.750" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="0C0018FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_LMG" poolSize="150">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
+            <Particle lifetime="0.450" lifetimeMax="0.650"/>
+            <Initial sizeX="0.160" sizeZ="0.900"/>
+            <Movement scaleEnd="3.200" velocity="85.0"/>
+            <Tracer segmentLength="0.10" maxLength="-1" fadeOutTime="0.18" lengthScale="1.1" minLength="0.4"/>
+            <Material softThickness="0.380" fadeIn="0.025" fadeOut="0.200" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="120000FF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.150" uvDistortY="0.380" distortAmount="1.8"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.380"/>
+            <Initial scale="1.600" sizeX="1.600" sizeZ="1.600" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="1.000" scaleEnd="2.800"/>
+            <Material softThickness="0.320" fadeIn="0.080" fadeOut="0.650" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="120000FF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="0.9"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.025" emitCount="10" spawnOffsetY="0.800">
+            <Particle lifetime="0.320" lifetimeMax="0.480"/>
+            <Initial scale="0.450" scaleMax="0.650" sizeZ="0.120" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="4.500" speedXMax="8.500" speedY="0.900" speedYMax="2.500" scaleStart="3.200" scaleEnd="0.180" direction="orient"/>
+            <Material fadeIn="0.220" fadeOut="0.850" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="120000FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_SG" poolSize="100">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000" emitCount="8">
+            <Particle lifetime="0.500" lifetimeMax="0.700"/>
+            <Initial sizeX="0.180" sizeZ="1.000"/>
+            <Movement scaleEnd="2.500" velocity="80.0" spread="15.0"/>
+            <Tracer segmentLength="0.15" maxLength="-1" fadeOutTime="0.20" lengthScale="0.7" minLength="0.4"/>
+            <Material softThickness="0.300" fadeIn="0.015" fadeOut="0.200" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="121000FF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.250" uvDistortY="0.500" distortAmount="1.5"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.180"/>
+            <Initial scale="1.600" sizeX="1.600" sizeZ="1.600" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="1.000" scaleEnd="2.500"/>
+            <Material softThickness="0.400" fadeIn="0.030" fadeOut="0.500" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="121000FF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="1.5"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.010" emitCount="12" spawnOffsetY="0.700">
+            <Particle lifetime="0.250" lifetimeMax="0.400"/>
+            <Initial scale="0.400" scaleMax="1.000" sizeZ="0.120" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="6.000" speedXMax="12.000" speedY="1.000" speedYMax="3.500" scaleStart="4.000" scaleEnd="0.100" direction="orient"/>
+            <Material fadeIn="0.200" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="121000FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_DMR" poolSize="110">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
+            <Particle lifetime="0.700" lifetimeMax="1.000"/>
+            <Initial sizeX="0.300" sizeZ="1.500"/>
+            <Movement scaleEnd="4.500" velocity="200.0" turbulence="0.1"/>
+            <Tracer segmentLength="0.12" maxLength="-1" fadeOutTime="0.30" lengthScale="2.0" minLength="0.9"/>
+            <Material softThickness="0.500" fadeIn="0.020" fadeOut="0.300" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="001210FF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.100" uvDistortY="0.350" distortAmount="1.8"/>
+            </Material>
+        </Emitter>
+    
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.500"/>
+            <Initial scale="2.000" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="1.500" scaleEnd="3.500"/>
+            <Material softThickness="0.400" fadeIn="0.080" fadeOut="0.750" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="001210FF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="0.8"/>
+            </Material>
+        </Emitter>
+    
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.025" emitCount="12" spawnOffsetY="0.700">
+            <Particle lifetime="0.450" lifetimeMax="0.600"/>
+            <Initial scale="0.600" scaleMax="0.900" sizeZ="0.200" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="4.000" speedXMax="7.000" speedY="1.000" speedYMax="2.500" scaleStart="3.000" scaleEnd="0.300" direction="orient"/>
+            <Material fadeIn="0.200" fadeOut="0.850" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="001210FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_AR_Silenced" poolSize="40">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
+            <Particle lifetime="0.200" lifetimeMax="0.300"/>
+            <Initial sizeX="0.080" sizeZ="0.450"/>
+            <Movement scaleEnd="2.000" velocity="110.0"/>
+            <Tracer segmentLength="0.08" maxLength="-1" fadeOutTime="0.08" lengthScale="1.0" minLength="0.3"/>
+            <Material softThickness="0.300" fadeIn="0.010" fadeOut="0.100" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="00121AFF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.120" uvDistortY="0.300" distortAmount="1.4"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.250"/>
+            <Initial scale="1.000" sizeX="1.000" sizeZ="1.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.800" scaleEnd="1.800"/>
+            <Material softThickness="0.250" fadeIn="0.050" fadeOut="0.400" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="00121AFF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="0.8"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.015" emitCount="6" spawnOffsetY="0.600">
+            <Particle lifetime="0.200" lifetimeMax="0.300"/>
+            <Initial scale="0.300" scaleMax="0.450" sizeZ="0.090" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="3.000" speedXMax="6.000" speedY="0.600" speedYMax="1.800" scaleStart="2.500" scaleEnd="0.120" direction="orient"/>
+            <Material fadeIn="0.180" fadeOut="0.600" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="00121AFF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_SMG_Silenced" poolSize="40">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
+            <Particle lifetime="0.120" lifetimeMax="0.200"/>
+            <Initial sizeX="0.040" sizeZ="0.300"/>
+            <Movement scaleEnd="1.200" velocity="120.0"/>
+            <Tracer segmentLength="0.04" maxLength="-1" fadeOutTime="0.05" lengthScale="0.6" minLength="0.15"/>
+            <Material softThickness="0.150" fadeIn="0.005" fadeOut="0.070" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="0C0018FF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.150" uvDistortY="0.200" distortAmount="1.6"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.180"/>
+            <Initial scale="0.800" sizeX="0.800" sizeZ="0.800" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.600" scaleEnd="1.200"/>
+            <Material softThickness="0.200" fadeIn="0.040" fadeOut="0.350" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="0C0018FF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="1.2"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.015" emitCount="4" spawnOffsetY="0.500">
+            <Particle lifetime="0.150" lifetimeMax="0.250"/>
+            <Initial scale="0.250" scaleMax="0.400" sizeZ="0.080" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="2.500" speedXMax="5.000" speedY="0.500" speedYMax="1.500" scaleStart="2.000" scaleEnd="0.100" direction="orient"/>
+            <Material fadeIn="0.150" fadeOut="0.550" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="0C0018FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_LMG_Silenced" poolSize="40">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
+            <Particle lifetime="0.250" lifetimeMax="0.400"/>
+            <Initial sizeX="0.100" sizeZ="0.600"/>
+            <Movement scaleEnd="2.200" velocity="85.0"/>
+            <Tracer segmentLength="0.08" maxLength="-1" fadeOutTime="0.10" lengthScale="0.9" minLength="0.3"/>
+            <Material softThickness="0.300" fadeIn="0.015" fadeOut="0.120" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="120000FF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.120" uvDistortY="0.300" distortAmount="1.6"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.300"/>
+            <Initial scale="1.200" sizeX="1.200" sizeZ="1.200" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.900" scaleEnd="2.000"/>
+            <Material softThickness="0.280" fadeIn="0.060" fadeOut="0.500" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="120000FF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="0.9"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.020" emitCount="8" spawnOffsetY="0.600">
+            <Particle lifetime="0.250" lifetimeMax="0.350"/>
+            <Initial scale="0.350" scaleMax="0.500" sizeZ="0.100" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="3.500" speedXMax="6.500" speedY="0.700" speedYMax="2.000" scaleStart="2.800" scaleEnd="0.140" direction="orient"/>
+            <Material fadeIn="0.200" fadeOut="0.700" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="120000FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_SG_Silenced" poolSize="40">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000" emitCount="8">
+            <Particle lifetime="0.300" lifetimeMax="0.450"/>
+            <Initial sizeX="0.120" sizeZ="0.700"/>
+            <Movement scaleEnd="1.800" velocity="80.0" spread="15.0"/>
+            <Tracer segmentLength="0.10" maxLength="-1" fadeOutTime="0.12" lengthScale="0.6" minLength="0.3"/>
+            <Material softThickness="0.250" fadeIn="0.010" fadeOut="0.150" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="121000FF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.200" uvDistortY="0.400" distortAmount="1.3"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.150"/>
+            <Initial scale="1.200" sizeX="1.200" sizeZ="1.200" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.900" scaleEnd="2.000"/>
+            <Material softThickness="0.350" fadeIn="0.025" fadeOut="0.400" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="121000FF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="1.5"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.010" emitCount="8" spawnOffsetY="0.500">
+            <Particle lifetime="0.200" lifetimeMax="0.300"/>
+            <Initial scale="0.300" scaleMax="0.700" sizeZ="0.090" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="4.000" speedXMax="8.000" speedY="0.800" speedYMax="2.000" scaleStart="3.000" scaleEnd="0.080" direction="orient"/>
+            <Material fadeIn="0.180" fadeOut="0.600" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="121000FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_DMR_Silenced" poolSize="40">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
+            <Particle lifetime="0.400" lifetimeMax="0.600"/>
+            <Initial sizeX="0.180" sizeZ="0.900"/>
+            <Movement scaleEnd="3.000" velocity="200.0" turbulence="0.1"/>
+            <Tracer segmentLength="0.10" maxLength="-1" fadeOutTime="0.15" lengthScale="1.5" minLength="0.6"/>
+            <Material softThickness="0.400" fadeIn="0.015" fadeOut="0.200" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="001210FF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.080" uvDistortY="0.250" distortAmount="1.5"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.350"/>
+            <Initial scale="1.500" sizeX="1.500" sizeZ="1.500" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="1.200" scaleEnd="2.500"/>
+            <Material softThickness="0.350" fadeIn="0.060" fadeOut="0.600" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="001210FF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="0.8"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.020" emitCount="8" spawnOffsetY="0.600">
+            <Particle lifetime="0.300" lifetimeMax="0.450"/>
+            <Initial scale="0.450" scaleMax="0.700" sizeZ="0.150" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="3.000" speedXMax="5.500" speedY="0.800" speedYMax="2.000" scaleStart="2.500" scaleEnd="0.200" direction="orient"/>
+            <Material fadeIn="0.180" fadeOut="0.700" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="001210FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_Pistol" poolSize="50">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
+            <Particle lifetime="0.150" lifetimeMax="0.250"/>
+            <Initial sizeX="0.040" sizeZ="0.400"/>
+            <Movement scaleEnd="1.500" velocity="80.0"/>
+            <Tracer segmentLength="0.06" maxLength="-1" fadeOutTime="0.06" lengthScale="0.9" minLength="0.3"/>
+            <Material softThickness="0.180" fadeIn="0.020" fadeOut="0.200" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="333333FF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.100" uvDistortY="0.200" distortAmount="0.8"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.200"/>
+            <Initial scale="0.700" sizeX="0.700" sizeZ="0.700" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.500" scaleEnd="1.200"/>
+            <Material softThickness="0.150" fadeIn="0.020" fadeOut="0.250" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="444444FF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="0.7"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.020" emitCount="3" spawnOffsetY="0.500">
+            <Particle lifetime="0.150" lifetimeMax="0.250"/>
+            <Initial scale="0.300" scaleMax="0.600" sizeZ="0.080" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="2.000" speedXMax="5.000" speedY="0.500" speedYMax="1.500" scaleStart="2.000" scaleEnd="0.100" direction="orient"/>
+            <Material fadeIn="0.100" fadeOut="0.600" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="333333FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+    <ParticleSystem name="HAND_Tracer_Pistol_Silenced" poolSize="40">
+        <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
+            <Particle lifetime="0.100" lifetimeMax="0.200"/>
+            <Initial sizeX="0.030" sizeZ="0.350"/>
+            <Movement scaleEnd="1.200" velocity="90.0"/>
+            <Tracer segmentLength="0.05" maxLength="-1" fadeOutTime="0.05" lengthScale="0.8" minLength="0.2"/>
+            <Material softThickness="0.150" fadeIn="0.010" fadeOut="0.150" mainTex="data/textures/fx/trail_smoke_main.dds" colorize="333333FF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.080" uvDistortY="0.150" distortAmount="0.5"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_cloud" shape="end" emitDelay="1.000">
+            <Particle lifetime="0.180"/>
+            <Initial scale="0.500" sizeX="0.500" sizeZ="0.500" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.300" scaleEnd="0.900"/>
+            <Material softThickness="0.120" fadeIn="0.010" fadeOut="0.200" blendMode="add_masked" mainTex="data/textures/fx/explosion_stinger.dds" colorize="444444FF">
+                <TextureAnimation frameWidth="128" frameHeight="128" startFrame="5" endFrame="10" animSpeed="0.8"/>
+            </Material>
+        </Emitter>
+
+        <Emitter name="impact_sparks" shape="end" emitDelay="0.010" emitCount="2" spawnOffsetY="0.400">
+            <Particle lifetime="0.120" lifetimeMax="0.200"/>
+            <Initial scale="0.250" scaleMax="0.500" sizeZ="0.060" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="1.500" speedXMax="3.000" speedY="0.300" speedYMax="0.800" scaleStart="1.500" scaleEnd="0.050" direction="orient"/>
+            <Material fadeIn="0.080" fadeOut="0.500" blendMode="add_masked" mainTex="data/textures/fx/flamespark.dds" colorize="333333FF"/>
+        </Emitter>
+    </ParticleSystem>
+
+</Particles>

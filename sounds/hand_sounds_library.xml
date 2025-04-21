@@ -1,0 +1,9 @@
+<Sounds>
+
+    <Sound ID="l75_fire" channel="game" preload="false">
+        <Path name="data/sounds/sfx/weapons/l75_fire_01.wav"/>
+        <Path name="data/sounds/sfx/weapons/l75_fire_02.wav"/>
+        <Path name="data/sounds/sfx/weapons/l75_fire_03.wav"/>
+    </Sound>
+
+</Sounds>

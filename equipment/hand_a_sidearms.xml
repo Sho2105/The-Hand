@@ -1,0 +1,128 @@
+<Equipment>
+
+    <!-- HK45CT (Pistol) for all members -->
+    <Bind eqp="HAND_PISTOL">
+        <to name="45FMJM1911_1911 Pistol"/>
+        <to name="45JHP185GR_Pistol"/>
+        <to name="45JHP160GR_Pistol"/>
+        <to name="IronSights_Pistol"/>
+    </Bind>
+    <Firearm name="HAND_PISTOL" inventoryBinding="SecondaryWeapon" category="HAND_pistol" unlockCost="0" sortId="0"
+            tooltip="@firearm_HAND_PISTOL_name"
+            description="@firearm_HAND_PISTOL_desc"
+            img="data/models/weapons/hk45ct_mag_ui.dds"
+            animationSet="pistol">
+        <MobilityModifiers moveSpeedModifierPercent="-1.6" turnSpeedModifierPercent="0"/>
+        <ConcealmentModifier add="-1.5"/>
+        <RenderObject3D model="data/models/weapons/a_pistol.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/a_pistol.dds" skipGOSSAO="true"/>
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="10"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1550"
+            reloadEmptyTime="1600"
+            changeInTime="750"
+            changeOutTime="1100"
+            readyTime="130"
+            guardTime="100"
+            accuracyStart="130"
+            accuracyEnd="60"
+            accuracyStartDist="7"
+            accuracyEndDist="15"/>
+        <Params
+            caliberInfoText="@firearm_caliber_45acp_name"
+            operationInfoText="@firearm_operation_semiauto_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="pm63_mag"
+            suppressedSwitch="HAND_PISTOL_Sup"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="3.0"
+            ai_rangeMax="15.0"
+            ai_stopWhenShooting="false"/>
+        <AttackTypes>        
+            <AttackType name="HAND_PISTOL_Close" inCoverOverride="HAND_PISTOL_CloseMounted" rangeMeters="1.5"/>
+            <AttackType name="HAND_PISTOL_Med" inCoverOverride="HAND_PISTOL_MedMounted" rangeMeters="8"/>
+            <AttackType name="HAND_PISTOL_Long" inCoverOverride="HAND_PISTOL_LongMounted" rangeMeters="999"/>        
+        </AttackTypes>                        
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="HAND_Tracer_Pistol">
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
+            <Flare particles="FX_MUZZLE_FLASH_PISTOL_04" />
+        </MuzzleFlash>
+        <Sounds> 
+            <Equip name="pistol_eqp"/>
+            <Unequip name="pistol_neqp"/>
+            <Reload name="pistol_reld"/>
+            <ReloadEmpty name="pistol_reldempt"/>
+            <Fire name="hk45_fire"/>
+            <ShellDrop name="pistol_shell_drop"/>
+            <Empty name="gen_empty"/>
+        </Sounds>
+    </Firearm>
+
+    <Bind eqp="HAND_PISTOL_Sup">
+        <to name="45FMJM1911_SuppressedPistol"/>
+        <to name="45JHP185GR_SuppressedPistol"/>
+        <to name="45JHP160GR_SuppressedPistol"/>
+        <to name="IronSights_Pistol"/>
+    </Bind>
+    <Firearm name="HAND_PISTOL_Sup" inventoryBinding="SecondaryWeaponMuzzle" category="HAND_pistol" unlockCost="0" sortId="0"
+            tooltip="@firearm_HAND_PISTOLsup_name"
+            description="@firearm_HAND_PISTOLsup_desc"
+            img="data/models/weapons/hk45ct_mag_ui.dds"
+            animationSet="pistol">
+        <MobilityModifiers moveSpeedModifierPercent="-1.6" turnSpeedModifierPercent="0"/>
+        <ConcealmentModifier add="-2.5"/>
+        <RenderObject3D model="data/models/weapons/a_pistol.khm" attachSlot="prop_sidearm" diffuseTex="data/models/weapons/a_pistol.dds" skipGOSSAO="true"/>>
+        <RenderObject3D model="data/models/weapons/attachments/silencer_01.khm" attachSlot="silencer_socket_pistol" skipGOSSAO="true" diffuseTex="data/models/weapons/attachments/silencer_01a.dds"/>
+        <ModifiableParams
+            numPellets="1"
+            roundsPerMagazine="10"
+            closedBolt="1"
+            cyclicReload="0"
+            reloadTime="1660"
+            reloadEmptyTime="1700"
+            changeInTime="1000"
+            changeOutTime="1300"
+            readyTime="140"
+            guardTime="110"
+            accuracyStart="130"
+            accuracyEnd="60"
+            accuracyStartDist="7"
+            accuracyEndDist="15"/>
+        <Params
+            caliberInfoText="@firearm_caliber_45acp_name"
+            operationInfoText="@firearm_operation_semiauto_name"
+            ejectingShellEntity="BulletCasingSmall"
+            magazineEntity="pm63_mag"
+            suppressedSwitch="HAND_PISTOL"
+            suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
+            ai_rangeMin="1.0"
+            ai_rangeOptimal="3.0"
+            ai_rangeMax="15.0"
+            ai_stopWhenShooting="false"/>
+        <AttackTypes>        
+            <AttackType name="HAND_PISTOL_Close" inCoverOverride="HAND_PISTOL_CloseMounted" rangeMeters="1.5"/>
+            <AttackType name="HAND_PISTOL_Med" inCoverOverride="HAND_PISTOL_MedMounted" rangeMeters="10"/>
+            <AttackType name="HAND_PISTOL_Long" inCoverOverride="HAND_PISTOL_LongMounted" rangeMeters="999"/>        
+        </AttackTypes>                
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="HAND_Tracer_Pistol_Silenced">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_08" />
+        </MuzzleFlash>
+        <Sounds> 
+            <Equip name="pistol_eqp"/>
+            <Unequip name="pistol_neqp"/>
+            <Reload name="pistol_reld"/>
+            <ReloadEmpty name="pistol_reldempt"/>
+            <Fire name="hk45sup_fire"/>
+            <ShellDrop name="pistol_shell_drop"/>
+            <Empty name="gen_empty"/>
+        </Sounds>
+    </Firearm>
+
+</Equipment>

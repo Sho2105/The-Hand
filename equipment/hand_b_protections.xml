@@ -1,0 +1,349 @@
+<Equipment>
+
+    <Helmet name="HAND_b_Helmet_1" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_helmet_1_name"
+        description="@HAND_b_helmet_1_desc"
+        img="data/models/humans/attachments/hand_b_helmet_1_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-1" />
+        <ConcealmentModifier add="0" />
+        <Params allowNVG="true">
+            <ProtectionArc degrees="360" coveragePercent="10" piercingProtectionLevel="20" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_Helmet_2" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_helmet_2_name"
+        description="@HAND_b_helmet_2_desc"
+        img="data/models/humans/attachments/hand_b_helmet_2_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="-2" />
+        <ConcealmentModifier add="0" />
+        <Params allowNVG="true">
+            <ProtectionArc degrees="360" coveragePercent="14" piercingProtectionLevel="40" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_Helmet_3" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_helmet_3_name"
+        description="@HAND_b_helmet_3_desc"
+        img="data/models/humans/attachments/hand_b_helmet_3_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-3" />
+        <ConcealmentModifier add="0" />
+        <Params allowNVG="true">
+            <ProtectionArc degrees="360" coveragePercent="18" piercingProtectionLevel="60" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_Helmet_4" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_helmet_4_name"
+        description="@HAND_b_helmet_4_desc"
+        img="data/models/humans/attachments/hand_b_helmet_4_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="-4" />
+        <ConcealmentModifier add="0" />
+        <Params allowNVG="true">
+            <ProtectionArc degrees="360" coveragePercent="22" piercingProtectionLevel="80" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_Helmet_5" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_helmet_5_name"
+        description="@HAND_b_helmet_5_desc"
+        img="data/models/humans/attachments/hand_b_helmet_5_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-5" />
+        <ConcealmentModifier add="0" />
+        <Params allowNVG="true">
+            <ProtectionArc degrees="360" coveragePercent="26" piercingProtectionLevel="100" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_RattanHat" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_rattanhat_name"
+        description="@HAND_b_rattanhat_desc"
+        img="data/models/humans/attachments/hand_b_rattanhat_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="2" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360" coveragePercent="5" piercingProtectionLevel="10" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_SantaHat" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_santahat_name"
+        description="@HAND_b_santahat_desc"
+        img="data/models/humans/attachments/hand_b_santahat_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="50" turnSpeedModifierPercent="-20" />
+        <ConcealmentModifier add="-3" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_santahat.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_santahat.dds" attachSlot="Bip001 Head"
+            windAnimated="1" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_CapAssaulter" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_capassaulter_name"
+        description="@HAND_b_capassaulter_desc"
+        img="data/models/humans/attachments/hand_b_capassaulter_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="0" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_capassaulter.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_capassaulter.dds"
+            attachSlot="Bip001 Head" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_Beret" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_beret_name"
+        description="@HAND_b_beret_desc"
+        img="data/models/humans/attachments/hand_b_beret_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_beret.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_beret.dds" attachSlot="Bip001 Head" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_SkullCrusher" inventoryBinding="Helmet" unlockCostBH="3"
+        tooltip="@HAND_b_skullcrusher_name"
+        description="@HAND_b_skullcrusher_desc"
+        img="data/models/humans/attachments/hand_b_skullcrusher_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="-2" />
+        <ConcealmentModifier add="-2" />
+        <Params nvgByDefault="true">
+            <ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
+        </Params>
+        <RenderObject3D model="data/models/humans/attachments/hand_b_skullcrusher.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_nvg.dds" attachSlot="Bip001 Head">
+            <Specular shininess="8" intensity="1.3" />
+        </RenderObject3D>
+    </Helmet>
+
+
+    <Helmet name="HAND_b_Headband" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_headband_name"
+        description="@HAND_b_headband_desc"
+        img="data/models/humans/attachments/hand_b_headband_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_headband.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_headband.dds" attachSlot="Bip001 Head" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_Bandana" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_bandana_name"
+        description="@HAND_b_bandana_desc"
+        img="data/models/humans/attachments/hand_b_bandana_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_bandana.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_bandana_red.dds"
+            attachSlot="Bip001 Head" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_UndercoverCap" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_undercovercap_name"
+        description="@HAND_b_undercovercap_desc"
+        img="data/models/humans/attachments/hand_b_undercovercap_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="1" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_undercovercap.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_undercovercap_scarf.dds"
+            attachSlot="Bip001 Head" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_undercovercap_scarf.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_undercovercap_scarf.dds" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+
+    <Helmet name="HAND_b_BlackOpsCap" inventoryBinding="Helmet" unlockCost="0"
+        tooltip="@HAND_b_blackopscap_name"
+        description="@HAND_b_blackopscap_desc"
+        img="data/models/humans/attachments/hand_b_blackopscap_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="3" turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="0" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_blackopscap.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_blackopscap.dds"
+            attachSlot="Bip001 Head" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_blackopscap_scarf.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_undercovercap_scarf.dds" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360" coveragePercent="0" piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+
+    <HelmetNVG name="HAND_b_NVG_SkullCrusher" inventoryBinding="HelmetNVG"
+        tooltip="@HAND_b_nvg_skullcrusher_name"
+        description="@HAND_b_nvg_skullcrusher_desc"
+        img="data/models/humans/attachments/hand_b_nvg_skullcrusher_ui.dds">
+        <ModifiableParams fovDegrees="40" fovRadiusMeters="0.42" fovRangeMeters="999" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_skullcrusher_up.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_nvg_skullcrusher.dds" attachSlot="nvg">
+            <Specular shininess="8" intensity="1.3" />
+        </RenderObject3D>
+        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_skullcrusher.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_nvg_skullcrusher.dds" attachSlot="nvg">
+            <Specular shininess="8" intensity="1.3" />
+        </RenderObject3D>
+        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_skullcrusher_lights.khm"
+            diffuseTex="data/textures/fx/light_flare_01.dds" diffuseColor="84ff47" blendMode="add"
+            attachSlot="nvg" />
+    </HelmetNVG>
+
+
+    <HelmetNVG name="HAND_b_NVG_Quad" inventoryBinding="HelmetNVG" unlockCost="0"
+        tooltip="@HAND_b_nvg_quad_name"
+        description="@HAND_b_nvg_quad_desc"
+        img="data/models/humans/attachments/hand_b_nvg_quad_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="-2" />
+        <ConcealmentModifier add="0" />
+        <ModifiableParams fovDegrees="90" fovRadiusMeters="0.5" fovRangeMeters="999" />
+        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_quad_up.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_nvg_quad.dds" attachSlot="nvg">
+            <Specular shininess="8" intensity="1.3" />
+        </RenderObject3D>
+        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_quad.khm"
+            diffuseTex="data/models/humans/attachments/hand_b_nvg_quad.dds" attachSlot="nvg">
+            <Specular shininess="8" intensity="1.3" />
+        </RenderObject3D>
+        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_quad_light.khm"
+            diffuseTex="data/textures/fx/light_flare_01.dds" diffuseColor="84ff47" blendMode="add"
+            attachSlot="nvg" />
+    </HelmetNVG>
+
+    <Armor name="HAND_b_Armor_1" inventoryBinding="Armor" unlockCost="0"
+        tooltip="@HAND_b_armor_1_name"
+        description="@HAND_b_armor_1_desc"
+        img="data/models/equipment/hand_b_armor_1_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-8" turnSpeedModifierPercent="-2" />
+        <ConcealmentModifier add="-2" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="30" piercingProtectionLevel="20" />
+            <ProtectionArc degrees="270" coveragePercent="15" piercingProtectionLevel="20" />
+            <ProtectionArc degrees="360" coveragePercent="30" piercingProtectionLevel="20" />
+        </Params>
+    </Armor>
+
+    <Armor name="HAND_b_Armor_2" inventoryBinding="Armor" unlockCost="0"
+        tooltip="@HAND_b_armor_2_name"
+        description="@HAND_b_armor_2_desc"
+        img="data/models/equipment/hand_b_armor_2_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-9" turnSpeedModifierPercent="-3" />
+        <ConcealmentModifier add="-3" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="35" piercingProtectionLevel="40" />
+            <ProtectionArc degrees="270" coveragePercent="20" piercingProtectionLevel="40" />
+            <ProtectionArc degrees="360" coveragePercent="35" piercingProtectionLevel="40" />
+        </Params>
+    </Armor>
+
+    <Armor name="HAND_b_Armor_3" inventoryBinding="Armor" unlockCost="0"
+        tooltip="@HAND_b_armor_3_name"
+        description="@HAND_b_armor_3_desc"
+        img="data/models/equipment/hand_b_armor_3_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-4" />
+        <ConcealmentModifier add="-4" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="60" />
+            <ProtectionArc degrees="270" coveragePercent="25" piercingProtectionLevel="60" />
+            <ProtectionArc degrees="360" coveragePercent="40" piercingProtectionLevel="60" />
+        </Params>
+    </Armor>
+
+    <Armor name="HAND_b_Armor_4" inventoryBinding="Armor" unlockCost="0"
+        tooltip="@HAND_b_armor_4_name"
+        description="@HAND_b_armor_4_desc"
+        img="data/models/equipment/hand_b_armor_4_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-11" turnSpeedModifierPercent="-5" />
+        <ConcealmentModifier add="-5" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="45" piercingProtectionLevel="80" />
+            <ProtectionArc degrees="270" coveragePercent="30" piercingProtectionLevel="80" />
+            <ProtectionArc degrees="360" coveragePercent="45" piercingProtectionLevel="80" />
+        </Params>
+    </Armor>
+
+    <Armor name="HAND_b_Armor_5" inventoryBinding="Armor" unlockCost="0"
+        tooltip="@HAND_b_armor_5_name"
+        description="@HAND_b_armor_5_desc"
+        img="data/models/equipment/hand_b_armor_5_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-12" turnSpeedModifierPercent="-6" />
+        <ConcealmentModifier add="-6" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="50" piercingProtectionLevel="100" />
+            <ProtectionArc degrees="270" coveragePercent="35" piercingProtectionLevel="100" />
+            <ProtectionArc degrees="360" coveragePercent="50" piercingProtectionLevel="100" />
+        </Params>
+    </Armor>
+
+    <Armor name="HAND_b_Vest_1" inventoryBinding="Armor" unlockCost="0"
+        tooltip="@HAND_b_vest_1_name"
+        description="@HAND_b_vest_1_desc"
+        img="data/models/equipment/hand_b_vest_1_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="-1" />
+        <ConcealmentModifier add="0" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="20" piercingProtectionLevel="10" />
+            <ProtectionArc degrees="360" coveragePercent="15" piercingProtectionLevel="10" />
+        </Params>
+    </Armor>
+
+    <Armor name="HAND_b_Vest_2" inventoryBinding="Armor" unlockCost="0"
+        tooltip="@HAND_b_vest_2_name"
+        description="@HAND_b_vest_2_desc"
+        img="data/models/equipment/hand_b_vest_2_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-3" turnSpeedModifierPercent="-1" />
+        <ConcealmentModifier add="0" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="25" piercingProtectionLevel="20" />
+            <ProtectionArc degrees="360" coveragePercent="20" piercingProtectionLevel="20" />
+        </Params>
+    </Armor>
+
+    <Armor name="HAND_b_Vest_3" inventoryBinding="Armor" unlockCost="0"
+        tooltip="@HAND_b_vest_3_name"
+        description="@HAND_b_vest_3_desc"
+        img="data/models/equipment/hand_b_vest_3_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-4" turnSpeedModifierPercent="-2" />
+        <ConcealmentModifier add="-1" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="30" piercingProtectionLevel="30" />
+            <ProtectionArc degrees="360" coveragePercent="25" piercingProtectionLevel="30" />
+        </Params>
+    </Armor>
+
+    <Armor name="HAND_b_Vest_4" inventoryBinding="Armor" unlockCost="0"
+        tooltip="@HAND_b_vest_4_name"
+        description="@HAND_b_vest_4_desc"
+        img="data/models/equipment/hand_b_vest_4_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-5" turnSpeedModifierPercent="-2" />
+        <ConcealmentModifier add="-2" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="35" piercingProtectionLevel="40" />
+            <ProtectionArc degrees="360" coveragePercent="30" piercingProtectionLevel="40" />
+        </Params>
+    </Armor>
+
+    <Armor name="HAND_b_Vest_5" inventoryBinding="Armor" unlockCost="0"
+        tooltip="@HAND_b_vest_5_name"
+        description="@HAND_b_vest_5_desc"
+        img="data/models/equipment/hand_b_vest_5_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-6" turnSpeedModifierPercent="-3" />
+        <ConcealmentModifier add="-3" />
+        <Params>
+            <ProtectionArc degrees="90" coveragePercent="40" piercingProtectionLevel="50" />
+            <ProtectionArc degrees="360" coveragePercent="35" piercingProtectionLevel="50" />
+        </Params>
+    </Armor>
+
+</Equipment>

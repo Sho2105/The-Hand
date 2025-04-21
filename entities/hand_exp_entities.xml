@@ -1,3 +1,108 @@
 <Entities>
+	<Entity name="InvisibleBodyTemplate" type="Projectile" hideInEditor="true">
+		<PhysicalParams solid="false" />
+		<RenderObject3D model="data/models/equipment/invisible.khm" skipGOSSAO="true"
+			disableDecals="true" diffuseTex="" />
+	</Entity>
 
+	<Entity name="HAND_SP_BOT" type="Human" editorAutoHeight="false" editorTags="unit hand">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm"
+			diffuseTex="data/models/humans/HAND_uniform.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="200" />
+		<Human type="GoodGuy" unit="HAND" class="SP_BOT" deployMode="1" expendable="true">
+			<Id name="@entity_hand_sp_bot" portrait="" gender="0" voicePack="" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.5" />
+			<Brain suppressionRecovery="30.0" />
+			<Mobility>
+				<MoveSpeed min="2.2" defaultMetersPerSec="3.5" max="10" />
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25" />
+			</Mobility>
+			<Equipment>
+				<Item name="HAND SteelFeet" />
+			</Equipment>
+			<Doctrine name="" />
+		</Human>
+	</Entity>
+
+	<Entity name="HAND_DA_BOT" type="Human" editorAutoHeight="false" editorTags="unit hand">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm"
+			diffuseTex="data/models/humans/HAND_uniform.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="200" />
+		<Human type="GoodGuy" unit="HAND" class="DA_BOT" deployMode="1" expendable="true">
+			<Id name="@entity_hand_da_bot" portrait="" gender="0" voicePack="" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<Mobility>
+				<MoveSpeed min="2.2" defaultMetersPerSec="3.5" max="10" />
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25" />
+			</Mobility>
+			<Equipment>
+				<Item name="HAND SteelFeet" />
+			</Equipment>
+			<Doctrine name="" />
+		</Human>
+	</Entity>
+
+	<Entity name="HAND_SH_BOT" type="Human" editorAutoHeight="false" editorTags="unit hand">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm"
+			diffuseTex="data/models/humans/HAND_uniform.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="200" />
+		<Human type="GoodGuy" unit="HAND" class="SH_BOT" deployMode="1" expendable="true">
+			<Id name="@entity_hand_sh_bot" portrait="" gender="0" voicePack="" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<Mobility>
+				<MoveSpeed min="2.2" defaultMetersPerSec="3.5" max="10" />
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25" />
+			</Mobility>
+			<Equipment>
+				<Item name="HAND SteelFeet" />
+			</Equipment>
+			<Doctrine name="" />
+		</Human>
+	</Entity>
+
+	<Entity name="HAND_CH_BOT" type="Human" editorAutoHeight="false" editorTags="unit hand">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm"
+			diffuseTex="data/models/humans/HAND_uniform.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="200" />
+		<Human type="GoodGuy" unit="HAND" class="CH_BOT" deployMode="1" expendable="true">
+			<Id name="@entity_hand_ch_bot" portrait="" gender="0" voicePack="" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<Mobility>
+				<MoveSpeed min="2.2" defaultMetersPerSec="3.5" max="10" />
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25" />
+			</Mobility>
+			<Equipment>
+				<Item name="HAND SteelFeet" />
+			</Equipment>
+			<Doctrine name="" />
+		</Human>
+	</Entity>
+
+	<Entity name="HAND_HA_BOT" type="Human" editorAutoHeight="false" editorTags="unit hand">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm"
+			diffuseTex="data/models/humans/HAND_uniform.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="200" />
+		<Human type="GoodGuy" unit="HAND" class="HA_BOT" deployMode="1" expendable="true">
+			<Id name="@entity_hand_ha_bot" portrait="" gender="0" voicePack="" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<Mobility>
+				<MoveSpeed min="2.2" defaultMetersPerSec="3.5" max="10" />
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25" />
+			</Mobility>
+			<Equipment>
+				<Item name="HAND SteelFeet" />
+			</Equipment>
+			<Doctrine name="" />
+		</Human>
+	</Entity>
+	
 </Entities>

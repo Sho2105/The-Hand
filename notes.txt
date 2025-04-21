@@ -72,8 +72,6 @@ create a new image in shader, copy for every material, select that node in every
 then slect that image in UV editing, bake to that image (Cycles engine, Diffuse bake type, no direct or indirect light, then bake)
 Also looks like the weapon's textures does not require to be flipped when export to dds
 
-
-I’ve analyzed your request to create a streamlined list of firearm and ammo categories for a tactical game, ensuring every type serves a unique purpose without bloating the list with redundancy. The goal is to cover all tactical scenarios—like long-range sniping, close-quarters combat, suppression, breaching, and anti-materiel—while avoiding weapons or ammo that overlap in function. I’ve drawn from real-world weaponry and their distinct roles, keeping heavy shields as requested but excluding melee options. Here’s the concise, comprehensive list:
 I'm planning on giving every Hand members their own unique models haha  and retexture the whole NTF squad (This should be easier)
 So imma try
 To finish their equipment first
@@ -87,3 +85,1025 @@ Straw hat, Scarf, Backpack
 Hostage blind fold, and gas masks, also redraw textures
 Redo Ring's breacher into a bigger explosion that does NOT kill, turn Middle's into a nuke
 MIddle's lmg will be able to spray non stop
+
+Rainbow Six Classic helmet visor for an example of transparent part on model
+
+Medkit: DMg type 1/2 will heal everything, but 0 kills the incapacitated one
+
+Megaphone shit
+
+	<!--MEGAPHONE-->
+
+	<wp
+		type="ROCKET_LAUNCHER"
+		equipment="Megaphone IM"
+		ui_prefix="data/textures/gui_ingame/waypoints/megaphone"
+		ttip="@menu_game_megaphone_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_megaphone_none_ttip"/>
+
+	<Bind eqp="Megaphone IM">
+		<to name="TEARMohammed"/>
+		<to name="338_SniperRifle"/> <!-- doesn't do anything, needed to avoid errors -->
+	</Bind>
+	<Firearm name="Megaphone IM" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
+			tooltip="@utility_megaphone_name"
+			description="@utility_megaphone_desc"
+			img="data/models/equipment/esp_megaphone_ui.dds"
+			animationSet="pistol"
+			>
+		<RenderObject3D model="data/models/equipment/esp_megaphone.khm" attachSlot="prop_sidearm" skipGOSSAO="true" diffuseTex="data/models/equipment/esp_megaphone.dds">
+			<Specular shininess="32" intensity="4.0"/>
+		</RenderObject3D>
+		<MobilityModifiers moveSpeedModifierPercent="-1.5" turnSpeedModifierPercent="-1"/>
+		<ConcealmentModifier add="-6"/>
+		
+		<ModifiableParams
+			projectilesPerMagazine="3"
+
+			reloadTime="3000"
+			reloadEmptyTime="3000"
+			changeInTime="200"
+			changeOutTime="1800"
+			readyTime="200"
+			guardTime="200"
+			/>
+
+		<Params
+			ai_rangeMin="10.0"
+			ai_rangeOptimal="30.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="true"
+			/>
+
+		<AttackTypesProjectile>
+			<AttackType name="CIA_RPG_QuickAimClose" rangeMeters="20"/>
+			<AttackType name="CIA_RPG_QuickAim" rangeMeters="9999"/>
+		</AttackTypesProjectile>
+
+		<Projectile
+			bodyTemplate="M203GrenadeBody"
+			trailParticles=""
+			lightTemplate=""
+
+			soundExplosion="megaphone_en"
+			soundVoiceOnLaunch="vox_trpr_01_gear_flash"
+			soundOnSpawn="megaphone_screech"
+			soundFollow=""
+
+			ai_aimForCover="false"
+			ai_launchBlastRadius="3.0"
+
+			minVelocity="5.0"
+			maxVelocity="15.0"
+			acceleration="4.0"
+			mass="3"
+			friendlyFire="false"
+			triggerOnImpact="true"
+
+			roundsPerSecond="2.0"
+			accuracyPercent="95"
+			physicsDetonationForce="0"
+			audibleLaunchSoundRadius="8"
+			audibleDetonationSoundRadius="15"
+				>
+
+			<EffectRange radiusMeters="10">
+				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
+				<SmokeEffect durationMSec="1" />
+			</EffectRange>
+
+		</Projectile>
+
+		<Sounds>
+			<!-- max 4 variants for each action -->
+			<Equip name="megaphone_eqp"/>
+			<!-- <Reload name="rifle_reld"/> -->
+			<!-- <ReloadEmpty name="rifle_reldempt"/> -->
+			<!-- <ShellDrop name="rifle_shell_drop"/> -->
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+CS Gas shit
+	<wp
+		type="THROW_GRENADE"
+		equipment="HRT CS Gas"
+		ui_prefix="data/textures/gui_ingame/waypoints/smoke_grenade"
+		ttip="@menu_game_hrt_csgas_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_hrt_csgas_none_ttip"/>
+	<Grenade name="HRT CS Gas" inventoryBinding="UtilityPouch" category="grenade"
+			quantity="2"
+
+			tooltip="@HRT_grenade_csgas_name"
+			description="@grenade_hrt_csgas_desc"
+			img="data/models/equipment/m7a3cs_ui.dds"
+			movie="data/movies/csgas_hrt.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+			soundUseVoice="VOX_GEAR_CSGAS_HRT"
+			unlockCost="2" discountedBy="HRT CS Gas Kit,PW HRT CS Gas Kit"
+		>
+		<RenderObject3D model="data/models/equipment/m7a3cs.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/m7a3cs.dds"/>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="m7a3_world"
+			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+
+			soundHitFloor="grenade_hit_floor"
+
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="200"
+
+			physicsDetonationForce="0"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="10">
+
+			<FX
+				particles="M7A3GrenadeExplosion"
+				randRotation2="true"
+				anim2D="">
+				<!-- entity1="FX_dust_small" -->
+			</FX>
+
+			<Shrapnel projectileSource="CS Gas_1" min="1" max="1" spreadRadius="0"/>
+
+			<EffectRange radiusMeters="0.5">
+				<SuppressEffect amount="35"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="5">
+				<SuppressEffect amount="0"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+Attract Bomb Shit (seems like its not that good anyway)
+	<Grenade name="Decoy Grenade HI" inventoryBinding="UtilityPouch" quantity="3"
+		tooltip="@grenade_decoy_hi_name" description="@grenade_decoy_hi_desc"
+		img="data/models/equipment/decoy_ui_TierOne.dds"
+		movie="data/movies/decoy_grenade.ogv" animationSet="grenade" soundUse="grenade_use">
+		<RenderObject3D model="data/models/equipment/frag_grenade.khm" skipGOSSAO="true"
+			diffuseTex="data/models/equipment/stinger.dds" />
+		<ConcealmentModifier add="-1" />
+		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0" />
+
+		<ModifiableParams changeInTime="0" changeOutTime="0" throwTime="1000" throwTimeCorner="1400" />
+
+		<Projectile bodyTemplate="StingerGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+			soundExplosion="decoy_hi_expl" soundHitFloor="grenade_hit_floor"
+			soundVoiceOnLaunch="VOX_TRPR_GEAR_STINGER" friendlyFire="true" triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="1000" physicsDetonationForce="0"
+			audibleLaunchSoundRadius="0" audibleDetonationSoundRadius="20">
+
+
+			<FX particles="" randRotation2="true" anim2D="">
+			</FX>
+		</Projectile>
+	</Grenade>
+
+spawn person shit
+	(i don't get this but i will experiment soon)
+	<wp
+		type="ROCKET_LAUNCHER"
+		equipment="DeployClassD"
+		ui_prefix="data/textures/gui_ingame/waypoints/depD"
+		ttip="@genettip_DEPLOYDLRWE"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@genettip_DEPLOYDERWE"/>
+	
+		<wp
+		type="ROCKET_LAUNCHER"
+		equipment="DeployClassD1"
+		ui_prefix="data/textures/gui_ingame/waypoints/depD"
+		ttip="@genettip_DEPLOYDRWE"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@genettip_DEPLOYDERWE"/>
+
+
+	<Bind eqp="DeployClassD">
+		<to name="CRISIS"/>
+		<to name="338_SniperRifle"/>
+	</Bind>
+
+	<Firearm name="DeployClassD" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
+			tooltip="@equipment_DCLASSDEPRWE_name"
+			description="@equipment_DCLASSDEPRWE_desc"
+			img="data/models/equipment/shrwe/screen.dds"
+			animationSet="grenade"
+			discardWithEntityWhenEmpty="Crisis D Class Leader"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-0.5"/>
+		<ModifiableParams
+			projectilesPerMagazine="1"
+
+			reloadTime="3000"
+			reloadEmptyTime="3000"
+			changeInTime="1000"
+			changeOutTime="0"
+			readyTime="600"
+			guardTime="350"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_noperwe_name"
+			operationInfoText="@firearmact_foundlogrwe_name"
+			ai_rangeMin="0.0"
+			ai_rangeOptimal="0.0"
+			ai_rangeMax="0.0"
+			ai_stopWhenShooting="true"
+		/>
+
+
+		<AttackTypesProjectile>
+			<AttackType name="Rangers_PumpAimedFire" rangeMeters="9999"/>
+		</AttackTypesProjectile>
+
+		<Projectile
+			bodyTemplate="ballRWE"
+			trailParticles=""
+			lightTemplate=""
+
+			soundExplosion=""
+			soundOnSpawn=""
+			soundFollow=""
+
+			ai_aimForCover="false"
+			ai_launchBlastRadius="0.0"
+
+			minVelocity="0.0"
+			maxVelocity="0.1"
+			acceleration="0.1"
+			mass="0.0"
+			friendlyFire="false"
+			triggerOnImpact="true"
+			triggerTimeAfterTargetHitMsec="0"
+
+			roundsPerSecond="5.0"
+			accuracyPercent="-1000"
+			physicsDetonationForce="0"
+			audibleLaunchSoundRadius="3"
+			audibleDetonationSoundRadius="3"
+			>
+
+		</Projectile>
+
+		<Sounds>
+			<!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+		<Bind eqp="DeployClassD1">
+		<to name="338_SniperRifle"/>
+	</Bind>
+
+	<Firearm name="DeployClassD1" inventoryBinding="UtilityPouch" category="rpg" unlockCost="0"
+			tooltip="@equipment_DCLASSDEPRWE_name"
+			description="@equipment_DCLASSDEPRWE_desc"
+			img="data/models/equipment/shrwe/screen.dds"
+			animationSet="grenade"
+			discardWithEntityWhenEmpty="Crisis D Class Scout"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-0.5"/>
+		<ModifiableParams
+			projectilesPerMagazine="1"
+
+			reloadTime="3000"
+			reloadEmptyTime="3000"
+			changeInTime="1000"
+			changeOutTime="0"
+			readyTime="600"
+			guardTime="350"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_noperwe_name"
+			operationInfoText="@firearmact_foundlogrwe_name"
+			ai_rangeMin="0.0"
+			ai_rangeOptimal="0.0"
+			ai_rangeMax="0.0"
+			ai_stopWhenShooting="true"
+		/>
+
+
+		<AttackTypesProjectile>
+			<AttackType name="Rangers_PumpAimedFire" rangeMeters="9999"/>
+		</AttackTypesProjectile>
+
+		<Projectile
+			bodyTemplate="ballRWE"
+			trailParticles=""
+			lightTemplate=""
+
+			soundExplosion=""
+			soundOnSpawn=""
+			soundFollow=""
+
+			ai_aimForCover="false"
+			ai_launchBlastRadius="0.0"
+
+			minVelocity="0.0"
+			maxVelocity="0.1"
+			acceleration="0.1"
+			mass="0.0"
+			friendlyFire="false"
+			triggerOnImpact="true"
+			triggerTimeAfterTargetHitMsec="0"
+
+			roundsPerSecond="5.0"
+			accuracyPercent="-1000"
+			physicsDetonationForce="0"
+			audibleLaunchSoundRadius="3"
+			audibleDetonationSoundRadius="3"
+			>
+
+		</Projectile>
+
+		<Sounds>
+			<!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+	<Entity name="Crisis D Class Leader" type="Human" editorAutoHeight="false" editorTags="unit cia">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/hostage.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/JPC-BX-1.khm" diffuseTex="data/models/humans/attachments/JPC-BX-1.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/JPC-BX-DT.khm" diffuseTex="data/models/humans/attachments/JPC-BX-DT.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/JPC-BX-DTB.khm" diffuseTex="data/models/humans/attachments/JPC-BX-DTB.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/JPC-BX-QZ.khm" diffuseTex="data/models/humans/attachments/dclass.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/SpecA.khm" diffuseTex="data/models/humans/attachments/dclass.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="200"/>
+		<Human type="GoodGuy" deployMode="1" expendable="true" >
+
+			<Id name="@entity_human_dclasslrwe" portrait="data/textures/portraits/ranger55.dds" gender="0" voicePack="nws_male"/>
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="30.0"/>
+
+			<Mobility>
+				<MoveSpeed min="2.2" defaultMetersPerSec="3.5" max="10"/>
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="AKMRWE UDC"/>
+				<Item name="IronSights"/>
+				<Item name="CapUndercoverFast"/>
+				<Item name="DeployClassD1"/>
+				<Item name="DeployClassD1"/>
+				<Item name="DeployClassD2"/>
+				<Item name="Lockpick"/>
+				<Item name="Rangers Jumpable"/>
+
+			</Equipment>
+			<Doctrine name="CRIS_Transition"/>
+		</Human>
+	</Entity>
+	
+	<Entity name="Crisis D Class Scout" type="Human" editorAutoHeight="false" editorTags="unit cia">
+		<RenderObject3D model="data/models/humans/civilian_male_standard.khm" diffuseTex="data/models/humans/hostage.dds"/>
+		<RenderObject3D model="data/models/humans/attachments/SpecA.khm" diffuseTex="data/models/humans/attachments/dclass2.dds"/>
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false"/>
+		<PhysicalParams health="200"/>
+		<Human type="GoodGuy" deployMode="1" expendable="true" >
+
+			<Id name="@entity_human_dclassrwe" portrait="data/textures/portraits/ranger55.dds" gender="0" voicePack="nws_male"/>
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6"/>
+			<Brain suppressionRecovery="30.0"/>
+
+			<Mobility>
+				<MoveSpeed min="2.2" defaultMetersPerSec="3.5" max="10"/>
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25"/>
+			</Mobility>
+
+			<Equipment>
+				<Item name="HK45CT CIA RWE"/>
+				<Item name="IronSights_Pistol"/>
+				<Item name="CapUndercoverFast"/>
+				<Item name="Lockpick"/>
+			</Equipment>
+			<Doctrine name="CRIS_Transition"/>
+		</Human>
+	</Entity>
+
+Okay, about the wall penetrating shits...it seems that its just a cheap trick of spawning another projectile, damn.
+	<Firearm name="AT4 Rocket Launcher" inventoryBinding="SupportGear1" category="rpg" unlockCost="2"
+			tooltip="@firearm_AT4_name"
+			description="@firearm_AT4_desc"
+			img="data/models/weapons/at4_ui.dds"
+			animationSet="rpg26"
+			movie="data/movies/rocket_launcher.ogv"
+			discardWithEntityWhenEmpty="DiscardedAT4"
+			soundUseVoice="VOX_GEAR_ROCKET"
+		>
+		<RenderObject3D model="data/models/weapons/at4.khm" attachSlot="prop_back_rpg" skipGOSSAO="true" diffuseTex="data/models/weapons/at4.dds">
+			<Specular shininess="32" intensity="4.0"/>
+		</RenderObject3D>
+		<MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-8"/>
+		<ConcealmentModifier add="-6"/>
+		<ModifiableParams
+			projectilesPerMagazine="1"
+
+			reloadTime="3000"
+			reloadEmptyTime="3000"
+			changeInTime="2200"
+			changeOutTime="600"
+			readyTime="800"
+			guardTime="400"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_84mmHEAT_name"
+			operationInfoText="@firearm_operation_singleshotthrow_name"
+			ai_rangeMin="10.0"
+			ai_rangeOptimal="30.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="true"
+		/>
+
+		<AttackTypesProjectile>
+			<AttackType name="CIA_RPG_QuickAimClose" rangeMeters="20"/>
+			<AttackType name="CIA_RPG_QuickAim" rangeMeters="9999"/>
+		</AttackTypesProjectile>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge">
+			<Flare particles="RpgLaunch_01" />
+		</MuzzleFlash>
+
+		<Projectile
+			bodyTemplate="Rpg26RocketBody"
+			trailParticles="RpgTrail2"
+			lightTemplate="Rocket Red"
+
+			soundExplosion="rpg26_expl"
+			soundOnSpawn="rpg26_fire"
+			soundFollow="rpg_fly_travel"
+
+			ai_aimForCover="false"
+			ai_launchBlastRadius="3.0"
+
+			minVelocity="5.0"
+			maxVelocity="35.0"
+			acceleration="4.0"
+			mass="0.0"
+			friendlyFire="true"
+			triggerOnImpact="true"
+
+			roundsPerSecond="2.0"
+			accuracyPercent="95"
+			physicsDetonationForce="100"
+			audibleLaunchSoundRadius="15"
+			audibleDetonationSoundRadius="100"
+			>
+
+			<FX
+				particles="RpgExplosion"
+				entity1="ExplosionLight"
+				entity2="Explosion Scorch Mark"
+				entity3="FX_dust_large"
+				deleteAfterMS3="35000"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="3">
+				<DamageEffect chancePercent="100" damage="999" damageType="2" armorPenetration="400"/>
+				<StunEffect chancePercent="100" innerRangeTimeMSec="5000" outerRangeTimeMSec="5000" armorPenetration="400" />
+				<SuppressEffect amount="50"/>
+				<SmokeEffect durationMSec="1900" />
+			</EffectRange>
+
+			<EffectRange radiusMeters="5.5">
+				<StunEffect chancePercent="50" innerRangeTimeMSec="1000" outerRangeTimeMSec="400"/>
+				<DamageEffect chancePercent="50" damage="35" damageType="1"/>
+				<ScatterEffect chancePercent="100"/>
+				<SuppressEffect amount="40"/>
+			</EffectRange>
+			<Shrapnel projectileSource="at4_pene" min="1" max="1" spreadRadius="0" />	
+		</Projectile>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<!-- <Reload name="rifle_reld"/> -->
+			<!-- <ReloadEmpty name="rifle_reldempt"/> -->
+			<!-- <Fire name="type56_fire"/> -->
+			<!-- <ShellDrop name="rifle_shell_drop"/> -->
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+	<Grenade name="at4_pene" inventoryBinding="UtilityPouch"
+			animationSet="grenade"
+		>
+
+		<Projectile
+			bodyTemplate="MolotovShrapnel"
+
+			trailParticles=""
+			lightTemplate=""
+
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="50"
+
+			physicsDetonationForce="0"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="0"
+			
+			soundExplosion="nosound"
+			soundHitFloor="nosound"
+			soundVoiceOnLaunch="nosound">
+
+
+			<FX
+				randRotation1="true"
+			/>
+
+
+			<EffectRange radiusMeters="3">
+				<DamageEffect chancePercent="100" damage="999" damageType="1"/>
+				<SuppressEffect amount="50"/>
+				<SmokeEffect durationMSec="1900" />
+			</EffectRange>
+
+			<EffectRange radiusMeters="5.5">
+				<StunEffect chancePercent="50" innerRangeTimeMSec="1000" outerRangeTimeMSec="400"/>
+				<DamageEffect chancePercent="50" damage="35" damageType="1"/>
+				<ScatterEffect chancePercent="100"/>
+				<SuppressEffect amount="40"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+Weapon with manual special bullet (vanilla's a grenade launcher)
+		<Firearm name="M16A4/M203" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
+			tooltip="@firearm_m16a4_m203_name"
+			img="data/models/weapons/m16a4_m203_ui.dds"
+			description="@firearm_m16_m203_desc"
+			animationSet="rifle"
+			soundUseVoice="VOX_GEAR_LAUNCHER"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-12" turnSpeedModifierPercent="-5"/>
+		<RenderObject3D model="data/models/weapons/m16a4_gl.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/m16a4_gl.dds"/>
+		<RenderObject3D model="data/models/weapons/m203.khm" attachSlot="underbarrel" skipGOSSAO="true" diffuseTex="data/models/weapons/m203.dds"/>
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="30"
+			closedBolt="1"
+
+			projectilesPerMagazine="5"
+
+			cyclicReload="0"
+			reloadTime="3000"
+			reloadEmptyTime="3500"
+			changeInTime="1300"
+			changeOutTime="1250"
+			readyTime="550"
+			guardTime="250"
+
+			accuracyStart="300"
+			accuracyEnd="300"
+			accuracyStartDist="0"
+			accuracyEndDist="100"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_556GL40_name"
+			operationInfoText="@firearm_operation_semi3rdburst_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m4_mag"
+			ai_rangeMin="1.0"
+			ai_rangeOptimal="40.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="false"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_RapidFire" rangeMeters="6"/>	
+			<AttackType name="Rangers_BurstFire" rangeMeters="6" disabled="true"/>
+			<AttackType name="Rangers_RapidFireMed" rangeMeters="15"/>
+			<AttackType name="Rangers_BurstFireMed" rangeMeters="15" disabled="true"/>
+			<AttackType name="Rangers_CarbineAimedFire" rangeMeters="43"/>
+			<AttackType name="Rangers_CarbineAimedFireXX" rangeMeters="9999"/>
+		</AttackTypes>
+				
+
+		<AttackTypesProjectile>
+			<AttackType name="RPG_QuickAimClose" rangeMeters="15"/>
+			<AttackType name="M203_QuickAim" rangeMeters="9999"/>
+		</AttackTypesProjectile>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+			<Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+		</MuzzleFlash>
+
+		<Sounds> 
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="m16_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+
+		<Projectile
+			bodyTemplate="M203GrenadeBody"
+			trailParticles=""
+			lightTemplate=""
+
+			soundExplosion="grenade_launcher_expl"
+			soundOnSpawn="m203_fire"
+			soundFollow=""
+
+			minVelocity="50000.0"
+			maxVelocity="50000.0"
+			acceleration="0.0"
+			mass="0.0"
+			friendlyFire="true"
+			triggerOnImpact="true"
+
+			roundsPerSecond="1.65"
+			accuracyPercent="75"
+			physicsDetonationForce="100"
+			audibleLaunchSoundRadius="2"
+			audibleDetonationSoundRadius="20"
+			>
+
+			<FX
+				particles="FragGrenade"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_large"
+				deleteAfterMS3="35000"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="1.7">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="999" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="30"/>
+				<SuppressEffect amount="30"/>
+				<SmokeEffect durationMSec="1030" />
+			</EffectRange>
+
+			<EffectRange radiusMeters="2">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="999" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="30"/>
+				<SuppressEffect amount="30"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1000" outerRangeTimeMSec="300"/>
+				<ScatterEffect chancePercent="100"/>
+			</EffectRange>
+
+		</Projectile>
+	</Firearm>
+
+msoc's airstrike
+
+	<Bind eqp="MSOC_A10_Strike">
+		<!--Bind-->
+
+		<to name="msoc_offmap_ammo"/>
+		<!-- doesn't do anything, needed to avoid errors -->
+
+		<to name="IronSights"/>
+
+	</Bind>
+
+	<Firearm name="MSOC_A10_Strike" inventoryBinding="SupportGear1" category="rpg" unlockCost="5"
+			tooltip="@msoc_airstrike_a10_name"
+			description="@msoc_airstrike_a10_desc"
+			img="data/models/equipment/msoc_a10_ui.dds"
+			img_tooltip="data/textures/gui/tooltip/hud_tooltip_rpg.tga"
+			animationSet="msoc_bino"
+			movie="data/movies/msoc_jtac.ogv"
+		>
+		<RenderObject3D model="data/models/equipment/msoc_binoculars.khm" attachSlot="vest_back_left"  skipGOSSAO="true" diffuseTex="data/models/equipment/msoc_binoculars.dds"/>
+
+		<MobilityModifiers moveSpeedModifierPercent="0" turnSpeedModifierPercent="0"/>
+		<ConcealmentModifier add="-6"/>
+
+		<ModifiableParams
+			projectilesPerMagazine="3"
+
+			reloadTime="3000"
+			reloadEmptyTime="3000"
+			changeInTime="800"
+			changeOutTime="800"
+			readyTime="700"
+			guardTime="400"
+		/>
+
+		<Params
+			caliberInfoText="@msoc_caliber_gau8_name"
+			operationInfoText="@msoc_airstrike_operation_name"
+			ai_rangeMin="10.0"
+			ai_rangeOptimal="15.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypesProjectile>
+			<AttackType name="CIA_RPG_QuickAimClose" rangeMeters="20"/>
+			<AttackType name="CIA_RPG_QuickAim" rangeMeters="9999"/>
+		</AttackTypesProjectile>
+
+		<Projectile
+			bodyTemplate="MSOC_CAS_Marker"
+			trailParticles=""
+			lightTemplate=""
+
+			soundExplosion="msoc_a10_flyby"
+			soundVoiceOnLaunch=""
+			soundOnSpawn="msoc_a10_pilot"
+			soundFollow="msoc_blank"
+
+			ai_aimForCover="false"
+			ai_launchBlastRadius="3.0"
+
+			minVelocity="15.0"
+			maxVelocity="60.0"
+			acceleration="8.0"
+			mass="0.0"
+			friendlyFire="false"
+			triggerOnImpact="true"
+
+			roundsPerSecond="2.0"
+			accuracyPercent="550"
+			physicsDetonationForce="0"
+			audibleLaunchSoundRadius="3"
+			audibleDetonationSoundRadius="0"
+			>
+
+			<!-- spawn these when exploding -->
+			<Shrapnel projectileSource="MSOC_Step1_A10Strike" min="1" max="-1" spreadRadius="3.0" />
+
+			<EffectRange radiusMeters="6">
+				<DamageEffect chancePercent="0" damage="0" damageType="0"/>
+			</EffectRange>
+		</Projectile>
+
+		<Sounds>
+			<!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<!-- <Reload name="rifle_reld"/> -->
+			<!-- <ReloadEmpty name="rifle_reldempt"/> -->
+			<!-- <Fire name="type56_fire"/> -->
+			<!-- <ShellDrop name="rifle_shell_drop"/> -->
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+
+	<Grenade name="MSOC_Step1_A10Strike" inventoryBinding="UtilityPouch" 	animationSet="grenade">
+
+		<Projectile
+			bodyTemplate="InvisibleProjectile"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+
+			trailParticles=""
+			lightTemplate=""
+			
+			soundExplosion="msoc_a10_pilot_attack"
+			soundHitFloor="msoc_blank"
+			soundFollow="msoc_blank"
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="12000"
+
+			physicsDetonationForce="10"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="0"
+			>
+			
+			<!-- spawn these when exploding -->
+			<Shrapnel projectileSource="MSOC_Step2_A10Strike" min="1" max="1" spreadRadius="0" />
+
+
+			<EffectRange radiusMeters="2.0">
+				<!-- <StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/> -->
+				<ScatterEffect chancePercent="0"/>
+				<SuppressEffect amount="30"/>
+				<!-- <SmokeEffect durationMSec="1030" /> -->
+			</EffectRange>
+		</Projectile>
+	</Grenade>	
+	
+	<Grenade name="MSOC_Step2_A10Strike" inventoryBinding="UtilityPouch" 	animationSet="grenade">
+
+		<Projectile
+			bodyTemplate="InvisibleProjectile"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+
+			trailParticles=""
+			lightTemplate=""
+			
+			soundExplosion="msoc_a10_brrrrt_delayed"
+			soundHitFloor="msoc_blank"
+			soundFollow="msoc_blank"
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="2900"
+
+			physicsDetonationForce="10"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="0"
+			>
+			
+		
+			<!-- spawn these when exploding -->
+			
+			<Shrapnel projectileSource="MSOC_Step3_A10Strike" min="8" max="15" spreadRadius="6" />
+
+
+			<EffectRange radiusMeters="2.0">
+				<!-- <StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/> -->
+				<ScatterEffect chancePercent="0"/>
+				<SuppressEffect amount="30"/>
+				<!-- <SmokeEffect durationMSec="1030" /> -->
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+	<Grenade name="MSOC_Step3_A10Strike" inventoryBinding="UtilityPouch" 	animationSet="grenade">
+
+		<Projectile
+			bodyTemplate="InvisibleProjectile"
+			pathIconTexture="data/textures/gui/contextual/pathicon_stinger_active.tga"
+
+			trailParticles=""
+			lightTemplate=""
+			
+			soundExplosion="msoc_blank"
+			soundHitFloor="msoc_blank"
+			soundFollow="msoc_blank"
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="1100"
+
+			physicsDetonationForce="10"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="0"
+			>
+			
+
+			<!-- spawn these when exploding -->
+			<Shrapnel projectileSource="MSOC_a10_fire_damage" min="8" max="10" spreadRadius="0" />
+
+
+			<EffectRange radiusMeters="2.0">
+				<!-- <StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/> -->
+				<ScatterEffect chancePercent="0"/>
+				<SuppressEffect amount="30"/>
+				<!-- <SmokeEffect durationMSec="1030" /> -->
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+
+	<Grenade name="MSOC_a10_fire_damage" inventoryBinding="UtilityPouch"
+			animationSet="grenade"
+		>
+
+		<Projectile
+			bodyTemplate="MolotovShrapnel"
+
+			friendlyFire="true"
+			triggerOnImpact="true"
+
+			physicsDetonationForce="60"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="0"
+			
+			soundExplosion="msoc_a10_ricochet"
+			soundHitFloor="msoc_blank"
+		>
+		
+			<FX
+				particles="MSOC_Gau8"
+				randRotation1="true"
+			/>
+
+			<Shrapnel projectileSource="MSOC_a10_fire_damage2" min="1" max="1" spreadRadius="1.5" />
+
+			<EffectRange radiusMeters="0.5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="100" damageType="2"/>
+				<ScatterEffect chancePercent="100" armorPenetration="30"/>
+			</EffectRange>
+			<EffectRange radiusMeters="1.2">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="100" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="30"/>
+			</EffectRange>
+			<EffectRange radiusMeters="5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="800" outerRangeTimeMSec="500"/>
+				<ScatterEffect chancePercent="100" rangeMeters="5" armorPenetration="0"/>
+				<SuppressEffect amount="45"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+	
+		<Grenade name="MSOC_a10_fire_damage2" inventoryBinding="UtilityPouch"
+			animationSet="grenade"
+		>
+
+		<Projectile
+			bodyTemplate="MolotovShrapnel"
+
+			friendlyFire="true"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="2700"
+
+			physicsDetonationForce="60"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="0"
+			
+			soundExplosion="msoc_a10_ricochet"
+			soundHitFloor="msoc_blank"
+		>
+
+			<FX
+				particles="MSOC_Gau8"
+				randRotation1="true"
+			/>
+
+			<EffectRange radiusMeters="0.5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="100" damageType="2"/>
+				<ScatterEffect chancePercent="100" armorPenetration="30"/>
+			</EffectRange>
+			<EffectRange radiusMeters="1.2">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
+				<DamageEffect chancePercent="100" damage="100" damageType="1"/>
+				<ScatterEffect chancePercent="100" armorPenetration="30"/>
+			</EffectRange>
+			<EffectRange radiusMeters="2.5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="800" outerRangeTimeMSec="500"/>
+				<DamageEffect chancePercent="50" damage="45" damageType="1"/>
+				<ScatterEffect chancePercent="100" rangeMeters="3" armorPenetration="0"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+		<ParticleSystem name="MSOC_Gau8" poolSize="3">
+		<Emitter name="radial dust" duration="0.100" emitDelay="1.000" spawnOffsetY="0.300">
+            <Particle lifetime="0.200"/>
+            <Initial scale="2.000" sizeX="2.000" sizeZ="2.000" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.600" scaleEnd="1.200"/>
+            <Material fadeIn="0.100" fadeOut="0.200" blendMode="add_masked" mainTex="data/textures/fx/radialdust1.dds" colorize="ECCCBC89">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+        <Emitter name="distort" emitDelay="1.000" emitCount="0" spawnOffsetY="0.200">
+            <Particle lifetime="0.300"/>
+            <Initial scale="2.000"/>
+            <Movement scaleStart="1.500" scaleEnd="2.500"/>
+            <Material fadeIn="0.200" fadeOut="0.600" distortPostProcess="1" distortAmount="18.454" mainTex="data/textures/fx/distort_ring.tga" colorize="FFFFFFFF">
+                <Distorted distortTex="data/textures/fx/distort_3octaves.tga" uvScrollH1="0.100" uvScrollV1="0.100" uvDistortX="-0.050" uvDistortY="0.040"/>
+            </Material>
+        </Emitter>
+        <Emitter name="lingering dust" shape="rect" duration="0.100" emitDelay="0.020" emitCount="4" spawnOffsetY="1.500" spawnBoxSizeX="0.100" spawnBoxSizeY="0.200" spawnBoxSizeZ="0.100">
+            <Particle lifetime="1.000" lifetimeMax="2.000"/>
+            <Initial scaleMax="1.200" orient="0.000" orientMax="360.000"/>
+            <Movement speedX="-0.200" speedXMax="0.400" speedY="0.100" speedYMax="0.400" speedZ="0.200" speedZMax="0.300" scaleStart="1.300" scaleEnd="1.000" rotationPerSec="10.000" direction="orient"/>
+            <Material softThickness="0.100" fadeIn="0.400" fadeOut="0.800" lit="vert" mainTex="data/textures/fx/smokepuff1.dds" colorize="86868656">
+                <TextureAnimation frameWidth="64" frameHeight="64"/>
+            </Material>
+        </Emitter>
+        <Emitter name="sparks_radial" duration="0.100" emitDelay="1.000" emitCount="2" spawnOffsetY="1.500">
+            <Particle lifetime="0.150"/>
+            <Initial scale="1.500" orient="0.000" orientMax="360.000"/>
+            <Movement scaleStart="0.800" scaleEnd="2.800"/>
+            <Material softThickness="0.100" fadeIn="0.001" fadeOut="0.800" blendMode="add_masked" mainTex="data/textures/fx/sparks_radial.dds" colorize="FFFEFEFF">
+                <TextureAnimation frameWidth="256" frameHeight="256"/>
+            </Material>
+        </Emitter>
+    </ParticleSystem>
+
+	
