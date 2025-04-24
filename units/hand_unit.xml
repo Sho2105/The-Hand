@@ -1,5 +1,5 @@
 <Units>
-    <Unit name="HAND" nameUI="[REDACTED]" description="They got lied to, they got betrayed, they got left behind. Now they're back, and they're going to make sure that never happens again." flagTex="data/textures/the_HAND_squad_bg.dds" flagColor="f5f5f5" rndNameEntry="@squadnameHAND" voicepack="commander_eng" incapacitationChance="50" incapacitationChanceCrit="25">
+    <Unit name="hand" nameUI="[REDACTED]" description="They got lied to, they got betrayed, they got left behind. Now they're back, and they're going to make sure that never happens again." flagTex="data/textures/the_hand_squad_bg.dds" flagColor="f5f5f5" rndNameEntry="@squadnamehand" voicepack="commander_eng" incapacitationChance="50" incapacitationChanceCrit="25">
         <Classes>
             <!-- After Timeline -->
             <Class name="Thumb" nameUI="The Thumb" description="Unused" numSlots="1" supply="100" iconTex="data/textures/gui/deploy/class_icon_spear.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="4"/>
@@ -16,16 +16,16 @@
             <Class name="Hammer" nameUI="Hammer" description="Unused" numSlots="2" supply="100" iconTex="data/textures/gui/deploy/class_icon_hammer.dds" upgrades="BH_Defence1, BH_Offence1, BH_Defence2, BH_Offence2" maxUpgradeable="2"/>
         </Classes>
         <TrooperRanks>
-            <Rank name="@HAND_rank_0" xpNeeded="0" badgeTex="data/textures/gui/customization/cia_rank_01.dds"/>
-            <Rank name="@HAND_rank_1" xpNeeded="560" badgeTex="data/textures/gui/customization/cia_rank_02.dds"/>
-            <Rank name="@HAND_rank_2" xpNeeded="1600" badgeTex="data/textures/gui/customization/cia_rank_03.dds"/>
-            <Rank name="@HAND_rank_3" xpNeeded="4480" badgeTex="data/textures/gui/customization/cia_rank_04.dds"/>
-            <Rank name="@HAND_rank_4" xpNeeded="12800" badgeTex="data/textures/gui/customization/cia_rank_05.dds"/>
-            <Rank name="@HAND_rank_5" xpNeeded="36000" badgeTex="data/textures/gui/customization/cia_rank_06.dds"/>
-            <Rank name="@HAND_rank_6" xpNeeded="100000" badgeTex="data/textures/gui/customization/cia_rank_07.dds"/>
-            <Rank name="@HAND_rank_7" xpNeeded="128000" badgeTex="data/textures/gui/customization/cia_rank_08.dds"/>
-            <Rank name="@HAND_rank_8" xpNeeded="160000" badgeTex="data/textures/gui/customization/cia_rank_09.dds"/>
-            <Rank name="@HAND_rank_9" xpNeeded="200000" badgeTex="data/textures/gui/customization/cia_rank_10.dds"/>
+            <Rank name="@hand_rank_0" xpNeeded="0" badgeTex="data/textures/gui/customization/cia_rank_01.dds"/>
+            <Rank name="@hand_rank_1" xpNeeded="560" badgeTex="data/textures/gui/customization/cia_rank_02.dds"/>
+            <Rank name="@hand_rank_2" xpNeeded="1600" badgeTex="data/textures/gui/customization/cia_rank_03.dds"/>
+            <Rank name="@hand_rank_3" xpNeeded="4480" badgeTex="data/textures/gui/customization/cia_rank_04.dds"/>
+            <Rank name="@hand_rank_4" xpNeeded="12800" badgeTex="data/textures/gui/customization/cia_rank_05.dds"/>
+            <Rank name="@hand_rank_5" xpNeeded="36000" badgeTex="data/textures/gui/customization/cia_rank_06.dds"/>
+            <Rank name="@hand_rank_6" xpNeeded="100000" badgeTex="data/textures/gui/customization/cia_rank_07.dds"/>
+            <Rank name="@hand_rank_7" xpNeeded="128000" badgeTex="data/textures/gui/customization/cia_rank_08.dds"/>
+            <Rank name="@hand_rank_8" xpNeeded="160000" badgeTex="data/textures/gui/customization/cia_rank_09.dds"/>
+            <Rank name="@hand_rank_9" xpNeeded="200000" badgeTex="data/textures/gui/customization/cia_rank_10.dds"/>
         </TrooperRanks>
         <Ranks>
             <Rank xpNeeded="0" badgeTex=""/> 
@@ -57,39 +57,39 @@
         </Ranks>
         <Doctrine doctrinePointsPerSquadLevel="1">
             <!-- Spear (SP): Offensive -->
-            <Node name="HAND_SP_OffensiveBuff"/>
-            <Node name="HAND_SP_DefensiveBuff"/>
-            <Node name="HAND_SP_EnemyDebuff"/>
-            <Node name="HAND_SP_SkillSetA"/>
-            <Node name="HAND_SP_SkillSetB"/>
+            <Node name="hand_SP_OffensiveBuff"/>
+            <Node name="hand_SP_DefensiveBuff"/>
+            <Node name="hand_SP_EnemyDebuff"/>
+            <Node name="hand_SP_SkillSetA"/>
+            <Node name="hand_SP_SkillSetB"/>
 
             <!-- Dagger (DG): Stealth -->
-            <Node name="HAND_DG_OffensiveBuff"/>
-            <Node name="HAND_DG_DefensiveBuff"/>
-            <Node name="HAND_DG_EnemyDebuff"/>
-            <Node name="HAND_DG_SkillSetA"/>
-            <Node name="HAND_DG_SkillSetB"/>
+            <Node name="hand_DG_OffensiveBuff"/>
+            <Node name="hand_DG_DefensiveBuff"/>
+            <Node name="hand_DG_EnemyDebuff"/>
+            <Node name="hand_DG_SkillSetA"/>
+            <Node name="hand_DG_SkillSetB"/>
 
             <!-- Chalice (CH): Support and Healing -->
-            <Node name="HAND_CH_OffensiveBuff"/>
-            <Node name="HAND_CH_EfficiencyBuff"/>
-            <Node name="HAND_CH_EnemyDebuff"/>
-            <Node name="HAND_CH_SkillSetA"/>
-            <Node name="HAND_CH_SkillSetB"/>
+            <Node name="hand_CH_OffensiveBuff"/>
+            <Node name="hand_CH_EfficiencyBuff"/>
+            <Node name="hand_CH_EnemyDebuff"/>
+            <Node name="hand_CH_SkillSetA"/>
+            <Node name="hand_CH_SkillSetB"/>
 
             <!-- Shield (SH): Defensive -->
-            <Node name="HAND_SH_OffensiveBuff"/>
-            <Node name="HAND_SH_DefensiveBuff"/>
-            <Node name="HAND_SH_EnemyDebuff"/>
-            <Node name="HAND_SH_SkillSetA"/>
-            <Node name="HAND_SH_SkillSetB"/>
+            <Node name="hand_SH_OffensiveBuff"/>
+            <Node name="hand_SH_DefensiveBuff"/>
+            <Node name="hand_SH_EnemyDebuff"/>
+            <Node name="hand_SH_SkillSetA"/>
+            <Node name="hand_SH_SkillSetB"/>
 
             <!-- Hammer (HA): Utility -->
-            <Node name="HAND_HA_OffensiveBuff"/>
-            <Node name="HAND_HA_EfficiencyBuff"/>
-            <Node name="HAND_HA_EnemyDebuff"/>
-            <Node name="HAND_HA_SkillSetA"/>
-            <Node name="HAND_HA_SkillSetB"/>
+            <Node name="hand_HA_OffensiveBuff"/>
+            <Node name="hand_HA_EfficiencyBuff"/>
+            <Node name="hand_HA_EnemyDebuff"/>
+            <Node name="hand_HA_SkillSetA"/>
+            <Node name="hand_HA_SkillSetB"/>
         </Doctrine>
     </Unit>
 </Units>

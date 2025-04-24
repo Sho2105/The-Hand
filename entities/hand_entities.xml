@@ -1,16 +1,6 @@
 <Entities>
 
-	<Entity name="HAND_FX_dust_large" type="BasicEntity" editorAutoHeight="false"
-		initialHeight="1.1" editorTags="fx">
-		<PhysicalParams solid="false" />
-		<RenderObject2D texture="data/textures/fx/atmospheric_fog.dds" blendMode="add"
-			color="cca300" sizeX="10" sizeY="10" disableDepthTest="true">
-			<TextureAnimation frameWidth="64" frameHeight="64" startFrame="0" endFrame="47"
-				animationTimeMS="3072" numLoops="-1" randomizeStartTime="true" />
-		</RenderObject2D>
-	</Entity>
-
-	<Entity name="HAND_GravityLight" type="Light" editorAutoHeight="false" initialHeight="1">
+	<Entity name="hand_GravityLight" type="Light" editorAutoHeight="false" initialHeight="1">
 		<PhysicalParams solid="false" />
 		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5"
 			hideInGame="true" disableDepthTest="true" />
@@ -18,19 +8,19 @@
 			animation="pulse" animRate="2" animAmount="9" dontLoop="true" deleteWhenAnimStops="true" />
 	</Entity>
 
-	<Entity name="HAND_gravity_mark" type="BasicEntity" editorAutoHeight="false"
+	<Entity name="hand_gravity_mark" type="BasicEntity" editorAutoHeight="false"
 		initialHeight="0.04" editorTags="fx">
 		<PhysicalParams solid="false" />
 		<RenderObject2D texture="data/textures/fx/explosion_mark.dds" blendMode="overlay" sizeX="1"
 			sizeY="1" />
 	</Entity>
 
-	<Entity name="HAND_InvisibleBody" type="Projectile" editorAutoHeight="false" initialHeight="1.0">
+	<Entity name="hand_InvisibleBody" type="Projectile" editorAutoHeight="false" initialHeight="1.0">
 		<PhysicalParams solid="false" />
 		<RenderObject3D model="data/models/equipment/invisible.khm" />
 	</Entity>
 
-	<Entity name="HAND_Light_ArtificialSun" type="Light" editorAutoHeight="false"
+	<Entity name="hand_Light_ArtificialSun" type="Light" editorAutoHeight="false"
 		initialHeight="1.0">
 		<PhysicalParams solid="false" />
 		<RenderObject2D texture="data/textures/editor/light_point.tga" sizeX="0.5" sizeY="0.5"
@@ -40,37 +30,37 @@
 			animRandomStart="true" />
 	</Entity>
 
-	<Entity name="HAND_PS_ArtificialSun" type="Projectile" editorAutoHeight="false"
+	<Entity name="hand_PS_ArtificialSun" type="Projectile" editorAutoHeight="false"
 		initialHeight="0.45" editorTags="fx">
 		<PhysicalParams solid="false" />
 		<RenderObject2D texture="data/textures/editor/vfx_icon.dds" blendMode="normal" sizeX="0.5"
 			sizeY="0.33" hideInGame="true" disableDepthTest="true" />
-		<EnvParticles particles="HAND_ArtificialSunLinger" sizeX="1" sizeZ="1" sizeY="1" />
+		<EnvParticles particles="hand_ArtificialSunLinger" sizeX="1" sizeZ="1" sizeY="1" />
 	</Entity>
 
-	<Entity name="HAND_NeurotoxinBody" type="Projectile" editorAutoHeight="false"
+	<Entity name="hand_NeurotoxinBody" type="Projectile" editorAutoHeight="false"
 		initialHeight="0.45">
 		<PhysicalParams solid="false" />
 		<RenderObject3D model="data/models/equipment/invisible.khm" />
 	</Entity>
 
-	<Entity name="HAND_MegaphoneBody" type="Projectile" editorAutoHeight="false"
+	<Entity name="hand_MegaphoneBody" type="Projectile" editorAutoHeight="false"
 		initialHeight="0.45">
 		<PhysicalParams solid="false" />
 		<RenderObject3D model="data/models/equipment/invisible.khm" />
 	</Entity>
 
-	<Entity name="HAND_PlaneExplosion" type="EnvParticles" editorAutoHeight="false"
+	<Entity name="hand_PlaneExplosion" type="EnvParticles" editorAutoHeight="false"
 		initialHeight="0.5">
 		<PhysicalParams solid="false" />
 		<RenderObject2D texture="data/textures/editor/vfx_icon.dds" blendMode="normal" sizeX="0.5"
 			sizeY="0.33" hideInGame="true" disableDepthTest="true" />
 		<Light type="Point" colorMultiplier="8" color="FF4500FF" radiusMeters="15.0"
 			animation="flicker" animRate="4.0" animAmount="0.5" animRandomStart="true" />
-		<EnvParticles particles="HAND_PlaneExplosionFX" sizeX="10" sizeZ="10" sizeY="2" />
+		<EnvParticles particles="hand_PlaneExplosionFX" sizeX="10" sizeZ="10" sizeY="2" />
 	</Entity>
 
-	<Entity name="HAND_PlaneWreckage" type="BasicEntity" editorAutoHeight="false"
+	<Entity name="hand_PlaneWreckage" type="BasicEntity" editorAutoHeight="false"
 		initialHeight="0.1">
 		<PhysicalParams blocksMovement="true" blocksVision="false" usableCover="true" />
 		<RenderObject3D model="data/models/environment/vehicles/airplane_t_debris_main.khm"

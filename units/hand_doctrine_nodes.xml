@@ -24,7 +24,7 @@ For Equipment, use <EquipmentModifier />
 		- every piece of equipment if set to 'all'
 		- the equipment name to which we're gonna apply the modifiers
 		- an entire category of firearms: pistol / rifle / shotgun / rpg (defined in the firearm as category="name")
-		- an entire category of equipment, specified by the equipment type: Firearm / Armor / Shield / Grenade / SpyCamera / ExplosiveCharge / Lockpick / LockpickMachine / Crowbar / DynamicHammer / SuicideBomb / Ammo / Scope / TECTorch / Disguise / Helmet / HelmetNVG / HAND Feet Of Steel
+		- an entire category of equipment, specified by the equipment type: Firearm / Armor / Shield / Grenade / SpyCamera / ExplosiveCharge / Lockpick / LockpickMachine / Crowbar / DynamicHammer / SuicideBomb / Ammo / Scope / TECTorch / Disguise / Helmet / HelmetNVG / hand Feet Of Steel
 	There are also a few extra parameters you can add only in <EquipmentModifier /> elements with no 'target':
 	- conditioning - percent increase in move and turn times. So conditioning="50" will make them move 50% faster, but still capped by their max move speed
 	- coverPercentAdd - percent increase to default cover protection chance of 50%
@@ -137,95 +137,95 @@ Buffs and debuffs - Apply doctrine effects to other humans, permanent or tempora
 
 <DoctrineNodes>
     <!-- Spear Division (Offense - AR) - Medium Range (10-50) -->
-    <Node name="HAND_SP_OffensiveBuff" nameUI="@HAND_SP_OffensiveBuff_name" description="@HAND_SP_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_medium_range_accuracy">
-        <GiveBuff nodeName="HAND_AimTimeBuff_M" when="kill" target="self" targetClass="Spear" durationMs="2500"/>
-        <GiveBuff nodeName="HAND_RoundsPerSecondBuff_M" when="kill" target="self" targetClass="Spear" durationMs="2500"/>
+    <Node name="hand_SP_OffensiveBuff" nameUI="@hand_SP_OffensiveBuff_name" description="@hand_SP_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_medium_range_accuracy">
+        <GiveBuff nodeName="hand_AimTimeBuff_M" when="kill" target="self" targetClass="Spear" durationMs="2500"/>
+        <GiveBuff nodeName="hand_RoundsPerSecondBuff_M" when="kill" target="self" targetClass="Spear" durationMs="2500"/>
     </Node>
-    <Node name="HAND_SP_DefensiveBuff" nameUI="@HAND_SP_DefensiveBuff_name" description="@HAND_SP_DefensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_extra_conditioning">
-        <GiveBuff nodeName="HAND_ConditioningBuff" when="always" target="self" targetClass="Spear"/>
+    <Node name="hand_SP_DefensiveBuff" nameUI="@hand_SP_DefensiveBuff_name" description="@hand_SP_DefensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_extra_conditioning">
+        <GiveBuff nodeName="hand_ConditioningBuff" when="always" target="self" targetClass="Spear"/>
     </Node>
-    <Node name="HAND_SP_EnemyDebuff" nameUI="@HAND_SP_EnemyDebuff_name" description="@HAND_SP_EnemyDebuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_violence_of_action">
-        <GiveBuff nodeName="HAND_RoundsPerSecondDebuff" when="kill" target="enemies_in_radius" radius="5.0" durationMs="2500"/>
+    <Node name="hand_SP_EnemyDebuff" nameUI="@hand_SP_EnemyDebuff_name" description="@hand_SP_EnemyDebuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_violence_of_action">
+        <GiveBuff nodeName="hand_RoundsPerSecondDebuff" when="kill" target="enemies_in_radius" radius="5.0" durationMs="2500"/>
     </Node>
-    <Node name="HAND_SP_SkillSetA" nameUI="@HAND_SP_SkillSetA_name" description="@HAND_SP_SkillSetA_desc" texturePrefix="data/textures/gui/doctrines/doctrine_assault_saw">
+    <Node name="hand_SP_SkillSetA" nameUI="@hand_SP_SkillSetA_name" description="@hand_SP_SkillSetA_desc" texturePrefix="data/textures/gui/doctrines/doctrine_assault_saw">
         <Enable name="SpeedyRifles" value="15" targetClass="Spear"/>
     </Node>
-    <Node name="HAND_SP_SkillSetB" nameUI="@HAND_SP_SkillSetB_name" description="@HAND_SP_SkillSetB_desc" texturePrefix="data/textures/gui/doctrines/doctrine_survival_rate">
+    <Node name="hand_SP_SkillSetB" nameUI="@hand_SP_SkillSetB_name" description="@hand_SP_SkillSetB_desc" texturePrefix="data/textures/gui/doctrines/doctrine_survival_rate">
         <Enable name="PistolTransition" targetClass="Spear"/>
     </Node>
 
     <!-- Dagger Division (Stealth - SMG) - Short Range (0-10) -->
-    <Node name="HAND_DG_OffensiveBuff" nameUI="@HAND_DG_OffensiveBuff_name" description="@HAND_DG_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_short_range_aim_speed">
-        <GiveBuff nodeName="HAND_NearbyTargetBuff_S" when="kill" target="self" targetClass="Dagger" durationMs="2500"/>
-        <GiveBuff nodeName="HAND_ResetTimeBuff_S" when="kill" target="self" targetClass="Dagger" durationMs="2500"/>
+    <Node name="hand_DG_OffensiveBuff" nameUI="@hand_DG_OffensiveBuff_name" description="@hand_DG_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_short_range_aim_speed">
+        <GiveBuff nodeName="hand_NearbyTargetBuff_S" when="kill" target="self" targetClass="Dagger" durationMs="2500"/>
+        <GiveBuff nodeName="hand_ResetTimeBuff_S" when="kill" target="self" targetClass="Dagger" durationMs="2500"/>
     </Node>
-    <Node name="HAND_DG_DefensiveBuff" nameUI="@HAND_DG_DefensiveBuff_name" description="@HAND_DG_DefensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_conceal_rig">
-        <GiveBuff nodeName="HAND_BeingSpottedRateBuff" when="always" target="self" targetClass="Dagger"/>
+    <Node name="hand_DG_DefensiveBuff" nameUI="@hand_DG_DefensiveBuff_name" description="@hand_DG_DefensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_conceal_rig">
+        <GiveBuff nodeName="hand_BeingSpottedRateBuff" when="always" target="self" targetClass="Dagger"/>
     </Node>
-    <Node name="HAND_DG_EnemyDebuff" nameUI="@HAND_DG_EnemyDebuff_name" description="@HAND_DG_EnemyDebuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_violence_of_action">
-        <GiveBuff nodeName="HAND_RoundsPerSecondDebuff" when="kill" target="enemies_in_radius" radius="5.0" durationMs="2500"/>
+    <Node name="hand_DG_EnemyDebuff" nameUI="@hand_DG_EnemyDebuff_name" description="@hand_DG_EnemyDebuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_violence_of_action">
+        <GiveBuff nodeName="hand_RoundsPerSecondDebuff" when="kill" target="enemies_in_radius" radius="5.0" durationMs="2500"/>
     </Node>
-    <Node name="HAND_DG_SkillSetA" nameUI="@HAND_DG_SkillSetA_name" description="@HAND_DG_SkillSetA_desc" texturePrefix="data/textures/gui/doctrines/doctrine_ambush">
+    <Node name="hand_DG_SkillSetA" nameUI="@hand_DG_SkillSetA_name" description="@hand_DG_SkillSetA_desc" texturePrefix="data/textures/gui/doctrines/doctrine_ambush">
         <Enable name="Ambush" value="2" targetClass="Dagger"/>
         <Enable name="Backstabbing" targetClass="Dagger"/>
     </Node>
-    <Node name="HAND_DG_SkillSetB" nameUI="@HAND_DG_SkillSetB_name" description="@HAND_DG_SkillSetB_desc" texturePrefix="data/textures/gui/doctrines/doctrine_disguise">
+    <Node name="hand_DG_SkillSetB" nameUI="@hand_DG_SkillSetB_name" description="@hand_DG_SkillSetB_desc" texturePrefix="data/textures/gui/doctrines/doctrine_disguise">
         <Enable name="Concealment" value="10" targetClass="Dagger"/>
         <Enable name="ConcealPistols" value="5" targetClass="Dagger"/>
     </Node>
 
     <!-- Shield Division (Defense - LMG) - Long Range (50-100) -->
-    <Node name="HAND_SH_OffensiveBuff" nameUI="@HAND_SH_OffensiveBuff_name" description="@HAND_SH_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_long_range_accuracy">
-        <GiveBuff nodeName="HAND_AimTimeBuff_L" when="kill" target="self" targetClass="Shield" durationMs="2500"/>
-        <GiveBuff nodeName="HAND_SuppressionBuff_L" when="kill" target="self" targetClass="Shield" durationMs="2500"/>
+    <Node name="hand_SH_OffensiveBuff" nameUI="@hand_SH_OffensiveBuff_name" description="@hand_SH_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_long_range_accuracy">
+        <GiveBuff nodeName="hand_AimTimeBuff_L" when="kill" target="self" targetClass="Shield" durationMs="2500"/>
+        <GiveBuff nodeName="hand_SuppressionBuff_L" when="kill" target="self" targetClass="Shield" durationMs="2500"/>
     </Node>
-    <Node name="HAND_SH_DefensiveBuff" nameUI="@HAND_SH_DefensiveBuff_name" description="@HAND_SH_DefensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_barricade_shooting">
-        <GiveBuff nodeName="HAND_CoverBuff" when="always" target="self" targetClass="Shield"/>
+    <Node name="hand_SH_DefensiveBuff" nameUI="@hand_SH_DefensiveBuff_name" description="@hand_SH_DefensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_barricade_shooting">
+        <GiveBuff nodeName="hand_CoverBuff" when="always" target="self" targetClass="Shield"/>
     </Node>
-    <Node name="HAND_SH_EnemyDebuff" nameUI="@HAND_SH_EnemyDebuff_name" description="@HAND_SH_EnemyDebuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_improved_suppression">
-        <GiveBuff nodeName="HAND_SuppressionDebuff" when="kill" target="enemies_in_radius" radius="5.0" durationMs="2500"/>
+    <Node name="hand_SH_EnemyDebuff" nameUI="@hand_SH_EnemyDebuff_name" description="@hand_SH_EnemyDebuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_improved_suppression">
+        <GiveBuff nodeName="hand_SuppressionDebuff" when="kill" target="enemies_in_radius" radius="5.0" durationMs="2500"/>
     </Node>
-    <Node name="HAND_SH_SkillSetA" nameUI="@HAND_SH_SkillSetA_name" description="@HAND_SH_SkillSetA_desc" texturePrefix="data/textures/gui/doctrines/doctrine_survival_rate">
+    <Node name="hand_SH_SkillSetA" nameUI="@hand_SH_SkillSetA_name" description="@hand_SH_SkillSetA_desc" texturePrefix="data/textures/gui/doctrines/doctrine_survival_rate">
         <Enable name="SurvivalRate" targetClass="Shield"/>
     </Node>
-    <Node name="HAND_SH_SkillSetB" nameUI="@HAND_SH_SkillSetB_name" description="@HAND_SH_SkillSetB_desc" texturePrefix="data/textures/gui/doctrines/doctrine_priority_bombers">
+    <Node name="hand_SH_SkillSetB" nameUI="@hand_SH_SkillSetB_name" description="@hand_SH_SkillSetB_desc" texturePrefix="data/textures/gui/doctrines/doctrine_priority_bombers">
         <Enable name="PriorityBombers" targetClass="Shield"/>
     </Node>
 
     <!-- Chalice Division (Support/Medic - DMR & Pistol) - Long Range (50-100) -->
-    <Node name="HAND_CH_OffensiveBuff" nameUI="@HAND_CH_OffensiveBuff_name" description="@HAND_CH_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_long_range_aim_speed">
-        <GiveBuff nodeName="HAND_AimTimeBuff_L" when="kill" target="self" targetClass="Chalice" durationMs="2500"/>
-        <GiveBuff nodeName="HAND_ResetTimeBuff_L" when="kill" target="self" targetClass="Chalice" durationMs="2500"/>
+    <Node name="hand_CH_OffensiveBuff" nameUI="@hand_CH_OffensiveBuff_name" description="@hand_CH_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_long_range_aim_speed">
+        <GiveBuff nodeName="hand_AimTimeBuff_L" when="kill" target="self" targetClass="Chalice" durationMs="2500"/>
+        <GiveBuff nodeName="hand_ResetTimeBuff_L" when="kill" target="self" targetClass="Chalice" durationMs="2500"/>
     </Node>
-    <Node name="HAND_CH_EfficiencyBuff" nameUI="@HAND_CH_EfficiencyBuff_name" description="@HAND_CH_EfficiencyBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_assault_planning">
-        <GiveBuff nodeName="HAND_EfficiencyBuff" when="always" target="self" targetClass="Chalice"/>
+    <Node name="hand_CH_EfficiencyBuff" nameUI="@hand_CH_EfficiencyBuff_name" description="@hand_CH_EfficiencyBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_assault_planning">
+        <GiveBuff nodeName="hand_EfficiencyBuff" when="always" target="self" targetClass="Chalice"/>
     </Node>
-    <Node name="HAND_CH_EnemyDebuff" nameUI="@HAND_CH_EnemyDebuff_name" description="@HAND_CH_EnemyDebuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_spotting">
-        <GiveBuff nodeName="HAND_AimTimeDebuff" when="kill" target="enemies_in_radius" radius="5.0" durationMs="2500"/>
+    <Node name="hand_CH_EnemyDebuff" nameUI="@hand_CH_EnemyDebuff_name" description="@hand_CH_EnemyDebuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_spotting">
+        <GiveBuff nodeName="hand_AimTimeDebuff" when="kill" target="enemies_in_radius" radius="5.0" durationMs="2500"/>
     </Node>
-    <Node name="HAND_CH_SkillSetA" nameUI="@HAND_CH_SkillSetA_name" description="@HAND_CH_SkillSetA_desc" texturePrefix="data/textures/gui/doctrines/doctrine_self_first_aid">
+    <Node name="hand_CH_SkillSetA" nameUI="@hand_CH_SkillSetA_name" description="@hand_CH_SkillSetA_desc" texturePrefix="data/textures/gui/doctrines/doctrine_self_first_aid">
         <Enable name="SelfFirstAid" targetClass="Chalice"/>
     </Node>
-    <Node name="HAND_CH_SkillSetB" nameUI="@HAND_CH_SkillSetB_name" description="@HAND_CH_SkillSetB_desc" texturePrefix="data/textures/gui/doctrines/doctrine_adv_intel">
+    <Node name="hand_CH_SkillSetB" nameUI="@hand_CH_SkillSetB_name" description="@hand_CH_SkillSetB_desc" texturePrefix="data/textures/gui/doctrines/doctrine_adv_intel">
         <Enable name="BasicLanguage" value="5" targetClass="Chalice"/>
         <Enable name="AdvancedLanguage" targetClass="Chalice"/>
     </Node>
 
     <!-- Hammer Division (Supplies/Logistics/Civ Interaction - Shotgun) - Short Range (0-10) -->
-    <Node name="HAND_HA_OffensiveBuff" nameUI="@HAND_HA_OffensiveBuff_name" description="@HAND_HA_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_short_range_accuracy">
-        <GiveBuff nodeName="HAND_ResetTimeBuff_S" when="kill" target="self" targetClass="Hammer" durationMs="2500"/>
-        <GiveBuff nodeName="HAND_NearbyTargetBuff_S" when="kill" target="self" targetClass="Hammer" durationMs="2500"/>
+    <Node name="hand_HA_OffensiveBuff" nameUI="@hand_HA_OffensiveBuff_name" description="@hand_HA_OffensiveBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_short_range_accuracy">
+        <GiveBuff nodeName="hand_ResetTimeBuff_S" when="kill" target="self" targetClass="Hammer" durationMs="2500"/>
+        <GiveBuff nodeName="hand_NearbyTargetBuff_S" when="kill" target="self" targetClass="Hammer" durationMs="2500"/>
     </Node>
-    <Node name="HAND_HA_EfficiencyBuff" nameUI="@HAND_HA_EfficiencyBuff_name" description="@HAND_HA_EfficiencyBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_assault_planning">
-        <GiveBuff nodeName="HAND_EfficiencyBuff" when="always" target="self" targetClass="Hammer"/>
+    <Node name="hand_HA_EfficiencyBuff" nameUI="@hand_HA_EfficiencyBuff_name" description="@hand_HA_EfficiencyBuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_assault_planning">
+        <GiveBuff nodeName="hand_EfficiencyBuff" when="always" target="self" targetClass="Hammer"/>
     </Node>
-    <Node name="HAND_HA_EnemyDebuff" nameUI="@HAND_HA_EnemyDebuff_name" description="@HAND_HA_EnemyDebuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_violence_of_action">
-        <GiveBuff nodeName="HAND_RoundsPerSecondDebuff" when="kill" target="enemies_in_radius" radius="5.0" durationMs="2500"/>
+    <Node name="hand_HA_EnemyDebuff" nameUI="@hand_HA_EnemyDebuff_name" description="@hand_HA_EnemyDebuff_desc" texturePrefix="data/textures/gui/doctrines/doctrine_violence_of_action">
+        <GiveBuff nodeName="hand_RoundsPerSecondDebuff" when="kill" target="enemies_in_radius" radius="5.0" durationMs="2500"/>
     </Node>
-    <Node name="HAND_HA_SkillSetA" nameUI="@HAND_HA_SkillSetA_name" description="@HAND_HA_SkillSetA_desc" texturePrefix="data/textures/gui/doctrines/doctrine_humint_network">
+    <Node name="hand_HA_SkillSetA" nameUI="@hand_HA_SkillSetA_name" description="@hand_HA_SkillSetA_desc" texturePrefix="data/textures/gui/doctrines/doctrine_humint_network">
         <Enable name="Persuasion" value="2" targetClass="Hammer"/>
     </Node>
-    <Node name="HAND_HA_SkillSetB" nameUI="@HAND_HA_SkillSetB_name" description="@HAND_HA_SkillSetB_desc" texturePrefix="data/textures/gui/doctrines/doctrine_adv_intel">
+    <Node name="hand_HA_SkillSetB" nameUI="@hand_HA_SkillSetB_name" description="@hand_HA_SkillSetB_desc" texturePrefix="data/textures/gui/doctrines/doctrine_adv_intel">
         <Enable name="HumintNetwork" value="5" targetClass="Hammer"/>
         <Enable name="AdvanceIntel" value="5" targetClass="Hammer"/>
     </Node>
@@ -233,196 +233,196 @@ Buffs and debuffs - Apply doctrine effects to other humans, permanent or tempora
     <!-- Child Nodes -->
     <!-- Buffs (AttackTypeModifier) -->
     <!-- Short Range (0-10) -->
-    <Node name="HAND_AccuracyBuff_S" description="You should not see this">
+    <Node name="hand_AccuracyBuff_S" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="10" accuracyAdd="50"/>
     </Node>
-    <Node name="HAND_CritBuff_S" description="You should not see this">
+    <Node name="hand_CritBuff_S" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="10" critChanceAdd="50"/>
     </Node>
-    <Node name="HAND_RoundsPerSecondBuff_S" description="You should not see this">
+    <Node name="hand_RoundsPerSecondBuff_S" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="10" roundsPerSecondAdd="+5"/>
     </Node>
-    <Node name="HAND_SuppressionBuff_S" description="You should not see this">
+    <Node name="hand_SuppressionBuff_S" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="10" suppressionAdd="50"/>
     </Node>
-    <Node name="HAND_FollowupShotBuff_S" description="You should not see this">
+    <Node name="hand_FollowupShotBuff_S" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="10" followupShotAccuracyAdd="50"/>
     </Node>
-    <Node name="HAND_AimTimeBuff_S" description="You should not see this">
+    <Node name="hand_AimTimeBuff_S" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="10" minAimTime="-150" maxAimTime="-200"/>
     </Node>
-    <Node name="HAND_ShotCountBuff_S" description="You should not see this">
+    <Node name="hand_ShotCountBuff_S" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="10" minShots="+5" maxShots="+5"/>
     </Node>
-    <Node name="HAND_ResetTimeBuff_S" description="You should not see this">
+    <Node name="hand_ResetTimeBuff_S" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="10" resetTime="-150"/>
     </Node>
-    <Node name="HAND_NearbyTargetBuff_S" description="You should not see this">
+    <Node name="hand_NearbyTargetBuff_S" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="10" nearbyTargetBonusCloseness="50"/>
     </Node>
 
     <!-- Medium Range (10-50) -->
-    <Node name="HAND_AccuracyBuff_M" description="You should not see this">
+    <Node name="hand_AccuracyBuff_M" description="You should not see this">
         <AttackTypeModifier minRange="10" maxRange="50" accuracyAdd="50"/>
     </Node>
-    <Node name="HAND_CritBuff_M" description="You should not see this">
+    <Node name="hand_CritBuff_M" description="You should not see this">
         <AttackTypeModifier minRange="10" maxRange="50" critChanceAdd="50"/>
     </Node>
-    <Node name="HAND_RoundsPerSecondBuff_M" description="You should not see this">
+    <Node name="hand_RoundsPerSecondBuff_M" description="You should not see this">
         <AttackTypeModifier minRange="10" maxRange="50" roundsPerSecondAdd="+5"/>
     </Node>
-    <Node name="HAND_SuppressionBuff_M" description="You should not see this">
+    <Node name="hand_SuppressionBuff_M" description="You should not see this">
         <AttackTypeModifier minRange="10" maxRange="50" suppressionAdd="50"/>
     </Node>
-    <Node name="HAND_FollowupShotBuff_M" description="You should not see this">
+    <Node name="hand_FollowupShotBuff_M" description="You should not see this">
         <AttackTypeModifier minRange="10" maxRange="50" followupShotAccuracyAdd="50"/>
     </Node>
-    <Node name="HAND_AimTimeBuff_M" description="You should not see this">
+    <Node name="hand_AimTimeBuff_M" description="You should not see this">
         <AttackTypeModifier minRange="10" maxRange="50" minAimTime="-150" maxAimTime="-200"/>
     </Node>
-    <Node name="HAND_ShotCountBuff_M" description="You should not see this">
+    <Node name="hand_ShotCountBuff_M" description="You should not see this">
         <AttackTypeModifier minRange="10" maxRange="50" minShots="+5" maxShots="+5"/>
     </Node>
-    <Node name="HAND_ResetTimeBuff_M" description="You should not see this">
+    <Node name="hand_ResetTimeBuff_M" description="You should not see this">
         <AttackTypeModifier minRange="10" maxRange="50" resetTime="-150"/>
     </Node>
-    <Node name="HAND_NearbyTargetBuff_M" description="You should not see this">
+    <Node name="hand_NearbyTargetBuff_M" description="You should not see this">
         <AttackTypeModifier minRange="10" maxRange="50" nearbyTargetBonusCloseness="50"/>
     </Node>
 
     <!-- Long Range (50-100) -->
-    <Node name="HAND_AccuracyBuff_L" description="You should not see this">
+    <Node name="hand_AccuracyBuff_L" description="You should not see this">
         <AttackTypeModifier minRange="50" maxRange="100" accuracyAdd="50"/>
     </Node>
-    <Node name="HAND_CritBuff_L" description="You should not see this">
+    <Node name="hand_CritBuff_L" description="You should not see this">
         <AttackTypeModifier minRange="50" maxRange="100" critChanceAdd="50"/>
     </Node>
-    <Node name="HAND_RoundsPerSecondBuff_L" description="You should not see this">
+    <Node name="hand_RoundsPerSecondBuff_L" description="You should not see this">
         <AttackTypeModifier minRange="50" maxRange="100" roundsPerSecondAdd="+5"/>
     </Node>
-    <Node name="HAND_SuppressionBuff_L" description="You should not see this">
+    <Node name="hand_SuppressionBuff_L" description="You should not see this">
         <AttackTypeModifier minRange="50" maxRange="100" suppressionAdd="50"/>
     </Node>
-    <Node name="HAND_FollowupShotBuff_L" description="You should not see this">
+    <Node name="hand_FollowupShotBuff_L" description="You should not see this">
         <AttackTypeModifier minRange="50" maxRange="100" followupShotAccuracyAdd="50"/>
     </Node>
-    <Node name="HAND_AimTimeBuff_L" description="You should not see this">
+    <Node name="hand_AimTimeBuff_L" description="You should not see this">
         <AttackTypeModifier minRange="50" maxRange="100" minAimTime="-150" maxAimTime="-200"/>
     </Node>
-    <Node name="HAND_ShotCountBuff_L" description="You should not see this">
+    <Node name="hand_ShotCountBuff_L" description="You should not see this">
         <AttackTypeModifier minRange="50" maxRange="100" minShots="+5" maxShots="+5"/>
     </Node>
-    <Node name="HAND_ResetTimeBuff_L" description="You should not see this">
+    <Node name="hand_ResetTimeBuff_L" description="You should not see this">
         <AttackTypeModifier minRange="50" maxRange="100" resetTime="-150"/>
     </Node>
-    <Node name="HAND_NearbyTargetBuff_L" description="You should not see this">
+    <Node name="hand_NearbyTargetBuff_L" description="You should not see this">
         <AttackTypeModifier minRange="50" maxRange="100" nearbyTargetBonusCloseness="50"/>
     </Node>
 
     <!-- Infinite Range (0-999) -->
-    <Node name="HAND_AccuracyBuff_I" description="You should not see this">
+    <Node name="hand_AccuracyBuff_I" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" accuracyAdd="50"/>
     </Node>
-    <Node name="HAND_CritBuff_I" description="You should not see this">
+    <Node name="hand_CritBuff_I" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" critChanceAdd="50"/>
     </Node>
-    <Node name="HAND_RoundsPerSecondBuff_I" description="You should not see this">
+    <Node name="hand_RoundsPerSecondBuff_I" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" roundsPerSecondAdd="+5"/>
     </Node>
-    <Node name="HAND_SuppressionBuff_I" description="You should not see this">
+    <Node name="hand_SuppressionBuff_I" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" suppressionAdd="50"/>
     </Node>
-    <Node name="HAND_FollowupShotBuff_I" description="You should not see this">
+    <Node name="hand_FollowupShotBuff_I" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" followupShotAccuracyAdd="50"/>
     </Node>
-    <Node name="HAND_AimTimeBuff_I" description="You should not see this">
+    <Node name="hand_AimTimeBuff_I" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" minAimTime="-150" maxAimTime="-200"/>
     </Node>
-    <Node name="HAND_ShotCountBuff_I" description="You should not see this">
+    <Node name="hand_ShotCountBuff_I" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" minShots="+5" maxShots="+5"/>
     </Node>
-    <Node name="HAND_ResetTimeBuff_I" description="You should not see this">
+    <Node name="hand_ResetTimeBuff_I" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" resetTime="-150"/>
     </Node>
-    <Node name="HAND_NearbyTargetBuff_I" description="You should not see this">
+    <Node name="hand_NearbyTargetBuff_I" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" nearbyTargetBonusCloseness="50"/>
     </Node>
     <!-- Buffs (EquipmentModifier) -->
-    <Node name="HAND_ConditioningBuff" description="You should not see this">
+    <Node name="hand_ConditioningBuff" description="You should not see this">
         <EquipmentModifier conditioning="25"/>
     </Node>
-    <Node name="HAND_CoverBuff" description="You should not see this">
+    <Node name="hand_CoverBuff" description="You should not see this">
         <EquipmentModifier coverPercentAdd="25"/>
     </Node>
-    <Node name="HAND_MeleeBuff" description="You should not see this">
+    <Node name="hand_MeleeBuff" description="You should not see this">
         <EquipmentModifier meleeDamageBonus="20" meleeSpeedAdd="15" meleeStunBonus="10" meleeReach="1.5"/> <!-- Kept as reminder for unusable -->
     </Node>
-    <Node name="HAND_SuppressionRecoveryBuff" description="You should not see this">
+    <Node name="hand_SuppressionRecoveryBuff" description="You should not see this">
         <EquipmentModifier suppressionRecoveryAdd="100"/>
     </Node>
-    <Node name="HAND_BeingSpottedRateBuff" description="You should not see this">
+    <Node name="hand_BeingSpottedRateBuff" description="You should not see this">
         <EquipmentModifier beingSpottedRate="-25"/>
     </Node>
-    <Node name="HAND_EfficiencyBuff" description="You should not see this">
+    <Node name="hand_EfficiencyBuff" description="You should not see this">
         <EquipmentModifier efficiencyPercent="+50"/>
     </Node>
-    <Node name="HAND_ReadyTimeBlockedBuff" description="You should not see this">
+    <Node name="hand_ReadyTimeBlockedBuff" description="You should not see this">
         <EquipmentModifier readyTimeAddBlocked="-50"/>
     </Node>
-    <Node name="HAND_GuardTimeBlockedBuff" description="You should not see this">
+    <Node name="hand_GuardTimeBlockedBuff" description="You should not see this">
         <EquipmentModifier guardTimeAddBlocked="-50"/>
     </Node>
     <!-- Debuffs (AttackTypeModifier) -->
-    <Node name="HAND_AccuracyDebuff" description="You should not see this">
+    <Node name="hand_AccuracyDebuff" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" accuracyAdd="-15"/>
     </Node>
-    <Node name="HAND_CritDebuff" description="You should not see this">
+    <Node name="hand_CritDebuff" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" critChanceAdd="-10"/>
     </Node>
-    <Node name="HAND_RoundsPerSecondDebuff" description="You should not see this">
+    <Node name="hand_RoundsPerSecondDebuff" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" roundsPerSecondAdd="-1.5"/>
     </Node>
-    <Node name="HAND_FollowupShotDebuff" description="You should not see this">
+    <Node name="hand_FollowupShotDebuff" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" followupShotAccuracyAdd="-10"/>
     </Node>
-    <Node name="HAND_AimTimeDebuff" description="You should not see this">
+    <Node name="hand_AimTimeDebuff" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" minAimTime="+100" maxAimTime="+100"/>
     </Node>
-    <Node name="HAND_ShotCountDebuff" description="You should not see this">
+    <Node name="hand_ShotCountDebuff" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" minShots="-1" maxShots="-5"/>
     </Node>
-    <Node name="HAND_ResetTimeDebuff" description="You should not see this">
+    <Node name="hand_ResetTimeDebuff" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" resetTime="+100"/>
     </Node>
-    <Node name="HAND_NearbyTargetDebuff" description="You should not see this">
+    <Node name="hand_NearbyTargetDebuff" description="You should not see this">
         <AttackTypeModifier minRange="0" maxRange="999" nearbyTargetBonusCloseness="-20"/>
     </Node>
     <!-- Debuffs (EquipmentModifier) -->
-    <Node name="HAND_SuppressionDebuff" description="You should not see this">
+    <Node name="hand_SuppressionDebuff" description="You should not see this">
         <EquipmentModifier suppressionRecoveryAdd="-200"/>
     </Node>
-    <Node name="HAND_ConditioningDebuff" description="You should not see this">
+    <Node name="hand_ConditioningDebuff" description="You should not see this">
         <EquipmentModifier conditioning="-20"/>
     </Node>
-    <Node name="HAND_CoverDebuff" description="You should not see this">
+    <Node name="hand_CoverDebuff" description="You should not see this">
         <EquipmentModifier coverPercentAdd="-10"/>
     </Node>
-    <Node name="HAND_MeleeDebuff" description="You should not see this">
+    <Node name="hand_MeleeDebuff" description="You should not see this">
         <EquipmentModifier meleeDamageAdd="-20" meleeSpeedAdd="-10" meleeStunBonus="-15" meleeReach="-5"/>
     </Node>
-    <Node name="HAND_SuppressionRecoveryDebuff" description="You should not see this">
+    <Node name="hand_SuppressionRecoveryDebuff" description="You should not see this">
         <EquipmentModifier suppressionRecoveryAdd="-50"/>
     </Node>
-    <Node name="HAND_FlinchDebuff" description="You should not see this">
+    <Node name="hand_FlinchDebuff" description="You should not see this">
         <EquipmentModifier flinchResistance="-15"/>
     </Node>
-    <Node name="HAND_PanicDebuff" description="You should not see this">
+    <Node name="hand_PanicDebuff" description="You should not see this">
         <EquipmentModifier beingSpottedRate="+20"/> <!-- Kept as-is per your doc, but noted as buff (Sho here, maybne if we turn it into positive value, it will be a debuff fr...but lol enemies don't hide) -->
     </Node>
-    <Node name="HAND_ReadyTimeBlockedDebuff" description="You should not see this">
+    <Node name="hand_ReadyTimeBlockedDebuff" description="You should not see this">
         <EquipmentModifier readyTimeAddBlocked="+50"/>
     </Node>
-    <Node name="HAND_GuardTimeBlockedDebuff" description="You should not see this">
+    <Node name="hand_GuardTimeBlockedDebuff" description="You should not see this">
         <EquipmentModifier guardTimeAddBlocked="+50"/>
     </Node>
 </DoctrineNodes>

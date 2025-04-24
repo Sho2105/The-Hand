@@ -1,22 +1,22 @@
 <GUIItems>
-    <!-- Load-time trigger for HAND deployment UI -->
+    <!-- Load-time trigger for hand deployment UI -->
     <EventActionBatch name="GAME_GUI_LOADTIME_ACTIONS">
-        <Action type="Show" target="HAND"/>
+        <Action type="Show" target="hand"/>
     </EventActionBatch>
 
-    <!-- Main deployment panel for HAND squads -->
-    <Item name="HAND" origin="0 -312" hidden="true" align="rt" sizeX="380">
+    <!-- Main deployment panel for hand squads -->
+    <Item name="hand" origin="0 -312" hidden="true" align="rt" sizeX="380">
         <OnOpen>
             <Action type="AddMeToParent" target="#unit_header"/>
         </OnOpen>
 
         <!-- Squad selection menu for switching between the Hand and NTF -->
-        <Item origin="0 0" name="HAND_Squad_Roster_Menu">
+        <Item origin="0 0" name="hand_Squad_Roster_Menu">
             <StaticImage origin="-206 0" align="lt">
                 <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="46" color="f5f5f5cc"/> <!-- White sidebar -->
             </StaticImage>
             
-            <Button name="HAND_SQUAD_Button" origin="-190 0" align="lt" hidden="true" tooltip="@HAND_deployui_hand">
+            <Button name="hand_SQUAD_Button" origin="-190 0" align="lt" hidden="true" tooltip="@hand_deployui_hand">
                 <RenderObject2D texture="data/textures/gui/square.tga" sizeX="185" sizeY="46" color="211e1dcc"/> <!-- Dark gray -->
                 <StaticImage origin="0 0" align="c">
                     <RenderObject2D texture="data/textures/gui/deploy/hand.dds"/>
@@ -29,22 +29,22 @@
                 </OnHover>
                 <OnClick>
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="185" sizeY="46" color="f5f5f5cc"/> <!-- White active -->
-                    <Action type="Show" target="HAND_SQUAD_Button_disable"/>
-                    <Action type="Hide" target="HAND_SQUAD_Button"/>
-                    <Action type="Hide" target="HAND_NULL_Button_disable"/>
-                    <Action type="Show" target="HAND_NULL_Button"/>
+                    <Action type="Show" target="hand_SQUAD_Button_disable"/>
+                    <Action type="Hide" target="hand_SQUAD_Button"/>
+                    <Action type="Hide" target="hand_NULL_Button_disable"/>
+                    <Action type="Show" target="hand_NULL_Button"/>
                 </OnClick>
             </Button>
 
-            <StaticImage name="HAND_SQUAD_Button_disable" origin="-97.5 -23">
+            <StaticImage name="hand_SQUAD_Button_disable" origin="-97.5 -23">
                 <OnOpen>
-                    <Action type="Hide" target="HAND_NULL"/>
-                    <Action type="Show" target="HAND_SQUAD"/>
+                    <Action type="Hide" target="hand_NULL"/>
+                    <Action type="Show" target="hand_SQUAD"/>
                     <Action type="SetOrigin" target="#deploy_squad_buttons" params="-8 -1076"/>
                 </OnOpen>
                 <OnClose>
                 </OnClose>
-                <StaticImage origin="0 0" tooltip="@HAND_deployui_hand">
+                <StaticImage origin="0 0" tooltip="@hand_deployui_hand">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="185" sizeY="46" color="f5f5f5cc"/> <!-- White active -->
                     <StaticImage origin="0 0" align="lt">
                         <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>
@@ -56,7 +56,7 @@
             </StaticImage>
 
             <!-- NULL Task Force button -->
-            <Button name="HAND_NULL_Button" origin="190 0" align="rt" tooltip="@HAND_deployui_null">
+            <Button name="hand_NULL_Button" origin="190 0" align="rt" tooltip="@hand_deployui_null">
                 <RenderObject2D texture="data/textures/gui/square.tga" sizeX="185" sizeY="46" color="211e1dcc"/> <!-- Dark gray -->
                 <StaticImage origin="0 0" align="c">
                     <RenderObject2D texture="data/textures/gui/deploy/null.dds"/>
@@ -69,22 +69,22 @@
                 </OnHover>
                 <OnClick>
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="185" sizeY="46" color="f5f5f5cc"/> <!-- White active -->
-                    <Action type="Hide" target="HAND_NULL_Button"/>
-                    <Action type="Show" target="HAND_NULL_Button_disable"/>
-                    <Action type="Hide" target="HAND_SQUAD_Button_disable"/>
-                    <Action type="Show" target="HAND_SQUAD_Button"/>
+                    <Action type="Hide" target="hand_NULL_Button"/>
+                    <Action type="Show" target="hand_NULL_Button_disable"/>
+                    <Action type="Hide" target="hand_SQUAD_Button_disable"/>
+                    <Action type="Show" target="hand_SQUAD_Button"/>
                 </OnClick>
             </Button>
 
-            <Item name="HAND_NULL_Button_disable" origin="97.5 -23" hidden="true">
+            <Item name="hand_NULL_Button_disable" origin="97.5 -23" hidden="true">
                 <OnOpen>
-                    <Action type="Hide" target="HAND_SQUAD"/>
-                    <Action type="Show" target="HAND_NULL"/>
+                    <Action type="Hide" target="hand_SQUAD"/>
+                    <Action type="Show" target="hand_NULL"/>
                     <Action type="SetOrigin" target="#deploy_squad_buttons" params="-8 -755"/>
                 </OnOpen>
                 <OnClose>
                 </OnClose>
-                <StaticImage origin="0 0" tooltip="@HAND_deployui_null">
+                <StaticImage origin="0 0" tooltip="@hand_deployui_null">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="185" sizeY="46" color="f5f5f5cc"/> <!-- White active -->
                     <StaticImage origin="0 0" align="lt">
                         <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" color="0c0b0b33"/>
@@ -97,10 +97,10 @@
         </Item>
 
         <!-- The Hand squad section -->
-        <Item name="HAND_SQUAD">
-            <StaticImage origin="0 -310" name="HAND_The_Hand" align="b">
+        <Item name="hand_SQUAD">
+            <StaticImage origin="0 -310" name="hand_The_Hand" align="b">
                 <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="255" color="211e1dcc" align="t"/> <!-- Dark gray background -->
-                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@HAND_deployui_hand2">
+                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@hand_deployui_hand2">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="2E382F"/> <!-- Dark greenish-gray header -->
                 </StaticImage>
                 <StaticImage origin="0 0" align="lt">
@@ -109,8 +109,8 @@
                 <StaticImage origin="-16 0" align="lt">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="255" color="f5f5f5cc"/> <!-- White sidebar -->
                 </StaticImage>
-                <StaticText name="HAND_ClassName" origin="-6 -2" text="@HAND_right_squad" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/> <!-- Black text -->
-                <StaticImage name="HAND_ClassIcon" origin="8 -4" align="lt">
+                <StaticText name="hand_ClassName" origin="-6 -2" text="@hand_right_squad" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/> <!-- Black text -->
+                <StaticImage name="hand_ClassIcon" origin="8 -4" align="lt">
                     <RenderObject2D texture="data/textures/gui/deploy/hand.dds"/>
                 </StaticImage>
                 <StaticImage name="Thumb" origin="-130 -100" align="t">
@@ -167,11 +167,11 @@
         </Item>
 
         <!-- NULL Task Force section with Spear, Dagger, Chalice, Shield, Hammer -->
-        <Item origin="0 -160" name="HAND_NULL" align="b" hidden="true">
+        <Item origin="0 -160" name="hand_NULL" align="b" hidden="true">
             <!-- Spear (7 slots, 4 on top row, 3 on bottom row) -->
             <StaticImage name="Spear" origin="0 -10">
                 <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="230" color="211e1dcc" align="t"/> <!-- Dark gray background -->
-                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@HAND_deployui_spear">
+                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@hand_deployui_spear">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="2E382F"/>
                 </StaticImage>
                 <StaticImage origin="0 0" align="lt">
@@ -180,8 +180,8 @@
                 <StaticImage origin="-16 0" align="lt">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="230" color="f5f5f5cc"/> <!-- White sidebar -->
                 </StaticImage>
-                <StaticText name="HAND_NULL_Spear_ClassName" origin="-6 -2" text="Spear" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/>
-                <StaticImage name="HAND_NULL_Spear_ClassIcon" origin="8 -7" align="lt">
+                <StaticText name="hand_NULL_Spear_ClassName" origin="-6 -2" text="Spear" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/>
+                <StaticImage name="hand_NULL_Spear_ClassIcon" origin="8 -7" align="lt">
                     <RenderObject2D texture="data/textures/gui/deploy/class_icon_spear.dds"/>
                 </StaticImage>
                 <Item name="Spear" origin="0 0" align="t">
@@ -212,7 +212,7 @@
             <!-- Dagger (5 slots, 3 on top row, 2 on bottom row) -->
             <StaticImage name="Dagger" origin="0 -250">
                 <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="230" color="211e1dcc" align="t"/> <!-- Dark gray background -->
-                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@HAND_deployui_dagger">
+                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@hand_deployui_dagger">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="2E382F"/>
                 </StaticImage>
                 <StaticImage origin="0 0" align="lt">
@@ -221,8 +221,8 @@
                 <StaticImage origin="-16 0" align="lt">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="230" color="f5f5f5cc"/> <!-- White sidebar -->
                 </StaticImage>
-                <StaticText name="HAND_NULL_Dagger_ClassName" origin="-6 -2" text="Dagger" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/>
-                <StaticImage name="HAND_NULL_Dagger_ClassIcon" origin="8 -7" align="lt">
+                <StaticText name="hand_NULL_Dagger_ClassName" origin="-6 -2" text="Dagger" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/>
+                <StaticImage name="hand_NULL_Dagger_ClassIcon" origin="8 -7" align="lt">
                     <RenderObject2D texture="data/textures/gui/deploy/class_icon_dagger.dds"/>
                 </StaticImage>
                 <Item name="Dagger" origin="0 0" align="t">
@@ -247,7 +247,7 @@
             <!-- Chalice (3 slots, single row) -->
             <StaticImage name="Chalice" origin="0 -455">
                 <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="160" color="211e1dcc" align="t"/> <!-- Dark gray background -->
-                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@HAND_deployui_chalice">
+                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@hand_deployui_chalice">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="2E382F"/>
                 </StaticImage>
                 <StaticImage origin="0 0" align="lt">
@@ -256,8 +256,8 @@
                 <StaticImage origin="-16 0" align="lt">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="160" color="f5f5f5cc"/> <!-- White sidebar -->
                 </StaticImage>
-                <StaticText name="HAND_NULL_Chalice_ClassName" origin="-6 -2" text="Chalice" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/>
-                <StaticImage name="HAND_NULL_Chalice_ClassIcon" origin="8 -7" align="lt">
+                <StaticText name="hand_NULL_Chalice_ClassName" origin="-6 -2" text="Chalice" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/>
+                <StaticImage name="hand_NULL_Chalice_ClassIcon" origin="8 -7" align="lt">
                     <RenderObject2D texture="data/textures/gui/deploy/class_icon_chalice.dds"/>
                 </StaticImage>
                 <Item name="Chalice" origin="0 0" align="t">
@@ -276,7 +276,7 @@
             <!-- Shield (4 slots, single row) -->
             <StaticImage name="Shield" origin="0 -625">
                 <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="160" color="211e1dcc" align="t"/> <!-- Dark gray background -->
-                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@HAND_deployui_shield">
+                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@hand_deployui_shield">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="2E382F"/>
                 </StaticImage>
                 <StaticImage origin="0 0" align="lt">
@@ -285,8 +285,8 @@
                 <StaticImage origin="-16 0" align="lt">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="160" color="f5f5f5cc"/> <!-- White sidebar -->
                 </StaticImage>
-                <StaticText name="HAND_NULL_Shield_ClassName" origin="-6 -2" text="Shield" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/>
-                <StaticImage name="HAND_NULL_Shield_ClassIcon" origin="8 -7" align="lt">
+                <StaticText name="hand_NULL_Shield_ClassName" origin="-6 -2" text="Shield" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/>
+                <StaticImage name="hand_NULL_Shield_ClassIcon" origin="8 -7" align="lt">
                     <RenderObject2D texture="data/textures/gui/deploy/class_icon_shield.dds"/>
                 </StaticImage>
                 <Item name="Shield" origin="0 0" align="t">
@@ -308,7 +308,7 @@
             <!-- Hammer (2 slots, single row) -->
             <StaticImage name="Hammer" origin="0 -795">
                 <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="160" color="211e1dcc" align="t"/> <!-- Dark gray background -->
-                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@HAND_deployui_hammer">
+                <StaticImage name="#ClassHeader" origin="0 0" align="t" tooltip="@hand_deployui_hammer">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="380" sizeY="46" color="2E382F"/>
                 </StaticImage>
                 <StaticImage origin="0 0" align="lt">
@@ -317,8 +317,8 @@
                 <StaticImage origin="-16 0" align="lt">
                     <RenderObject2D texture="data/textures/gui/square.tga" sizeX="8" sizeY="160" color="f5f5f5cc"/> <!-- White sidebar -->
                 </StaticImage>
-                <StaticText name="HAND_NULL_Hammer_ClassName" origin="-6 -2" text="Hammer" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/>
-                <StaticImage name="HAND_NULL_Hammer_ClassIcon" origin="8 -7" align="lt">
+                <StaticText name="hand_NULL_Hammer_ClassName" origin="-6 -2" text="Hammer" align="rt" font="header_4" textColor="000000ff" fontAutoDownsize="true"/>
+                <StaticImage name="hand_NULL_Hammer_ClassIcon" origin="8 -7" align="lt">
                     <RenderObject2D texture="data/textures/gui/deploy/class_icon_hammer.dds"/>
                 </StaticImage>
                 <Item name="Hammer" origin="0 0" align="t">

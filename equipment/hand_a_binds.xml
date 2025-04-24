@@ -1,102 +1,105 @@
-<!-- This file is used to bind equipment to the HANDs of the player model. 
-There are currently x slots to put equipment in: Primary, Secondary, Helmet and NVG, Armor, Utility Pouch, Support Gear.
-HAND = The whole unit.
+<!-- This file is used to bind equipment to the hands of the player model. 
+There are currently x slots to put equipment in: Primary, Secondary, Helmet and NVG, Armor, Utility
+Pouch, Support Gear.
+hand = The whole unit.
 "Before Team" classes: Spear, Dagger, Chalice, Shield, Hammer
 "After Team" classes: Thumb, Index, Middle, Ring, Pinky
 -->
 
 <Equipment>
     <!-- === Null's Gear (After Team: Thumb, Index, Middle, Ring, Pinky) === -->
-    
+
     <!-- Primary Weapons -->
-    <Bind eqp="HAND_AR" to="Thumb"/>
-    <Bind eqp="HAND_AR_Sup" to="Thumb"/>
-    <Bind eqp="HAND_SMG" to="Index"/>
-    <Bind eqp="HAND_SMG_Sup" to="Index"/>
-    <Bind eqp="HAND_LMG" to="Middle"/>
-    <Bind eqp="HAND_LMG_Sup" to="Middle"/>
-    <Bind eqp="HAND_SG" to="Ring"/>
-    <Bind eqp="HAND_DMR" to="Pinky"/>
-    <Bind eqp="HAND_DMR_Sup" to="Pinky"/>
+    <Bind eqp="hand_AR" to="Thumb" />
+    <Bind eqp="hand_AR_Sup" to="Thumb" />
+    <Bind eqp="hand_SMG" to="Index" />
+    <Bind eqp="hand_SMG_Sup" to="Index" />
+    <Bind eqp="hand_LMG" to="Middle" />
+    <Bind eqp="hand_LMG_Sup" to="Middle" />
+    <Bind eqp="hand_SG" to="Ring" />
+    <Bind eqp="hand_DMR" to="Pinky" />
+    <Bind eqp="hand_DMR_Sup" to="Pinky" />
 
     <!-- Secondary Weapons -->
-    <Bind eqp="HAND_PISTOL" to="Thumb"/>
-    <Bind eqp="HAND_PISTOL_Sup" to="Thumb"/>
-    <Bind eqp="HAND_PISTOL" to="Index"/>
-    <Bind eqp="HAND_PISTOL_Sup" to="Index"/>
-    <Bind eqp="HAND_PISTOL" to="Middle"/>
-    <Bind eqp="HAND_PISTOL_Sup" to="Middle"/>
-    <Bind eqp="HAND_PISTOL" to="Ring"/>
-    <Bind eqp="HAND_PISTOL_Sup" to="Ring"/>
-    <Bind eqp="HAND_PISTOL" to="Pinky"/>
-    <Bind eqp="HAND_PISTOL_Sup" to="Pinky"/>
+    <Bind eqp="hand_PISTOL" to="Thumb" />
+    <Bind eqp="hand_PISTOL_Sup" to="Thumb" />
+    <Bind eqp="hand_PISTOL" to="Index" />
+    <Bind eqp="hand_PISTOL_Sup" to="Index" />
+    <Bind eqp="hand_PISTOL" to="Middle" />
+    <Bind eqp="hand_PISTOL_Sup" to="Middle" />
+    <Bind eqp="hand_PISTOL" to="Ring" />
+    <Bind eqp="hand_PISTOL_Sup" to="Ring" />
+    <Bind eqp="hand_PISTOL" to="Pinky" />
+    <Bind eqp="hand_PISTOL_Sup" to="Pinky" />
 
     <!-- Headgear -->
-    <Bind eqp="CapBlackOps" to="Thumb"/>
-    <Bind eqp="HelmetACH" to="Thumb"/>
-    <Bind eqp="HelmetIHPS" to="Thumb"/>
-    <Bind eqp="CapUndercover" to="Index"/>
-    <Bind eqp="HelmetACH" to="Index"/>
-    <Bind eqp="HelmetACH" to="Middle"/>
-    <Bind eqp="HelmetIHPS" to="Middle"/>
-    <Bind eqp="HelmetACH" to="Ring"/>
-    <Bind eqp="HelmetIHPS" to="Ring"/>
-    <Bind eqp="HelmetACH" to="Pinky"/>
-    <Bind eqp="HelmetIHPS" to="Pinky"/>
+    <Bind eqp="CapBlackOps" to="Thumb" />
+    <Bind eqp="HelmetACH" to="Thumb" />
+    <Bind eqp="HelmetIHPS" to="Thumb" />
+    <Bind eqp="CapUndercover" to="Index" />
+    <Bind eqp="HelmetACH" to="Index" />
+    <Bind eqp="HelmetACH" to="Middle" />
+    <Bind eqp="HelmetIHPS" to="Middle" />
+    <Bind eqp="HelmetACH" to="Ring" />
+    <Bind eqp="HelmetIHPS" to="Ring" />
+    <Bind eqp="HelmetACH" to="Pinky" />
+    <Bind eqp="HelmetIHPS" to="Pinky" />
 
     <!-- Armor -->
-    <Bind eqp="CIA TacVest Level III" to="Thumb"/>
-    <Bind eqp="CIA TacVest Level IV" to="Thumb"/>
-    <Bind eqp="CIA Concealable LVL2" to="Index"/>
-    <Bind eqp="CIA Concealable LVL3A" to="Index"/>
-    <Bind eqp="CIA TacVest Level III" to="Middle"/>
-    <Bind eqp="CIA TacVest Level IV" to="Middle"/>
-    <Bind eqp="CIA TacVest Level III" to="Ring"/>
-    <Bind eqp="CIA TacVest Level IV" to="Ring"/>
-    <Bind eqp="CIA TacVest Level III" to="Pinky"/>
-    <Bind eqp="CIA TacVest Level IV" to="Pinky"/>
+    <Bind eqp="CIA TacVest Level III" to="Thumb" />
+    <Bind eqp="CIA TacVest Level IV" to="Thumb" />
+    <Bind eqp="CIA Concealable LVL2" to="Index" />
+    <Bind eqp="CIA Concealable LVL3A" to="Index" />
+    <Bind eqp="CIA TacVest Level III" to="Middle" />
+    <Bind eqp="CIA TacVest Level IV" to="Middle" />
+    <Bind eqp="CIA TacVest Level III" to="Ring" />
+    <Bind eqp="CIA TacVest Level IV" to="Ring" />
+    <Bind eqp="CIA TacVest Level III" to="Pinky" />
+    <Bind eqp="CIA TacVest Level IV" to="Pinky" />
 
     <!-- Support Gear -->
-    <Bind eqp="HAND Strafe" to="Thumb"/>
-    <Bind eqp="HAND Smoke Screen" to="Index"/>
-    <Bind eqp="HAND Bombard" to="Middle"/>
-    <Bind eqp="HAND Breacher" to="Ring"/>
-    <Bind eqp="HAND HealingSpray" to="Pinky"/>
+    <Bind eqp="hand Strafe" to="Thumb" />
+    <Bind eqp="hand Smoke Screen" to="Index" />
+    <Bind eqp="hand Bombard" to="Middle" />
+    <Bind eqp="hand Breacher" to="Ring" />
+    <Bind eqp="hand HealingSpray" to="Pinky" />
 
-    <!-- === Shared Gear (Bound to HAND Tag) === -->
-    
+    <!-- === Shared Gear (Bound to hand Tag) === -->
+
     <!-- Headgear (NVG) -->
-    <Bind eqp="NVG" to="HAND"/>
-    <Bind eqp="NVG_02" to="HAND"/>
+    <Bind eqp="NVG" to="hand" />
+    <Bind eqp="NVG_02" to="hand" />
 
     <!-- Utility Pouch -->
-    <Bind eqp="Smoke Grenade" to="HAND"/>
-    <Bind eqp="Frag Grenade" to="HAND"/>
-    <Bind eqp="Flashbang" to="HAND"/>
-    <Bind eqp="Slap Charge" to="HAND"/>
-    <Bind eqp="Molotov Pyro" to="HAND"/>
-    <Bind eqp="Stinger" to="HAND"/>
-    <Bind eqp="Wall Charge" to="HAND"/>
+    <Bind eqp="Smoke Grenade" to="hand" />
+    <Bind eqp="Frag Grenade" to="hand" />
+    <Bind eqp="Flashbang" to="hand" />
+    <Bind eqp="Slap Charge" to="hand" />
+    <Bind eqp="Molotov Pyro" to="hand" />
+    <Bind eqp="Stinger" to="hand" />
+    <Bind eqp="Wall Charge" to="hand" />
 
     <!-- Empty Slots -->
-    <Bind eqp="EmptyUtility" to="HAND"/>
-    <Bind eqp="EmptyPrimary" to="HAND"/>
-    <Bind eqp="EmptySecondary" to="HAND"/>
-    <Bind eqp="EmptyHelmet" to="HAND"/>
-    <Bind eqp="EmptyHelmetNVG" to="HAND"/>
-    <Bind eqp="EmptyArmor" to="HAND"/>
-    <Bind eqp="EmptySupportGear" to="HAND"/>
-    <Bind eqp="EmptyPrimaryMuzzle" to="HAND"/>
-    <Bind eqp="EmptySecondaryMuzzle" to="HAND"/>
+    <Bind eqp="EmptyUtility" to="hand" />
+    <Bind eqp="EmptyPrimary" to="hand" />
+    <Bind eqp="EmptySecondary" to="hand" />
+    <Bind eqp="EmptyHelmet" to="hand" />
+    <Bind eqp="EmptyHelmetNVG" to="hand" />
+    <Bind eqp="EmptyArmor" to="hand" />
+    <Bind eqp="EmptySupportGear" to="hand" />
+    <Bind eqp="EmptyPrimaryMuzzle" to="hand" />
+    <Bind eqp="EmptySecondaryMuzzle" to="hand" />
 
     <!-- === Standard Gear (Definitions for Empty Slots) === -->
-    <Empty name="EmptyUtility" inventoryBinding="UtilityPouch" tooltip="@menu_cust_item_empty"/>
-    <Empty name="EmptyPrimary" inventoryBinding="PrimaryWeapon" tooltip="@menu_cust_item_empty"/>
-    <Empty name="EmptySecondary" inventoryBinding="SecondaryWeapon" tooltip="@menu_cust_item_empty"/>
-    <Empty name="EmptyHelmet" inventoryBinding="Helmet" tooltip="@menu_cust_item_empty"/>
-    <Empty name="EmptyHelmetNVG" inventoryBinding="HelmetNVG" tooltip="@menu_cust_item_empty"/>
-    <Empty name="EmptyArmor" inventoryBinding="Armor" tooltip="@menu_cust_item_empty"/>
-    <Empty name="EmptySupportGear" inventoryBinding="SupportGear1" tooltip="@menu_cust_item_empty"/>
-    <Empty name="EmptyPrimaryMuzzle" inventoryBinding="PrimaryWeaponMuzzle" tooltip="@menu_cust_item_empty"/>
-    <Empty name="EmptySecondaryMuzzle" inventoryBinding="SecondaryWeaponMuzzle" tooltip="@menu_cust_item_empty"/>
+    <Empty name="EmptyUtility" inventoryBinding="UtilityPouch" tooltip="@menu_cust_item_empty" />
+    <Empty name="EmptyPrimary" inventoryBinding="PrimaryWeapon" tooltip="@menu_cust_item_empty" />
+    <Empty name="EmptySecondary" inventoryBinding="SecondaryWeapon" tooltip="@menu_cust_item_empty" />
+    <Empty name="EmptyHelmet" inventoryBinding="Helmet" tooltip="@menu_cust_item_empty" />
+    <Empty name="EmptyHelmetNVG" inventoryBinding="HelmetNVG" tooltip="@menu_cust_item_empty" />
+    <Empty name="EmptyArmor" inventoryBinding="Armor" tooltip="@menu_cust_item_empty" />
+    <Empty name="EmptySupportGear" inventoryBinding="SupportGear1" tooltip="@menu_cust_item_empty" />
+    <Empty name="EmptyPrimaryMuzzle" inventoryBinding="PrimaryWeaponMuzzle"
+        tooltip="@menu_cust_item_empty" />
+    <Empty name="EmptySecondaryMuzzle" inventoryBinding="SecondaryWeaponMuzzle"
+        tooltip="@menu_cust_item_empty" />
 </Equipment>

@@ -1,13 +1,13 @@
 <Equipment>
 
-    <Bind eqp="HAND_Katana">
-        <to name="HAND_Melee_Ammo" />
+    <Bind eqp="hand_Katana">
+        <to name="hand_Melee_Ammo" />
     </Bind>
-    <Firearm name="HAND_Katana" inventoryBinding="SecondaryWeapon" category="melee" unlockCost="0"
+    <Firearm name="hand_Katana" inventoryBinding="SecondaryWeapon" category="melee" unlockCost="0"
         tooltip="@melee_icacrowbar_name"
         description="@melee_icacrowbar_desc"
         img="data/models/equipment/ica_crowbar_ui.dds"
-        animationSet="HAND_katana_anim"
+        animationSet="hand_katana_anim"
     >
         <MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-2.25" />
@@ -52,32 +52,32 @@
         </Sounds>
     </Firearm>
 
-    <Bind eqp="DeployHAND_SP_BOT">
-        <to name="HAND" />
-        <to name="HAND_Melee_Ammo" />
+    <Bind eqp="hand_SP_BOT">
+        <to name="hand" />
+        <to name="hand_Melee_Ammo" />
     </Bind>
-    <Bind eqp="DeployHAND_DA_BOT">
-        <to name="HAND" />
-        <to name="HAND_Melee_Ammo" />
+    <Bind eqp="hand_DA_BOT">
+        <to name="hand" />
+        <to name="hand_Melee_Ammo" />
     </Bind>
-    <Bind eqp="DeployHAND_SH_BOT">
-        <to name="HAND" />
-        <to name="HAND_Melee_Ammo" />
+    <Bind eqp="hand_SH_BOT">
+        <to name="hand" />
+        <to name="hand_Melee_Ammo" />
     </Bind>
-    <Bind eqp="DeployHAND_CH_BOT">
-        <to name="HAND" />
-        <to name="HAND_Melee_Ammo" />
+    <Bind eqp="hand_CH_BOT">
+        <to name="hand" />
+        <to name="hand_Melee_Ammo" />
     </Bind>
-    <Bind eqp="DeployHAND_HA_BOT">
-        <to name="HAND" />
-        <to name="HAND_Melee_Ammo" />
+    <Bind eqp="hand_HA_BOT">
+        <to name="hand" />
+        <to name="hand_Melee_Ammo" />
     </Bind>
 
     <!-- Deployment Shits -->
-    <Firearm name="DeployHAND_SP_BOT" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
-        tooltip="@equipment_HAND_SP_BOT_name" description="@equipment_HAND_SP_BOT_desc"
+    <Firearm name="hand_SP_BOT" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
+        tooltip="@equipment_hand_SP_BOT_name" description="@equipment_hand_SP_BOT_desc"
         img="data/models/equipment/shrwe/screen.dds" animationSet="grenade"
-        discardWithEntityWhenEmpty="HAND_SP_BOT">
+        discardWithEntityWhenEmpty="hand_SP_BOT">
         <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-0.5" />
         <ModifiableParams
@@ -125,10 +125,10 @@
         </Sounds>
     </Firearm>
 
-    <Firearm name="DeployHAND_DA_BOT" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
-        tooltip="@equipment_HAND_DA_BOT_name" description="@equipment_HAND_DA_BOT_desc"
+    <Firearm name="hand_DA_BOT" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
+        tooltip="@equipment_hand_DA_BOT_name" description="@equipment_hand_DA_BOT_desc"
         img="data/models/equipment/shrwe/screen.dds" animationSet="grenade"
-        discardWithEntityWhenEmpty="HAND_DA_BOT">
+        discardWithEntityWhenEmpty="hand_DA_BOT">
         <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-0.5" />
         <ModifiableParams
@@ -176,10 +176,10 @@
         </Sounds>
     </Firearm>
 
-    <Firearm name="DeployHAND_SH_BOT" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
-        tooltip="@equipment_HAND_SH_BOT_name" description="@equipment_HAND_SH_BOT_desc"
+    <Firearm name="hand_SH_BOT" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
+        tooltip="@equipment_hand_SH_BOT_name" description="@equipment_hand_SH_BOT_desc"
         img="data/models/equipment/shrwe/screen.dds" animationSet="grenade"
-        discardWithEntityWhenEmpty="HAND_SH_BOT">
+        discardWithEntityWhenEmpty="hand_SH_BOT">
         <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-0.5" />
         <ModifiableParams
@@ -227,10 +227,10 @@
         </Sounds>
     </Firearm>
 
-    <Firearm name="DeployHAND_CH_BOT" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
-        tooltip="@equipment_HAND_CH_BOT_name" description="@equipment_HAND_CH_BOT_desc"
+    <Firearm name="hand_CH_BOT" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
+        tooltip="@equipment_hand_CH_BOT_name" description="@equipment_hand_CH_BOT_desc"
         img="data/models/equipment/shrwe/screen.dds" animationSet="grenade"
-        discardWithEntityWhenEmpty="HAND_CH_BOT">
+        discardWithEntityWhenEmpty="hand_CH_BOT">
         <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-0.5" />
         <ModifiableParams
@@ -278,10 +278,10 @@
         </Sounds>
     </Firearm>
 
-    <Firearm name="DeployHAND_HA_BOT" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
-        tooltip="@equipment_HAND_HA_BOT_name" description="@equipment_HAND_HA_BOT_desc"
+    <Firearm name="hand_HA_BOT" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
+        tooltip="@equipment_hand_HA_BOT_name" description="@equipment_hand_HA_BOT_desc"
         img="data/models/equipment/shrwe/screen.dds" animationSet="grenade"
-        discardWithEntityWhenEmpty="HAND_HA_BOT">
+        discardWithEntityWhenEmpty="hand_HA_BOT">
         <MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-0.5" />
         <ModifiableParams
@@ -330,11 +330,11 @@
     </Firearm>
 
     <!-- Anti Materiels shits-->
-    <Bind eqp="HAND_RPG">
-        <to name="HAND" />
-        <to name="HAND_Melee_Ammo" />
+    <Bind eqp="hand_RPG">
+        <to name="hand" />
+        <to name="hand_Melee_Ammo" />
     </Bind>
-    <Firearm name="HAND_RPG" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
+    <Firearm name="hand_RPG" inventoryBinding="SupportGear1" category="rpg" unlockCost="0"
         tooltip="@firearm_AT4_name"
         description="@firearm_AT4_desc"
         img="data/models/weapons/at4_ui.dds"
@@ -472,11 +472,11 @@
             </EffectRange>
         </Projectile>
     </Grenade>
-    <Bind eqp="HAND_M16A4/M203">
-        <to name="HAND" />
-        <to name="HAND_Melee_Ammo" />
+    <Bind eqp="hand_M16A4/M203">
+        <to name="hand" />
+        <to name="hand_Melee_Ammo" />
     </Bind>
-    <Firearm name="HAND_M16A4/M203" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
+    <Firearm name="hand_M16A4/M203" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="0"
         tooltip="@firearm_m16a4_m203_name"
         img="data/models/weapons/m16a4_m203_ui.dds"
         description="@firearm_m16_m203_desc"
@@ -605,11 +605,11 @@
     </Firearm>
 
     <!-- AirStrike shits-->
-    <Bind eqp="NTF_ContainmentStrike" to="HAND" />
-    <Grenade name="NTF_ContainmentStrike" inventoryBinding="SupportGear1" unlockCostBH="6"
+    <Bind eqp="NTF_ContainmentStrike" to="hand" />
+    <Grenade name="NTF_ContainmentStrike" inventoryBinding="SupportGear1" unlockCostBH="0"
         quantity="1"
         tooltip="@equipment_NTF_voidstrike_name" description="@equipment_NTF_voidstrike_desc"
-        img="data/models/equipment/strafe_ui.dds" movie="data/movies/HAND_strafe.ogv"
+        img="data/models/equipment/strafe_ui.dds" movie="data/movies/hand_strafe.ogv"
         animationSet="grenade" soundUse="grenade_use" soundUseVoice="VOX_GEAR_SMOKE">
         <RenderObject3D model="data/models/equipment/smoke_grenade.khm" skipGOSSAO="true"
             diffuseTex="data/models/equipment/smoke_grenade.dds" />

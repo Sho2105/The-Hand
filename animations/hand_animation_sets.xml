@@ -1,5 +1,5 @@
 <AnimationSets>
-    <AnimationSet name="HAND_medkit_anim" inherit="default">
+    <AnimationSet name="hand_medkit_anim" inherit="default">
         <Animation handle="idle_crouch" name="rifle_character_crouch_idle" />
         <Animation handle="grenade_throw_low_right" name="generic_equipment_use" />
         <Animation handle="grenade_throw_low_left" name="generic_equipment_use" />
@@ -12,7 +12,7 @@
         <Animation handle="change_out" name="crouch_up_device" />
     </AnimationSet>
 
-    <AnimationSet name="HAND_katana_anim" inherit="pistol">
+    <AnimationSet name="hand_katana_anim" inherit="pistol">
 		<Animation handle="idle" name="melee_character_idle_aim" />
 		<Animation handle="idle_rare" name="melee_character_idle_aim2" />
 		<Animation handle="idle_low" name="melee_character_idle_low" />

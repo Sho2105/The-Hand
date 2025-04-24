@@ -1,6 +1,6 @@
 <Particles>
 
-    <ParticleSystem name="HAND_Tracer_AR" poolSize="120">
+    <ParticleSystem name="hand_Tracer_AR" poolSize="120">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
             <Particle lifetime="0.350" lifetimeMax="0.500"/>
             <Initial sizeX="0.140" sizeZ="0.800"/>
@@ -28,7 +28,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_SMG" poolSize="80">
+    <ParticleSystem name="hand_Tracer_SMG" poolSize="80">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
             <Particle lifetime="0.200" lifetimeMax="0.300"/>
             <Initial sizeX="0.060" sizeZ="0.500"/>
@@ -56,7 +56,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_LMG" poolSize="150">
+    <ParticleSystem name="hand_Tracer_LMG" poolSize="150">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
             <Particle lifetime="0.450" lifetimeMax="0.650"/>
             <Initial sizeX="0.160" sizeZ="0.900"/>
@@ -84,7 +84,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_SG" poolSize="100">
+    <ParticleSystem name="hand_Tracer_SG" poolSize="100">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000" emitCount="8">
             <Particle lifetime="0.500" lifetimeMax="0.700"/>
             <Initial sizeX="0.180" sizeZ="1.000"/>
@@ -112,7 +112,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_DMR" poolSize="110">
+    <ParticleSystem name="hand_Tracer_DMR" poolSize="110">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
             <Particle lifetime="0.700" lifetimeMax="1.000"/>
             <Initial sizeX="0.300" sizeZ="1.500"/>
@@ -140,7 +140,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_AR_Silenced" poolSize="40">
+    <ParticleSystem name="hand_Tracer_AR_Silenced" poolSize="40">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
             <Particle lifetime="0.200" lifetimeMax="0.300"/>
             <Initial sizeX="0.080" sizeZ="0.450"/>
@@ -168,7 +168,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_SMG_Silenced" poolSize="40">
+    <ParticleSystem name="hand_Tracer_SMG_Silenced" poolSize="40">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
             <Particle lifetime="0.120" lifetimeMax="0.200"/>
             <Initial sizeX="0.040" sizeZ="0.300"/>
@@ -196,7 +196,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_LMG_Silenced" poolSize="40">
+    <ParticleSystem name="hand_Tracer_LMG_Silenced" poolSize="40">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
             <Particle lifetime="0.250" lifetimeMax="0.400"/>
             <Initial sizeX="0.100" sizeZ="0.600"/>
@@ -224,7 +224,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_SG_Silenced" poolSize="40">
+    <ParticleSystem name="hand_Tracer_SG_Silenced" poolSize="40">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000" emitCount="8">
             <Particle lifetime="0.300" lifetimeMax="0.450"/>
             <Initial sizeX="0.120" sizeZ="0.700"/>
@@ -252,7 +252,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_DMR_Silenced" poolSize="40">
+    <ParticleSystem name="hand_Tracer_DMR_Silenced" poolSize="40">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
             <Particle lifetime="0.400" lifetimeMax="0.600"/>
             <Initial sizeX="0.180" sizeZ="0.900"/>
@@ -280,7 +280,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_Pistol" poolSize="50">
+    <ParticleSystem name="hand_Tracer_Pistol" poolSize="50">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
             <Particle lifetime="0.150" lifetimeMax="0.250"/>
             <Initial sizeX="0.040" sizeZ="0.400"/>
@@ -308,7 +308,7 @@
         </Emitter>
     </ParticleSystem>
 
-    <ParticleSystem name="HAND_Tracer_Pistol_Silenced" poolSize="40">
+    <ParticleSystem name="hand_Tracer_Pistol_Silenced" poolSize="40">
         <Emitter name="bullet_trail" startDelay="0.001" emitDelay="1.000">
             <Particle lifetime="0.100" lifetimeMax="0.200"/>
             <Initial sizeX="0.030" sizeZ="0.350"/>

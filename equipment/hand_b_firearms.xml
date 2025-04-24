@@ -1,8 +1,8 @@
 <Equipment>
-    <Shield name="HAND_b_Shield_1" inventoryBinding="PrimaryWeapon" unlockCost="0" unlockCostBH="0"
+    <Shield name="hand_b_Shield_1" inventoryBinding="PrimaryWeapon" unlockCost="0" unlockCostBH="0"
         category="shield"
-        tooltip="@HAND_b_shield_1_name"
-        description="@HAND_b_shield_1_desc"
+        tooltip="@hand_b_shield_1_name"
+        description="@hand_b_shield_1_desc"
         img="data/models/equipment/hand_b_shield_1_ui.dds"
         holdBone="shield"
         animationSet="shield">
@@ -32,10 +32,10 @@
         </Params>
     </Shield>
 
-    <Shield name="HAND_b_Shield_2" inventoryBinding="PrimaryWeapon" unlockCost="0" unlockCostBH="0"
+    <Shield name="hand_b_Shield_2" inventoryBinding="PrimaryWeapon" unlockCost="0" unlockCostBH="0"
         category="shield"
-        tooltip="@HAND_b_shield_2_name"
-        description="@HAND_b_shield_2_desc"
+        tooltip="@hand_b_shield_2_name"
+        description="@hand_b_shield_2_desc"
         img="data/models/equipment/hand_b_shield_2_ui.dds"
         holdBone="shield"
         animationSet="shield">

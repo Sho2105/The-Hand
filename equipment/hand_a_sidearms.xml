@@ -1,15 +1,15 @@
 <Equipment>
 
     <!-- HK45CT (Pistol) for all members -->
-    <Bind eqp="HAND_PISTOL">
+    <Bind eqp="hand_PISTOL">
         <to name="45FMJM1911_1911 Pistol"/>
         <to name="45JHP185GR_Pistol"/>
         <to name="45JHP160GR_Pistol"/>
         <to name="IronSights_Pistol"/>
     </Bind>
-    <Firearm name="HAND_PISTOL" inventoryBinding="SecondaryWeapon" category="HAND_pistol" unlockCost="0" sortId="0"
-            tooltip="@firearm_HAND_PISTOL_name"
-            description="@firearm_HAND_PISTOL_desc"
+    <Firearm name="hand_PISTOL" inventoryBinding="SecondaryWeapon" category="hand_pistol" unlockCost="0" sortId="0"
+            tooltip="@firearm_hand_PISTOL_name"
+            description="@firearm_hand_PISTOL_desc"
             img="data/models/weapons/hk45ct_mag_ui.dds"
             animationSet="pistol">
         <MobilityModifiers moveSpeedModifierPercent="-1.6" turnSpeedModifierPercent="0"/>
@@ -35,17 +35,17 @@
             operationInfoText="@firearm_operation_semiauto_name"
             ejectingShellEntity="BulletCasingSmall"
             magazineEntity="pm63_mag"
-            suppressedSwitch="HAND_PISTOL_Sup"
+            suppressedSwitch="hand_PISTOL_Sup"
             ai_rangeMin="1.0"
             ai_rangeOptimal="3.0"
             ai_rangeMax="15.0"
             ai_stopWhenShooting="false"/>
         <AttackTypes>        
-            <AttackType name="HAND_PISTOL_Close" inCoverOverride="HAND_PISTOL_CloseMounted" rangeMeters="1.5"/>
-            <AttackType name="HAND_PISTOL_Med" inCoverOverride="HAND_PISTOL_MedMounted" rangeMeters="8"/>
-            <AttackType name="HAND_PISTOL_Long" inCoverOverride="HAND_PISTOL_LongMounted" rangeMeters="999"/>        
+            <AttackType name="hand_PISTOL_Close" inCoverOverride="hand_PISTOL_CloseMounted" rangeMeters="1.5"/>
+            <AttackType name="hand_PISTOL_Med" inCoverOverride="hand_PISTOL_MedMounted" rangeMeters="8"/>
+            <AttackType name="hand_PISTOL_Long" inCoverOverride="hand_PISTOL_LongMounted" rangeMeters="999"/>        
         </AttackTypes>                        
-        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="HAND_Tracer_Pistol">
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="hand_Tracer_Pistol">
             <Flare particles="FX_MUZZLE_FLASH_PISTOL_01" />
             <Flare particles="FX_MUZZLE_FLASH_PISTOL_02" />
             <Flare particles="FX_MUZZLE_FLASH_PISTOL_03" />
@@ -62,15 +62,15 @@
         </Sounds>
     </Firearm>
 
-    <Bind eqp="HAND_PISTOL_Sup">
+    <Bind eqp="hand_PISTOL_Sup">
         <to name="45FMJM1911_SuppressedPistol"/>
         <to name="45JHP185GR_SuppressedPistol"/>
         <to name="45JHP160GR_SuppressedPistol"/>
         <to name="IronSights_Pistol"/>
     </Bind>
-    <Firearm name="HAND_PISTOL_Sup" inventoryBinding="SecondaryWeaponMuzzle" category="HAND_pistol" unlockCost="0" sortId="0"
-            tooltip="@firearm_HAND_PISTOLsup_name"
-            description="@firearm_HAND_PISTOLsup_desc"
+    <Firearm name="hand_PISTOL_Sup" inventoryBinding="SecondaryWeaponMuzzle" category="hand_pistol" unlockCost="0" sortId="0"
+            tooltip="@firearm_hand_PISTOLsup_name"
+            description="@firearm_hand_PISTOLsup_desc"
             img="data/models/weapons/hk45ct_mag_ui.dds"
             animationSet="pistol">
         <MobilityModifiers moveSpeedModifierPercent="-1.6" turnSpeedModifierPercent="0"/>
@@ -97,18 +97,18 @@
             operationInfoText="@firearm_operation_semiauto_name"
             ejectingShellEntity="BulletCasingSmall"
             magazineEntity="pm63_mag"
-            suppressedSwitch="HAND_PISTOL"
+            suppressedSwitch="hand_PISTOL"
             suppressedImg="data/models/weapons/attachments/basic_silencer_ui.dds"
             ai_rangeMin="1.0"
             ai_rangeOptimal="3.0"
             ai_rangeMax="15.0"
             ai_stopWhenShooting="false"/>
         <AttackTypes>        
-            <AttackType name="HAND_PISTOL_Close" inCoverOverride="HAND_PISTOL_CloseMounted" rangeMeters="1.5"/>
-            <AttackType name="HAND_PISTOL_Med" inCoverOverride="HAND_PISTOL_MedMounted" rangeMeters="10"/>
-            <AttackType name="HAND_PISTOL_Long" inCoverOverride="HAND_PISTOL_LongMounted" rangeMeters="999"/>        
+            <AttackType name="hand_PISTOL_Close" inCoverOverride="hand_PISTOL_CloseMounted" rangeMeters="1.5"/>
+            <AttackType name="hand_PISTOL_Med" inCoverOverride="hand_PISTOL_MedMounted" rangeMeters="10"/>
+            <AttackType name="hand_PISTOL_Long" inCoverOverride="hand_PISTOL_LongMounted" rangeMeters="999"/>        
         </AttackTypes>                
-        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="HAND_Tracer_Pistol_Silenced">
+        <MuzzleFlash lightTemplate="ShotLightSmall" tracerTemplate="hand_Tracer_Pistol_Silenced">
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_05" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_06" />
             <Flare particles="FX_MUZZLE_FLASH_RIFLE_07" />

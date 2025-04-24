@@ -13,7 +13,7 @@
 
 <FirearmAttackTypes>
     <!-- Assault Rifle -->
-    <AttackType name="HAND_AR_Close">
+    <AttackType name="hand_AR_Close">
         <ModifiableParams
             minAimTime="100"
             maxAimTime="300"
@@ -24,7 +24,7 @@
             followupShotAccuracyAdd="10"
             critChanceAdd="20"/>
     </AttackType>
-    <AttackType name="HAND_AR_CloseMounted">
+    <AttackType name="hand_AR_CloseMounted">
         <ModifiableParams
             minAimTime="100"
             maxAimTime="250"
@@ -35,7 +35,7 @@
             followupShotAccuracyAdd="15"
             critChanceAdd="25"/>
     </AttackType>
-    <AttackType name="HAND_AR_Med">
+    <AttackType name="hand_AR_Med">
         <ModifiableParams
             minAimTime="150"
             maxAimTime="350"
@@ -46,7 +46,7 @@
             followupShotAccuracyAdd="5"
             critChanceAdd="15"/>
     </AttackType>
-    <AttackType name="HAND_AR_MedMounted">
+    <AttackType name="hand_AR_MedMounted">
         <ModifiableParams
             minAimTime="150"
             maxAimTime="300"
@@ -57,7 +57,7 @@
             followupShotAccuracyAdd="10"
             critChanceAdd="20"/>
     </AttackType>
-    <AttackType name="HAND_AR_Long">
+    <AttackType name="hand_AR_Long">
         <ModifiableParams
             minAimTime="200"
             maxAimTime="400"
@@ -68,7 +68,7 @@
             followupShotAccuracyAdd="0"
             critChanceAdd="10"/>
     </AttackType>
-    <AttackType name="HAND_AR_LongMounted">
+    <AttackType name="hand_AR_LongMounted">
         <ModifiableParams
             minAimTime="200"
             maxAimTime="350"
@@ -81,7 +81,7 @@
     </AttackType>
 
     <!-- SMG -->
-    <AttackType name="HAND_SMG_Close">
+    <AttackType name="hand_SMG_Close">
         <ModifiableParams
             minAimTime="75"
             maxAimTime="250"
@@ -92,7 +92,7 @@
             followupShotAccuracyAdd="10"
             critChanceAdd="25"/>
     </AttackType>
-    <AttackType name="HAND_SMG_CloseMounted">
+    <AttackType name="hand_SMG_CloseMounted">
         <ModifiableParams
             minAimTime="75"
             maxAimTime="200"
@@ -103,7 +103,7 @@
             followupShotAccuracyAdd="15"
             critChanceAdd="30"/>
     </AttackType>
-    <AttackType name="HAND_SMG_Med">
+    <AttackType name="hand_SMG_Med">
         <ModifiableParams
             minAimTime="100"
             maxAimTime="300"
@@ -114,7 +114,7 @@
             followupShotAccuracyAdd="5"
             critChanceAdd="20"/>
     </AttackType>
-    <AttackType name="HAND_SMG_MedMounted">
+    <AttackType name="hand_SMG_MedMounted">
         <ModifiableParams
             minAimTime="100"
             maxAimTime="250"
@@ -125,7 +125,7 @@
             followupShotAccuracyAdd="10"
             critChanceAdd="25"/>
     </AttackType>
-    <AttackType name="HAND_SMG_Long">
+    <AttackType name="hand_SMG_Long">
         <ModifiableParams
             minAimTime="125"
             maxAimTime="350"
@@ -136,7 +136,7 @@
             followupShotAccuracyAdd="0"
             critChanceAdd="15"/>
     </AttackType>
-    <AttackType name="HAND_SMG_LongMounted">
+    <AttackType name="hand_SMG_LongMounted">
         <ModifiableParams
             minAimTime="125"
             maxAimTime="300"
@@ -149,7 +149,7 @@
     </AttackType>
 
     <!-- LMG -->
-    <AttackType name="HAND_LMG_Close">
+    <AttackType name="hand_LMG_Close">
         <ModifiableParams
             minAimTime="150"
             maxAimTime="350"
@@ -160,7 +160,7 @@
             followupShotAccuracyAdd="5"
             critChanceAdd="20"/>
     </AttackType>
-    <AttackType name="HAND_LMG_CloseMounted">
+    <AttackType name="hand_LMG_CloseMounted">
         <ModifiableParams
             minAimTime="150"
             maxAimTime="300"
@@ -171,7 +171,7 @@
             followupShotAccuracyAdd="10"
             critChanceAdd="25"/>
     </AttackType>
-    <AttackType name="HAND_LMG_Med">
+    <AttackType name="hand_LMG_Med">
         <ModifiableParams
             minAimTime="200"
             maxAimTime="400"
@@ -182,7 +182,7 @@
             followupShotAccuracyAdd="0"
             critChanceAdd="15"/>
     </AttackType>
-    <AttackType name="HAND_LMG_MedMounted">
+    <AttackType name="hand_LMG_MedMounted">
         <ModifiableParams
             minAimTime="200"
             maxAimTime="350"
@@ -193,7 +193,7 @@
             followupShotAccuracyAdd="5"
             critChanceAdd="20"/>
     </AttackType>
-    <AttackType name="HAND_LMG_Long">
+    <AttackType name="hand_LMG_Long">
         <ModifiableParams
             minAimTime="250"
             maxAimTime="450"
@@ -204,7 +204,7 @@
             followupShotAccuracyAdd="-5"
             critChanceAdd="10"/>
     </AttackType>
-    <AttackType name="HAND_LMG_LongMounted">
+    <AttackType name="hand_LMG_LongMounted">
         <ModifiableParams
             minAimTime="250"
             maxAimTime="400"
@@ -217,7 +217,7 @@
     </AttackType>
 
     <!-- DMR -->
-    <AttackType name="HAND_DMR_Close">
+    <AttackType name="hand_DMR_Close">
         <ModifiableParams
             minAimTime="300"
             maxAimTime="450"
@@ -228,7 +228,7 @@
             followupShotAccuracyAdd="30"
             critChanceAdd="30"/>
     </AttackType>
-    <AttackType name="HAND_DMR_CloseMounted">
+    <AttackType name="hand_DMR_CloseMounted">
         <ModifiableParams
             minAimTime="300"
             maxAimTime="400"
@@ -239,7 +239,7 @@
             followupShotAccuracyAdd="35"
             critChanceAdd="35"/>
     </AttackType>
-    <AttackType name="HAND_DMR_Med">
+    <AttackType name="hand_DMR_Med">
         <ModifiableParams
             minAimTime="350"
             maxAimTime="500"
@@ -250,7 +250,7 @@
             followupShotAccuracyAdd="25"
             critChanceAdd="25"/>
     </AttackType>
-    <AttackType name="HAND_DMR_MedMounted">
+    <AttackType name="hand_DMR_MedMounted">
         <ModifiableParams
             minAimTime="350"
             maxAimTime="450"
@@ -261,7 +261,7 @@
             followupShotAccuracyAdd="30"
             critChanceAdd="30"/>
     </AttackType>
-    <AttackType name="HAND_DMR_Long">
+    <AttackType name="hand_DMR_Long">
         <ModifiableParams
             minAimTime="400"
             maxAimTime="550"
@@ -272,7 +272,7 @@
             followupShotAccuracyAdd="20"
             critChanceAdd="20"/>
     </AttackType>
-    <AttackType name="HAND_DMR_LongMounted">
+    <AttackType name="hand_DMR_LongMounted">
         <ModifiableParams
             minAimTime="400"
             maxAimTime="500"
@@ -285,7 +285,7 @@
     </AttackType>
 
     <!-- Shotgun -->
-    <AttackType name="HAND_SG_Close">
+    <AttackType name="hand_SG_Close">
         <ModifiableParams
             minAimTime="100"
             maxAimTime="300"
@@ -296,7 +296,7 @@
             followupShotAccuracyAdd="15"
             critChanceAdd="25"/>
     </AttackType>
-    <AttackType name="HAND_SG_CloseMounted">
+    <AttackType name="hand_SG_CloseMounted">
         <ModifiableParams
             minAimTime="100"
             maxAimTime="250"
@@ -307,7 +307,7 @@
             followupShotAccuracyAdd="20"
             critChanceAdd="30"/>
     </AttackType>
-    <AttackType name="HAND_SG_Med">
+    <AttackType name="hand_SG_Med">
         <ModifiableParams
             minAimTime="150"
             maxAimTime="350"
@@ -318,7 +318,7 @@
             followupShotAccuracyAdd="10"
             critChanceAdd="15"/>
     </AttackType>
-    <AttackType name="HAND_SG_MedMounted">
+    <AttackType name="hand_SG_MedMounted">
         <ModifiableParams
             minAimTime="150"
             maxAimTime="300"
@@ -329,7 +329,7 @@
             followupShotAccuracyAdd="15"
             critChanceAdd="20"/>
     </AttackType>
-    <AttackType name="HAND_SG_Long">
+    <AttackType name="hand_SG_Long">
         <ModifiableParams
             minAimTime="200"
             maxAimTime="400"
@@ -340,7 +340,7 @@
             followupShotAccuracyAdd="5"
             critChanceAdd="5"/>
     </AttackType>
-    <AttackType name="HAND_SG_LongMounted">
+    <AttackType name="hand_SG_LongMounted">
         <ModifiableParams
             minAimTime="200"
             maxAimTime="350"
@@ -353,7 +353,7 @@
     </AttackType>
 
     <!-- Pistol -->
-    <AttackType name="HAND_PISTOL_Close">
+    <AttackType name="hand_PISTOL_Close">
         <ModifiableParams
             minAimTime="150"
             maxAimTime="400"
@@ -364,7 +364,7 @@
             followupShotAccuracyAdd="10"
             critChanceAdd="20"/>
     </AttackType>
-    <AttackType name="HAND_PISTOL_CloseMounted">
+    <AttackType name="hand_PISTOL_CloseMounted">
         <ModifiableParams
             minAimTime="150"
             maxAimTime="350"
@@ -375,7 +375,7 @@
             followupShotAccuracyAdd="15"
             critChanceAdd="25"/>
     </AttackType>
-    <AttackType name="HAND_PISTOL_Med">
+    <AttackType name="hand_PISTOL_Med">
         <ModifiableParams
             minAimTime="200"
             maxAimTime="450"
@@ -386,7 +386,7 @@
             followupShotAccuracyAdd="5"
             critChanceAdd="15"/>
     </AttackType>
-    <AttackType name="HAND_PISTOL_MedMounted">
+    <AttackType name="hand_PISTOL_MedMounted">
         <ModifiableParams
             minAimTime="200"
             maxAimTime="400"
@@ -397,7 +397,7 @@
             followupShotAccuracyAdd="10"
             critChanceAdd="20"/>
     </AttackType>
-    <AttackType name="HAND_PISTOL_Long">
+    <AttackType name="hand_PISTOL_Long">
         <ModifiableParams
             minAimTime="250"
             maxAimTime="500"
@@ -408,7 +408,7 @@
             followupShotAccuracyAdd="0"
             critChanceAdd="10"/>
     </AttackType>
-    <AttackType name="HAND_PISTOL_LongMounted">
+    <AttackType name="hand_PISTOL_LongMounted">
         <ModifiableParams
             minAimTime="250"
             maxAimTime="450"

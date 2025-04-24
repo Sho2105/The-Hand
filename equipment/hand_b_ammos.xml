@@ -1,6 +1,6 @@
 <Equipment>
 
-	<Ammo name="HAND_Melee_Ammo" img="data/models/equipment/none_ui.dds">
+	<Ammo name="hand_Melee_Ammo" img="data/models/equipment/none_ui.dds">
 
 		<Params roundsPerSecond="2"
 				audibleSoundRadius="10"

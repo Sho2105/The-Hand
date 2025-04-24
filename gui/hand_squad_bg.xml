@@ -1,12 +1,12 @@
 <GUIItems>
-	<Item name="Menu_Main_Background_HAND" hidden="true">
+	<Item name="Menu_Main_Background_hand" hidden="true">
 		<Item name="#parallax_speed" origin="2.0 0"/>
 		<Item name="#parallax_mouse_scale" origin="0.0 0.0"/>
 		<!-- <Item name="#parallax_mouse_scale" origin="-1.0 0.003"/> -->
 		<Item name="#parallax_elements">
 			<Item>
 				<StaticImage origin="0 0">
-					<RenderObject2D texture="data/textures/gui/keyart_HAND/The_HAND_BG.dds"/>
+					<RenderObject2D texture="data/textures/gui/keyart_hand/The_hand_BG.dds"/>
 					<Item name="#parallax_layer_speed" origin="0.5 0"/>
 				</StaticImage>
 			</Item>

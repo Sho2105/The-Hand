@@ -1,5 +1,5 @@
 <GUIItems>
-    <Item name="#HAND_DoctrineTree" align="i" hidden="true">
+    <Item name="#hand_DoctrineTree" align="i" hidden="true">
         <Button name="#template_doctrine_button" hidden="true">
             <RenderObject2D texture="data/textures/gui/doctrines/doctrine_empty_normal.dds"/>
             <OnHover>
@@ -49,14 +49,14 @@
                     <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" flipX="true" sizeX="190" sizeY="75" color="0c0b0b33"/>
                 </StaticImage>
                 <Item sizeX="400" sizeY="72" align="lt">
-                    <StaticText text="@HAND_doctrine_branch_spear" font="header_3" fontAutoDownsize="false" textColor="000000"/>
+                    <StaticText text="@hand_doctrine_branch_spear" font="header_3" fontAutoDownsize="false" textColor="000000"/>
                 </Item>
             </StaticImage>
-            <Item name="HAND_SP_OffensiveBuff" origin="80 -160" align="lt"/>
-            <Item name="HAND_SP_DefensiveBuff" origin="-80 -160" align="rt"/>
-            <Item name="HAND_SP_EnemyDebuff" origin="80 -335" align="lt"/>
-            <Item name="HAND_SP_SkillSetA" origin="-80 -335" align="rt"/>
-            <Item name="HAND_SP_SkillSetB" origin="0 -510" align="ct"/>
+            <Item name="hand_SP_OffensiveBuff" origin="80 -160" align="lt"/>
+            <Item name="hand_SP_DefensiveBuff" origin="-80 -160" align="rt"/>
+            <Item name="hand_SP_EnemyDebuff" origin="80 -335" align="lt"/>
+            <Item name="hand_SP_SkillSetA" origin="-80 -335" align="rt"/>
+            <Item name="hand_SP_SkillSetB" origin="0 -510" align="ct"/>
         </Item>
 
         <!-- === Dagger (Top Row - Middle) === -->
@@ -76,14 +76,14 @@
                     <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" flipX="true" sizeX="190" sizeY="75" color="0c0b0b33"/>
                 </StaticImage>
                 <Item sizeX="400" sizeY="72" align="lt">
-                    <StaticText text="@HAND_doctrine_branch_dagger" font="header_3" fontAutoDownsize="false" textColor="000000"/>
+                    <StaticText text="@hand_doctrine_branch_dagger" font="header_3" fontAutoDownsize="false" textColor="000000"/>
                 </Item>
             </StaticImage>
-            <Item name="HAND_DG_OffensiveBuff" origin="80 -160" align="lt"/>
-            <Item name="HAND_DG_DefensiveBuff" origin="-80 -160" align="rt"/>
-            <Item name="HAND_DG_EnemyDebuff" origin="80 -335" align="lt"/>
-            <Item name="HAND_DG_SkillSetA" origin="-80 -335" align="rt"/>
-            <Item name="HAND_DG_SkillSetB" origin="0 -510" align="ct"/>
+            <Item name="hand_DG_OffensiveBuff" origin="80 -160" align="lt"/>
+            <Item name="hand_DG_DefensiveBuff" origin="-80 -160" align="rt"/>
+            <Item name="hand_DG_EnemyDebuff" origin="80 -335" align="lt"/>
+            <Item name="hand_DG_SkillSetA" origin="-80 -335" align="rt"/>
+            <Item name="hand_DG_SkillSetB" origin="0 -510" align="ct"/>
         </Item>
 
         <!-- === Shield (Top Row - Right) === -->
@@ -103,14 +103,14 @@
                     <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" flipX="true" sizeX="190" sizeY="75" color="0c0b0b33"/>
                 </StaticImage>
                 <Item sizeX="400" sizeY="72" align="lt">
-                    <StaticText text="@HAND_doctrine_branch_shield" font="header_3" fontAutoDownsize="false" textColor="000000"/>
+                    <StaticText text="@hand_doctrine_branch_shield" font="header_3" fontAutoDownsize="false" textColor="000000"/>
                 </Item>
             </StaticImage>
-            <Item name="HAND_SH_OffensiveBuff" origin="80 -160" align="lt"/>
-            <Item name="HAND_SH_DefensiveBuff" origin="-80 -160" align="rt"/>
-            <Item name="HAND_SH_EnemyDebuff" origin="80 -335" align="lt"/>
-            <Item name="HAND_SH_SkillSetA" origin="-80 -335" align="rt"/>
-            <Item name="HAND_SH_SkillSetB" origin="0 -510" align="ct"/>
+            <Item name="hand_SH_OffensiveBuff" origin="80 -160" align="lt"/>
+            <Item name="hand_SH_DefensiveBuff" origin="-80 -160" align="rt"/>
+            <Item name="hand_SH_EnemyDebuff" origin="80 -335" align="lt"/>
+            <Item name="hand_SH_SkillSetA" origin="-80 -335" align="rt"/>
+            <Item name="hand_SH_SkillSetB" origin="0 -510" align="ct"/>
         </Item>
 
         <!-- === Hammer (Bottom Row - Left) === -->
@@ -139,14 +139,14 @@
                     <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" flipX="true" sizeX="190" sizeY="95" color="0c0b0b33"/>
                 </StaticImage>
                 <Item sizeX="610" sizeY="100" origin="0 5" align="t">
-                    <StaticText text="@HAND_doctrine_branch_hammer" font="header_3" fontAutoDownsize="true" textColor="000000"/>
+                    <StaticText text="@hand_doctrine_branch_hammer" font="header_3" fontAutoDownsize="true" textColor="000000"/>
                 </Item>
             </StaticImage>
-            <Item name="HAND_HA_OffensiveBuff" origin="100 -180" align="lt"/>
-            <Item name="HAND_HA_EfficiencyBuff" origin="0 -180" align="ct"/>
-            <Item name="HAND_HA_EnemyDebuff" origin="-100 -180" align="rt"/>
-            <Item name="HAND_HA_SkillSetA" origin="100 -360" align="lt"/>
-            <Item name="HAND_HA_SkillSetB" origin="-100 -360" align="rt"/>
+            <Item name="hand_HA_OffensiveBuff" origin="100 -180" align="lt"/>
+            <Item name="hand_HA_EfficiencyBuff" origin="0 -180" align="ct"/>
+            <Item name="hand_HA_EnemyDebuff" origin="-100 -180" align="rt"/>
+            <Item name="hand_HA_SkillSetA" origin="100 -360" align="lt"/>
+            <Item name="hand_HA_SkillSetB" origin="-100 -360" align="rt"/>
         </Item>
 
         <!-- === Chalice (Bottom Row - Right) === -->
@@ -175,14 +175,14 @@
                     <RenderObject2D texture="data/textures/gui/deploy/deploy_class_diagonalbars.dds" flipX="true" sizeX="190" sizeY="95" color="0c0b0b33"/>
                 </StaticImage>
                 <Item sizeX="610" sizeY="100" origin="0 5" align="t">
-                    <StaticText text="@HAND_doctrine_branch_chalice" font="header_3" fontAutoDownsize="true" textColor="000000"/>
+                    <StaticText text="@hand_doctrine_branch_chalice" font="header_3" fontAutoDownsize="true" textColor="000000"/>
                 </Item>
             </StaticImage>
-            <Item name="HAND_CH_OffensiveBuff" origin="100 -180" align="lt"/>
-            <Item name="HAND_CH_EfficiencyBuff" origin="0 -180" align="ct"/>
-            <Item name="HAND_CH_EnemyDebuff" origin="-100 -180" align="rt"/>
-            <Item name="HAND_CH_SkillSetA" origin="100 -360" align="lt"/>
-            <Item name="HAND_CH_SkillSetB" origin="-100 -360" align="rt"/>
+            <Item name="hand_CH_OffensiveBuff" origin="100 -180" align="lt"/>
+            <Item name="hand_CH_EfficiencyBuff" origin="0 -180" align="ct"/>
+            <Item name="hand_CH_EnemyDebuff" origin="-100 -180" align="rt"/>
+            <Item name="hand_CH_SkillSetA" origin="100 -360" align="lt"/>
+            <Item name="hand_CH_SkillSetB" origin="-100 -360" align="rt"/>
         </Item>
     </Item>
 </GUIItems>

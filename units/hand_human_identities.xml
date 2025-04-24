@@ -1,40 +1,40 @@
 <HumanIdentities>
     <!-- After Timeline -->
-    <Portrait tex="data/textures/portraits/blank1.dds" unit="HAND" class="Thumb" gender="0" customName="Thumb"/>
-    <Portrait tex="data/textures/portraits/blank2.dds" unit="HAND" class="Index" gender="0" customName="Index"/>
-    <Portrait tex="data/textures/portraits/blank3.dds" unit="HAND" class="Middle" gender="0" customName="Middle"/>
-    <Portrait tex="data/textures/portraits/blank4.dds" unit="HAND" class="Ring" gender="0" customName="Ring"/>
-    <Portrait tex="data/textures/portraits/blank5.dds" unit="HAND" class="Pinky" gender="1" customName="Pinky"/>
+    <Portrait tex="data/textures/portraits/blank1.dds" unit="hand" class="Thumb" gender="0" customName="Thumb"/>
+    <Portrait tex="data/textures/portraits/blank2.dds" unit="hand" class="Index" gender="0" customName="Index"/>
+    <Portrait tex="data/textures/portraits/blank3.dds" unit="hand" class="Middle" gender="0" customName="Middle"/>
+    <Portrait tex="data/textures/portraits/blank4.dds" unit="hand" class="Ring" gender="0" customName="Ring"/>
+    <Portrait tex="data/textures/portraits/blank5.dds" unit="hand" class="Pinky" gender="1" customName="Pinky"/>
 
     <!-- Before Timeline -->
     <!-- Spear (7) -->
-    <Portrait tex="data/textures/portraits/censored1.dds" unit="HAND" class="Spear" gender="0" customName="SP-84-C"/>
-    <Portrait tex="data/textures/portraits/censored3.dds" unit="HAND" class="Spear" gender="0" customName="SP-15-H"/>
-    <Portrait tex="data/textures/portraits/censored6.dds" unit="HAND" class="Spear" gender="0" customName="SP-03-A"/>
-    <Portrait tex="data/textures/portraits/censored8.dds" unit="HAND" class="Spear" gender="0" customName="SP-25-B"/>
-    <Portrait tex="data/textures/portraits/censored9.dds" unit="HAND" class="Spear" gender="0" customName="SP-38-M"/>
-    <Portrait tex="data/textures/portraits/censored10.dds" unit="HAND" class="Spear" gender="0" customName="SP-19-H"/>
-    <Portrait tex="data/textures/portraits/censored20.dds" unit="HAND" class="Spear" gender="0" customName="SP-93-B"/>
+    <Portrait tex="data/textures/portraits/censored1.dds" unit="hand" class="Spear" gender="0" customName="SP-84-C"/>
+    <Portrait tex="data/textures/portraits/censored3.dds" unit="hand" class="Spear" gender="0" customName="SP-15-H"/>
+    <Portrait tex="data/textures/portraits/censored6.dds" unit="hand" class="Spear" gender="0" customName="SP-03-A"/>
+    <Portrait tex="data/textures/portraits/censored8.dds" unit="hand" class="Spear" gender="0" customName="SP-25-B"/>
+    <Portrait tex="data/textures/portraits/censored9.dds" unit="hand" class="Spear" gender="0" customName="SP-38-M"/>
+    <Portrait tex="data/textures/portraits/censored10.dds" unit="hand" class="Spear" gender="0" customName="SP-19-H"/>
+    <Portrait tex="data/textures/portraits/censored20.dds" unit="hand" class="Spear" gender="0" customName="SP-93-B"/>
 
     <!-- Dagger (5) -->
-    <Portrait tex="data/textures/portraits/censored2.dds" unit="HAND" class="Dagger" gender="0" customName="DA-67-I"/>
-    <Portrait tex="data/textures/portraits/censored11.dds" unit="HAND" class="Dagger" gender="1" customName="DA-22-S"/>
-    <Portrait tex="data/textures/portraits/censored12.dds" unit="HAND" class="Dagger" gender="0" customName="DA-44-I"/>
-    <Portrait tex="data/textures/portraits/censored13.dds" unit="HAND" class="Dagger" gender="0" customName="DA-71-A"/>
-    <Portrait tex="data/textures/portraits/censored21.dds" unit="HAND" class="Dagger" gender="1" customName="DA-95-S"/>
+    <Portrait tex="data/textures/portraits/censored2.dds" unit="hand" class="Dagger" gender="0" customName="DA-67-I"/>
+    <Portrait tex="data/textures/portraits/censored11.dds" unit="hand" class="Dagger" gender="1" customName="DA-22-S"/>
+    <Portrait tex="data/textures/portraits/censored12.dds" unit="hand" class="Dagger" gender="0" customName="DA-44-I"/>
+    <Portrait tex="data/textures/portraits/censored13.dds" unit="hand" class="Dagger" gender="0" customName="DA-71-A"/>
+    <Portrait tex="data/textures/portraits/censored21.dds" unit="hand" class="Dagger" gender="1" customName="DA-95-S"/>
 
     <!-- Chalice (3) -->
-    <Portrait tex="data/textures/portraits/censored5.dds" unit="HAND" class="Chalice" gender="1" customName="CH-55-M"/>
-    <Portrait tex="data/textures/portraits/censored7.dds" unit="HAND" class="Chalice" gender="1" customName="CH-09-D"/>
-    <Portrait tex="data/textures/portraits/censored14.dds" unit="HAND" class="Chalice" gender="1" customName="CH-31-E"/>
+    <Portrait tex="data/textures/portraits/censored5.dds" unit="hand" class="Chalice" gender="1" customName="CH-55-M"/>
+    <Portrait tex="data/textures/portraits/censored7.dds" unit="hand" class="Chalice" gender="1" customName="CH-09-D"/>
+    <Portrait tex="data/textures/portraits/censored14.dds" unit="hand" class="Chalice" gender="1" customName="CH-31-E"/>
 
     <!-- Shield (4) -->
-    <Portrait tex="data/textures/portraits/censored4.dds" unit="HAND" class="Shield" gender="0" customName="SH-47-B"/>
-    <Portrait tex="data/textures/portraits/censored15.dds" unit="HAND" class="Shield" gender="0" customName="SH-06-S"/>
-    <Portrait tex="data/textures/portraits/censored16.dds" unit="HAND" class="Shield" gender="0" customName="SH-12-B"/>
-    <Portrait tex="data/textures/portraits/censored17.dds" unit="HAND" class="Shield" gender="0" customName="SH-01-C"/>
+    <Portrait tex="data/textures/portraits/censored4.dds" unit="hand" class="Shield" gender="0" customName="SH-47-B"/>
+    <Portrait tex="data/textures/portraits/censored15.dds" unit="hand" class="Shield" gender="0" customName="SH-06-S"/>
+    <Portrait tex="data/textures/portraits/censored16.dds" unit="hand" class="Shield" gender="0" customName="SH-12-B"/>
+    <Portrait tex="data/textures/portraits/censored17.dds" unit="hand" class="Shield" gender="0" customName="SH-01-C"/>
 
     <!-- Hammer (2) -->
-    <Portrait tex="data/textures/portraits/censored18.dds" unit="HAND" class="Hammer" gender="0" customName="HA-17-E"/>
-    <Portrait tex="data/textures/portraits/censored19.dds" unit="HAND" class="Hammer" gender="0" customName="HA-88-L"/>
+    <Portrait tex="data/textures/portraits/censored18.dds" unit="hand" class="Hammer" gender="0" customName="HA-17-E"/>
+    <Portrait tex="data/textures/portraits/censored19.dds" unit="hand" class="Hammer" gender="0" customName="HA-88-L"/>
 </HumanIdentities>

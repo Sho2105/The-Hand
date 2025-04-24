@@ -57,29 +57,29 @@ There are **four more just like him.**
 
 ## NULL OPERATORS (PRE-INCIDENT)  
 
-| ID      | NAME             | STATUS      | GENDER  |
-|---------|------------------|------------|---------|
-| SP-84-C | Alexander Varga  | Survivor   | Male    |
-| DA-67-I | Jules Fontaine   | Survivor   | Male    |
-| SP-15-H | Samuel Alvarez   | Survivor   | Male    |
-| SH-47-B | Elias Becker     | Survivor   | Male    |
-| CH-55-M | Rika Hanazawa    | Survivor   | Female  |
-| SP-02-A | Mason Carter     | **Traitor** | Male    |
-| CH-09-D | Noa Kim          | KIA        | Female  |
-| SP-25-B | Omar Rahal       | KIA        | Male    |
-| SP-38-M | Carlos Gutierrez | KIA        | Male    |
-| SP-19-H | Marco Lombardi   | KIA        | Male    |
-| DA-22-S | Sophie Langley   | KIA        | Female  |
-| DA-44-I | Jin Zhang        | KIA        | Male    |
-| DA-71-A | Rahul Patel      | KIA        | Male    |
-| CH-31-E | Gabriella Moreau | KIA        | Female  |
-| SH-06-S | Leon Müller      | KIA        | Male    |
-| SH-12-B | Thomas O'Connor  | KIA        | Male    |
-| SH-01-C | Yusuf Hassan     | KIA        | Male    |
-| HA-17-E | Dmitri Ivanov    | KIA        | Male    |
-| HA-88-L | Ethan Clarke     | KIA        | Male    |
-| SP-93-B | Liam Kessler     | KIA        | Male    |
-| DA-95-S | Aisha Nadeem     | KIA        | Female  |
+| ID      | NAME             | STATUS      | GENDER |
+| ------- | ---------------- | ----------- | ------ |
+| SP-84-C | Alexander Varga  | Survivor    | Male   |
+| DA-67-I | Jules Fontaine   | Survivor    | Male   |
+| SP-15-H | Samuel Alvarez   | Survivor    | Male   |
+| SH-47-B | Elias Becker     | Survivor    | Male   |
+| CH-55-M | Rika Hanazawa    | Survivor    | Female |
+| SP-02-A | Mason Carter     | **Traitor** | Male   |
+| CH-09-D | Noa Kim          | KIA         | Female |
+| SP-25-B | Omar Rahal       | KIA         | Male   |
+| SP-38-M | Carlos Gutierrez | KIA         | Male   |
+| SP-19-H | Marco Lombardi   | KIA         | Male   |
+| DA-22-S | Sophie Langley   | KIA         | Female |
+| DA-44-I | Jin Zhang        | KIA         | Male   |
+| DA-71-A | Rahul Patel      | KIA         | Male   |
+| CH-31-E | Gabriella Moreau | KIA         | Female |
+| SH-06-S | Leon Müller      | KIA         | Male   |
+| SH-12-B | Thomas O'Connor  | KIA         | Male   |
+| SH-01-C | Yusuf Hassan     | KIA         | Male   |
+| HA-17-E | Dmitri Ivanov    | KIA         | Male   |
+| HA-88-L | Ethan Clarke     | KIA         | Male   |
+| SP-93-B | Liam Kessler     | KIA         | Male   |
+| DA-95-S | Aisha Nadeem     | KIA         | Female |
 
 ---
 

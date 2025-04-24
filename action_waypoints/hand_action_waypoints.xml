@@ -1,113 +1,90 @@
 <ActionWaypoints>
-	<wp
-		type="THROW_GRENADE"
-		equipment="HAND Bombard"
-		ui_prefix="data/textures/gui_ingame/waypoints/m320"
-		ttip="@genettip_HAND_throw_bombard"
-		ttip_disabled="@menu_HAND_bombard_cannot_use"
-		ttip_empty="@menu_HAND_bombard_none" />
-	<wp
-		type="THROW_GRENADE"
-		equipment="HAND Strafe"
-		ui_prefix="data/textures/gui_ingame/waypoints/m320"
-		ttip="@genettip_HAND_throw_strafe"
-		ttip_disabled="@menu_HAND_strafe_cannot_use"
-		ttip_empty="@menu_HAND_strafe_none" />
-	<wp
-		type="PLANT_EXPLOSIVES"
-		equipment="HAND Breacher"
-		ui_prefix="data/textures/gui_ingame/waypoints/charge_breach"
-		ttip="@genettip_HAND_plant_breacher"
-		ttip_disabled="@menu_HAND_breacher_cannot_use"
-		ttip_empty="@menu_HAND_breacher_none" />
-	<wp
-		type="WAITING_FOR_DETONATION"
-		equipment="HAND Breacher"
-		ui_prefix="data/textures/gui_ingame/waypoints/blow_up"
-		ttip="@genettip_HAND_detonate_breacher" />
-	<wp
-		type="THROW_GRENADE"
-		equipment="HAND HealingSpray"
-		ui_prefix="data/textures/gui_ingame/waypoints/smoke_grenade"
-		ttip="@genettip_HAND_throw_healingspray"
-		ttip_disabled="@menu_HAND_healingspray_cannot_use"
-		ttip_empty="@menu_HAND_healingspray_none" />
-	<wp
-		type="THROW_GRENADE"
-		equipment="HAND Smoke Screen"
-		ui_prefix="data/textures/gui_ingame/waypoints/smoke_grenade"
-		ttip="@genettip_HAND_throw_smokescreen"
-		ttip_disabled="@menu_HAND_smokescreen_cannot_use"
-		ttip_empty="@menu_HAND_smokescreen_none" />
-	<wp
-		type="FEET_OF_STEEL"
-		equipment="HAND SteelFeet"
-		ui_prefix="data/textures/gui_ingame/waypoints/feet_of_steel"
-		ttip="@menu_game_feet_of_steel_ttip"
-		ttip_disabled="@menu_game_tool_disabled_ttip"
-		ttip_empty="@menu_game_tool_none_ttip" />
-	<wp
-		type="PICK_LOCK"
-		equipment="HAND LockPuncher"
-		ui_prefix="data/textures/gui_ingame/waypoints/lockpick"
-		ttip="@menu_game_lockpick_ttip"
-		ttip_disabled="@menu_game_tool_disabled_ttip"
-		ttip_empty="@menu_game_tool_none_ttip" />
-
-	<wp
-		type="THROW_GRENADE"
-		equipment="HAND_b_GravGrenade"
-		ui_prefix="data/textures/gui_ingame/waypoints/hand_b_gravitygrenade"
-		ttip="@menu_HAND_b_GravGrenade_ttip"
-		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@menu_HAND_b_GravGrenade_none_ttip" />
-
-	<wp
-		type="THROW_GRENADE"
-		equipment="HAND_b_Sun"
-		ui_prefix="data/textures/gui_ingame/waypoints/HAND_b_Sun"
-		ttip="@HAND_b_Sun_ttip"
-		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@HAND_b_Sun_none_ttip" />
-
-	<wp
-		type="THROW_GRENADE"
-		equipment="HAND_b_Medkit"
-		ui_prefix="data/textures/gui_ingame/waypoints/hand_medkit"
-		ttip="@hand_menu_game_medkit_ttip"
-		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@hand_menu_game_medkit_none_ttip" />
-
-	<wp
-		type="THROW_GRENADE"
-		equipment="HAND_b_NeurotoxinGas"
-		ui_prefix="data/textures/gui_ingame/waypoints/neurotoxin"
-		ttip="@hand_menu_neurotoxin_ttip"
-		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@hand_menu_neurotoxin_none_ttip" />
-
-	<wp
-		type="ROCKET_LAUNCHER"
-		equipment="HAND_b_Megaphone"
-		ui_prefix="data/textures/gui_ingame/waypoints/hand_b_megaphone"
-		ttip="@hand_b_megaphone_ttip"
-		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@hand_b_megaphone_none_ttip" />
-
-	<wp
-		type="THROW_GRENADE"
-		equipment="HAND_b_SuicidePlane"
-		ui_prefix="data/textures/gui_ingame/waypoints/hand_b_suicideplane_icon"
-		ttip="@hand_b_suicideplane_ttip"
-		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@hand_b_suicideplane_none_ttip" />
-
-	<wp
-		type="THROW_GRENADE"
-		equipment="NTF_ContainmentStrike"
-		ui_prefix="data/textures/gui_ingame/waypoints/neurotoxin"
-		ttip="@hand_menu_neurotoxin_ttip"
-		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@hand_menu_neurotoxin_none_ttip" />
-
+    <wp type="THROW_GRENADE"
+        equipment="hand Bombard"
+        ui_prefix="data/textures/gui_ingame/waypoints/m320"
+        ttip="@genettip_hand_throw_bombard"
+        ttip_disabled="@menu_hand_bombard_cannot_use"
+        ttip_empty="@menu_hand_bombard_none" />
+    <wp type="THROW_GRENADE"
+        equipment="hand Strafe"
+        ui_prefix="data/textures/gui_ingame/waypoints/m320"
+        ttip="@genettip_hand_throw_strafe"
+        ttip_disabled="@menu_hand_strafe_cannot_use"
+        ttip_empty="@menu_hand_strafe_none" />
+    <wp type="PLANT_EXPLOSIVES"
+        equipment="hand Breacher"
+        ui_prefix="data/textures/gui_ingame/waypoints/charge_breach"
+        ttip="@genettip_hand_plant_breacher"
+        ttip_disabled="@menu_hand_breacher_cannot_use"
+        ttip_empty="@menu_hand_breacher_none" />
+    <wp type="WAITING_FOR_DETONATION"
+        equipment="hand Breacher"
+        ui_prefix="data/textures/gui_ingame/waypoints/blow_up"
+        ttip="@genettip_hand_detonate_breacher" />
+    <wp type="THROW_GRENADE"
+        equipment="hand HealingSpray"
+        ui_prefix="data/textures/gui_ingame/waypoints/smoke_grenade"
+        ttip="@genettip_hand_throw_healingspray"
+        ttip_disabled="@menu_hand_healingspray_cannot_use"
+        ttip_empty="@menu_hand_healingspray_none" />
+    <wp type="THROW_GRENADE"
+        equipment="hand Smoke Screen"
+        ui_prefix="data/textures/gui_ingame/waypoints/smoke_grenade"
+        ttip="@genettip_hand_throw_smokescreen"
+        ttip_disabled="@menu_hand_smokescreen_cannot_use"
+        ttip_empty="@menu_hand_smokescreen_none" />
+    <wp type="FEET_OF_STEEL"
+        equipment="hand SteelFeet"
+        ui_prefix="data/textures/gui_ingame/waypoints/feet_of_steel"
+        ttip="@menu_game_feet_of_steel_ttip"
+        ttip_disabled="@menu_game_tool_disabled_ttip"
+        ttip_empty="@menu_game_tool_none_ttip" />
+    <wp type="PICK_LOCK"
+        equipment="hand LockPuncher"
+        ui_prefix="data/textures/gui_ingame/waypoints/lockpick"
+        ttip="@menu_game_lockpick_ttip"
+        ttip_disabled="@menu_game_tool_disabled_ttip"
+        ttip_empty="@menu_game_tool_none_ttip" />
+    <wp type="THROW_GRENADE"
+        equipment="hand_b_GravGrenade"
+        ui_prefix="data/textures/gui_ingame/waypoints/hand_b_gravitygrenade"
+        ttip="@menu_hand_b_GravGrenade_ttip"
+        ttip_disabled="@menu_generic_cannot_use"
+        ttip_empty="@menu_hand_b_GravGrenade_none_ttip" />
+    <wp type="THROW_GRENADE"
+        equipment="hand_b_Sun"
+        ui_prefix="data/textures/gui_ingame/waypoints/hand_b_Sun"
+        ttip="@hand_b_Sun_ttip"
+        ttip_disabled="@menu_generic_cannot_use"
+        ttip_empty="@hand_b_Sun_none_ttip" />
+    <wp type="THROW_GRENADE"
+        equipment="hand_b_Medkit"
+        ui_prefix="data/textures/gui_ingame/waypoints/hand_medkit"
+        ttip="@hand_menu_game_medkit_ttip"
+        ttip_disabled="@menu_generic_cannot_use"
+        ttip_empty="@hand_menu_game_medkit_none_ttip" />
+    <wp type="THROW_GRENADE"
+        equipment="hand_b_NeurotoxinGas"
+        ui_prefix="data/textures/gui_ingame/waypoints/neurotoxin"
+        ttip="@hand_menu_neurotoxin_ttip"
+        ttip_disabled="@menu_generic_cannot_use"
+        ttip_empty="@hand_menu_neurotoxin_none_ttip" />
+    <wp type="ROCKET_LAUNCHER"
+        equipment="hand_b_Megaphone"
+        ui_prefix="data/textures/gui_ingame/waypoints/hand_b_megaphone"
+        ttip="@hand_b_megaphone_ttip"
+        ttip_disabled="@menu_generic_cannot_use"
+        ttip_empty="@hand_b_megaphone_none_ttip" />
+    <wp type="THROW_GRENADE"
+        equipment="hand_b_SuicidePlane"
+        ui_prefix="data/textures/gui_ingame/waypoints/hand_b_suicideplane_icon"
+        ttip="@hand_b_suicideplane_ttip"
+        ttip_disabled="@menu_generic_cannot_use"
+        ttip_empty="@hand_b_suicideplane_none_ttip" />
+    <wp type="THROW_GRENADE"
+        equipment="NTF_ContainmentStrike"
+        ui_prefix="data/textures/gui_ingame/waypoints/neurotoxin"
+        ttip="@hand_menu_neurotoxin_ttip"
+        ttip_disabled="@menu_generic_cannot_use"
+        ttip_empty="@hand_menu_neurotoxin_none_ttip" />
 </ActionWaypoints>
