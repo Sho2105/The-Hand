@@ -6,7 +6,7 @@
             unlockCost="0"
             tooltip="@hand_b_helmet_1_name"
             description="@hand_b_helmet_1_desc"
-            img="data/models/humans/attachments/HandHelmet1_ui.dds">
+            img="data/models/humans/attachments/hand_b_helmet1.dds">
         <MobilityModifiers moveSpeedModifierPercent="-1"
                            turnSpeedModifierPercent="-1" />
         <ConcealmentModifier add="0" />
@@ -21,7 +21,7 @@
             unlockCost="0"
             tooltip="@hand_b_helmet_2_name"
             description="@hand_b_helmet_2_desc"
-            img="data/models/humans/attachments/hand_b_helmet_2_ui.dds">
+            img="data/models/humans/attachments/HandHelmet2_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-2"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="0" />
@@ -36,7 +36,7 @@
             unlockCost="0"
             tooltip="@hand_b_helmet_3_name"
             description="@hand_b_helmet_3_desc"
-            img="data/models/humans/attachments/hand_b_helmet_3_ui.dds">
+            img="data/models/humans/attachments/HandHelmet3_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-3"
                            turnSpeedModifierPercent="-3" />
         <ConcealmentModifier add="0" />
@@ -51,7 +51,7 @@
             unlockCost="0"
             tooltip="@hand_b_helmet_4_name"
             description="@hand_b_helmet_4_desc"
-            img="data/models/humans/attachments/hand_b_helmet_4_ui.dds">
+            img="data/models/humans/attachments/HandHelmet4_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-4"
                            turnSpeedModifierPercent="-4" />
         <ConcealmentModifier add="0" />
@@ -66,7 +66,7 @@
             unlockCost="0"
             tooltip="@hand_b_helmet_5_name"
             description="@hand_b_helmet_5_desc"
-            img="data/models/humans/attachments/hand_b_helmet_5_ui.dds">
+            img="data/models/humans/attachments/HandHelmet5_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-5"
                            turnSpeedModifierPercent="-5" />
         <ConcealmentModifier add="0" />
@@ -81,7 +81,7 @@
             unlockCost="0"
             tooltip="@hand_b_rattanhat_name"
             description="@hand_b_rattanhat_desc"
-            img="data/models/humans/attachments/hand_b_rattanhat_ui.dds">
+            img="data/models/humans/attachments/HandRattan_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="0"
                            turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="2" />
@@ -274,7 +274,7 @@
                unlockCost="0"
                tooltip="@hand_b_nvg_quad_name"
                description="@hand_b_nvg_quad_desc"
-               img="data/models/humans/attachments/hand_b_nvg_quad_ui.dds">
+               img="data/models/humans/attachments/HandQuadNvg_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-1"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="0" />
@@ -282,7 +282,7 @@
                           fovRadiusMeters="0.5"
                           fovRangeMeters="999" />
         <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_quad_up.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_nvg_quad.dds"
+                        diffuseTex="data/models/humans/attachments/HandQuadNvg_ui.dds"
                         attachSlot="nvg">
             <Specular shininess="8"
                       intensity="1.3" />
@@ -327,7 +327,7 @@
            unlockCost="0"
            tooltip="@hand_b_armor_2_name"
            description="@hand_b_armor_2_desc"
-           img="data/models/equipment/hand_b_armor_2_ui.dds">
+           img="data/models/equipment/HandArmor2_ui">
         <MobilityModifiers moveSpeedModifierPercent="-9"
                            turnSpeedModifierPercent="-3" />
         <ConcealmentModifier add="-3" />
@@ -348,7 +348,7 @@
            unlockCost="0"
            tooltip="@hand_b_armor_3_name"
            description="@hand_b_armor_3_desc"
-           img="data/models/equipment/hand_b_armor_3_ui.dds">
+           img="data/models/equipment/HandArmor3_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-10"
                            turnSpeedModifierPercent="-4" />
         <ConcealmentModifier add="-4" />
@@ -369,7 +369,7 @@
            unlockCost="0"
            tooltip="@hand_b_armor_4_name"
            description="@hand_b_armor_4_desc"
-           img="data/models/equipment/hand_b_armor_4_ui.dds">
+           img="data/models/equipment/HandArmor4_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-11"
                            turnSpeedModifierPercent="-5" />
         <ConcealmentModifier add="-5" />
@@ -390,7 +390,7 @@
            unlockCost="0"
            tooltip="@hand_b_armor_5_name"
            description="@hand_b_armor_5_desc"
-           img="data/models/equipment/hand_b_armor_5_ui.dds">
+           img="data/models/equipment/HandArmor5_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-12"
                            turnSpeedModifierPercent="-6" />
         <ConcealmentModifier add="-6" />
@@ -411,7 +411,7 @@
            unlockCost="0"
            tooltip="@hand_b_vest_1_name"
            description="@hand_b_vest_1_desc"
-           img="data/models/equipment/hand_b_vest_1_ui.dds">
+           img="data/models/equipment/HandVest1_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-2"
                            turnSpeedModifierPercent="-1" />
         <ConcealmentModifier add="0" />
@@ -429,7 +429,7 @@
            unlockCost="0"
            tooltip="@hand_b_vest_2_name"
            description="@hand_b_vest_2_desc"
-           img="data/models/equipment/hand_b_vest_2_ui.dds">
+           img="data/models/equipment/HandVest2_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-3"
                            turnSpeedModifierPercent="-1" />
         <ConcealmentModifier add="0" />
@@ -447,7 +447,7 @@
            unlockCost="0"
            tooltip="@hand_b_vest_3_name"
            description="@hand_b_vest_3_desc"
-           img="data/models/equipment/hand_b_vest_3_ui.dds">
+           img="data/models/equipment/HandVest3_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-4"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="-1" />
@@ -465,7 +465,7 @@
            unlockCost="0"
            tooltip="@hand_b_vest_4_name"
            description="@hand_b_vest_4_desc"
-           img="data/models/equipment/hand_b_vest_4_ui.dds">
+           img="data/models/equipment/HandVest4_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-5"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="-2" />
@@ -483,7 +483,7 @@
            unlockCost="0"
            tooltip="@hand_b_vest_5_name"
            description="@hand_b_vest_5_desc"
-           img="data/models/equipment/hand_b_vest_5_ui.dds">
+           img="data/models/equipment/HandVest5_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-6"
                            turnSpeedModifierPercent="-3" />
         <ConcealmentModifier add="-3" />
