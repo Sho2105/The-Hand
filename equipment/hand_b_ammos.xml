@@ -1,15 +1,22 @@
 <Equipment>
-
-	<Ammo name="hand_Melee_Ammo" img="data/models/equipment/none_ui.dds">
-
-		<Params roundsPerSecond="2"
-				audibleSoundRadius="10"
-				physicsImpactForce="10.5"
-				>
-			<Damage start="10" end="5" startDist="0" endDist="4"/>
-			<CriticalChancePercent start="12" end="5" startDist="0" endDist="4"/>
-			<ArmorPenetration start="100" end="100" startDist="0" endDist="20"/>
-		</Params>
-	</Ammo>
-
+	<!-- This shit is here for melee weapons and others that don't actually shoot ammos-->
+    <Ammo name="hand_ammo_None"
+          img="data/models/equipment/none_ui.dds">
+        <Params roundsPerSecond="2"
+                audibleSoundRadius="10"
+                physicsImpactForce="10.5">
+            <Damage start="10"
+                    end="5"
+                    startDist="0"
+                    endDist="4" />
+            <CriticalChancePercent start="12"
+                                   end="5"
+                                   startDist="0"
+                                   endDist="4" />
+            <ArmorPenetration start="100"
+                              end="100"
+                              startDist="0"
+                              endDist="20" />
+        </Params>
+    </Ammo>
 </Equipment>

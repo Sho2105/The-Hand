@@ -1,0 +1,52 @@
+<Equipment>
+    <!-- Melee -->
+    <Bind eqp="hand_weapon_Katana">
+        <to name="hand_ammo_None" />
+    </Bind>
+    <Firearm name="hand_weapon_Katana"
+             inventoryBinding="SecondaryWeapon"
+             category="melee"
+             unlockCost="0"
+             tooltip="@hand_weapon_Katana_name"
+             description="@hand_weapon_Katana_desc"
+             img="data/models/equipment/hand_weapon_Katana_ui.dds"
+             animationSet="hand_weapon_Katana_anim">
+        <MobilityModifiers moveSpeedModifierPercent="-1"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2.25" />
+        <RenderObject3D model="data/models/weapons/hand_weapon_Katana.khm"
+                        attachSlot="prop_back_rifle"
+                        skipGOSSAO="true"
+                        diffuseTex="data/models/weapons/hand_weapon_Katana.dds" />
+        <Specular shininess="32"
+                  intensity="4.0" />
+        <ModifiableParams changeInTime="500"
+                          changeOutTime="1000"
+                          efficiencyPercent="100"
+                          audibleSoundRadius="1.0"
+                          meleeDamageBonus="100"
+                          meleeReach="2.0"
+                          meleeAttackCooldown="100"
+                          meleeAttackDuration="500"
+                          meleeStunBonus="200"
+                          roundsPerMagazine="0"
+                          reloadTime="5"
+                          reloadEmptyTime="5"
+                          readyTime="500"
+                          guardTime="0"
+                          accuracyStart="100"
+                          accuracyEnd="10"
+                          accuracyStartDist="0"
+                          accuracyEndDist="5"
+                          suppressionScale="1.0" />
+        <Params operationInfoText="@firearm_operation_melee_name" />
+        <AttackTypes>
+            <AttackType name="Rangers_PumpAimedFire"
+                        rangeMeters="9999" />
+        </AttackTypes>
+        <Sounds>
+            <Fire name="melee_hit" />
+        </Sounds>
+    </Firearm>
+    <!-- Sidearm -->
+</Equipment>

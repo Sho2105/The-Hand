@@ -1106,4 +1106,16 @@ msoc's airstrike
         </Emitter>
     </ParticleSystem>
 
-	
+Armor, helmet(nvg), firearm(supressor, scope, ammo), utility, gear
+Waypoint, entities, particles
+
+Naming convention: hand_[category]_[Name/Number]_[suffix(if needed)]
+Only the name will have the first letter uppercase, everything else lowercase
+EG: hand_armor_1 (which is a general armor) 
+	hand_armor_thumb1(exclusive class item)
+	hand_waypoint_PortaLight
+	hand_effect_name
+	hand_entity_name
+	hand_firearm_m15_model
+	hand_firearm_m1_ui
+There. it looks fine enough

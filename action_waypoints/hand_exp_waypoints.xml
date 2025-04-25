@@ -1,51 +1,44 @@
 <ActionWaypoints>
-
-    <wp
-        type="ROCKET_LAUNCHER"
-        equipment="hand_SP_BOT"
-        ui_prefix="data/textures/gui_ingame/waypoints/hand_sp_bot"
-        ttip="@genettip_hand_SP_BOT"
+    <wp type="ROCKET_LAUNCHER"
+        equipment="hand_gear_Spbot"
+        ui_prefix="data/textures/gui_ingame/waypoints/hand_gear_Spbot"
+        ttip="@genettip_hand_gear_Spbot"
         ttip_disabled="@menu_generic_cannot_use"
-        ttip_empty="@genettip_hand_SP_BOT_EMPTY" />
-
-    <wp
-        type="ROCKET_LAUNCHER"
-        equipment="hand_DA_BOT"
-        ui_prefix="data/textures/gui_ingame/waypoints/hand_da_bot"
-        ttip="@genettip_hand_DA_BOT"
+        ttip_empty="@genettip_hand_gear_Spbot_EMPTY" />
+    <wp type="ROCKET_LAUNCHER"
+        equipment="hand_gear_Dabot"
+        ui_prefix="data/textures/gui_ingame/waypoints/hand_gear_Dabot"
+        ttip="@genettip_hand_gear_Dabot"
         ttip_disabled="@menu_generic_cannot_use"
-        ttip_empty="@genettip_hand_DA_BOT_EMPTY" />
-
-    <wp
-        type="ROCKET_LAUNCHER"
-        equipment="hand_SH_BOT"
-        ui_prefix="data/textures/gui_ingame/waypoints/hand_sh_bot"
-        ttip="@genettip_hand_SH_BOT"
+        ttip_empty="@genettip_hand_gear_Dabot_EMPTY" />
+    <wp type="ROCKET_LAUNCHER"
+        equipment="hand_gear_Shbot"
+        ui_prefix="data/textures/gui_ingame/waypoints/hand_gear_Shbot"
+        ttip="@genettip_hand_gear_Shbot"
         ttip_disabled="@menu_generic_cannot_use"
-        ttip_empty="@genettip_hand_SH_BOT_EMPTY" />
-
-    <wp
-        type="ROCKET_LAUNCHER"
-        equipment="hand_CH_BOT"
-        ui_prefix="data/textures/gui_ingame/waypoints/hand_ch_bot"
-        ttip="@genettip_hand_CH_BOT"
+        ttip_empty="@genettip_hand_gear_Shbot_EMPTY" />
+    <wp type="ROCKET_LAUNCHER"
+        equipment="hand_gear_Chbot"
+        ui_prefix="data/textures/gui_ingame/waypoints/hand_gear_Chbot"
+        ttip="@genettip_hand_gear_Chbot"
         ttip_disabled="@menu_generic_cannot_use"
-        ttip_empty="@genettip_hand_CH_BOT_EMPTY" />
-
-    <wp
-        type="ROCKET_LAUNCHER"
-        equipment="hand_HA_BOT"
-        ui_prefix="data/textures/gui_ingame/waypoints/hand_ha_bot"
-        ttip="@genettip_hand_HA_BOT"
+        ttip_empty="@genettip_hand_gear_Chbot_EMPTY" />
+    <wp type="ROCKET_LAUNCHER"
+        equipment="hand_gear_Habot"
+        ui_prefix="data/textures/gui_ingame/waypoints/hand_gear_Habot"
+        ttip="@genettip_hand_gear_Habot"
         ttip_disabled="@menu_generic_cannot_use"
-        ttip_empty="@genettip_hand_HA_BOT_EMPTY" />
-
-    <wp
-        type="ROCKET_LAUNCHER"
+        ttip_empty="@genettip_hand_gear_Habot_EMPTY" />
+    <wp type="ROCKET_LAUNCHER"
         equipment="hand_RPG"
         ui_prefix="data/textures/gui_ingame/waypoints/rocket_launcher"
         ttip="@menu_game_rocketlaunch_ttip"
         ttip_disabled="@menu_generic_cannot_use"
         ttip_empty="@menu_game_grenadelaunch_none_ttip" />
-
+    <wp type="THROW_GRENADE"
+        equipment="hand_utility_Svest"
+        ui_prefix="data/textures/gui_ingame/waypoints/blow_up"
+        ttip="@menu_game_svest_ttip"
+        ttip_disabled="@menu_generic_cannot_use"
+        ttip_empty="@menu_game_svest_none_ttip" />
 </ActionWaypoints>

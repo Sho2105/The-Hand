@@ -34,7 +34,7 @@
         ttip_disabled="@menu_hand_smokescreen_cannot_use"
         ttip_empty="@menu_hand_smokescreen_none" />
     <wp type="FEET_OF_STEEL"
-        equipment="hand SteelFeet"
+        equipment="hand_gear_Steelfeet"
         ui_prefix="data/textures/gui_ingame/waypoints/feet_of_steel"
         ttip="@menu_game_feet_of_steel_ttip"
         ttip_disabled="@menu_game_tool_disabled_ttip"

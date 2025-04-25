@@ -1,0 +1,45 @@
+<Equipment>
+    <!-- Bot Ammo -->
+    <Ammo name="hand_ammo_Spbot"
+          tooltip="@hand_ammo_Spbot_name"
+          description="@hand_ammo_Spbot_desc"
+          img="data/models/weapons/hand_ammo_Spbot_ui.dds">
+        <Params roundsPerSecond="15"
+                audibleSoundRadius="110"
+                physicsImpactForce="2.5">
+            <Damage start="35"
+                    end="25"
+                    startDist="0"
+                    endDist="120" />
+            <CriticalChancePercent start="40"
+                                   end="20"
+                                   startDist="0"
+                                   endDist="80" />
+            <ArmorPenetration start="60"
+                              end="60"
+                              startDist="0"
+                              endDist="120" />
+        </Params>
+    </Ammo>
+    <Ammo name="hand_ammo_Shbot"
+          tooltip="@hand_ammo_Shbot_name"
+          description="@hand_ammo_Shbot_desc"
+          img="data/models/weapons/hand_ammo_Shbot_ui.dds">
+        <Params roundsPerSecond="20"
+                audibleSoundRadius="120"
+                physicsImpactForce="1.8">
+            <Damage start="25"
+                    end="15"
+                    startDist="0"
+                    endDist="80" />
+            <CriticalChancePercent start="20"
+                                   end="10"
+                                   startDist="0"
+                                   endDist="50" />
+            <ArmorPenetration start="40"
+                              end="40"
+                              startDist="0"
+                              endDist="80" />
+        </Params>
+    </Ammo>
+</Equipment>

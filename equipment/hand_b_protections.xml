@@ -1,12 +1,11 @@
 <Equipment>
-    <Bind eqp="hand_b_Helmet_1"
-          to="hand" />
-    <Helmet name="hand_b_Helmet_1"
+    <!-- Protective Items-->
+    <Helmet name="hand_helmet_1"
             inventoryBinding="Helmet"
             unlockCost="0"
-            tooltip="@hand_b_helmet_1_name"
-            description="@hand_b_helmet_1_desc"
-            img="data/models/humans/attachments/hand_b_helmet1.dds">
+            tooltip="@hand_helmet_1_name"
+            description="@hand_helmet_1_desc"
+            img="data/models/humans/attachments/hand_helmet_1_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-1"
                            turnSpeedModifierPercent="-1" />
         <ConcealmentModifier add="0" />
@@ -16,12 +15,12 @@
                            piercingProtectionLevel="20" />
         </Params>
     </Helmet>
-    <Helmet name="hand_b_Helmet_2"
+    <Helmet name="hand_helmet_2"
             inventoryBinding="Helmet"
             unlockCost="0"
-            tooltip="@hand_b_helmet_2_name"
-            description="@hand_b_helmet_2_desc"
-            img="data/models/humans/attachments/HandHelmet2_ui.dds">
+            tooltip="@hand_helmet_2_name"
+            description="@hand_helmet_2_desc"
+            img="data/models/humans/attachments/hand_helmet_2_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-2"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="0" />
@@ -31,12 +30,12 @@
                            piercingProtectionLevel="40" />
         </Params>
     </Helmet>
-    <Helmet name="hand_b_Helmet_3"
+    <Helmet name="hand_helmet_3"
             inventoryBinding="Helmet"
             unlockCost="0"
-            tooltip="@hand_b_helmet_3_name"
-            description="@hand_b_helmet_3_desc"
-            img="data/models/humans/attachments/HandHelmet3_ui.dds">
+            tooltip="@hand_helmet_3_name"
+            description="@hand_helmet_3_desc"
+            img="data/models/humans/attachments/hand_helmet_3_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-3"
                            turnSpeedModifierPercent="-3" />
         <ConcealmentModifier add="0" />
@@ -46,12 +45,12 @@
                            piercingProtectionLevel="60" />
         </Params>
     </Helmet>
-    <Helmet name="hand_b_Helmet_4"
+    <Helmet name="hand_helmet_4"
             inventoryBinding="Helmet"
             unlockCost="0"
-            tooltip="@hand_b_helmet_4_name"
-            description="@hand_b_helmet_4_desc"
-            img="data/models/humans/attachments/HandHelmet4_ui.dds">
+            tooltip="@hand_helmet_4_name"
+            description="@hand_helmet_4_desc"
+            img="data/models/humans/attachments/hand_helmet_4_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-4"
                            turnSpeedModifierPercent="-4" />
         <ConcealmentModifier add="0" />
@@ -61,12 +60,12 @@
                            piercingProtectionLevel="80" />
         </Params>
     </Helmet>
-    <Helmet name="hand_b_Helmet_5"
+    <Helmet name="hand_helmet_5"
             inventoryBinding="Helmet"
             unlockCost="0"
-            tooltip="@hand_b_helmet_5_name"
-            description="@hand_b_helmet_5_desc"
-            img="data/models/humans/attachments/HandHelmet5_ui.dds">
+            tooltip="@hand_helmet_5_name"
+            description="@hand_helmet_5_desc"
+            img="data/models/humans/attachments/hand_helmet_5_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-5"
                            turnSpeedModifierPercent="-5" />
         <ConcealmentModifier add="0" />
@@ -76,237 +75,12 @@
                            piercingProtectionLevel="100" />
         </Params>
     </Helmet>
-    <Helmet name="hand_b_RattanHat"
-            inventoryBinding="Helmet"
-            unlockCost="0"
-            tooltip="@hand_b_rattanhat_name"
-            description="@hand_b_rattanhat_desc"
-            img="data/models/humans/attachments/HandRattan_ui.dds">
-        <MobilityModifiers moveSpeedModifierPercent="0"
-                           turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="2" />
-        <Params allowNVG="false">
-            <ProtectionArc degrees="360"
-                           coveragePercent="5"
-                           piercingProtectionLevel="10" />
-        </Params>
-    </Helmet>
-    <Helmet name="hand_b_SantaHat"
-            inventoryBinding="Helmet"
-            unlockCost="0"
-            tooltip="@hand_b_santahat_name"
-            description="@hand_b_santahat_desc"
-            img="data/models/humans/attachments/hand_b_santahat_ui.dds">
-        <MobilityModifiers moveSpeedModifierPercent="50"
-                           turnSpeedModifierPercent="-20" />
-        <ConcealmentModifier add="-3" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_santahat.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_santahat.dds"
-                        attachSlot="Bip001 Head"
-                        windAnimated="1" />
-        <Params allowNVG="false">
-            <ProtectionArc degrees="360"
-                           coveragePercent="0"
-                           piercingProtectionLevel="0" />
-        </Params>
-    </Helmet>
-    <Helmet name="hand_b_CapAssaulter"
-            inventoryBinding="Helmet"
-            unlockCost="0"
-            tooltip="@hand_b_capassaulter_name"
-            description="@hand_b_capassaulter_desc"
-            img="data/models/humans/attachments/hand_b_capassaulter_ui.dds">
-        <MobilityModifiers moveSpeedModifierPercent="0"
-                           turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="0" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_capassaulter.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_capassaulter.dds"
-                        attachSlot="Bip001 Head" />
-        <Params allowNVG="false">
-            <ProtectionArc degrees="360"
-                           coveragePercent="0"
-                           piercingProtectionLevel="0" />
-        </Params>
-    </Helmet>
-    <Helmet name="hand_b_Beret"
-            inventoryBinding="Helmet"
-            unlockCost="0"
-            tooltip="@hand_b_beret_name"
-            description="@hand_b_beret_desc"
-            img="data/models/humans/attachments/hand_b_beret_ui.dds">
-        <MobilityModifiers moveSpeedModifierPercent="0"
-                           turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="-4" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_beret.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_beret.dds"
-                        attachSlot="Bip001 Head" />
-        <Params allowNVG="false">
-            <ProtectionArc degrees="360"
-                           coveragePercent="0"
-                           piercingProtectionLevel="0" />
-        </Params>
-    </Helmet>
-    <Helmet name="hand_b_SkullCrusher"
-            inventoryBinding="Helmet"
-            unlockCostBH="3"
-            tooltip="@hand_b_skullcrusher_name"
-            description="@hand_b_skullcrusher_desc"
-            img="data/models/humans/attachments/hand_b_skullcrusher_ui.dds">
-        <MobilityModifiers moveSpeedModifierPercent="-2"
-                           turnSpeedModifierPercent="-2" />
-        <ConcealmentModifier add="-2" />
-        <Params nvgByDefault="true">
-            <ProtectionArc degrees="360"
-                           coveragePercent="0"
-                           piercingProtectionLevel="0" />
-        </Params>
-        <RenderObject3D model="data/models/humans/attachments/hand_b_skullcrusher.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_nvg.dds"
-                        attachSlot="Bip001 Head">
-            <Specular shininess="8"
-                      intensity="1.3" />
-        </RenderObject3D>
-    </Helmet>
-    <Helmet name="hand_b_Headband"
-            inventoryBinding="Helmet"
-            unlockCost="0"
-            tooltip="@hand_b_headband_name"
-            description="@hand_b_headband_desc"
-            img="data/models/humans/attachments/hand_b_headband_ui.dds">
-        <MobilityModifiers moveSpeedModifierPercent="0"
-                           turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="-2" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_headband.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_headband.dds"
-                        attachSlot="Bip001 Head" />
-        <Params allowNVG="false">
-            <ProtectionArc degrees="360"
-                           coveragePercent="0"
-                           piercingProtectionLevel="0" />
-        </Params>
-    </Helmet>
-    <Helmet name="hand_b_Bandana"
-            inventoryBinding="Helmet"
-            unlockCost="0"
-            tooltip="@hand_b_bandana_name"
-            description="@hand_b_bandana_desc"
-            img="data/models/humans/attachments/hand_b_bandana_ui.dds">
-        <MobilityModifiers moveSpeedModifierPercent="0"
-                           turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="-2" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_bandana.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_bandana_red.dds"
-                        attachSlot="Bip001 Head" />
-        <Params allowNVG="false">
-            <ProtectionArc degrees="360"
-                           coveragePercent="0"
-                           piercingProtectionLevel="0" />
-        </Params>
-    </Helmet>
-    <Helmet name="hand_b_UndercoverCap"
-            inventoryBinding="Helmet"
-            unlockCost="0"
-            tooltip="@hand_b_undercovercap_name"
-            description="@hand_b_undercovercap_desc"
-            img="data/models/humans/attachments/hand_b_undercovercap_ui.dds">
-        <MobilityModifiers moveSpeedModifierPercent="0"
-                           turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="1" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_undercovercap.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_undercovercap_scarf.dds"
-                        attachSlot="Bip001 Head" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_undercovercap_scarf.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_undercovercap_scarf.dds" />
-        <Params allowNVG="false">
-            <ProtectionArc degrees="360"
-                           coveragePercent="0"
-                           piercingProtectionLevel="0" />
-        </Params>
-    </Helmet>
-    <Helmet name="hand_b_BlackOpsCap"
-            inventoryBinding="Helmet"
-            unlockCost="0"
-            tooltip="@hand_b_blackopscap_name"
-            description="@hand_b_blackopscap_desc"
-            img="data/models/humans/attachments/hand_b_blackopscap_ui.dds">
-        <MobilityModifiers moveSpeedModifierPercent="3"
-                           turnSpeedModifierPercent="0" />
-        <ConcealmentModifier add="0" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_blackopscap.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_blackopscap.dds"
-                        attachSlot="Bip001 Head" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_blackopscap_scarf.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_undercovercap_scarf.dds" />
-        <Params allowNVG="false">
-            <ProtectionArc degrees="360"
-                           coveragePercent="0"
-                           piercingProtectionLevel="0" />
-        </Params>
-    </Helmet>
-    <HelmetNVG name="hand_b_NVG_SkullCrusher"
-               inventoryBinding="HelmetNVG"
-               tooltip="@hand_b_nvg_skullcrusher_name"
-               description="@hand_b_nvg_skullcrusher_desc"
-               img="data/models/humans/attachments/hand_b_nvg_skullcrusher_ui.dds">
-        <ModifiableParams fovDegrees="40"
-                          fovRadiusMeters="0.42"
-                          fovRangeMeters="999" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_skullcrusher_up.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_nvg_skullcrusher.dds"
-                        attachSlot="nvg">
-            <Specular shininess="8"
-                      intensity="1.3" />
-        </RenderObject3D>
-        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_skullcrusher.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_nvg_skullcrusher.dds"
-                        attachSlot="nvg">
-            <Specular shininess="8"
-                      intensity="1.3" />
-        </RenderObject3D>
-        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_skullcrusher_lights.khm"
-                        diffuseTex="data/textures/fx/light_flare_01.dds"
-                        diffuseColor="84ff47"
-                        blendMode="add"
-                        attachSlot="nvg" />
-    </HelmetNVG>
-    <HelmetNVG name="hand_b_NVG_Quad"
-               inventoryBinding="HelmetNVG"
-               unlockCost="0"
-               tooltip="@hand_b_nvg_quad_name"
-               description="@hand_b_nvg_quad_desc"
-               img="data/models/humans/attachments/HandQuadNvg_ui.dds">
-        <MobilityModifiers moveSpeedModifierPercent="-1"
-                           turnSpeedModifierPercent="-2" />
-        <ConcealmentModifier add="0" />
-        <ModifiableParams fovDegrees="90"
-                          fovRadiusMeters="0.5"
-                          fovRangeMeters="999" />
-        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_quad_up.khm"
-                        diffuseTex="data/models/humans/attachments/HandQuadNvg_ui.dds"
-                        attachSlot="nvg">
-            <Specular shininess="8"
-                      intensity="1.3" />
-        </RenderObject3D>
-        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_quad.khm"
-                        diffuseTex="data/models/humans/attachments/hand_b_nvg_quad.dds"
-                        attachSlot="nvg">
-            <Specular shininess="8"
-                      intensity="1.3" />
-        </RenderObject3D>
-        <RenderObject3D model="data/models/humans/attachments/hand_b_nvg_quad_light.khm"
-                        diffuseTex="data/textures/fx/light_flare_01.dds"
-                        diffuseColor="84ff47"
-                        blendMode="add"
-                        attachSlot="nvg" />
-    </HelmetNVG>
-    <Bind eqp="hand_b_Armor_1"
-          to="hand" />
-    <Armor name="hand_b_Armor_1"
+    <Armor name="hand_armor_1"
            inventoryBinding="Armor"
            unlockCost="0"
-           tooltip="@hand_b_armor_1_name"
-           description="@hand_b_armor_1_desc"
-           img="data/models/equipment/HandArmor1_ui.dds">
+           tooltip="@hand_armor_1_name"
+           description="@hand_armor_1_desc"
+           img="data/models/equipment/hand_armor_1_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-8"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="-2" />
@@ -322,12 +96,12 @@
                            piercingProtectionLevel="20" />
         </Params>
     </Armor>
-    <Armor name="hand_b_Armor_2"
+    <Armor name="hand_armor_2"
            inventoryBinding="Armor"
            unlockCost="0"
-           tooltip="@hand_b_armor_2_name"
-           description="@hand_b_armor_2_desc"
-           img="data/models/equipment/HandArmor2_ui">
+           tooltip="@hand_armor_2_name"
+           description="@hand_armor_2_desc"
+           img="data/models/equipment/hand_armor_2_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-9"
                            turnSpeedModifierPercent="-3" />
         <ConcealmentModifier add="-3" />
@@ -343,12 +117,12 @@
                            piercingProtectionLevel="40" />
         </Params>
     </Armor>
-    <Armor name="hand_b_Armor_3"
+    <Armor name="hand_armor_3"
            inventoryBinding="Armor"
            unlockCost="0"
-           tooltip="@hand_b_armor_3_name"
-           description="@hand_b_armor_3_desc"
-           img="data/models/equipment/HandArmor3_ui.dds">
+           tooltip="@hand_armor_3_name"
+           description="@hand_armor_3_desc"
+           img="data/models/equipment/hand_armor_3_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-10"
                            turnSpeedModifierPercent="-4" />
         <ConcealmentModifier add="-4" />
@@ -364,12 +138,12 @@
                            piercingProtectionLevel="60" />
         </Params>
     </Armor>
-    <Armor name="hand_b_Armor_4"
+    <Armor name="hand_armor_4"
            inventoryBinding="Armor"
            unlockCost="0"
-           tooltip="@hand_b_armor_4_name"
-           description="@hand_b_armor_4_desc"
-           img="data/models/equipment/HandArmor4_ui.dds">
+           tooltip="@hand_armor_4_name"
+           description="@hand_armor_4_desc"
+           img="data/models/equipment/hand_armor_4_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-11"
                            turnSpeedModifierPercent="-5" />
         <ConcealmentModifier add="-5" />
@@ -385,12 +159,12 @@
                            piercingProtectionLevel="80" />
         </Params>
     </Armor>
-    <Armor name="hand_b_Armor_5"
+    <Armor name="hand_armor_5"
            inventoryBinding="Armor"
            unlockCost="0"
-           tooltip="@hand_b_armor_5_name"
-           description="@hand_b_armor_5_desc"
-           img="data/models/equipment/HandArmor5_ui.dds">
+           tooltip="@hand_armor_5_name"
+           description="@hand_armor_5_desc"
+           img="data/models/equipment/hand_armor_5_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-12"
                            turnSpeedModifierPercent="-6" />
         <ConcealmentModifier add="-6" />
@@ -406,12 +180,12 @@
                            piercingProtectionLevel="100" />
         </Params>
     </Armor>
-    <Armor name="hand_b_Vest_1"
+    <Armor name="hand_armor_Vest1"
            inventoryBinding="Armor"
            unlockCost="0"
-           tooltip="@hand_b_vest_1_name"
-           description="@hand_b_vest_1_desc"
-           img="data/models/equipment/HandVest1_ui.dds">
+           tooltip="@hand_armor_Vest1_name"
+           description="@hand_armor_Vest1_desc"
+           img="data/models/equipment/hand_armor_Vest1_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-2"
                            turnSpeedModifierPercent="-1" />
         <ConcealmentModifier add="0" />
@@ -424,12 +198,12 @@
                            piercingProtectionLevel="10" />
         </Params>
     </Armor>
-    <Armor name="hand_b_Vest_2"
+    <Armor name="hand_armor_Vest2"
            inventoryBinding="Armor"
            unlockCost="0"
-           tooltip="@hand_b_vest_2_name"
-           description="@hand_b_vest_2_desc"
-           img="data/models/equipment/HandVest2_ui.dds">
+           tooltip="@hand_armor_Vest2_name"
+           description="@hand_armor_Vest2_desc"
+           img="data/models/equipment/hand_armor_Vest2_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-3"
                            turnSpeedModifierPercent="-1" />
         <ConcealmentModifier add="0" />
@@ -442,12 +216,12 @@
                            piercingProtectionLevel="20" />
         </Params>
     </Armor>
-    <Armor name="hand_b_Vest_3"
+    <Armor name="hand_armor_Vest3"
            inventoryBinding="Armor"
            unlockCost="0"
-           tooltip="@hand_b_vest_3_name"
-           description="@hand_b_vest_3_desc"
-           img="data/models/equipment/HandVest3_ui.dds">
+           tooltip="@hand_armor_Vest3_name"
+           description="@hand_armor_Vest3_desc"
+           img="data/models/equipment/hand_armor_Vest3_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-4"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="-1" />
@@ -460,12 +234,12 @@
                            piercingProtectionLevel="30" />
         </Params>
     </Armor>
-    <Armor name="hand_b_Vest_4"
+    <Armor name="hand_armor_Vest4"
            inventoryBinding="Armor"
            unlockCost="0"
-           tooltip="@hand_b_vest_4_name"
-           description="@hand_b_vest_4_desc"
-           img="data/models/equipment/HandVest4_ui.dds">
+           tooltip="@hand_armor_Vest4_name"
+           description="@hand_armor_Vest4_desc"
+           img="data/models/equipment/hand_armor_Vest4_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-5"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="-2" />
@@ -478,12 +252,12 @@
                            piercingProtectionLevel="40" />
         </Params>
     </Armor>
-    <Armor name="hand_b_Vest_5"
+    <Armor name="hand_armor_Vest5"
            inventoryBinding="Armor"
            unlockCost="0"
-           tooltip="@hand_b_vest_5_name"
-           description="@hand_b_vest_5_desc"
-           img="data/models/equipment/HandVest5_ui.dds">
+           tooltip="@hand_armor_Vest5_name"
+           description="@hand_armor_Vest5_desc"
+           img="data/models/equipment/hand_armor_Vest5_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-6"
                            turnSpeedModifierPercent="-3" />
         <ConcealmentModifier add="-3" />
@@ -496,4 +270,267 @@
                            piercingProtectionLevel="50" />
         </Params>
     </Armor>
+    <!-- Vanity Items -->
+    <Helmet name="hand_helmet_Rattanhat"
+            inventoryBinding="Helmet"
+            unlockCost="0"
+            tooltip="@hand_helmet_Rattanhat_name"
+            description="@hand_helmet_Rattanhat_desc"
+            img="data/models/humans/attachments/hand_helmet_Rattanhat_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="2" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360"
+                           coveragePercent="5"
+                           piercingProtectionLevel="10" />
+        </Params>
+    </Helmet>
+    <Helmet name="hand_helmet_Santahat"
+            inventoryBinding="Helmet"
+            unlockCost="0"
+            tooltip="@hand_helmet_Santahat_name"
+            description="@hand_helmet_Santahat_desc"
+            img="data/models/humans/attachments/santa_hat_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="50"
+                           turnSpeedModifierPercent="-20" />
+        <ConcealmentModifier add="-3" />
+        <RenderObject3D model="data/models/humans/attachments/santa_hat.khm"
+                        diffuseTex="data/models/humans/attachments/santa_hat.dds"
+                        attachSlot="Bip001 Head"
+                        windAnimated="1" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360"
+                           coveragePercent="0"
+                           piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+    <Helmet name="hand_helmet_Capassaulter"
+            inventoryBinding="Helmet"
+            unlockCost="0"
+            tooltip="@hand_helmet_Capassaulter_name"
+            description="@hand_helmet_Capassaulter_desc"
+            img="data/models/humans/attachments/cia_cap_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="0" />
+        <RenderObject3D model="data/models/humans/attachments/cia_cap.khm"
+                        diffuseTex="data/models/humans/attachments/swat_cap.dds"
+                        attachSlot="Bip001 Head" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360"
+                           coveragePercent="0"
+                           piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+    <Helmet name="hand_helmet_Beretops"
+            inventoryBinding="Helmet"
+            unlockCost="0"
+            tooltip="@hand_helmet_Beretops_name"
+            description="@hand_helmet_Beretops_desc"
+            img="data/models/humans/attachments/captain_beret_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-4" />
+        <RenderObject3D model="data/models/humans/attachments/swat_beret.khm"
+                        diffuseTex="data/models/humans/attachments/swat_beret.dds"
+                        attachSlot="Bip001 Head" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360"
+                           coveragePercent="0"
+                           piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+    <Helmet name="hand_helmet_Skullcrusher"
+            inventoryBinding="Helmet"
+            unlockCostBH="3"
+            tooltip="@hand_helmet_Skullcrusher_name"
+            description="@hand_helmet_Skullcrusher_desc"
+            img="data/models/humans/attachments/straps_skullcrusher_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-2"
+                           turnSpeedModifierPercent="-2" />
+        <ConcealmentModifier add="-2" />
+        <Params nvgByDefault="true">
+            <ProtectionArc degrees="360"
+                           coveragePercent="0"
+                           piercingProtectionLevel="0" />
+        </Params>
+        <RenderObject3D model="data/models/humans/attachments/straps_skullcrusher.khm"
+                        diffuseTex="data/models/humans/attachments/nvg_03.dds"
+                        attachSlot="Bip001 Head">
+            <Specular shininess="8"
+                      intensity="1.3" />
+        </RenderObject3D>
+    </Helmet>
+    <Helmet name="hand_helmet_Headband"
+            inventoryBinding="Helmet"
+            unlockCost="0"
+            tooltip="@hand_helmet_Headband_name"
+            description="@hand_helmet_Headband_desc"
+            img="data/models/humans/attachments/headband_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2" />
+        <RenderObject3D model="data/models/humans/attachments/swat_militia_hair.khm"
+                        diffuseTex="data/models/humans/attachments/cia_headband.dds"
+                        attachSlot="Bip001 Head" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360"
+                           coveragePercent="0"
+                           piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+    <Helmet name="hand_helmet_Bandana"
+            inventoryBinding="Helmet"
+            unlockCost="0"
+            tooltip="@hand_helmet_Bandana_name"
+            description="@hand_helmet_Bandana_desc"
+            img="data/models/humans/attachments/bandana_01_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-2" />
+        <RenderObject3D model="data/models/humans/attachments/swat_bandana_02.khm"
+                        diffuseTex="data/models/humans/attachments/swat_bandana_02_red.dds"
+                        attachSlot="Bip001 Head" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360"
+                           coveragePercent="0"
+                           piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+    <Helmet name="hand_helmet_Undercovercap"
+            inventoryBinding="Helmet"
+            unlockCost="0"
+            tooltip="@hand_helmet_Undercovercap_name"
+            description="@hand_helmet_Undercovercap_desc"
+            img="data/models/humans/attachments/cia_beret_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="1" />
+        <RenderObject3D model="data/models/humans/attachments/cia_beret.khm"
+                        diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds"
+                        attachSlot="Bip001 Head" />
+        <RenderObject3D model="data/models/humans/attachments/cia_scarf.khm"
+                        diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360"
+                           coveragePercent="0"
+                           piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+    <Helmet name="hand_helmet_Blackopscap"
+            inventoryBinding="Helmet"
+            unlockCost="0"
+            tooltip="@hand_helmet_Blackopscap_name"
+            description="@hand_helmet_Blackopscap_desc"
+            img="data/models/humans/attachments/cia_cap_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="3"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="0" />
+        <RenderObject3D model="data/models/humans/attachments/cia_cap.khm"
+                        diffuseTex="data/models/humans/attachments/cia_cap_01.dds"
+                        attachSlot="Bip001 Head" />
+        <RenderObject3D model="data/models/humans/attachments/cia_scarf.khm"
+                        diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360"
+                           coveragePercent="0"
+                           piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+    <Helmet name="hand_helmet_Usflagbandana"
+            inventoryBinding="Helmet"
+            unlockCost="0"
+            tooltip="@hand_helmet_Usflagbandana_name"
+            description="@hand_helmet_Usflagbandana_desc"
+            img="data/models/humans/attachments/bandana_01_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="0"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-10" />
+        <RenderObject3D model="data/models/humans/attachments/swat_bandana_02.khm"
+                        diffuseTex="data/models/humans/attachments/swat_bandana_02_us.dds"
+                        attachSlot="Bip001 Head" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360"
+                           coveragePercent="0"
+                           piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+    <Helmet name="hand_helmet_Blackhood"
+            inventoryBinding="Helmet"
+            unlockCost="0"
+            quantity="1"
+            tooltip="@hand_helmet_Blackhood_name"
+            description="@hand_helmet_Blackhood_desc"
+            img="data/models/humans/attachments/hostage_blindfold_ui.dds">
+        <ConcealmentModifier add="+2" />
+        <MobilityModifiers moveSpeedModifierPercent="0"
+                           turnSpeedModifierPercent="0" />
+        <RenderObject3D attachSlot="Bip001 Head"
+                        model="data/models/humans/attachments/hostage_blindfold.khm"
+                        diffuseTex="data/models/humans/attachments/hostage_blindfold.dds"
+                        windAnimated="1" />
+        <Params allowNVG="false">
+            <ProtectionArc degrees="360"
+                           coveragePercent="0"
+                           piercingProtectionLevel="0" />
+        </Params>
+    </Helmet>
+    <!-- NVGs -->
+    <HelmetNVG name="hand_helmet_Quadnvg"
+               inventoryBinding="HelmetNVG"
+               unlockCost="0"
+               tooltip="@hand_helmet_Quadnvg_name"
+               description="@hand_helmet_Quadnvg_desc"
+               img="data/models/humans/attachments/hand_helmet_Quadnvg_ui.dds">
+        <MobilityModifiers moveSpeedModifierPercent="-1"
+                           turnSpeedModifierPercent="-2" />
+        <ConcealmentModifier add="0" />
+        <ModifiableParams fovDegrees="90"
+                          fovRadiusMeters="0.5"
+                          fovRangeMeters="999" />
+        <RenderObject3D model="data/models/humans/attachments/hand_helmet_Quadnvg_up.khm"
+                        diffuseTex="data/models/humans/attachments/hand_helmet_Quadnvg_ui.dds"
+                        attachSlot="nvg">
+            <Specular shininess="8"
+                      intensity="1.3" />
+        </RenderObject3D>
+        <RenderObject3D model="data/models/humans/attachments/hand_helmet_Quadnvg.khm"
+                        diffuseTex="data/models/humans/attachments/hand_helmet_Quadnvg.dds"
+                        attachSlot="nvg">
+            <Specular shininess="8"
+                      intensity="1.3" />
+        </RenderObject3D>
+        <RenderObject3D model="data/models/humans/attachments/hand_helmet_Quadnvg_light.khm"
+                        diffuseTex="data/textures/fx/light_flare_01.dds"
+                        diffuseColor="84ff47"
+                        blendMode="add"
+                        attachSlot="nvg" />
+    </HelmetNVG>
+    <HelmetNVG name="hand_helmet_Skullcrusher_nvg"
+               inventoryBinding="HelmetNVG"
+               tooltip="@hand_helmet_Skullcrusher_nvg_name"
+               description="@hand_helmet_Skullcrusher_nvg_desc"
+               img="data/models/humans/attachments/nvg_03_ui.dds">
+        <ModifiableParams fovDegrees="40"
+                          fovRadiusMeters="0.42"
+                          fovRangeMeters="999" />
+        <RenderObject3D model="data/models/humans/attachments/nvg_03_up.khm"
+                        diffuseTex="data/models/humans/attachments/nvg_03.dds"
+                        attachSlot="nvg">
+            <Specular shininess="8"
+                      intensity="1.3" />
+        </RenderObject3D>
+        <RenderObject3D model="data/models/humans/attachments/nvg_03.khm"
+                        diffuseTex="data/models/humans/attachments/nvg_03.dds"
+                        attachSlot="nvg">
+            <Specular shininess="8"
+                      intensity="1.3" />
+        </RenderObject3D>
+        <RenderObject3D model="data/models/humans/attachments/nvg_03_lights.khm"
+                        diffuseTex="data/textures/fx/light_flare_01.dds"
+                        diffuseColor="84ff47"
+                        blendMode="add"
+                        attachSlot="nvg" />
+    </HelmetNVG>
 </Equipment>

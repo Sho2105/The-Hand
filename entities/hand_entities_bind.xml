@@ -27,14 +27,14 @@
 	<Bind eqp="hand Breacher" to="fence_stone_02" />
 	<Bind eqp="hand Breacher" to="fence_stone_03" />
 
-	<Bind eqp="hand SteelFeet" to="door_wood_01_locked" />
-	<Bind eqp="hand SteelFeet" to="door_wood_old_locked" />
-	<Bind eqp="hand SteelFeet" to="door_flat_01_locked" />
-	<Bind eqp="hand SteelFeet" to="gate_poor_01_locked" />
-	<Bind eqp="hand SteelFeet" to="door_grate_01_locked" />
-	<Bind eqp="hand SteelFeet" to="door_metal_sheet_locked" />
-	<Bind eqp="hand SteelFeet" to="door_grate_02_locked" />
-	<Bind eqp="hand SteelFeet" to="gate_metal_sheet_locked" />
+	<Bind eqp="hand_gear_Steelfeet" to="door_wood_01_locked" />
+	<Bind eqp="hand_gear_Steelfeet" to="door_wood_old_locked" />
+	<Bind eqp="hand_gear_Steelfeet" to="door_flat_01_locked" />
+	<Bind eqp="hand_gear_Steelfeet" to="gate_poor_01_locked" />
+	<Bind eqp="hand_gear_Steelfeet" to="door_grate_01_locked" />
+	<Bind eqp="hand_gear_Steelfeet" to="door_metal_sheet_locked" />
+	<Bind eqp="hand_gear_Steelfeet" to="door_grate_02_locked" />
+	<Bind eqp="hand_gear_Steelfeet" to="gate_metal_sheet_locked" />
 
 	<Bind eqp="hand LockPuncher" to="door_wood_01_locked" />
 	<Bind eqp="hand LockPuncher" to="door_wood_old_locked" />

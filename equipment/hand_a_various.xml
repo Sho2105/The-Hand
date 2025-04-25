@@ -1,12 +1,12 @@
 <Equipment>
-    <Grenade name="hand Strafe"
+    <Grenade name="hand_gear_Signaturethumb"
              inventoryBinding="SupportGear1"
              unlockCostBH="0"
              quantity="1"
-             tooltip="@equipment_hand_strafe_name"
-             description="@equipment_hand_strafe_desc"
-             img="data/models/equipment/strafe_ui.dds"
-             movie="data/movies/hand_strafe.ogv"
+             tooltip="@hand_gear_Signaturethumb_name"
+             description="@hand_gear_Signaturethumb_desc"
+             img="data/models/equipment/hand_gear_Signaturethumb_ui.dds"
+             movie="data/movies/hand_gear_Signaturethumb.ogv"
              animationSet="grenade"
              soundUse="grenade_use"
              soundUseVoice="VOX_GEAR_SMOKE">
@@ -33,9 +33,9 @@
                     physicsDetonationForce="5"
                     audibleLaunchSoundRadius="0"
                     audibleDetonationSoundRadius="20">
-            <FX particles="hand_Strafesmoke"
+            <FX particles="hand_effect_Signaturethumbsmoke"
                 anim2D="" />
-            <Shrapnel projectileSource="StrafeBody"
+            <Shrapnel projectileSource="hand_gear_Signaturethumbbody"
                       min="15"
                       max="20"
                       spreadRadius="15.0" />
@@ -44,7 +44,7 @@
             </EffectRange>
         </Projectile>
     </Grenade>
-    <Grenade name="StrafeBody"
+    <Grenade name="hand_gear_Signaturethumbbody"
              inventoryBinding="SupportGear1"
              quantity="20"
              tooltip="You Should not see this"
@@ -73,12 +73,12 @@
                     physicsDetonationForce="5"
                     audibleLaunchSoundRadius="0"
                     audibleDetonationSoundRadius="20">
-            <FX particles="hand_Strafebullet"
+            <FX particles="hand_effect_Signaturethumbbullet"
                 randRotation="true"
                 entity3="FX_dust_small"
                 deleteAfterMS3="25000"
                 anim2D="" />
-            <Shrapnel projectileSource="StrafeBody2"
+            <Shrapnel projectileSource="hand_gear_Signaturethumbbody2"
                       min="5"
                       max="5"
                       spreadRadius="7.5" />
@@ -107,7 +107,7 @@
             </EffectRange>
         </Projectile>
     </Grenade>
-    <Grenade name="StrafeBody2"
+    <Grenade name="hand_gear_Signaturethumbbody2"
              inventoryBinding="SupportGear1"
              quantity="20"
              tooltip="You Should not see this"
@@ -136,7 +136,7 @@
                     physicsDetonationForce="5"
                     audibleLaunchSoundRadius="0"
                     audibleDetonationSoundRadius="20">
-            <FX particles="hand_Strafebullet"
+            <FX particles="hand_effect_Signaturethumbbullet"
                 randRotation="true"
                 entity3="FX_dust_small"
                 deleteAfterMS3="25000"
@@ -166,13 +166,54 @@
             </EffectRange>
         </Projectile>
     </Grenade>
-    <Grenade name="hand Bombard"
+    <Grenade name="hand_gear_Signatureindex"
              inventoryBinding="SupportGear1"
              unlockCostBH="0"
              quantity="1"
-             tooltip="@equipment_hand_bombard_name"
-             description="@equipment_hand_bombard_desc"
-             img="data/models/equipment/bombard_ui.dds"
+             tooltip="@hand_gear_Signatureindex_name"
+             description="@hand_gear_Signatureindex_desc"
+             img="data/models/equipment/hand_gear_Signatureindex_ui.dds"
+             movie="data/movies/hand_gear_Signatureindex.ogv"
+             animationSet="grenade"
+             soundUse="grenade_use"
+             soundUseVoice="VOX_GEAR_SMOKE">
+        <RenderObject3D model="data/models/equipment/smoke_grenade.khm"
+                        skipGOSSAO="true"
+                        diffuseTex="data/models/equipment/smoke_grenade.dds" />
+        <ConcealmentModifier add="5" />
+        <MobilityModifiers moveSpeedModifierPercent="-0.5"
+                           turnSpeedModifierPercent="0" />
+        <ModifiableParams changeInTime="0"
+                          changeOutTime="0"
+                          throwTime="500"
+                          throwTimeCorner="500" />
+        <Projectile bodyTemplate="SmokeGrenade"
+                    trailParticles="SmokeGrenadeTrail"
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundExplosion=""
+                    soundOnSpawn="smoke_throw"
+                    soundFollow="smoke_loop"
+                    soundHitFloor="grenade_hit_floor"
+                    friendlyFire="false"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="200"
+                    physicsDetonationForce="5"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="10">
+            <FX particles="hand_effect_Signatureindex"
+                anim2D="" />
+            <EffectRange radiusMeters="12.5">
+                <SmokeEffect durationMSec="60000" />
+            </EffectRange>
+        </Projectile>
+    </Grenade>
+    <Grenade name="hand_gear_Signaturemiddle"
+             inventoryBinding="SupportGear1"
+             unlockCostBH="0"
+             quantity="1"
+             tooltip="@hand_gear_Signaturemiddle_name"
+             description="@hand_gear_Signaturemiddle_desc"
+             img="data/models/equipment/hand_gear_Signaturemiddle_ui.dds"
              animationSet="grenade"
              soundUse="grenade_use"
              soundUseVoice="VOX_GEAR_SMOKE">
@@ -199,7 +240,7 @@
                     physicsDetonationForce="5"
                     audibleLaunchSoundRadius="0"
                     audibleDetonationSoundRadius="100">
-            <Shrapnel projectileSource="BombardBody"
+            <Shrapnel projectileSource="hand_gear_Signaturemiddlebody"
                       min="1"
                       max="1"
                       spreadRadius="0" />
@@ -208,7 +249,7 @@
             </EffectRange>
         </Projectile>
     </Grenade>
-    <Grenade name="BombardBody"
+    <Grenade name="hand_gear_Signaturemiddlebody"
              inventoryBinding="SupportGear1"
              quantity="1"
              tooltip="You Should not see this"
@@ -236,7 +277,7 @@
                     physicsDetonationForce="1000"
                     audibleLaunchSoundRadius="0"
                     audibleDetonationSoundRadius="150">
-            <FX particles="hand_bombard_explosion"
+            <FX particles="hand_effect_Signaturemiddleexplosion"
                 randRotation2="true"
                 deleteAfterMS3="25000"
                 anim2D="" />
@@ -254,53 +295,14 @@
             </EffectRange>
         </Projectile>
     </Grenade>
-    <Grenade name="hand HealingSpray"
-             inventoryBinding="SupportGear1"
-             unlockCostBH="0"
-             quantity="1"
-             tooltip="@equipment_hand_healingspray_name"
-             description="@equipment_hand_healingspray_desc"
-             img="data/models/equipment/healingspray_ui.dds"
-             animationSet="grenade"
-             soundUse="grenade_use">
-        <ConcealmentModifier add="-1" />
-        <MobilityModifiers moveSpeedModifierPercent="-0.8"
-                           turnSpeedModifierPercent="0" />
-        <ModifiableParams changeInTime="0"
-                          changeOutTime="0"
-                          throwTime="1000"
-                          throwTimeCorner="1400" />
-        <Projectile bodyTemplate="SmokeGrenade"
-                    trailParticles="SmokeGrenadeTrail"
-                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-                    soundExplosion=""
-                    soundOnSpawn="smoke_throw"
-                    soundFollow="smoke_loop"
-                    soundHitFloor="grenade_hit_floor"
-                    friendlyFire="true"
-                    triggerOnImpact="false"
-                    triggerTimeAfterTargetHitMsec="200"
-                    physicsDetonationForce="0"
-                    audibleLaunchSoundRadius="0"
-                    audibleDetonationSoundRadius="4">
-            <FX particles="hand_Healingspray"
-                anim2D="" />
-            <EffectRange radiusMeters="2.5">
-                <SmokeEffect durationMSec="0" />
-                <DamageEffect chancePercent="100"
-                              damage="-500"
-                              damageType="1" />
-            </EffectRange>
-        </Projectile>
-    </Grenade>
-    <ExplosiveCharge name="hand Breacher"
+    <ExplosiveCharge name="hand_gear_Signaturering"
                      inventoryBinding="SupportGear1"
                      unlockCostBH="0"
                      quantity="5"
-                     tooltip="@equipment_hand_demo_charge_name"
-                     description="@equipment_hand_demo_charge_desc"
-                     img="data/models/equipment/breacher_ui.dds"
-                     movie="data/movies/hand_demo_charge.ogv"
+                     tooltip="@hand_gear_Signaturering_name"
+                     description="@hand_gear_Signaturering_desc"
+                     img="data/models/equipment/hand_gear_Signaturering_ui.dds"
+                     movie="data/movies/hand_gear_Signaturering.ogv"
                      animationSet="generic_device"
                      soundUse="equip_charge"
                      crouchOnUse="true">
@@ -328,40 +330,29 @@
                           damageType="2" />
         <Params bodyTemplate="DemoChargeBody"
                 explosionSound="expl_breach_charge">
-            <FX particles="hand_BreachingCharge"
+            <FX particles="hand_effect_Signatureringcharge"
                 entity1="ExplosionLight"
                 entity2="scorch_mark_breach"
                 entity3="FX_dust_large"
                 deleteAfterMS3="35000" />
         </Params>
     </ExplosiveCharge>
-    <Grenade name="hand Smoke Screen"
+    <Grenade name="hand_gear_Signaturepinky"
              inventoryBinding="SupportGear1"
              unlockCostBH="0"
              quantity="1"
-             tooltip="@equipment_hand_smoke_screen_name"
-             description="@equipment_hand_smoke_screen_desc"
-             img="data/models/equipment/smokescreen_ui.dds"
-             movie="data/movies/smoke_screen.ogv"
+             tooltip="@hand_gear_Signaturepinky_name"
+             description="@hand_gear_Signaturepinky_desc"
+             img="data/models/equipment/hand_gear_Signaturepinky_ui.dds"
              animationSet="grenade"
-             soundUse="grenade_use"
-             soundUseVoice="VOX_GEAR_SMOKE">
-        <RenderObject3D model="data/models/equipment/smoke_grenade.khm"
-                        skipGOSSAO="true"
-                        diffuseTex="data/models/equipment/smoke_grenade.dds" />
-        <ConcealmentModifier add="5" />
-        <MobilityModifiers moveSpeedModifierPercent="-0.5"
+             soundUse="grenade_use">
+        <ConcealmentModifier add="-1" />
+        <MobilityModifiers moveSpeedModifierPercent="-0.8"
                            turnSpeedModifierPercent="0" />
-        <!-- - throwTime is the full time required to throw it, it is split in half between when the hand starts
-        moving and the grenade launches and the recovery
-        - the effectRange Radius contains the previous one, but the effects do not concatenate
-        - explosion time is adjusted automatically depending on the distance to target, but have a minimum
-        explosion time -->
         <ModifiableParams changeInTime="0"
                           changeOutTime="0"
-                          throwTime="500"
-                          throwTimeCorner="500" />
-        <!-- NOTE: Explosion particle is tweaked to last about as long as duration -->
+                          throwTime="1000"
+                          throwTimeCorner="1400" />
         <Projectile bodyTemplate="SmokeGrenade"
                     trailParticles="SmokeGrenadeTrail"
                     pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
@@ -369,24 +360,26 @@
                     soundOnSpawn="smoke_throw"
                     soundFollow="smoke_loop"
                     soundHitFloor="grenade_hit_floor"
-                    friendlyFire="false"
+                    friendlyFire="true"
                     triggerOnImpact="false"
                     triggerTimeAfterTargetHitMsec="200"
-                    physicsDetonationForce="5"
+                    physicsDetonationForce="0"
                     audibleLaunchSoundRadius="0"
-                    audibleDetonationSoundRadius="10">
-            <FX particles="hand_Smokescreen"
+                    audibleDetonationSoundRadius="4">
+            <FX particles="hand_effect_Signaturepinky"
                 anim2D="" />
-            <EffectRange radiusMeters="12.5">
-                <!-- The Smoke FX is 25 in diameter -->
-                <SmokeEffect durationMSec="60000" />
+            <EffectRange radiusMeters="2.5">
+                <SmokeEffect durationMSec="0" />
+                <DamageEffect chancePercent="100"
+                              damage="-500"
+                              damageType="1" />
             </EffectRange>
         </Projectile>
     </Grenade>
-    <FeetOfSteel name="hand SteelFeet"
+    <FeetOfSteel name="hand_gear_Steelfeet"
                  inventoryBinding="SupportGear2"
-                 tooltip="@equipment_hand_steel_feet_name"
-                 img="data/models/equipment/SteelFeet_ui.dds">
+                 tooltip="You should not see this"
+                 img="data/models/equipment/hand_gear_Steelfeet_ui.dds">
         <ModifiableParams efficiencyPercent="150"
                           audibleSoundRadius="15.0"
                           timePerKickMsec="1500"
@@ -395,10 +388,10 @@
         <MobilityModifiers moveSpeedModifierPercent="0"
                            turnSpeedModifierPercent="0" />
     </FeetOfSteel>
-    <Lockpick name="hand LockPuncher"
+    <Lockpick name="hand_gear_Lockpuncher"
               inventoryBinding="SupportGear2"
-              tooltip="@equipment_hand_lock_puncher_name"
-              img="data/models/equipment/lockpuncher_ui.dds"
+              tooltip="You should not see this"
+              img="data/models/equipment/hand_gear_Lockpuncher_ui.dds"
               animationSet="generic_device"
               soundUse="lockpick_use"
               crouchOnUse="true">
