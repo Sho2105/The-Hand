@@ -13,10 +13,10 @@
              animationSet="rifle">
         <MobilityModifiers moveSpeedModifierPercent="-5"
                            turnSpeedModifierPercent="-1" />
-        <RenderObject3D model="data/models/weapons/hand_weapon_Spbot.khm"
+        <RenderObject3D model="data/models/weapons/a_ar.khm"
                         attachSlot="prop_back_rifle"
                         skipGOSSAO="true"
-                        diffuseTex="data/models/weapons/hand_weapon_Spbot.dds" />
+                        diffuseTex="data/models/weapons/a_ar.dds" />
         <ModifiableParams numPellets="1"
                           roundsPerMagazine="40"
                           closedBolt="0"
@@ -79,10 +79,10 @@
              animationSet="rifle">
         <MobilityModifiers moveSpeedModifierPercent="-8"
                            turnSpeedModifierPercent="-2" />
-        <RenderObject3D model="data/models/weapons/hand_weapon_Shbot.khm"
+        <RenderObject3D model="data/models/weapons/a_hmg.khm"
                         attachSlot="prop_back_rifle"
                         skipGOSSAO="true"
-                        diffuseTex="data/models/weapons/hand_weapon_Shbot.dds" />
+                        diffuseTex="data/models/weapons/a_hmg.dds" />
         <ModifiableParams numPellets="1"
                           roundsPerMagazine="100"
                           closedBolt="0"
@@ -140,7 +140,7 @@
             category="shield"
             tooltip="@hand_weapon_Shield1_name"
             description="@hand_weapon_Shield1_desc"
-            img="data/models/equipment/hand_weapon_Shield1_ui.dds"
+            img="data/models/weapons/hand_weapon_Shield1_ui.dds"
             holdBone="shield"
             animationSet="shield">
         <MobilityModifiers moveSpeedModifierPercent="-25"
@@ -177,7 +177,7 @@
             category="shield"
             tooltip="@hand_weapon_Shield2_name"
             description="@hand_weapon_Shield2_desc"
-            img="data/models/equipment/hand_weapon_Shield2_ui.dds"
+            img="data/models/weapons/hand_weapon_Shield2_ui.dds"
             holdBone="shield"
             animationSet="shield">
         <MobilityModifiers moveSpeedModifierPercent="-30"

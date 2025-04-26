@@ -1,31 +1,31 @@
 <Entities>
 
-	<!-- hand Breacher, bind these to the walls so it can actually blows up -->
-	<Bind eqp="hand Breacher" to="fence_metal_90_01" />
-	<Bind eqp="hand Breacher" to="gate_metal_large" />
-	<Bind eqp="hand Breacher" to="garage_door" />
-	<Bind eqp="hand Breacher" to="garage_door_small" />
-	<Bind eqp="hand Breacher" to="fence_metal_01" />
-	<Bind eqp="hand Breacher" to="fence_metal_02" />
-	<Bind eqp="hand Breacher" to="fence_metal_02_02" />
-	<Bind eqp="hand Breacher" to="fence_metal_02_03" />
-	<Bind eqp="hand Breacher" to="fence_metal_corner_01" />
-	<Bind eqp="hand Breacher" to="window_single_metal_bars" />
-	<Bind eqp="hand Breacher" to="door_elevator" />
-	<Bind eqp="hand Breacher" to="door_bookcase" />
-	<Bind eqp="hand Breacher" to="Wall" />
-	<Bind eqp="hand Breacher" to="Wall 2mH" />
-	<Bind eqp="hand Breacher" to="Wall White" />
-	<Bind eqp="hand Breacher" to="Wall White 2mH" />
-	<Bind eqp="hand Breacher" to="Wall Brick" />
-	<Bind eqp="hand Breacher" to="Wall Stone Slabs" />
-	<Bind eqp="hand Breacher" to="Wall Ship" />
-	<Bind eqp="hand Breacher" to="Wall Green Fence" />
-	<Bind eqp="hand Breacher" to="Wall Thin" />
-	<Bind eqp="hand Breacher" to="Wall Fat" />
-	<Bind eqp="hand Breacher" to="fence_stone_01" />
-	<Bind eqp="hand Breacher" to="fence_stone_02" />
-	<Bind eqp="hand Breacher" to="fence_stone_03" />
+	<!-- hand_gear_Signaturering, bind these to the walls so it can actually blows up -->
+	<Bind eqp="hand_gear_Signaturering" to="fence_metal_90_01" />
+	<Bind eqp="hand_gear_Signaturering" to="gate_metal_large" />
+	<Bind eqp="hand_gear_Signaturering" to="garage_door" />
+	<Bind eqp="hand_gear_Signaturering" to="garage_door_small" />
+	<Bind eqp="hand_gear_Signaturering" to="fence_metal_01" />
+	<Bind eqp="hand_gear_Signaturering" to="fence_metal_02" />
+	<Bind eqp="hand_gear_Signaturering" to="fence_metal_02_02" />
+	<Bind eqp="hand_gear_Signaturering" to="fence_metal_02_03" />
+	<Bind eqp="hand_gear_Signaturering" to="fence_metal_corner_01" />
+	<Bind eqp="hand_gear_Signaturering" to="window_single_metal_bars" />
+	<Bind eqp="hand_gear_Signaturering" to="door_elevator" />
+	<Bind eqp="hand_gear_Signaturering" to="door_bookcase" />
+	<Bind eqp="hand_gear_Signaturering" to="Wall" />
+	<Bind eqp="hand_gear_Signaturering" to="Wall 2mH" />
+	<Bind eqp="hand_gear_Signaturering" to="Wall White" />
+	<Bind eqp="hand_gear_Signaturering" to="Wall White 2mH" />
+	<Bind eqp="hand_gear_Signaturering" to="Wall Brick" />
+	<Bind eqp="hand_gear_Signaturering" to="Wall Stone Slabs" />
+	<Bind eqp="hand_gear_Signaturering" to="Wall Ship" />
+	<Bind eqp="hand_gear_Signaturering" to="Wall Green Fence" />
+	<Bind eqp="hand_gear_Signaturering" to="Wall Thin" />
+	<Bind eqp="hand_gear_Signaturering" to="Wall Fat" />
+	<Bind eqp="hand_gear_Signaturering" to="fence_stone_01" />
+	<Bind eqp="hand_gear_Signaturering" to="fence_stone_02" />
+	<Bind eqp="hand_gear_Signaturering" to="fence_stone_03" />
 
 	<Bind eqp="hand_gear_Steelfeet" to="door_wood_01_locked" />
 	<Bind eqp="hand_gear_Steelfeet" to="door_wood_old_locked" />
@@ -36,13 +36,13 @@
 	<Bind eqp="hand_gear_Steelfeet" to="door_grate_02_locked" />
 	<Bind eqp="hand_gear_Steelfeet" to="gate_metal_sheet_locked" />
 
-	<Bind eqp="hand LockPuncher" to="door_wood_01_locked" />
-	<Bind eqp="hand LockPuncher" to="door_wood_old_locked" />
-	<Bind eqp="hand LockPuncher" to="door_flat_01_locked" />
-	<Bind eqp="hand LockPuncher" to="gate_poor_01_locked" />
-	<Bind eqp="hand LockPuncher" to="door_grate_01_locked" />
-	<Bind eqp="hand LockPuncher" to="door_metal_sheet_locked" />
-	<Bind eqp="hand LockPuncher" to="door_grate_02_locked" />
-	<Bind eqp="hand LockPuncher" to="gate_metal_sheet_locked" />
+	<Bind eqp="hand_gear_Lockpuncher" to="door_wood_01_locked" />
+	<Bind eqp="hand_gear_Lockpuncher" to="door_wood_old_locked" />
+	<Bind eqp="hand_gear_Lockpuncher" to="door_flat_01_locked" />
+	<Bind eqp="hand_gear_Lockpuncher" to="gate_poor_01_locked" />
+	<Bind eqp="hand_gear_Lockpuncher" to="door_grate_01_locked" />
+	<Bind eqp="hand_gear_Lockpuncher" to="door_metal_sheet_locked" />
+	<Bind eqp="hand_gear_Lockpuncher" to="door_grate_02_locked" />
+	<Bind eqp="hand_gear_Lockpuncher" to="gate_metal_sheet_locked" />
 
 </Entities>

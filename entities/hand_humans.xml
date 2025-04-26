@@ -1,787 +1,401 @@
 <Entities>
-    <!-- After Timeline (Fingers) -->
-    <Entity name="ThumbTemplateHuman"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Thumb">
-            <Id name="ThumbTemplateHuman"
-                portrait="data/textures/portraits/blank1.dds"
-                gender="0"
-                voicePack="cia_male" />
-            <FOV degrees="100"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="100.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="IndexTemplateHuman"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/cia_scarf.khm"
-                        diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
-        <RenderObject3D model="data/models/humans/attachments/cia_jacket.khm"
-                        diffuseTex="data/models/humans/attachments/cia_jacket.dds"
-                        windAnimated="1" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Index">
-            <Id name="IndexTemplateHuman"
-                portrait="data/textures/portraits/blank2.dds"
-                gender="0"
-                voicePack="cia_male" />
-            <FOV degrees="100"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="50.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Concealment default="10"
-                         canHide="true" />
-            <Equipment>
-                <Item name="hand LockPuncher" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="MiddleTemplateHuman"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm"
-                        diffuseTex="data/models/humans/attachments/hand_support_vest.dds">
-            <Specular shininess="8"
-                      intensity="1.3" />
-        </RenderObject3D>
-        <RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_support_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_support_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_support_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm"
-                        attachSlot="vest_right"
-                        skipGOSSAO="true"
-                        diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_left.khm"
-                        attachSlot="vest_left"
-                        skipGOSSAO="true"
-                        diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Middle">
-            <Id name="MiddleTemplateHuman"
-                portrait="data/textures/portraits/blank3.dds"
-                gender="0"
-                voicePack="cia_male" />
-            <FOV degrees="100"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="100.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="RingTemplateHuman"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm"
-                        diffuseTex="data/models/humans/attachments/hand_breacher_vest.dds">
-            <Specular shininess="8"
-                      intensity="1.3" />
-        </RenderObject3D>
-        <RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_breacher_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_breacher_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Ring">
-            <Id name="RingTemplateHuman"
-                portrait="data/textures/portraits/blank4.dds"
-                gender="0"
-                voicePack="cia_male" />
-            <FOV degrees="100"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="100.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="PinkyTemplateHuman"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/civilian_female_standard.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm"
-                        diffuseTex="data/models/humans/attachments/hand_marksman_vest.dds">
-            <Specular shininess="8"
-                      intensity="1.3" />
-        </RenderObject3D>
-        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_marksman_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_marksman_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Pinky">
-            <Id name="PinkyTemplateHuman"
-                portrait="data/textures/portraits/blank5.dds"
-                gender="1"
-                voicePack="cia_female" />
-            <FOV degrees="100"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="50.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand LockPuncher" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <!-- Before Timeline (Divisions) -->
-    <Entity name="SpearTemplateHuman_Male"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_assaulter_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_assaulter_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Spear">
-            <Id name="SpearTemplateHuman_Male"
-                portrait="data/textures/portraits/Censored1.dds"
-                gender="0"
-                voicePack="cia_male" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="100.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="SpearTemplateHuman_Female"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_assaulter_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_assaulter_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Spear">
-            <Id name="SpearTemplateHuman_Female"
-                portrait="data/textures/portraits/Censored1.dds"
-                gender="1"
-                voicePack="cia_female" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="100.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="DaggerTemplateHuman_Male"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/cia_scarf.khm"
-                        diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
-        <RenderObject3D model="data/models/humans/attachments/cia_jacket.khm"
-                        diffuseTex="data/models/humans/attachments/cia_jacket.dds"
-                        windAnimated="1" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Dagger">
-            <Id name="DaggerTemplateHuman_Male"
-                portrait="data/textures/portraits/Censored2.dds"
-                gender="0"
-                voicePack="cia_male" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="50.0" />
-            <Concealment default="10"
-                         canHide="true" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand LockPuncher" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="DaggerTemplateHuman_Female"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/cia_scarf.khm"
-                        diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
-        <RenderObject3D model="data/models/humans/attachments/cia_jacket.khm"
-                        diffuseTex="data/models/humans/attachments/cia_jacket.dds"
-                        windAnimated="1" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Dagger">
-            <Id name="DaggerTemplateHuman_Female"
-                portrait="data/textures/portraits/Censored2.dds"
-                gender="1"
-                voicePack="cia_female" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="50.0" />
-            <Concealment default="10"
-                         canHide="true" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand LockPuncher" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="ChaliceTemplateHuman_Male"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_marksman_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_marksman_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Chalice">
-            <Id name="ChaliceTemplateHuman_Male"
-                portrait="data/textures/portraits/Censored5.dds"
-                gender="0"
-                voicePack="cia_male" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="50.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand LockPuncher" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="ChaliceTemplateHuman_Female"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_marksman_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_marksman_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_marksman_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Chalice">
-            <Id name="ChaliceTemplateHuman_Female"
-                portrait="data/textures/portraits/Censored5.dds"
-                gender="1"
-                voicePack="cia_female" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="50.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand LockPuncher" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="ShieldTemplateHuman_Male"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_support_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_support_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_support_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Shield">
-            <Id name="ShieldTemplateHuman_Male"
-                portrait="data/textures/portraits/Censored4.dds"
-                gender="0"
-                voicePack="cia_male" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="100.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="ShieldTemplateHuman_Female"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_support_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_support_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_support_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Shield">
-            <Id name="ShieldTemplateHuman_Female"
-                portrait="data/textures/portraits/Censored4.dds"
-                gender="1"
-                voicePack="cia_female" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="100.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="HammerTemplateHuman_Male"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_breacher_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_breacher_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Hammer">
-            <Id name="HammerTemplateHuman_Male"
-                portrait="data/textures/portraits/Censored18.dds"
-                gender="0"
-                voicePack="cia_male" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="100.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <Entity name="HammerTemplateHuman_Female"
-            type="Human"
-            editorAutoHeight="false">
-        <RenderObject3D model="data/models/humans/cia_undercover.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm"
-                        diffuseTex="data/models/humans/attachments/hand_breacher_vest.dds" />
-        <RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm"
-                        diffuseTex="data/models/humans/attachments/hand_breacher_helmet.dds"
-                        attachSlot="Bip001 Head" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="100" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="Hammer">
-            <Id name="HammerTemplateHuman_Female"
-                portrait="data/textures/portraits/Censored18.dds"
-                gender="1"
-                voicePack="cia_female" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="1" />
-            <Brain suppressionRecovery="100.0" />
-            <Mobility>
-                <MoveSpeed min="1.1"
-                           defaultMetersPerSec="2.28"
-                           max="10" />
-                <TurnSpeed min="6"
-                           defaultMetersPerSec="13"
-                           max="20" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-        </Human>
-    </Entity>
-    <!-- Bots-->
-    <Entity name="hand_gear_Spbot"
-            type="Human"
-            editorAutoHeight="false"
-            editorTags="unit hand">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="200" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="SP_BOT"
-               deployMode="1"
-               expendable="true">
-            <Id name="@entity_hand_gear_Spbot"
-                portrait=""
-                gender="0"
-                voicePack="" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="0.5" />
-            <Brain suppressionRecovery="30.0" />
-            <Mobility>
-                <MoveSpeed min="2.2"
-                           defaultMetersPerSec="3.5"
-                           max="10" />
-                <TurnSpeed min="10"
-                           defaultMetersPerSec="24"
-                           max="25" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_weapon_Spbot" />
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-            <Doctrine name="" />
-        </Human>
-    </Entity>
-    <Entity name="hand_gear_Dabot"
-            type="Human"
-            editorAutoHeight="false"
-            editorTags="unit hand">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="200" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="DA_BOT"
-               deployMode="1"
-               expendable="true">
-            <Id name="@entity_hand_gear_Dabot"
-                portrait=""
-                gender="0"
-                voicePack="" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="30.0" />
-            <Mobility>
-                <MoveSpeed min="2.2"
-                           defaultMetersPerSec="3.5"
-                           max="10" />
-                <TurnSpeed min="10"
-                           defaultMetersPerSec="24"
-                           max="25" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-            <Doctrine name="" />
-        </Human>
-    </Entity>
-    <Entity name="hand_gear_Shbot"
-            type="Human"
-            editorAutoHeight="false"
-            editorTags="unit hand">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="200" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="SH_BOT"
-               deployMode="1"
-               expendable="true">
-            <Id name="@entity_hand_gear_Shbot"
-                portrait=""
-                gender="0"
-                voicePack="" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="30.0" />
-            <Mobility>
-                <MoveSpeed min="2.2"
-                           defaultMetersPerSec="3.5"
-                           max="10" />
-                <TurnSpeed min="10"
-                           defaultMetersPerSec="24"
-                           max="25" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_weapon_Shbot" />
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-            <Doctrine name="" />
-        </Human>
-    </Entity>
-    <Entity name="hand_gear_Chbot"
-            type="Human"
-            editorAutoHeight="false"
-            editorTags="unit hand">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="200" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="CH_BOT"
-               deployMode="1"
-               expendable="true">
-            <Id name="@entity_hand_gear_Chbot"
-                portrait=""
-                gender="0"
-                voicePack="" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="30.0" />
-            <Mobility>
-                <MoveSpeed min="2.2"
-                           defaultMetersPerSec="3.5"
-                           max="10" />
-                <TurnSpeed min="10"
-                           defaultMetersPerSec="24"
-                           max="25" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-            <Doctrine name="" />
-        </Human>
-    </Entity>
-    <Entity name="hand_gear_Habot"
-            type="Human"
-            editorAutoHeight="false"
-            editorTags="unit hand">
-        <RenderObject3D model="data/models/humans/ranger_assaulter.khm"
-                        diffuseTex="data/models/humans/hand_uniform.dds" />
-        <Breakable template="GenericTrooperGibs"
-                   breakOnDamage="explosive"
-                   deleteOnDeath="false" />
-        <PhysicalParams health="200" />
-        <Human type="GoodGuy"
-               unit="hand"
-               class="HA_BOT"
-               deployMode="1"
-               expendable="true">
-            <Id name="@entity_hand_gear_Habot"
-                portrait=""
-                gender="0"
-                voicePack="" />
-            <FOV degrees="90"
-                 distanceMeters="999"
-                 eyeRadiusMeters="0.6" />
-            <Brain suppressionRecovery="30.0" />
-            <Mobility>
-                <MoveSpeed min="2.2"
-                           defaultMetersPerSec="3.5"
-                           max="10" />
-                <TurnSpeed min="10"
-                           defaultMetersPerSec="24"
-                           max="25" />
-            </Mobility>
-            <Equipment>
-                <Item name="hand_utility_Svest" />
-                <Item name="hand_gear_Steelfeet" />
-            </Equipment>
-            <Doctrine name="" />
-        </Human>
-    </Entity>
+	<!-- After Timeline (Fingers) -->
+	<Entity name="ThumbTemplateHuman" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/hand_breacher_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/hand_breacher_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Thumb">
+			<Id name="ThumbTemplateHuman" portrait="data/textures/portraits/thumb.dds" gender="0" voicePack="cia_male" />
+			<FOV degrees="100" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="100.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="IndexTemplateHuman" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_jacket.khm" diffuseTex="data/models/humans/attachments/cia_jacket.dds" windAnimated="1" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Index">
+			<Id name="IndexTemplateHuman" portrait="data/textures/portraits/index.dds" gender="0" voicePack="cia_male" />
+			<FOV degrees="100" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="50.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Concealment default="10" canHide="true" />
+			<Equipment>
+				<Item name="hand_gear_Lockpuncher" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="MiddleTemplateHuman" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm" diffuseTex="data/models/humans/attachments/hand_support_vest.dds">
+			<Specular shininess="8" intensity="1.3" />
+		</RenderObject3D>
+		<RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/hand_support_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_support_helmet.khm" diffuseTex="data/models/humans/attachments/hand_support_helmet.dds" attachSlot="Bip001 Head" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_right.khm" attachSlot="vest_right" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_sidepouch_left.khm" attachSlot="vest_left" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/ranger_sidepouch.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Middle">
+			<Id name="MiddleTemplateHuman" portrait="data/textures/portraits/middle.dds" gender="0" voicePack="cia_male" />
+			<FOV degrees="100" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="100.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="RingTemplateHuman" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm" diffuseTex="data/models/humans/attachments/hand_breacher_vest.dds">
+			<Specular shininess="8" intensity="1.3" />
+		</RenderObject3D>
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/hand_breacher_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/hand_breacher_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Ring">
+			<Id name="RingTemplateHuman" portrait="data/textures/portraits/ring.dds" gender="0" voicePack="cia_male" />
+			<FOV degrees="100" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="100.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="PinkyTemplateHuman" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/civilian_female_standard.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_vest_01.khm" diffuseTex="data/models/humans/attachments/hand_marksman_vest.dds">
+			<Specular shininess="8" intensity="1.3" />
+		</RenderObject3D>
+		<RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/hand_marksman_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_marksman_helmet.khm" diffuseTex="data/models/humans/attachments/hand_marksman_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Pinky">
+			<Id name="PinkyTemplateHuman" portrait="data/textures/portraits/pinky.dds" gender="1" voicePack="cia_female" />
+			<FOV degrees="100" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="50.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Lockpuncher" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<!-- Before Timeline (Divisions) -->
+	<Entity name="SpearTemplateHuman_Male" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/hand_assaulter_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/hand_assaulter_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Spear">
+			<Id name="SpearTemplateHuman_Male" portrait="data/textures/portraits/1.dds" gender="0" voicePack="cia_male" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="100.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="SpearTemplateHuman_Female" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/hand_assaulter_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/hand_assaulter_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Spear">
+			<Id name="SpearTemplateHuman_Female" portrait="data/textures/portraits/1.dds" gender="1" voicePack="cia_female" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="100.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="DaggerTemplateHuman_Male" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_jacket.khm" diffuseTex="data/models/humans/attachments/cia_jacket.dds" windAnimated="1" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Dagger">
+			<Id name="DaggerTemplateHuman_Male" portrait="data/textures/portraits/2.dds" gender="0" voicePack="cia_male" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="50.0" />
+			<Concealment default="10" canHide="true" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Lockpuncher" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="DaggerTemplateHuman_Female" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_scarf.khm" diffuseTex="data/models/humans/attachments/cia_scarf_beret_01.dds" />
+		<RenderObject3D model="data/models/humans/attachments/cia_jacket.khm" diffuseTex="data/models/humans/attachments/cia_jacket.dds" windAnimated="1" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Dagger">
+			<Id name="DaggerTemplateHuman_Female" portrait="data/textures/portraits/2.dds" gender="1" voicePack="cia_female" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="50.0" />
+			<Concealment default="10" canHide="true" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Lockpuncher" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="ChaliceTemplateHuman_Male" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/hand_marksman_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_marksman_helmet.khm" diffuseTex="data/models/humans/attachments/hand_marksman_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Chalice">
+			<Id name="ChaliceTemplateHuman_Male" portrait="data/textures/portraits/5.dds" gender="0" voicePack="cia_male" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="50.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Lockpuncher" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="ChaliceTemplateHuman_Female" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_marksman_vest.khm" diffuseTex="data/models/humans/attachments/hand_marksman_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_marksman_helmet.khm" diffuseTex="data/models/humans/attachments/hand_marksman_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Chalice">
+			<Id name="ChaliceTemplateHuman_Female" portrait="data/textures/portraits/5.dds" gender="1" voicePack="cia_female" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="50.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Lockpuncher" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="ShieldTemplateHuman_Male" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/hand_support_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_support_helmet.khm" diffuseTex="data/models/humans/attachments/hand_support_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Shield">
+			<Id name="ShieldTemplateHuman_Male" portrait="data/textures/portraits/4.dds" gender="0" voicePack="cia_male" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="100.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="ShieldTemplateHuman_Female" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_support_vest.khm" diffuseTex="data/models/humans/attachments/hand_support_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_support_helmet.khm" diffuseTex="data/models/humans/attachments/hand_support_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Shield">
+			<Id name="ShieldTemplateHuman_Female" portrait="data/textures/portraits/4.dds" gender="1" voicePack="cia_female" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="100.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="HammerTemplateHuman_Male" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/hand_breacher_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/hand_breacher_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Hammer">
+			<Id name="HammerTemplateHuman_Male" portrait="data/textures/portraits/18.dds" gender="0" voicePack="cia_male" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="100.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<Entity name="HammerTemplateHuman_Female" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/cia_undercover.khm" diffuseTex="data/models/humans/hand_uniform.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_vest.khm" diffuseTex="data/models/humans/attachments/hand_breacher_vest.dds" />
+		<RenderObject3D model="data/models/humans/attachments/ranger_assaulter_helmet.khm" diffuseTex="data/models/humans/attachments/hand_breacher_helmet.dds" attachSlot="Bip001 Head" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="100" />
+		<Human type="GoodGuy" unit="hand" class="Hammer">
+			<Id name="HammerTemplateHuman_Female" portrait="data/textures/portraits/18.dds" gender="1" voicePack="cia_female" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="1" />
+			<Brain suppressionRecovery="100.0" />
+			<Mobility>
+				<MoveSpeed min="1.1" defaultMetersPerSec="2.28" max="10" />
+				<TurnSpeed min="6" defaultMetersPerSec="13" max="20" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+		</Human>
+	</Entity>
+	<!-- Bots -->
+	<Entity name="hand_entity_Spbot" type="Human" editorAutoHeight="false" >
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/laymetal.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="200" />
+		<Human type="GoodGuy" unit="hand" class="SP_BOT" deployMode="1" expendable="true">
+			<Id name="@hand_entity_Spbot" portrait="data/textures/portraits/redacted.dds" gender="0" voicePack="" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.5" />
+			<Brain suppressionRecovery="30.0" />
+			<Mobility>
+				<MoveSpeed min="2.2" defaultMetersPerSec="3.5" max="10" />
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_weapon_Spbot" />
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+			<Doctrine name="" />
+		</Human>
+	</Entity>
+	<Entity name="hand_entity_Dabot" type="Human" editorAutoHeight="false" >
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/laymetal.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="50" />
+		<Human type="GoodGuy" deployMode="1" expendable="true">
+			<Id name="@hand_entity_Dabot" portrait="data/textures/portraits/redacted.dds" gender="0" voicePack="" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<Mobility>
+				<MoveSpeed min="2.5" defaultMetersPerSec="3.5" max="10"/>
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25"/>
+			</Mobility>
+			<Equipment>
+				<Item name="hand_weapon_Katana" />
+				<Item name="hand_helmet_Rattanhat" />
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+			<Doctrine name="hand_SP_SkillSetB" />
+			<Concealment default="11" canHide="true" />
+		</Human>
+	</Entity>
+	<Entity name="hand_entity_Shbot" type="Human" editorAutoHeight="false" >
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/laymetal.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="500" />
+		<Human type="GoodGuy" unit="hand" class="SH_BOT" deployMode="1" expendable="true">
+			<Id name="@hand_entity_Shbot" portrait="data/textures/portraits/redacted.dds" gender="0" voicePack="" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<Mobility>
+				<MoveSpeed min="1.5" defaultMetersPerSec="3.5" max="10" />
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_weapon_Shbot" />
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+			<Doctrine name="" />
+		</Human>
+	</Entity>
+	<Entity name="hand_entity_Chbot" type="Human" editorAutoHeight="false" >
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/laymetal.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="200" />
+		<Human type="GoodGuy" unit="hand" class="CH_BOT" deployMode="1" expendable="true">
+			<Id name="@hand_entity_Chbot" portrait="data/textures/portraits/redacted.dds" gender="0" voicePack="" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<Mobility>
+				<MoveSpeed min="2.2" defaultMetersPerSec="3.5" max="10" />
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_utility_Medkitbot" />
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+			<Doctrine name="" />
+		</Human>
+	</Entity>
+	<Entity name="hand_entity_Habot" type="Human" editorAutoHeight="false">
+		<RenderObject3D model="data/models/humans/ranger_assaulter.khm" diffuseTex="data/models/humans/laymetal.dds" />
+		<Breakable template="GenericTrooperGibs" breakOnDamage="explosive" deleteOnDeath="false" />
+		<PhysicalParams health="200" />
+		<Human type="GoodGuy" unit="hand" class="HA_BOT" deployMode="1" expendable="true">
+			<Id name="@hand_entity_Habot" portrait="data/textures/portraits/redacted.dds" gender="0" voicePack="" />
+			<FOV degrees="90" distanceMeters="999" eyeRadiusMeters="0.6" />
+			<Brain suppressionRecovery="30.0" />
+			<Mobility>
+				<MoveSpeed min="2.2" defaultMetersPerSec="3.5" max="10" />
+				<TurnSpeed min="10" defaultMetersPerSec="24" max="25" />
+			</Mobility>
+			<Equipment>
+				<Item name="hand_utility_Svest" />
+				<Item name="hand_gear_Steelfeet" />
+			</Equipment>
+			<Doctrine name="hand_SP_SkillSetB" />
+		</Human>
+	</Entity>
 </Entities>

@@ -26,7 +26,7 @@
         <ConcealmentModifier add="0" />
         <Params allowNVG="true">
             <ProtectionArc degrees="360"
-                           coveragePercent="14"
+                           coveragePercent="20"
                            piercingProtectionLevel="40" />
         </Params>
     </Helmet>
@@ -41,7 +41,7 @@
         <ConcealmentModifier add="0" />
         <Params allowNVG="true">
             <ProtectionArc degrees="360"
-                           coveragePercent="18"
+                           coveragePercent="30"
                            piercingProtectionLevel="60" />
         </Params>
     </Helmet>
@@ -56,7 +56,7 @@
         <ConcealmentModifier add="0" />
         <Params allowNVG="true">
             <ProtectionArc degrees="360"
-                           coveragePercent="22"
+                           coveragePercent="40"
                            piercingProtectionLevel="80" />
         </Params>
     </Helmet>
@@ -71,7 +71,7 @@
         <ConcealmentModifier add="0" />
         <Params allowNVG="true">
             <ProtectionArc degrees="360"
-                           coveragePercent="26"
+                           coveragePercent="50"
                            piercingProtectionLevel="100" />
         </Params>
     </Helmet>
@@ -80,7 +80,7 @@
            unlockCost="0"
            tooltip="@hand_armor_1_name"
            description="@hand_armor_1_desc"
-           img="data/models/equipment/hand_armor_1_ui.dds">
+           img="data/models/humans/attachments/hand_armor_1_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-8"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="-2" />
@@ -101,7 +101,7 @@
            unlockCost="0"
            tooltip="@hand_armor_2_name"
            description="@hand_armor_2_desc"
-           img="data/models/equipment/hand_armor_2_ui.dds">
+           img="data/models/humans/attachments/hand_armor_2_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-9"
                            turnSpeedModifierPercent="-3" />
         <ConcealmentModifier add="-3" />
@@ -122,7 +122,7 @@
            unlockCost="0"
            tooltip="@hand_armor_3_name"
            description="@hand_armor_3_desc"
-           img="data/models/equipment/hand_armor_3_ui.dds">
+           img="data/models/humans/attachments/hand_armor_3_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-10"
                            turnSpeedModifierPercent="-4" />
         <ConcealmentModifier add="-4" />
@@ -143,7 +143,7 @@
            unlockCost="0"
            tooltip="@hand_armor_4_name"
            description="@hand_armor_4_desc"
-           img="data/models/equipment/hand_armor_4_ui.dds">
+           img="data/models/humans/attachments/hand_armor_4_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-11"
                            turnSpeedModifierPercent="-5" />
         <ConcealmentModifier add="-5" />
@@ -164,7 +164,7 @@
            unlockCost="0"
            tooltip="@hand_armor_5_name"
            description="@hand_armor_5_desc"
-           img="data/models/equipment/hand_armor_5_ui.dds">
+           img="data/models/humans/attachments/hand_armor_5_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-12"
                            turnSpeedModifierPercent="-6" />
         <ConcealmentModifier add="-6" />
@@ -185,7 +185,7 @@
            unlockCost="0"
            tooltip="@hand_armor_Vest1_name"
            description="@hand_armor_Vest1_desc"
-           img="data/models/equipment/hand_armor_Vest1_ui.dds">
+           img="data/models/humans/attachments/hand_armor_Vest1_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-2"
                            turnSpeedModifierPercent="-1" />
         <ConcealmentModifier add="0" />
@@ -203,7 +203,7 @@
            unlockCost="0"
            tooltip="@hand_armor_Vest2_name"
            description="@hand_armor_Vest2_desc"
-           img="data/models/equipment/hand_armor_Vest2_ui.dds">
+           img="data/models/humans/attachments/hand_armor_Vest2_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-3"
                            turnSpeedModifierPercent="-1" />
         <ConcealmentModifier add="0" />
@@ -221,7 +221,7 @@
            unlockCost="0"
            tooltip="@hand_armor_Vest3_name"
            description="@hand_armor_Vest3_desc"
-           img="data/models/equipment/hand_armor_Vest3_ui.dds">
+           img="data/models/humans/attachments/hand_armor_Vest3_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-4"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="-1" />
@@ -239,7 +239,7 @@
            unlockCost="0"
            tooltip="@hand_armor_Vest4_name"
            description="@hand_armor_Vest4_desc"
-           img="data/models/equipment/hand_armor_Vest4_ui.dds">
+           img="data/models/humans/attachments/hand_armor_Vest4_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-5"
                            turnSpeedModifierPercent="-2" />
         <ConcealmentModifier add="-2" />
@@ -257,7 +257,7 @@
            unlockCost="0"
            tooltip="@hand_armor_Vest5_name"
            description="@hand_armor_Vest5_desc"
-           img="data/models/equipment/hand_armor_Vest5_ui.dds">
+           img="data/models/humans/attachments/hand_armor_Vest5_ui.dds">
         <MobilityModifiers moveSpeedModifierPercent="-6"
                            turnSpeedModifierPercent="-3" />
         <ConcealmentModifier add="-3" />
@@ -277,6 +277,10 @@
             tooltip="@hand_helmet_Rattanhat_name"
             description="@hand_helmet_Rattanhat_desc"
             img="data/models/humans/attachments/hand_helmet_Rattanhat_ui.dds">
+            <RenderObject3D model="data/models/humans/attachments/hand_helmet_Rattanhat.khm"
+                            diffuseTex="data/models/humans/attachments/hand_helmet_Rattanhat.dds"
+                            attachSlot="Bip001 Head"
+                            />
         <MobilityModifiers moveSpeedModifierPercent="0"
                            turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="2" />
@@ -463,7 +467,7 @@
             tooltip="@hand_helmet_Blackhood_name"
             description="@hand_helmet_Blackhood_desc"
             img="data/models/humans/attachments/hostage_blindfold_ui.dds">
-        <ConcealmentModifier add="+2" />
+        <ConcealmentModifier add="2" />
         <MobilityModifiers moveSpeedModifierPercent="0"
                            turnSpeedModifierPercent="0" />
         <RenderObject3D attachSlot="Bip001 Head"
@@ -507,10 +511,10 @@
                         blendMode="add"
                         attachSlot="nvg" />
     </HelmetNVG>
-    <HelmetNVG name="hand_helmet_Skullcrusher_nvg"
+    <HelmetNVG name="hand_helmet_Skullcrushernvg"
                inventoryBinding="HelmetNVG"
-               tooltip="@hand_helmet_Skullcrusher_nvg_name"
-               description="@hand_helmet_Skullcrusher_nvg_desc"
+               tooltip="@hand_helmet_Skullcrushernvg_name"
+               description="@hand_helmet_Skullcrushernvg_desc"
                img="data/models/humans/attachments/nvg_03_ui.dds">
         <ModifiableParams fovDegrees="40"
                           fovRadiusMeters="0.42"

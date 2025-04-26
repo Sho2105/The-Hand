@@ -58,18 +58,19 @@ hand = The whole unit.
     <Bind eqp="CIA TacVest Level IV" to="Pinky" />
 
     <!-- Support Gear -->
-    <Bind eqp="hand Strafe" to="Thumb" />
-    <Bind eqp="hand Smoke Screen" to="Index" />
-    <Bind eqp="hand Bombard" to="Middle" />
-    <Bind eqp="hand Breacher" to="Ring" />
-    <Bind eqp="hand HealingSpray" to="Pinky" />
+    <Bind eqp="hand_gear_Signaturethumb" to="Thumb" />
+    <Bind eqp="hand_gear_Signatureindex" to="Index" />
+    <Bind eqp="hand_gear_Signaturemiddle" to="Middle" />
+    <Bind eqp="hand_gear_Signaturering" to="Ring" />
+    <Bind eqp="hand_gear_Signaturepinky" to="Pinky" />
 
     <!-- === Shared Gear (Bound to hand Tag) === -->
 
     <!-- Headgear (NVG) -->
     <Bind eqp="NVG" to="hand" />
     <Bind eqp="NVG_02" to="hand" />
-
+    <Bind eqp="hand_helmet_Quadnvg" to="hand" />
+    <Bind eqp="hand_helmet_Skullcrushernvg" to="hand" />
     <!-- Utility Pouch -->
     <Bind eqp="Smoke Grenade" to="hand" />
     <Bind eqp="Frag Grenade" to="hand" />

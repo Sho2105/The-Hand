@@ -1,94 +1,74 @@
 <AnimationSets>
-    <AnimationSet name="hand_medkit_anim" inherit="default">
-        <Animation handle="idle_crouch" name="rifle_character_crouch_idle" />
-        <Animation handle="grenade_throw_low_right" name="generic_equipment_use" />
-        <Animation handle="grenade_throw_low_left" name="generic_equipment_use" />
-        <Animation handle="grenade_throw_top_right" name="generic_equipment_use" />
-        <Animation handle="grenade_throw_corner_left" name="generic_equipment_use" />
-        <Animation handle="grenade_throw_corner_right" name="generic_equipment_use" />
-        <Animation handle="grenade_crouched" name="generic_equipment_use" />
-        <Animation handle="operate_equipment" name="generic_equipment_use" />
-        <Animation handle="change_in" name="crouch_down_device" />
-        <Animation handle="change_out" name="crouch_up_device" />
-    </AnimationSet>
-
-    <AnimationSet name="hand_katana_anim" inherit="pistol">
+	<AnimationSet name="hand_medkit_anim" inherit="default">
+		<Animation handle="idle_crouch" name="rifle_character_crouch_idle" />
+		<Animation handle="grenade_throw_low_right" name="generic_equipment_use" />
+		<Animation handle="grenade_throw_low_left" name="generic_equipment_use" />
+		<Animation handle="grenade_throw_top_right" name="generic_equipment_use" />
+		<Animation handle="grenade_throw_corner_left" name="generic_equipment_use" />
+		<Animation handle="grenade_throw_corner_right" name="generic_equipment_use" />
+		<Animation handle="grenade_crouched" name="generic_equipment_use" />
+		<Animation handle="operate_equipment" name="generic_equipment_use" />
+		<Animation handle="change_in" name="crouch_down_device" />
+		<Animation handle="change_out" name="crouch_up_device" />
+	</AnimationSet>
+	<AnimationSet name="hand_katana_anim" inherit="pistol">
 		<Animation handle="idle" name="melee_character_idle_aim" />
 		<Animation handle="idle_rare" name="melee_character_idle_aim2" />
 		<Animation handle="idle_low" name="melee_character_idle_low" />
 		<Animation handle="idle_crouch" name="melee_character_crouch_idle" />
-
-
 		<Animation handle="walk" name="melee_character_walk_aim_f" />
 		<Animation handle="walk_low" name="melee_character_walk_low_f" />
 		<Animation handle="walk_b" name="melee_character_walk_aim_b" />
 		<Animation handle="walk_crouch" name="melee_character_crouch_walk" />
 		<Animation handle="walk_crouch_b" name="melee_character_crouch_walk_b" />
-
 		<Animation handle="strafe_l" name="melee_character_walk_aim_l" />
 		<Animation handle="strafe_r" name="melee_character_walk_aim_r" />
-
 		<Animation handle="sprint" name="melee_character_sprint_f" />
-
 		<Animation handle="opendoor" name="melee_character_dooropen" />
 		<Animation handle="opendoor_l" name="melee_character_dooropen_l" />
 		<Animation handle="opendoor_r" name="melee_character_dooropen_r" />
-
 		<Animation handle="kickdoor" name="melee_character_doorkick" />
 		<Animation handle="kickdoor_l" name="melee_character_doorkick_l" />
 		<Animation handle="kickdoor_r" name="melee_character_doorkick_r" />
-
 		<Animation handle="crouch_down" name="melee_character_crouch_aim" />
 		<Animation handle="crouch_up" name="melee_character_crouch_aim_reverse" />
-
 		<Animation handle="melee" name="melee_character_hit_01" />
 		<Animation handle="melee_02" name="melee_character_hit_02" />
 		<Animation handle="melee_03" name="melee_character_hit_03" />
 		<Animation handle="melee_04" name="melee_character_hit_04" />
-
 		<Animation handle="break_window" name="melee_character_hit_01" />
 		<Animation handle="break_curtain" name="melee_character_hit_02" />
 		<Animation handle="jump_over_obstacle" name="jump_over_obstacle_melee" />
-
 		<Animation handle="point_at_raised" name="melee_point_aim" />
 		<Animation handle="point_at_lowered" name="melee_point_low" />
 		<Animation handle="ready_weapon_hack" name="melee_character_idle_aim" />
-
 		<Animation handle="raiseweapon" name="melee_character_raise_weapon" />
 		<Animation handle="lowerweapon" name="melee_character_lower_weapon" />
 		<Animation handle="change_out" name="melee_character_change_out" />
 		<Animation handle="change_in" name="melee_character_change_in" />
-
 		<Animation handle="die_f" name="rifle_character_die_f1" />
 		<Animation handle="die_f2" name="rifle_character_die_f2" />
 		<Animation handle="die_f3" name="rifle_character_die_f3" />
-
 		<Animation handle="die_b" name="rifle_character_die_b1" />
 		<Animation handle="die_b2" name="rifle_character_die_b2" />
 		<Animation handle="die_b3" name="rifle_character_die_b3" />
-
 		<Animation handle="die_l" name="rifle_character_die_l1" />
 		<Animation handle="die_l2" name="rifle_character_die_l2" />
 		<Animation handle="die_l3" name="rifle_character_die_l3" />
-
 		<Animation handle="die_r" name="rifle_character_die_r1" />
 		<Animation handle="die_r2" name="rifle_character_die_r2" />
 		<Animation handle="die_r3" name="rifle_character_die_r3" />
-
 		<Animation handle="stunned" name="melee_character_stunned" />
 		<Animation handle="stunned_crouched" name="melee_character_stunned" />
 		<Animation handle="knocked_back" name="melee_character_stumble_back" />
-		<Animation handle="burning" name="put_out_fire_loop_melee" />		
-		
+		<Animation handle="burning" name="put_out_fire_loop_melee" />
 		<Animation handle="idle_crouch" name="crouch_in_fear_loop_melee" />
 		<Animation handle="crouch_down" name="crouch_in_fear_melee" />
 		<Animation handle="crouch_up" name="crouch_in_fear_getup_melee" />
-
 		<Animation handle="hurt_back" name="melee_character_hurt_back" />
 		<Animation handle="hurt_forward" name="melee_character_hurt_forward" />
 		<Animation handle="hurt_left" name="melee_character_hurt_left" />
 		<Animation handle="hurt_right" name="melee_character_hurt_right" />
-
 		<Animation handle="interact1" name="melee_character_idle_low_1" />
 		<Animation handle="interact2" name="melee_character_idle_low_2" />
 		<Animation handle="interact3" name="melee_character_idle_low_3" />

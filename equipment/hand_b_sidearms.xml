@@ -1,6 +1,7 @@
 <Equipment>
     <!-- Melee -->
     <Bind eqp="hand_weapon_Katana">
+        <to name="hand" />
         <to name="hand_ammo_None" />
     </Bind>
     <Firearm name="hand_weapon_Katana"
@@ -9,8 +10,8 @@
              unlockCost="0"
              tooltip="@hand_weapon_Katana_name"
              description="@hand_weapon_Katana_desc"
-             img="data/models/equipment/hand_weapon_Katana_ui.dds"
-             animationSet="hand_weapon_Katana_anim">
+             img="data/models/weapons/hand_weapon_Katana_ui.dds"
+             animationSet="hand_katana_anim">
         <MobilityModifiers moveSpeedModifierPercent="-1"
                            turnSpeedModifierPercent="0" />
         <ConcealmentModifier add="-2.25" />

@@ -26,19 +26,17 @@
 
 # Deploy UI  
 @hand_deployui_hand=T̷̡̨̹̺̩̞͚̳̹̑̈̋̈́̎̄͝͠h̴̤̘̗̪̍̐͂̈́̔̾̎ę̵̢̤̜͕̻́̐̈́͆̆̾͐̀̒̏ ̸̢͎̄̇̽̒̍͘̚͝H̵̨̡̞̺̼͓͋͋̈́̽̇̿͘͘͠a̵̢̖͉̗̘̍̐̆̀̕̕͜͝n̸̛̦̲̙̗͇̖͖̞͎̲̈́̈͊͂͌d̷̼̪̗̤̝̳͆̈́̉̏̓̄̔͠ 
-
 @hand_deployui_hand2=[R̷̙̜̘͎̝͖͆́̑̀̍͐͌͝E̶̤̞̽̊̄͒̇̆Ď̴͕̜̈́́̀̄̏͘Ẳ̸̼̜̤̖̯̩̊̌̓̆͐ͅC̶̦̰̠̜̞̬̺̏͊͑̓̅̀T̸̛̙̪́͋̔̐͘E̶̡̡̠͉͎͔̩̽̋̍̄͆̚̕͘D̵̞͎̤̗̯͎̺͂̆̓͑̅͂]
-
-# Lore Gallery
-@menu_lore=32 31 31 31 30 31
-@menu_lore_page=4e 55 4c 4c 20 4f 52 47 41 4e 49 5a 41 54 49 4f 4e 0a 4c 45 41 4b 45 44 20 44 41 54 41 42 41 53 45
-
 @hand_deployui_null=Null Task Force  
 @hand_deployui_spear=The Spear\nAssault and containment specialists\nAverage engagement duration: 4.5 minutes.\nOperational success rate: 82%.\nDesigned for rapid force deployment and high-intensity combat.\nStatistically vulnerable to prolonged engagements exceeding 15 minutes.  
 @hand_deployui_dagger=The Dagger\nStealth and intelligence operatives\nAverage mission duration: 6-48 hours.\nElimination success rate: 91%.\nTrained for zero-detection infiltration and high-value target removal.\nCompromised missions result in 67% casualty rate.  
 @hand_deployui_chalice=The Chalice\nMedical and support personnel\nSurvival rate increase: 56% with active deployment.\nAverage field stabilization time: 3.2 minutes per casualty.\nDesignated as long-range support, providing suppressive fire and emergency extraction.\nEffective combat range: 200-800m.\nStandard armament includes designated marksman rifles and compact SMGs.  
 @hand_deployui_shield=The Shield\nDefense and protection units\nEngagement endurance: 3.4x higher than standard units.\nAverage suppression time: 12 minutes per position.\nDeployed for high-risk fortifications and area denial.\nMobility loss: 37% due to heavy armor loadout.\nCarries the heaviest weaponry, capable of withstanding direct fire for prolonged periods.\nMission failure likelihood increases by 62% upon full unit loss.  
 @hand_deployui_hammer=The Hammer\nSupply and logistics team\nBreach success rate: 89% within first attempt.\nAverage entry time: 8.4 seconds per structure.\nSpecialized in demolition, forced entry, and frontline support.\nHighly effective in close-quarters combat with explosives and heavy shotguns.\nFatality rate increases by 44% if the squad is compromised before breach completion.  
+
+# Lore Gallery
+@menu_lore=32 31 31 31 30 31
+@menu_lore_page=4e 55 4c 4c 20 4f 52 47 41 4e 49 5a 41 54 49 4f 4e 0a 4c 45 41 4b 45 44 20 44 41 54 41 42 41 53 45
 
 # Firearms
 @firearm_hand_AR_name=Thumb's M4  
@@ -58,7 +56,7 @@
 
 @firearm_hand_SG_name=Ring's M1014  
 @firearm_hand_SG_desc=Hope you’re keeping your room clean. If I come home to a mess, you’re running laps. Squad’s good. New guy won’t stop clicking his damn pen—drives me nuts. But he’s sharp. We drilled today, everything lined up perfect. Clean. Precise. Almost like when we stacked Dad’s firewood just right. I miss that. Miss you too. Stay out of trouble, alright?  
-@firearm_hand_SGsup_name=Ring's m1014 suppressed
+@firearm_hand_SGsup_name=Ring's M1014 suppressed
 @firearm_hand_SGsup_desc=Suppressor? Bro… I carry a shotgun.
 
 @firearm_hand_DMR_name=Pinky's MK20  
@@ -72,24 +70,20 @@
 @firearm_hand_PISTOLsup_desc=No echoes. No second chances.  
 
 # Signature gears  
-@equipment_hand_strafe_name=Thumb's Strafe Signal  
-@equipment_hand_strafe_desc=[LOG ID: SP-84-C]\n████Squad’s in position. Target’s in sight. We’re green for assault.\n████Moving in. Slow. Quiet. Just like drills. ████, take point. Three… two—\n████Contact! Suppressing! Keep moving! ████, where’s our—\n████What? That’s not the—████\n████We’re pinned! ████, this isn’t the plan! Repeat—\n████Wait… what the hell is that? That’s not—████No. No, no, no—\n████FALL BACK! NOW! DON’T SHOOT—\n████The bullets—why are they—coming back—\n████Oh god—█ is gone—he’s just—\n████████DO SOMETHING! CALL IT OFF! CALL IT—\n████You knew. YOU KNEW. YOU FUCKING KNEW. YOU LYING, BACKSTABBING PIECE OF SHIT! I TRUSTED YOU! I FOUGHT FOR YOU! I—\n████I—can’t—move. My own rounds. My own goddamn—\n████████FUCK YOU! FUCK YOU! FUCK YOU!\n████…\n[End log]  
+@hand_gear_Signaturethumb_name=Thumb's Strafe Signal  
+@hand_gear_Signaturethumb_desc=[LOG ID: SP-84-C]\n████Squad’s in position. Target’s in sight. We’re green for assault.\n████Moving in. Slow. Quiet. Just like drills. ████, take point. Three… two—\n████Contact! Suppressing! Keep moving! ████, where’s our—\n████What? That’s not the—████\n████We’re pinned! ████, this isn’t the plan! Repeat—\n████Wait… what the hell is that? That’s not—████No. No, no, no—\n████FALL BACK! NOW! DON’T SHOOT—\n████The bullets—why are they—coming back—\n████Oh god—█ is gone—he’s just—\n████████DO SOMETHING! CALL IT OFF! CALL IT—\n████You knew. YOU KNEW. YOU FUCKING KNEW. YOU LYING, BACKSTABBING PIECE OF SHIT! I TRUSTED YOU! I FOUGHT FOR YOU! I—\n████I—can’t—move. My own rounds. My own goddamn—\n████████FUCK YOU! FUCK YOU! FUCK YOU!\n████…\n[End log]  
 
-@equipment_hand_smoke_screen_name=Index's Smoke Screen  
-@equipment_hand_smoke_screen_desc=[LOG ID: DA-67-I]\n████Entering anomaly zone. ███████ says data’s still intact. Just grab it and go.\n████The walls look… wrong. Flesh-like. Pulsing. I don’t—████No. Focus. Get the data. Ignore it.\n████Something’s watching. Feels like eyes behind my skull. Shadows move when I’m not looking.\n████Keep moving. Almost there. Just—\n████Wait. That’s—████No. That can’t be. It’s not possible.\n████████? Is that you? How—how are you here? You’re real. You’re warm.\n████I knew you’d wait for me. I knew it. I—I kept it with me, see? Our ring. I was waiting for the right time, but—\n████No. No, no, no, no. Your hands. Your face. What—why are you—\n████You’re not real.\n████It’s burning. It’s burning. It’s inside me. GET IT OUT—\n████████I can’t—I can’t breathe—I can’t see—\n[End log]  
+@hand_gear_Signatureindex_name=Index's Smoke Screen  
+@hand_gear_Signatureindex_desc=[LOG ID: DA-67-I]\n████Entering anomaly zone. ███████ says data’s still intact. Just grab it and go.\n████The walls look… wrong. Flesh-like. Pulsing. I don’t—████No. Focus. Get the data. Ignore it.\n████Something’s watching. Feels like eyes behind my skull. Shadows move when I’m not looking.\n████Keep moving. Almost there. Just—\n████Wait. That’s—████No. That can’t be. It’s not possible.\n████████? Is that you? How—how are you here? You’re real. You’re warm.\n████I knew you’d wait for me. I knew it. I—I kept it with me, see? Our ring. I was waiting for the right time, but—\n████No. No, no, no, no. Your hands. Your face. What—why are you—\n████You’re not real.\n████It’s burning. It’s burning. It’s inside me. GET IT OUT—\n████████I can’t—I can’t breathe—I can’t see—\n[End log]  
 
-@equipment_hand_bombard_name=Middle’s Bombard Signal  
-@equipment_hand_bombard_desc=[LOG ID: SH-15-H]\n████Headcount. Again. Just to be sure. ████, ████, ████, ████—\n████Wait. No. No, no, that’s wrong. Where’s ████?\n████He was just here. I SAW him. I TALKED to him. Where the hell did he go?!\n████Alright, everyone, close ranks. No one moves alone. No one—\n████████is gone. Just like that. No sound. No trace. Just… empty space where they were standing.\n████We are not stopping. We are NOT stopping. Keep moving, keep talking, keep breathing—\n████████gone.\n████████gone.\n████████ALL FUCKING GONE.\n████COME ON, THEN! SHOW ME YOUR FACE, YOU COWARD PIECE OF SHIT!\n████HAHAHAHAHA! YOU THINK I’M SCARED?! I’M STILL HERE! I’M STILL FUCKING HERE!\n████COME ON, MAKE SOME FUCKING NOISE!█\n███The sky is—exploding?\n[End log]  
+@hand_gear_Signaturemiddle_name=Middle’s Bombard Signal  
+@hand_gear_Signaturemiddle_desc=[LOG ID: SH-15-H]\n████Headcount. Again. Just to be sure. ████, ████, ████, ████—\n████Wait. No. No, no, that’s wrong. Where’s ████?\n████He was just here. I SAW him. I TALKED to him. Where the hell did he go?!\n████Alright, everyone, close ranks. No one moves alone. No one—\n████████is gone. Just like that. No sound. No trace. Just… empty space where they were standing.\n████We are not stopping. We are NOT stopping. Keep moving, keep talking, keep breathing—\n████████gone.\n████████gone.\n████████ALL FUCKING GONE.\n████COME ON, THEN! SHOW ME YOUR FACE, YOU COWARD PIECE OF SHIT!\n████HAHAHAHAHA! YOU THINK I’M SCARED?! I’M STILL HERE! I’M STILL FUCKING HERE!\n████COME ON, MAKE SOME FUCKING NOISE!█\n███The sky is—exploding?\n[End log]  
 
-@equipment_hand_demo_charge_name=Ring's Breacher  
-@equipment_hand_demo_charge_desc=[LOG ID: HA-47-B]\n████Everyone, stay close. No pushing. We move together. \n████Elders first. Hold the kids’ hands. Keep your heads down. You’re doing great.\n████Alright, almost there. Just through this tunnel. \n████No lights, but we can see the other side. Keep moving. Almost out.\n████Why aren’t we getting closer?\n████No, no, we should’ve reached it by now.\n████I don’t understand. It’s right there.\n████Why does it feel farther?\n████Deep breaths. Stay together. We just—\n████NO NO NO NO NO\n████GET BACK\n████GET BACK GET BA—\n████\n████Shit—\n████The rocks—they’re coming down—\n████I’ve got you, hold on to my hand! Please—\n████No, no, no, don’t let go, DON’T LET GO—\n████I can't feel my face…\n████I can’t see the light anymore…\n[End log]  
+@hand_gear_Signaturering_name=Ring's Breacher  
+@hand_gear_Signaturering_desc=[LOG ID: HA-47-B]\n████Everyone, stay close. No pushing. We move together. \n████Elders first. Hold the kids’ hands. Keep your heads down. You’re doing great.\n████Alright, almost there. Just through this tunnel. \n████No lights, but we can see the other side. Keep moving. Almost out.\n████Why aren’t we getting closer?\n████No, no, we should’ve reached it by now.\n████I don’t understand. It’s right there.\n████Why does it feel farther?\n████Deep breaths. Stay together. We just—\n████NO NO NO NO NO\n████GET BACK\n████GET BACK GET BA—\n████\n████Shit—\n████The rocks—they’re coming down—\n████I’ve got you, hold on to my hand! Please—\n████No, no, no, don’t let go, DON’T LET GO—\n████I can't feel my face…\n████I can’t see the light anymore…\n[End log]  
 
-@equipment_hand_healingspray_name=Pinky’s Medkit  
-@equipment_hand_healingspray_desc=[LOG ID: CH-55-M]\n████Checking wind… 2.3 knots east… adjusting… Target acquired. Firing— Clean hit. You see that? Did I do good?\n████Hehe… thanks. You’re always so cool about this. Where next?\n████…Down there? It’s too open. If we— Oh. Okay. I trust you.\n████Wait… something’s wrong. It’s too quiet. Do you hear—\n████████? MOVE!\n████—NO—\n████\n████N-No no no no no— Please— Please, stay still, d-don’t move, I can—I can fix this— Just let me-\n████Shh, please, just breathe, okay? I—I’ll stop the bleeding— It’s just a little—it’s not—\n████No no no no, please don’t close your eyes, please— I’m right here, I—I’m right here, don’t go where I can’t follow—\n████Please… please don’t leave me alone…\n████I hear them. They're coming.\n████████, I’ll stay with you. Like I promised.\n[End log]  
-
-# Hidden
-@equipment_hand_lock_puncher_name=Lock Puncher
-@equipment_hand_steel_feet_name=Steel Feet
+@hand_gear_Signaturepinky_name=Pinky’s Medkit  
+@hand_gear_Signaturepinky_desc=[LOG ID: CH-55-M]\n████Checking wind… 2.3 knots east… adjusting… Target acquired. Firing— Clean hit. You see that? Did I do good?\n████Hehe… thanks. You’re always so cool about this. Where next?\n████…Down there? It’s too open. If we— Oh. Okay. I trust you.\n████Wait… something’s wrong. It’s too quiet. Do you hear—\n████████? MOVE!\n████—NO—\n████\n████N-No no no no no— Please— Please, stay still, d-don’t move, I can—I can fix this— Just let me-\n████Shh, please, just breathe, okay? I—I’ll stop the bleeding— It’s just a little—it’s not—\n████No no no no, please don’t close your eyes, please— I’m right here, I—I’m right here, don’t go where I can’t follow—\n████Please… please don’t leave me alone…\n████I hear them. They're coming.\n████████, I’ll stay with you. Like I promised.\n[End log]  
 
 # Generic deployuis
 @genettip_hand_throw_strafe=It still hurts... we all died to this.
@@ -194,3 +188,139 @@
 
 @hand_HA_SkillSetB_name=Intel Grid
 @hand_HA_SkillSetB_desc=Reveals mission insights.
+
+# Missing Tags (Placeholders)
+@genettip_hand_detonate_breacher=[PLACEHOLDER]
+@genettip_hand_gear_Chbot=[PLACEHOLDER]
+@genettip_hand_gear_Chbot_EMPTY=[PLACEHOLDER]
+@genettip_hand_gear_Dabot=[PLACEHOLDER]
+@genettip_hand_gear_Dabot_EMPTY=[PLACEHOLDER]
+@genettip_hand_gear_Habot=[PLACEHOLDER]
+@genettip_hand_gear_Habot_EMPTY=[PLACEHOLDER]
+@genettip_hand_gear_Shbot=[PLACEHOLDER]
+@genettip_hand_gear_Shbot_EMPTY=[PLACEHOLDER]
+@genettip_hand_gear_Spbot=[PLACEHOLDER]
+@genettip_hand_gear_Spbot_EMPTY=[PLACEHOLDER]
+@hand_ammo_Shbot_desc=[PLACEHOLDER]
+@hand_ammo_Shbot_name=[PLACEHOLDER]
+@hand_ammo_Spbot_desc=[PLACEHOLDER]
+@hand_ammo_Spbot_name=[PLACEHOLDER]
+@hand_armor_1_desc=[PLACEHOLDER]
+@hand_armor_1_name=[PLACEHOLDER]
+@hand_armor_2_desc=[PLACEHOLDER]
+@hand_armor_2_name=[PLACEHOLDER]
+@hand_armor_3_desc=[PLACEHOLDER]
+@hand_armor_3_name=[PLACEHOLDER]
+@hand_armor_4_desc=[PLACEHOLDER]
+@hand_armor_4_name=[PLACEHOLDER]
+@hand_armor_5_desc=[PLACEHOLDER]
+@hand_armor_5_name=[PLACEHOLDER]
+@hand_armor_Vest1_desc=[PLACEHOLDER]
+@hand_armor_Vest1_name=[PLACEHOLDER]
+@hand_armor_Vest2_desc=[PLACEHOLDER]
+@hand_armor_Vest2_name=[PLACEHOLDER]
+@hand_armor_Vest3_desc=[PLACEHOLDER]
+@hand_armor_Vest3_name=[PLACEHOLDER]
+@hand_armor_Vest4_desc=[PLACEHOLDER]
+@hand_armor_Vest4_name=[PLACEHOLDER]
+@hand_armor_Vest5_desc=[PLACEHOLDER]
+@hand_armor_Vest5_name=[PLACEHOLDER]
+@hand_b_megaphone_none_ttip=[PLACEHOLDER]
+@hand_b_megaphone_ttip=[PLACEHOLDER]
+@hand_b_suicideplane_none_ttip=[PLACEHOLDER]
+@hand_b_suicideplane_ttip=[PLACEHOLDER]
+@hand_entity_Chbot=[PLACEHOLDER]
+@hand_entity_Dabot=[PLACEHOLDER]
+@hand_entity_Habot=[PLACEHOLDER]
+@hand_entity_Shbot=[PLACEHOLDER]
+@hand_entity_Spbot=[PLACEHOLDER]
+@hand_gear_Chbot_desc=This dude can heal alot, but fragile af so keep it away from guns, non combative
+@hand_gear_Chbot_name=[PLACEHOLDER]
+@hand_gear_Containmentstrike_desc=Air strike, WIP. Yeah i'm unoriginal, i know that, but i'm tired and i don't have time left
+@hand_gear_Containmentstrike_name=[PLACEHOLDER]
+@hand_gear_Dabot_desc=This shit supposed to be able to hide even better than normal undercovers, but the game engine said "FUCK YOU" so i changed it into a melee bot...for now.
+@hand_gear_Dabot_name=[PLACEHOLDER]
+@hand_gear_Habot_desc=Allahu Akbar?
+@hand_gear_Habot_name=[PLACEHOLDER]
+@hand_gear_Medkitbig_desc=Can heal knocked down allies
+@hand_gear_Medkitbig_name=[PLACEHOLDER]
+@hand_gear_Piercer_desc=This shit can shoot some wall breaking bullets, but thats all, boring, i know
+@hand_gear_Piercer_name=[PLACEHOLDER]
+@hand_gear_Shbot_desc=This dude supposed to be able to have a very good machine gun focus on Suppressing and act like a fking turret, but i'm running out of time to create proper guns, sorry, will do later
+@hand_gear_Shbot_name=[PLACEHOLDER]
+@hand_gear_Spbot_desc=Boring old expendable unit, will spice this shit up later, at least it can defend itself
+@hand_gear_Spbot_name=[PLACEHOLDER]
+@hand_gear_Suicideplane_desc=Tenno Heika Banzaiiiii
+@hand_gear_Suicideplane_name=[PLACEHOLDER]
+@hand_gear_Wallbreaker_desc=Same as a normal rpg, but it deals damage to enemies behind the walls as well...so...50% better than the normal version?
+@hand_gear_Wallbreaker_name=[PLACEHOLDER]
+@hand_menu_game_medkit_none_ttip=[PLACEHOLDER]
+@hand_menu_game_medkit_ttip=[PLACEHOLDER]
+@hand_menu_neurotoxin_none_ttip=[PLACEHOLDER]
+@hand_menu_neurotoxin_ttip=[PLACEHOLDER]
+@hand_utility_Gravgrenade_desc=Break your enemies legs
+@hand_utility_Gravgrenade_name=[PLACEHOLDER]
+@hand_utility_Medkitbot_desc=[PLACEHOLDER]
+@hand_utility_Medkitbot_name=[PLACEHOLDER]
+@hand_utility_Medkitsmall_desc=Pretty nice, can heal 75hp but don't use it on knocked down soldiers, its low quality and will kill those weak hearts, lol
+@hand_utility_Medkitsmall_name=[PLACEHOLDER]
+@hand_utility_Megaphone_desc=This shit's supposed to scatter everyone away, but not very effective so i upped its scale to very big, WIP
+@hand_utility_Megaphone_name=[PLACEHOLDER]
+@hand_utility_Neurotoxingas_desc=DOT Gas grenade, friendly fire on
+@hand_utility_Neurotoxingas_name=[PLACEHOLDER]
+@hand_utility_Sun_desc=Looks cool, can emit out some lights, but that's all, use it when you hate nvg or wanna reduce some of your FPS
+@hand_utility_Sun_name=[PLACEHOLDER]
+@hand_utility_Sun_none_ttip=[PLACEHOLDER]
+@hand_utility_Sun_ttip=[PLACEHOLDER]
+@hand_weapon_Katana_desc=[PLACEHOLDER]
+@hand_weapon_Katana_name=[PLACEHOLDER]
+@hand_weapon_Shbot_desc=[PLACEHOLDER]
+@hand_weapon_Shbot_name=[PLACEHOLDER]
+@hand_weapon_Shield1_desc=[PLACEHOLDER]
+@hand_weapon_Shield1_name=[PLACEHOLDER]
+@hand_weapon_Shield2_desc=[PLACEHOLDER]
+@hand_weapon_Shield2_name=[PLACEHOLDER]
+@hand_weapon_Spbot_desc=[PLACEHOLDER]
+@hand_weapon_Spbot_name=[PLACEHOLDER]
+@menu_hand_utility_Gravgrenade_none_ttip=[PLACEHOLDER]
+@menu_hand_utility_Gravgrenade_ttip=[PLACEHOLDER]
+@utility_svest_desc=[PLACEHOLDER]
+@utility_svest_name=[PLACEHOLDER]
+
+# Helmets (Adding as a new section for clarity)
+@hand_helmet_1_desc=[PLACEHOLDER]
+@hand_helmet_1_name=[PLACEHOLDER]
+@hand_helmet_2_desc=[PLACEHOLDER]
+@hand_helmet_2_name=[PLACEHOLDER]
+@hand_helmet_3_desc=[PLACEHOLDER]
+@hand_helmet_3_name=[PLACEHOLDER]
+@hand_helmet_4_desc=[PLACEHOLDER]
+@hand_helmet_4_name=[PLACEHOLDER]
+@hand_helmet_5_desc=[PLACEHOLDER]
+@hand_helmet_5_name=[PLACEHOLDER]
+@hand_helmet_Bandana_desc=[PLACEHOLDER]
+@hand_helmet_Bandana_name=[PLACEHOLDER]
+@hand_helmet_Beretops_desc=[PLACEHOLDER]
+@hand_helmet_Beretops_name=[PLACEHOLDER]
+@hand_helmet_Blackhood_desc=[PLACEHOLDER]
+@hand_helmet_Blackhood_name=[PLACEHOLDER]
+@hand_helmet_Blackopscap_desc=[PLACEHOLDER]
+@hand_helmet_Blackopscap_name=[PLACEHOLDER]
+@hand_helmet_Capassaulter_desc=[PLACEHOLDER]
+@hand_helmet_Capassaulter_name=[PLACEHOLDER]
+@hand_helmet_Headband_desc=[PLACEHOLDER]
+@hand_helmet_Headband_name=[PLACEHOLDER]
+@hand_helmet_Quadnvg_desc=[PLACEHOLDER]
+@hand_helmet_Quadnvg_name=[PLACEHOLDER]
+@hand_helmet_Rattanhat_desc=A souvenir from a trip to Japan, it loosk cool i guess
+@hand_helmet_Rattanhat_name=Rattan
+@hand_helmet_Santahat_desc=[PLACEHOLDER]
+@hand_helmet_Santahat_name=[PLACEHOLDER]
+@hand_helmet_Skullcrusher_desc=[PLACEHOLDER]
+@hand_helmet_Skullcrusher_name=[PLACEHOLDER]
+@hand_helmet_Skullcrushernvg_desc=[PLACEHOLDER]
+@hand_helmet_Skullcrushernvg_name=[PLACEHOLDER]
+@hand_helmet_Undercovercap_desc=[PLACEHOLDER]
+@hand_helmet_Undercovercap_name=[PLACEHOLDER]
+@hand_helmet_Usflagbandana_desc=[PLACEHOLDER]
+@hand_helmet_Usflagbandana_name=[PLACEHOLDER]
