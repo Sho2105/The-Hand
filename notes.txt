@@ -86,6 +86,7 @@ Hostage blind fold, and gas masks, also redraw textures
 Redo Ring's breacher into a bigger explosion that does NOT kill, turn Middle's into a nuke
 MIddle's lmg will be able to spray non stop
 
+Maybe, an in-session bot that run support fast but can't shoot, 360 vision cone for gathering intels. And it can explode in 1 meter radius
 Rainbow Six Classic helmet visor for an example of transparent part on model
 
 Medkit: DMg type 1/2 will heal everything, but 0 kills the incapacitated one
@@ -1119,3 +1120,4 @@ EG: hand_armor_1 (which is a general armor)
 	hand_firearm_m15_model
 	hand_firearm_m1_ui
 There. it looks fine enough
+

@@ -134,76 +134,76 @@
     </Firearm>
     <!-- Shields -->
     <Shield name="hand_weapon_Shield1"
-            inventoryBinding="PrimaryWeapon"
-            unlockCost="0"
-            unlockCostBH="0"
-            category="shield"
-            tooltip="@hand_weapon_Shield1_name"
-            description="@hand_weapon_Shield1_desc"
-            img="data/models/weapons/hand_weapon_Shield1_ui.dds"
-            holdBone="shield"
-            animationSet="shield">
+    inventoryBinding="PrimaryWeapon"
+    unlockCost="0"
+    unlockCostBH="0"
+    category="shield"
+    tooltip="@hand_weapon_Shield1_name"
+    description="@hand_weapon_Shield1_desc"
+    img="data/models/weapons/hand_weapon_Shield1_ui.dds"
+    holdBone="shield"
+    animationSet="shield">
         <MobilityModifiers moveSpeedModifierPercent="-25"
-                           turnSpeedModifierPercent="-60" />
+                   turnSpeedModifierPercent="-60" />
         <RenderObject3D model="data/models/weapons/hand_weapon_Shield1.khm"
-                        diffuseTex="data/models/weapons/hand_weapon_Shield1.dds"
-                        attachSlot="prop_back_rifle" />
-        <ModifiableParams fovDegrees="90"
-                          fovRangeMeters="999999"
-                          fovRadiusMeters="0.5"
-                          suppressionRecoveryAdd="15"
-                          meleeSpeedAdd="-60" />
+                diffuseTex="data/models/weapons/hand_weapon_Shield1.dds"
+                attachSlot="prop_back_rifle" />
+        <ModifiableParams fovDegrees="70"
+                  fovRangeMeters="999999"
+                  fovRadiusMeters="0.5"
+                  suppressionRecoveryAdd="20"
+                  meleeSpeedAdd="-50" />
         <Params>
-            <ProtectionArc degrees="100"
-                           coveragePercent="90"
-                           piercingProtectionLevel="60" />
+            <ProtectionArc degrees="110"
+                   coveragePercent="95"
+                   piercingProtectionLevel="80" />
             <FX particles="Hit_Metal_Shield" />
             <EquipmentModifier>
-                <AddTo reloadTime="+1800"
-                       reloadEmptyTime="+1800"
-                       readyTime="+90"
-                       guardTime="+90"
-                       changeInTime="+280"
-                       changeOutTime="+280"
-                       accuracyStart="-35"
-                       accuracyEnd="-65" />
+                <AddTo reloadTime="+1600"
+               reloadEmptyTime="+1600"
+               readyTime="+80"
+               guardTime="+80"
+               changeInTime="+250"
+               changeOutTime="+250"
+               accuracyStart="-30"
+               accuracyEnd="-60" />
             </EquipmentModifier>
         </Params>
     </Shield>
     <Shield name="hand_weapon_Shield2"
-            inventoryBinding="PrimaryWeapon"
-            unlockCost="0"
-            unlockCostBH="0"
-            category="shield"
-            tooltip="@hand_weapon_Shield2_name"
-            description="@hand_weapon_Shield2_desc"
-            img="data/models/weapons/hand_weapon_Shield2_ui.dds"
-            holdBone="shield"
-            animationSet="shield">
-        <MobilityModifiers moveSpeedModifierPercent="-30"
-                           turnSpeedModifierPercent="-70" />
+    inventoryBinding="PrimaryWeapon"
+    unlockCost="0"
+    unlockCostBH="0"
+    category="shield"
+    tooltip="@hand_weapon_Shield2_name"
+    description="@hand_weapon_Shield2_desc"
+    img="data/models/weapons/hand_weapon_Shield2_ui.dds"
+    holdBone="shield"
+    animationSet="shield">
+        <MobilityModifiers moveSpeedModifierPercent="-5"
+                   turnSpeedModifierPercent="-40" />
         <RenderObject3D model="data/models/weapons/hand_weapon_Shield2.khm"
-                        diffuseTex="data/models/weapons/hand_weapon_Shield2.dds"
-                        attachSlot="prop_back_rifle" />
-        <ModifiableParams fovDegrees="50"
-                          fovRangeMeters="999999"
-                          fovRadiusMeters="0.5"
-                          suppressionRecoveryAdd="25"
-                          meleeSpeedAdd="-70" />
+                diffuseTex="data/models/weapons/hand_weapon_Shield2.dds"
+                attachSlot="prop_back_rifle" />
+        <ModifiableParams fovDegrees="90"
+                  fovRangeMeters="999999"
+                  fovRadiusMeters="0.5"
+                  suppressionRecoveryAdd="10"
+                  meleeSpeedAdd="-30" />
         <Params>
-            <ProtectionArc degrees="100"
-                           coveragePercent="95"
-                           piercingProtectionLevel="80" />
+            <ProtectionArc degrees="90"
+                   coveragePercent="80"
+                   piercingProtectionLevel="70" />
             <FX particles="Hit_Metal_Shield" />
             <EquipmentModifier>
-                <AddTo reloadTime="+2200"
-                       reloadEmptyTime="+2200"
-                       readyTime="+110"
-                       guardTime="+110"
-                       changeInTime="+320"
-                       changeOutTime="+320"
-                       accuracyStart="-45"
-                       accuracyEnd="-75" />
+                <AddTo reloadTime="+1800"
+               reloadEmptyTime="+1800"
+               readyTime="+90"
+               guardTime="+90"
+               changeInTime="+200"
+               changeOutTime="+200"
+               accuracyStart="-50"
+               accuracyEnd="-80" />
             </EquipmentModifier>
         </Params>
     </Shield>

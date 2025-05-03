@@ -95,10 +95,10 @@
 			</EffectRange>
 		</Projectile>
 	</Grenade>
-	<ExplosiveCharge name="hand_gear_Signaturering" inventoryBinding="SupportGear1" unlockCostBH="0" quantity="5" tooltip="@hand_gear_Signaturering_name" description="@hand_gear_Signaturering_desc" img="data/models/equipment/hand_gear_Signaturering_ui.dds" movie="data/movies/hand_gear_Signaturering.ogv" animationSet="generic_device" soundUse="equip_charge" crouchOnUse="true">
+	<ExplosiveCharge name="hand_gear_Signaturering" inventoryBinding="SupportGear1" unlockCostBH="0" quantity="1" tooltip="@hand_gear_Signaturering_name" description="@hand_gear_Signaturering_desc" img="data/models/equipment/hand_gear_Signaturering_ui.dds" movie="data/movies/hand_gear_Signaturering.ogv" animationSet="generic_device" soundUse="equip_charge" crouchOnUse="true">
 		<RenderObject3D model="data/models/humans/attachments/backpack_demo_charge.khm" attachSlot="vest_back_left" skipGOSSAO="true" diffuseTex="data/models/humans/attachments/backpack_demo_charge.dds" />
 		<MobilityModifiers moveSpeedModifierPercent="-10" turnSpeedModifierPercent="-1" />
-		<ModifiableParams changeInTime="500" changeOutTime="500" efficiencyPercent="100" deployTime="500" area1WidthMeters="999" area1LengthMeters="999" area1Damage="999" area1StunTime="10000" area2WidthMeters="999" area2LengthMeters="999" area2Damage="999" area2StunTime="5000" audibleSoundRadius="1.0" audibleSoundRadiusForPlacing="1.0" physicsDetonationForce="999" damageType="2" />
+		<ModifiableParams changeInTime="500" changeOutTime="500" efficiencyPercent="100" deployTime="500" area1WidthMeters="999" area1LengthMeters="999" area1Damage="999" area1StunTime="10000" area2WidthMeters="999" area2LengthMeters="999" area2Damage="0" area2StunTime="5000" audibleSoundRadius="1.0" audibleSoundRadiusForPlacing="1.0" physicsDetonationForce="999" damageType="2" />
 		<Params bodyTemplate="DemoChargeBody" explosionSound="expl_breach_charge">
 			<FX particles="hand_effect_Signatureringcharge" entity1="ExplosionLight" entity2="scorch_mark_breach" entity3="FX_dust_large" deleteAfterMS3="35000" />
 		</Params>

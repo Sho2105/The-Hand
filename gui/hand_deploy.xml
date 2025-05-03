@@ -166,7 +166,7 @@
             </StaticImage>
         </Item>
 
-        <!-- NULL Task Force section with Spear, Dagger, Chalice, Shield, Hammer -->
+        <!-- NULL Task Force section -->
         <Item origin="0 -160" name="hand_NULL" align="b" hidden="true">
             <!-- Spear (7 slots, 4 on top row, 3 on bottom row) -->
             <StaticImage name="Spear" origin="0 -10">

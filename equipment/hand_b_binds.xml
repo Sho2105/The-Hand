@@ -46,6 +46,10 @@
 	<Bind eqp="MP5K CIA BOps" to="Shield" />
 	<Bind eqp="MP5K Sup CIA BOps" to="Shield" />
 	<Bind eqp="P320 Raider CIA" to="Shield" />
+	<Bind eqp="M9 Pistol" to="Shield" />
+	<Bind eqp="M9Sup Pistol" to="Shield" />
+	<Bind eqp="hand_weapon_Shield1" to="Shield" />
+	<Bind eqp="hand_weapon_Shield2" to="Shield" />
 	<!-- Hammer: Shotguns, Pistols -->
 	<Bind eqp="M1014" to="Hammer" />
 	<Bind eqp="M16A4/M203" to="Hammer" />

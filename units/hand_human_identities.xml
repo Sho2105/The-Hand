@@ -12,24 +12,24 @@
     <Portrait tex="data/textures/portraits/6.dds" unit="hand" class="Spear" gender="0" customName="SP-03-A"/>
     <Portrait tex="data/textures/portraits/8.dds" unit="hand" class="Spear" gender="0" customName="SP-25-B"/>
     <Portrait tex="data/textures/portraits/9.dds" unit="hand" class="Spear" gender="0" customName="SP-38-M"/>
-    <Portrait tex="data/textures/portraits/10.dds" unit="hand" class="Spear" gender="0" customName="SP-19-H"/>
+    <Portrait tex="data/textures/portraits/7.dds" unit="hand" class="Spear" gender="0" customName="SP-19-H"/>
     <Portrait tex="data/textures/portraits/20.dds" unit="hand" class="Spear" gender="0" customName="SP-93-B"/>
     <!-- Dagger (5) -->
     <Portrait tex="data/textures/portraits/2.dds" unit="hand" class="Dagger" gender="0" customName="DA-67-I"/>
-    <Portrait tex="data/textures/portraits/11.dds" unit="hand" class="Dagger" gender="1" customName="DA-22-S"/>
+    <Portrait tex="data/textures/portraits/13.dds" unit="hand" class="Dagger" gender="1" customName="DA-22-S"/>
     <Portrait tex="data/textures/portraits/12.dds" unit="hand" class="Dagger" gender="0" customName="DA-44-I"/>
-    <Portrait tex="data/textures/portraits/13.dds" unit="hand" class="Dagger" gender="0" customName="DA-71-A"/>
-    <Portrait tex="data/textures/portraits/21.dds" unit="hand" class="Dagger" gender="1" customName="DA-95-S"/>
+    <Portrait tex="data/textures/portraits/11.dds" unit="hand" class="Dagger" gender="0" customName="DA-71-A"/>
+    <Portrait tex="data/textures/portraits/18.dds" unit="hand" class="Dagger" gender="1" customName="DA-95-S"/>
     <!-- Chalice (3) -->
     <Portrait tex="data/textures/portraits/5.dds" unit="hand" class="Chalice" gender="1" customName="CH-55-M"/>
-    <Portrait tex="data/textures/portraits/7.dds" unit="hand" class="Chalice" gender="1" customName="CH-09-D"/>
-    <Portrait tex="data/textures/portraits/14.dds" unit="hand" class="Chalice" gender="1" customName="CH-31-E"/>
+    <Portrait tex="data/textures/portraits/10.dds" unit="hand" class="Chalice" gender="1" customName="CH-09-D"/>
+    <Portrait tex="data/textures/portraits/17.dds" unit="hand" class="Chalice" gender="1" customName="CH-31-E"/>
     <!-- Shield (4) -->
     <Portrait tex="data/textures/portraits/4.dds" unit="hand" class="Shield" gender="0" customName="SH-47-B"/>
     <Portrait tex="data/textures/portraits/15.dds" unit="hand" class="Shield" gender="0" customName="SH-06-S"/>
     <Portrait tex="data/textures/portraits/16.dds" unit="hand" class="Shield" gender="0" customName="SH-12-B"/>
-    <Portrait tex="data/textures/portraits/17.dds" unit="hand" class="Shield" gender="0" customName="SH-01-C"/>
+    <Portrait tex="data/textures/portraits/14.dds" unit="hand" class="Shield" gender="0" customName="SH-01-C"/>
     <!-- Hammer (2) -->
-    <Portrait tex="data/textures/portraits/18.dds" unit="hand" class="Hammer" gender="0" customName="HA-17-E"/>
+    <Portrait tex="data/textures/portraits/21.dds" unit="hand" class="Hammer" gender="0" customName="HA-17-E"/>
     <Portrait tex="data/textures/portraits/19.dds" unit="hand" class="Hammer" gender="0" customName="HA-88-L"/>
 </HumanIdentities>
