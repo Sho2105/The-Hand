@@ -1,5 +1,5 @@
 <Entities>
-	<Entity name="InvisibleBodyTemplate" type="Projectile" hideInEditor="true">
+	<Entity name="hand_entity_Invisiblebody" type="Projectile" hideInEditor="true">
 		<PhysicalParams solid="false" />
 		<RenderObject3D model="data/models/equipment/invisible.khm" skipGOSSAO="true"
 			disableDecals="true" diffuseTex="" />

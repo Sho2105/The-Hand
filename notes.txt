@@ -54,15 +54,6 @@ Change doctrines UI colors to white
 
 Shit, it is possible for a flamethrower, check the ngf asset mod, also possible to spawn cover(movement block entities) out, check usaf, it is not possible to slow enemies down, but we can "pin" them down by supression param
 
-A device that intervally stun enemies in a big radius?
-A grenade that pushes enemies away far (currently unable to push shits, maybe just stunlock hold them in place is enough i guess)
-Air Support (USAF MOD, we don't such good sounds though...but maybe we can focus on the visual and explosion part, and borrow some assets online)
-Flare gun (USAF MOD, used for light at night, or just some glowsticks is fine too)
-A super strong gun with limited bullet (best if it can dig wall, maybe both a sniper and a rpg version)
-2 tiers medkit.
-A god damn megaphone to evacuate a whole zone of civilian (and attract enemies attention, of course)
-Some drones, maybe a suicide drone, and an intel gatherer drone, annnnd maybe a drone that can shoot?
-
 Where possible, applies spawn entities of a black flame to represent unique material used to fight anomallies
 
 IMPORTANT!!!

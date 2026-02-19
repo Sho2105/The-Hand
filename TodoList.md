@@ -1,11 +1,12 @@
-UI, bots, placeholder descriptions
---- 
-- rework doctrine tree, create new upgradable
-- redraw uniform, vest, helmets textures
-- redraw rank icons
----
-- add new sounds
-- add custom enemies (which include custom behavior, models, textures, sounds)
-- add custom campaign (me thinking about a full blown war missionpacks)
-- finally, focus on the story and world building and polish everything
-- along the way, always remember to come back and polish sounds and visual fx, as your 3d skill is ass
+Fix the bots mags (i guess its fixed)
+- Add new toys
+- Cleanup Bind files
+- Update
+- Design new UI icon style
+- Working on models
+- Update
+- Standalize everything's FX, Icons, Sounds
+- Update
+- New enemies
+- Writing, campaign, misisons pac
+- Polish

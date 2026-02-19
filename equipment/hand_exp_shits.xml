@@ -1,235 +1,824 @@
 <Equipment>
-
-
-    <!-- DOT template-->
-    <Grenade name="suppress_per_second_1" inventoryBinding="UtilityPouch" animationSet="grenade">
-        <Projectile
-            bodyTemplate="InvisibleBodyTemplate"
-            trailParticles=""
-            pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-            soundOnSpawn=""
-            soundExplosion=""
-            soundHitFloor="none"
-            mass="10.0"
-            friendlyFire="true"
-            triggerOnImpact="false"
-            triggerTimeAfterTargetHitMsec="1000"
-            physicsDetonationForce="0"
-            audibleLaunchSoundRadius="0"
-            audibleDetonationSoundRadius="0">
+    <!-- Deployment Shits -->
+    <Bind eqp="hand_gear_Spbot">
+        <to name="hand_ammo_None" />
+    </Bind>
+    <Bind eqp="hand_gear_Dabot">
+        <to name="hand_ammo_None" />
+    </Bind>
+    <Bind eqp="hand_gear_Shbot">
+        <to name="hand_ammo_None" />
+    </Bind>
+    <Bind eqp="hand_gear_Chbot">
+        <to name="hand_ammo_None" />
+    </Bind>
+    <Bind eqp="hand_gear_Habot">
+        <to name="hand_ammo_None" />
+    </Bind>
+    <Firearm name="hand_gear_Spbot"
+             inventoryBinding="SupportGear1"
+             category="rpg"
+             unlockCost="0"
+             tooltip="@hand_gear_Spbot_name"
+             description="@hand_gear_Spbot_desc"
+             img="data/models/equipment/hand_gear_Spbot_ui.dds"
+             animationSet="grenade"
+             discardWithEntityWhenEmpty="hand_entity_Spbot">
+        <MobilityModifiers moveSpeedModifierPercent="-2"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-0.5" />
+        <ModifiableParams projectilesPerMagazine="1"
+                          reloadTime="3000"
+                          reloadEmptyTime="3000"
+                          changeInTime="1000"
+                          changeOutTime="0"
+                          readyTime="600"
+                          guardTime="350" />
+        <Params caliberInfoText="@firearm_caliber_noperwe_name"
+                operationInfoText="@firearmact_foundlogrwe_name"
+                ai_rangeMin="0.0"
+                ai_rangeOptimal="0.0"
+                ai_rangeMax="0.0"
+                ai_stopWhenShooting="true" />
+        <AttackTypesProjectile>
+            <AttackType name="Rangers_PumpAimedFire"
+                        rangeMeters="9999" />
+        </AttackTypesProjectile>
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    lightTemplate=""
+                    soundExplosion=""
+                    soundOnSpawn=""
+                    soundFollow=""
+                    ai_aimForCover="false"
+                    ai_launchBlastRadius="0.0"
+                    minVelocity="0.0"
+                    maxVelocity="0.1"
+                    acceleration="0.1"
+                    mass="0.0"
+                    friendlyFire="false"
+                    triggerOnImpact="true"
+                    triggerTimeAfterTargetHitMsec="0"
+                    roundsPerSecond="5.0"
+                    accuracyPercent="-1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="3"
+                    audibleDetonationSoundRadius="3" />
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+    <Firearm name="hand_gear_Dabot"
+             inventoryBinding="SupportGear1"
+             category="rpg"
+             unlockCost="0"
+             tooltip="@hand_gear_Dabot_name"
+             description="@hand_gear_Dabot_desc"
+             img="data/models/equipment/hand_gear_Dabot_ui.dds"
+             animationSet="grenade"
+             discardWithEntityWhenEmpty="hand_entity_Dabot">
+        <MobilityModifiers moveSpeedModifierPercent="-2"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-0.5" />
+        <ModifiableParams projectilesPerMagazine="1"
+                          reloadTime="3000"
+                          reloadEmptyTime="3000"
+                          changeInTime="1000"
+                          changeOutTime="0"
+                          readyTime="600"
+                          guardTime="350" />
+        <Params caliberInfoText="@firearm_caliber_noperwe_name"
+                operationInfoText="@firearmact_foundlogrwe_name"
+                ai_rangeMin="0.0"
+                ai_rangeOptimal="0.0"
+                ai_rangeMax="0.0"
+                ai_stopWhenShooting="true" />
+        <AttackTypesProjectile>
+            <AttackType name="Rangers_PumpAimedFire"
+                        rangeMeters="9999" />
+        </AttackTypesProjectile>
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    lightTemplate=""
+                    soundExplosion=""
+                    soundOnSpawn=""
+                    soundFollow=""
+                    ai_aimForCover="false"
+                    ai_launchBlastRadius="0.0"
+                    minVelocity="0.0"
+                    maxVelocity="0.1"
+                    acceleration="0.1"
+                    mass="0.0"
+                    friendlyFire="false"
+                    triggerOnImpact="true"
+                    triggerTimeAfterTargetHitMsec="0"
+                    roundsPerSecond="5.0"
+                    accuracyPercent="-1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="3"
+                    audibleDetonationSoundRadius="3" />
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+    <Firearm name="hand_gear_Shbot"
+             inventoryBinding="SupportGear1"
+             category="rpg"
+             unlockCost="0"
+             tooltip="@hand_gear_Shbot_name"
+             description="@hand_gear_Shbot_desc"
+             img="data/models/equipment/hand_gear_Shbot_ui.dds"
+             animationSet="grenade"
+             discardWithEntityWhenEmpty="hand_entity_Shbot">
+        <MobilityModifiers moveSpeedModifierPercent="-2"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-0.5" />
+        <ModifiableParams projectilesPerMagazine="1"
+                          reloadTime="3000"
+                          reloadEmptyTime="3000"
+                          changeInTime="1000"
+                          changeOutTime="0"
+                          readyTime="600"
+                          guardTime="350" />
+        <Params caliberInfoText="@firearm_caliber_noperwe_name"
+                operationInfoText="@firearmact_foundlogrwe_name"
+                ai_rangeMin="0.0"
+                ai_rangeOptimal="0.0"
+                ai_rangeMax="0.0"
+                ai_stopWhenShooting="true" />
+        <AttackTypesProjectile>
+            <AttackType name="Rangers_PumpAimedFire"
+                        rangeMeters="9999" />
+        </AttackTypesProjectile>
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    lightTemplate=""
+                    soundExplosion=""
+                    soundOnSpawn=""
+                    soundFollow=""
+                    ai_aimForCover="false"
+                    ai_launchBlastRadius="0.0"
+                    minVelocity="0.0"
+                    maxVelocity="0.1"
+                    acceleration="0.1"
+                    mass="0.0"
+                    friendlyFire="false"
+                    triggerOnImpact="true"
+                    triggerTimeAfterTargetHitMsec="0"
+                    roundsPerSecond="5.0"
+                    accuracyPercent="-1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="3"
+                    audibleDetonationSoundRadius="3" />
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+    <Firearm name="hand_gear_Chbot"
+             inventoryBinding="SupportGear1"
+             category="rpg"
+             unlockCost="0"
+             tooltip="@hand_gear_Chbot_name"
+             description="@hand_gear_Chbot_desc"
+             img="data/models/equipment/hand_gear_Chbot_ui.dds"
+             animationSet="grenade"
+             discardWithEntityWhenEmpty="hand_entity_Chbot">
+        <MobilityModifiers moveSpeedModifierPercent="-2"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-0.5" />
+        <ModifiableParams projectilesPerMagazine="1"
+                          reloadTime="3000"
+                          reloadEmptyTime="3000"
+                          changeInTime="1000"
+                          changeOutTime="0"
+                          readyTime="600"
+                          guardTime="350" />
+        <Params caliberInfoText="@firearm_caliber_noperwe_name"
+                operationInfoText="@firearmact_foundlogrwe_name"
+                ai_rangeMin="0.0"
+                ai_rangeOptimal="0.0"
+                ai_rangeMax="0.0"
+                ai_stopWhenShooting="true" />
+        <AttackTypesProjectile>
+            <AttackType name="Rangers_PumpAimedFire"
+                        rangeMeters="9999" />
+        </AttackTypesProjectile>
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    lightTemplate=""
+                    soundExplosion=""
+                    soundOnSpawn=""
+                    soundFollow=""
+                    ai_aimForCover="false"
+                    ai_launchBlastRadius="0.0"
+                    minVelocity="0.0"
+                    maxVelocity="0.1"
+                    acceleration="0.1"
+                    mass="0.0"
+                    friendlyFire="false"
+                    triggerOnImpact="true"
+                    triggerTimeAfterTargetHitMsec="0"
+                    roundsPerSecond="5.0"
+                    accuracyPercent="-1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="3"
+                    audibleDetonationSoundRadius="3" />
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+    <Firearm name="hand_gear_Habot"
+             inventoryBinding="SupportGear1"
+             category="rpg"
+             unlockCost="0"
+             tooltip="@hand_gear_Habot_name"
+             description="@hand_gear_Habot_desc"
+             img="data/models/equipment/hand_gear_Habot_ui.dds"
+             animationSet="grenade"
+             discardWithEntityWhenEmpty="hand_entity_Habot">
+        <MobilityModifiers moveSpeedModifierPercent="-2"
+                           turnSpeedModifierPercent="0" />
+        <ConcealmentModifier add="-0.5" />
+        <ModifiableParams projectilesPerMagazine="1"
+                          reloadTime="3000"
+                          reloadEmptyTime="3000"
+                          changeInTime="1000"
+                          changeOutTime="0"
+                          readyTime="600"
+                          guardTime="350" />
+        <Params caliberInfoText="@firearm_caliber_noperwe_name"
+                operationInfoText="@firearmact_foundlogrwe_name"
+                ai_rangeMin="0.0"
+                ai_rangeOptimal="0.0"
+                ai_rangeMax="0.0"
+                ai_stopWhenShooting="true" />
+        <AttackTypesProjectile>
+            <AttackType name="Rangers_PumpAimedFire"
+                        rangeMeters="9999" />
+        </AttackTypesProjectile>
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    lightTemplate=""
+                    soundExplosion=""
+                    soundOnSpawn=""
+                    soundFollow=""
+                    ai_aimForCover="false"
+                    ai_launchBlastRadius="0.0"
+                    minVelocity="0.0"
+                    maxVelocity="0.1"
+                    acceleration="0.1"
+                    mass="0.0"
+                    friendlyFire="false"
+                    triggerOnImpact="true"
+                    triggerTimeAfterTargetHitMsec="0"
+                    roundsPerSecond="5.0"
+                    accuracyPercent="-1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="3"
+                    audibleDetonationSoundRadius="3" />
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+    <!-- Anti Materiels shits -->
+    <Bind eqp="hand_gear_Wallbreaker">
+        <to name="hand_ammo_None" />
+    </Bind>
+    <Firearm name="hand_gear_Wallbreaker"
+             inventoryBinding="SupportGear1"
+             category="rpg"
+             unlockCost="0"
+             tooltip="@hand_gear_Wallbreaker_name"
+             description="@hand_gear_Wallbreaker_desc"
+             img="data/models/weapons/at4_ui.dds"
+             animationSet="rpg26"
+             movie="data/movies/hand_gear_Wallbreaker.ogv"
+             discardWithEntityWhenEmpty="DiscardedAT4"
+             soundUseVoice="VOX_GEAR_ROCKET">
+        <RenderObject3D model="data/models/weapons/at4.khm"
+                        attachSlot="prop_back_rpg"
+                        skipGOSSAO="true"
+                        diffuseTex="data/models/weapons/at4.dds">
+            <Specular shininess="32"
+                      intensity="4.0" />
+        </RenderObject3D>
+        <MobilityModifiers moveSpeedModifierPercent="-10"
+                           turnSpeedModifierPercent="-8" />
+        <ConcealmentModifier add="-6" />
+        <ModifiableParams projectilesPerMagazine="1"
+                          reloadTime="3000"
+                          reloadEmptyTime="3000"
+                          changeInTime="2200"
+                          changeOutTime="600"
+                          readyTime="800"
+                          guardTime="400" />
+        <Params caliberInfoText="@firearm_caliber_84mmHEAT_name"
+                operationInfoText="@firearm_operation_singleshotthrow_name"
+                ai_rangeMin="10.0"
+                ai_rangeOptimal="30.0"
+                ai_rangeMax="100.0"
+                ai_stopWhenShooting="true" />
+        <AttackTypesProjectile>
+            <AttackType name="CIA_RPG_QuickAimClose"
+                        rangeMeters="20" />
+            <AttackType name="CIA_RPG_QuickAim"
+                        rangeMeters="9999" />
+        </AttackTypesProjectile>
+        <MuzzleFlash lightTemplate="ShotLightLarge">
+            <Flare particles="RpgLaunch_01" />
+        </MuzzleFlash>
+        <Projectile bodyTemplate="M203GrenadeBody"
+                    trailParticles="RpgTrail"
+                    lightTemplate="Rocket Red"
+                    soundExplosion="rpg26_expl"
+                    soundOnSpawn="rpg26_fire"
+                    soundFollow="rpg_fly_travel"
+                    ai_aimForCover="false"
+                    ai_launchBlastRadius="3.0"
+                    minVelocity="5.0"
+                    maxVelocity="35.0"
+                    acceleration="4.0"
+                    mass="0.0"
+                    friendlyFire="true"
+                    triggerOnImpact="true"
+                    roundsPerSecond="2.0"
+                    accuracyPercent="95"
+                    physicsDetonationForce="100"
+                    audibleLaunchSoundRadius="15"
+                    audibleDetonationSoundRadius="100">
+            <FX particles="RpgExplosion"
+                entity1="ExplosionLight"
+                entity2="Explosion Scorch Mark"
+                entity3="FX_dust_large"
+                deleteAfterMS3="35000"
+                anim2D="" />
+            <EffectRange radiusMeters="3">
+                <DamageEffect chancePercent="100"
+                              damage="999"
+                              damageType="2"
+                              armorPenetration="400" />
+                <StunEffect chancePercent="100"
+                            innerRangeTimeMSec="5000"
+                            outerRangeTimeMSec="5000"
+                            armorPenetration="400" />
+                <SuppressEffect amount="50" />
+                <SmokeEffect durationMSec="1900" />
+            </EffectRange>
+            <EffectRange radiusMeters="5.5">
+                <StunEffect chancePercent="50"
+                            innerRangeTimeMSec="1000"
+                            outerRangeTimeMSec="400" />
+                <DamageEffect chancePercent="50"
+                              damage="35"
+                              damageType="1" />
+                <ScatterEffect chancePercent="100" />
+                <SuppressEffect amount="40" />
+            </EffectRange>
+            <Shrapnel projectileSource="hand_gear_Wallbreaker_shrapnel"
+                      min="1"
+                      max="1"
+                      spreadRadius="0" />
+        </Projectile>
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Empty name="gen_empty" />
+        </Sounds>
+    </Firearm>
+    <Grenade name="hand_gear_Wallbreaker_shrapnel"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="MolotovShrapnel"
+                    trailParticles=""
+                    lightTemplate=""
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="50"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0"
+                    soundExplosion="nosound"
+                    soundHitFloor="nosound"
+                    soundVoiceOnLaunch="nosound">
+            <FX randRotation1="true" />
+            <EffectRange radiusMeters="3">
+                <DamageEffect chancePercent="100"
+                              damage="999"
+                              damageType="1" />
+                <SuppressEffect amount="50" />
+                <SmokeEffect durationMSec="1900" />
+            </EffectRange>
+            <EffectRange radiusMeters="5.5">
+                <StunEffect chancePercent="50"
+                            innerRangeTimeMSec="1000"
+                            outerRangeTimeMSec="400" />
+                <DamageEffect chancePercent="50"
+                              damage="35"
+                              damageType="1" />
+                <ScatterEffect chancePercent="100" />
+                <SuppressEffect amount="40" />
+            </EffectRange>
+        </Projectile>
+    </Grenade>
+    <Bind eqp="hand_gear_Piercer">
+        <to name="hand_ammo_None" />
+    </Bind>
+    <Firearm name="hand_gear_Piercer"
+             inventoryBinding="PrimaryWeapon"
+             category="rifle"
+             unlockCost="0"
+             tooltip="@hand_gear_Piercer_name"
+             img="data/models/weapons/m16a4_gl_ui.dds"
+             description="@hand_gear_Piercer_desc"
+             animationSet="rifle"
+             soundUseVoice="VOX_GEAR_LAUNCHER">
+        <MobilityModifiers moveSpeedModifierPercent="-12"
+                           turnSpeedModifierPercent="-5" />
+        <RenderObject3D model="data/models/weapons/m16a4_gl.khm"
+                        attachSlot="prop_back_rifle"
+                        skipGOSSAO="true"
+                        diffuseTex="data/models/weapons/m16a4_gl.dds" />
+        <RenderObject3D model="data/models/weapons/m203.khm"
+                        attachSlot="underbarrel"
+                        skipGOSSAO="true"
+                        diffuseTex="data/models/weapons/m203.dds" />
+        <ModifiableParams numPellets="1"
+                          roundsPerMagazine="30"
+                          closedBolt="1"
+                          projectilesPerMagazine="5"
+                          cyclicReload="0"
+                          reloadTime="3000"
+                          reloadEmptyTime="3500"
+                          changeInTime="1300"
+                          changeOutTime="1250"
+                          readyTime="550"
+                          guardTime="250"
+                          accuracyStart="300"
+                          accuracyEnd="300"
+                          accuracyStartDist="0"
+                          accuracyEndDist="100" />
+        <Params caliberInfoText="@firearm_caliber_556GL40_name"
+                operationInfoText="@firearm_operation_semi3rdburst_name"
+                ejectingShellEntity="BulletCasingLarge"
+                magazineEntity="m4_mag"
+                ai_rangeMin="1.0"
+                ai_rangeOptimal="40.0"
+                ai_rangeMax="100.0"
+                ai_stopWhenShooting="false"
+                hasLaser="true" />
+        <AttackTypes>
+            <AttackType name="Rangers_RapidFire"
+                        rangeMeters="6" />
+            <AttackType name="Rangers_BurstFire"
+                        rangeMeters="6"
+                        disabled="true" />
+            <AttackType name="Rangers_RapidFireMed"
+                        rangeMeters="15" />
+            <AttackType name="Rangers_BurstFireMed"
+                        rangeMeters="15"
+                        disabled="true" />
+            <AttackType name="Rangers_CarbineAimedFire"
+                        rangeMeters="43" />
+            <AttackType name="Rangers_CarbineAimedFireXX"
+                        rangeMeters="9999" />
+        </AttackTypes>
+        <AttackTypesProjectile>
+            <AttackType name="RPG_QuickAimClose"
+                        rangeMeters="15" />
+            <AttackType name="M203_QuickAim"
+                        rangeMeters="9999" />
+        </AttackTypesProjectile>
+        <MuzzleFlash lightTemplate="ShotLightLarge"
+                     tracerTemplate="Tracer_Rifle">
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_01" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_02" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_03" />
+            <Flare particles="FX_MUZZLE_FLASH_RIFLE_04" />
+        </MuzzleFlash>
+        <Sounds>
+            <Equip name="rifle_eqp" />
+            <Unequip name="rifle_neqp" />
+            <Reload name="rifle_reld" />
+            <ReloadEmpty name="rifle_reldempt" />
+            <Fire name="m16_fire" />
+            <ShellDrop name="rifle_shell_drop" />
+            <Empty name="gen_empty" />
+        </Sounds>
+        <Projectile bodyTemplate="Rpg26RocketBody"
+                    trailParticles="RpgTrail2"
+                    lightTemplate="Rocket Red"
+                    soundExplosion="grenade_launcher_expl"
+                    soundOnSpawn="m203_fire"
+                    soundFollow=""
+                    minVelocity="50000.0"
+                    maxVelocity="50000.0"
+                    acceleration="0.2"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="true"
+                    roundsPerSecond="1.65"
+                    accuracyPercent="75"
+                    physicsDetonationForce="999"
+                    audibleLaunchSoundRadius="2"
+                    audibleDetonationSoundRadius="20"
+                    damageType="2">
+            <FX particles="FragGrenade"
+                entity1="ExplosionLight"
+                entity2="explosion_mark"
+                randRotation2="true"
+                entity3="FX_dust_large"
+                deleteAfterMS3="35000"
+                anim2D="" />
+            <EffectRange radiusMeters="1.7">
+                <StunEffect chancePercent="100"
+                            innerRangeTimeMSec="1500"
+                            outerRangeTimeMSec="1500" />
+                <DamageEffect chancePercent="100"
+                              damage="999"
+                              damageType="2" />
+                <ScatterEffect chancePercent="100"
+                               armorPenetration="30" />
+                <SuppressEffect amount="30" />
+                <SmokeEffect durationMSec="1030" />
+            </EffectRange>
+            <EffectRange radiusMeters="2">
+                <StunEffect chancePercent="100"
+                            innerRangeTimeMSec="1500"
+                            outerRangeTimeMSec="1500" />
+                <DamageEffect chancePercent="100"
+                              damage="999"
+                              damageType="2" />
+                <ScatterEffect chancePercent="100"
+                               armorPenetration="30" />
+                <SuppressEffect amount="30" />
+            </EffectRange>
+            <EffectRange radiusMeters="5">
+                <StunEffect chancePercent="100"
+                            innerRangeTimeMSec="1000"
+                            outerRangeTimeMSec="300" />
+                <ScatterEffect chancePercent="100" />
+            </EffectRange>
+        </Projectile>
+    </Firearm>
+    <!-- DOT template -->
+    <Grenade name="suppress_per_second_1"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundOnSpawn=""
+                    soundExplosion=""
+                    soundHitFloor="none"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0">
             <FX />
-            <Shrapnel projectileSource="suppress_per_second_2" min="1" max="1" spreadRadius="0" />
+            <Shrapnel projectileSource="suppress_per_second_2"
+                      min="1"
+                      max="1"
+                      spreadRadius="0" />
             <EffectRange radiusMeters="5">
                 <SuppressEffect amount="35" />
             </EffectRange>
         </Projectile>
     </Grenade>
-
-    <Grenade name="suppress_per_second_2" inventoryBinding="UtilityPouch" animationSet="grenade">
-        <Projectile
-            bodyTemplate="InvisibleBodyTemplate"
-            trailParticles=""
-            pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-            soundOnSpawn=""
-            soundExplosion=""
-            soundHitFloor="none"
-            mass="10.0"
-            friendlyFire="true"
-            triggerOnImpact="false"
-            triggerTimeAfterTargetHitMsec="1000"
-            physicsDetonationForce="0"
-            audibleLaunchSoundRadius="0"
-            audibleDetonationSoundRadius="0">
+    <Grenade name="suppress_per_second_2"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundOnSpawn=""
+                    soundExplosion=""
+                    soundHitFloor="none"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0">
             <FX />
-            <Shrapnel projectileSource="suppress_per_second_3" min="1" max="1" spreadRadius="0" />
+            <Shrapnel projectileSource="suppress_per_second_3"
+                      min="1"
+                      max="1"
+                      spreadRadius="0" />
             <EffectRange radiusMeters="5">
                 <SuppressEffect amount="35" />
             </EffectRange>
         </Projectile>
     </Grenade>
-
-    <Grenade name="suppress_per_second_3" inventoryBinding="UtilityPouch" animationSet="grenade">
-        <Projectile
-            bodyTemplate="InvisibleBodyTemplate"
-            trailParticles=""
-            pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-            soundOnSpawn=""
-            soundExplosion=""
-            soundHitFloor="none"
-            mass="10.0"
-            friendlyFire="true"
-            triggerOnImpact="false"
-            triggerTimeAfterTargetHitMsec="1000"
-            physicsDetonationForce="0"
-            audibleLaunchSoundRadius="0"
-            audibleDetonationSoundRadius="0">
+    <Grenade name="suppress_per_second_3"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundOnSpawn=""
+                    soundExplosion=""
+                    soundHitFloor="none"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0">
             <FX />
-            <Shrapnel projectileSource="suppress_per_second_4" min="1" max="1" spreadRadius="0" />
+            <Shrapnel projectileSource="suppress_per_second_4"
+                      min="1"
+                      max="1"
+                      spreadRadius="0" />
             <EffectRange radiusMeters="5">
                 <SuppressEffect amount="35" />
             </EffectRange>
         </Projectile>
     </Grenade>
-
-    <Grenade name="suppress_per_second_4" inventoryBinding="UtilityPouch" animationSet="grenade">
-        <Projectile
-            bodyTemplate="InvisibleBodyTemplate"
-            trailParticles=""
-            pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-            soundOnSpawn=""
-            soundExplosion=""
-            soundHitFloor="none"
-            mass="10.0"
-            friendlyFire="true"
-            triggerOnImpact="false"
-            triggerTimeAfterTargetHitMsec="1000"
-            physicsDetonationForce="0"
-            audibleLaunchSoundRadius="0"
-            audibleDetonationSoundRadius="0">
+    <Grenade name="suppress_per_second_4"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundOnSpawn=""
+                    soundExplosion=""
+                    soundHitFloor="none"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0">
             <FX />
-            <Shrapnel projectileSource="suppress_per_second_5" min="1" max="1" spreadRadius="0" />
+            <Shrapnel projectileSource="suppress_per_second_5"
+                      min="1"
+                      max="1"
+                      spreadRadius="0" />
             <EffectRange radiusMeters="5">
                 <SuppressEffect amount="35" />
             </EffectRange>
         </Projectile>
     </Grenade>
-
-    <Grenade name="suppress_per_second_5" inventoryBinding="UtilityPouch" animationSet="grenade">
-        <Projectile
-            bodyTemplate="InvisibleBodyTemplate"
-            trailParticles=""
-            pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-            soundOnSpawn=""
-            soundExplosion=""
-            soundHitFloor="none"
-            mass="10.0"
-            friendlyFire="true"
-            triggerOnImpact="false"
-            triggerTimeAfterTargetHitMsec="1000"
-            physicsDetonationForce="0"
-            audibleLaunchSoundRadius="0"
-            audibleDetonationSoundRadius="0">
+    <Grenade name="suppress_per_second_5"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundOnSpawn=""
+                    soundExplosion=""
+                    soundHitFloor="none"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0">
             <FX />
-            <Shrapnel projectileSource="suppress_per_second_6" min="1" max="1" spreadRadius="0" />
+            <Shrapnel projectileSource="suppress_per_second_6"
+                      min="1"
+                      max="1"
+                      spreadRadius="0" />
             <EffectRange radiusMeters="5">
                 <SuppressEffect amount="35" />
             </EffectRange>
         </Projectile>
     </Grenade>
-
-    <Grenade name="suppress_per_second_6" inventoryBinding="UtilityPouch" animationSet="grenade">
-        <Projectile
-            bodyTemplate="InvisibleBodyTemplate"
-            trailParticles=""
-            pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-            soundOnSpawn=""
-            soundExplosion=""
-            soundHitFloor="none"
-            mass="10.0"
-            friendlyFire="true"
-            triggerOnImpact="false"
-            triggerTimeAfterTargetHitMsec="1000"
-            physicsDetonationForce="0"
-            audibleLaunchSoundRadius="0"
-            audibleDetonationSoundRadius="0">
+    <Grenade name="suppress_per_second_6"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundOnSpawn=""
+                    soundExplosion=""
+                    soundHitFloor="none"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0">
             <FX />
-            <Shrapnel projectileSource="suppress_per_second_7" min="1" max="1" spreadRadius="0" />
+            <Shrapnel projectileSource="suppress_per_second_7"
+                      min="1"
+                      max="1"
+                      spreadRadius="0" />
             <EffectRange radiusMeters="5">
                 <SuppressEffect amount="35" />
             </EffectRange>
         </Projectile>
     </Grenade>
-
-    <Grenade name="suppress_per_second_7" inventoryBinding="UtilityPouch" animationSet="grenade">
-        <Projectile
-            bodyTemplate="InvisibleBodyTemplate"
-            trailParticles=""
-            pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-            soundOnSpawn=""
-            soundExplosion=""
-            soundHitFloor="none"
-            mass="10.0"
-            friendlyFire="true"
-            triggerOnImpact="false"
-            triggerTimeAfterTargetHitMsec="1000"
-            physicsDetonationForce="0"
-            audibleLaunchSoundRadius="0"
-            audibleDetonationSoundRadius="0">
+    <Grenade name="suppress_per_second_7"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundOnSpawn=""
+                    soundExplosion=""
+                    soundHitFloor="none"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0">
             <FX />
-            <Shrapnel projectileSource="suppress_per_second_8" min="1" max="1" spreadRadius="0" />
+            <Shrapnel projectileSource="suppress_per_second_8"
+                      min="1"
+                      max="1"
+                      spreadRadius="0" />
             <EffectRange radiusMeters="5">
                 <SuppressEffect amount="35" />
             </EffectRange>
         </Projectile>
     </Grenade>
-
-    <Grenade name="suppress_per_second_8" inventoryBinding="UtilityPouch" animationSet="grenade">
-        <Projectile
-            bodyTemplate="InvisibleBodyTemplate"
-            trailParticles=""
-            pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-            soundOnSpawn=""
-            soundExplosion=""
-            soundHitFloor="none"
-            mass="10.0"
-            friendlyFire="true"
-            triggerOnImpact="false"
-            triggerTimeAfterTargetHitMsec="1000"
-            physicsDetonationForce="0"
-            audibleLaunchSoundRadius="0"
-            audibleDetonationSoundRadius="0">
+    <Grenade name="suppress_per_second_8"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundOnSpawn=""
+                    soundExplosion=""
+                    soundHitFloor="none"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0">
             <FX />
-            <Shrapnel projectileSource="suppress_per_second_9" min="1" max="1" spreadRadius="0" />
+            <Shrapnel projectileSource="suppress_per_second_9"
+                      min="1"
+                      max="1"
+                      spreadRadius="0" />
             <EffectRange radiusMeters="5">
                 <SuppressEffect amount="35" />
             </EffectRange>
         </Projectile>
     </Grenade>
-
-    <Grenade name="suppress_per_second_9" inventoryBinding="UtilityPouch" animationSet="grenade">
-        <Projectile
-            bodyTemplate="InvisibleBodyTemplate"
-            trailParticles=""
-            pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-            soundOnSpawn=""
-            soundExplosion=""
-            soundHitFloor="none"
-            mass="10.0"
-            friendlyFire="true"
-            triggerOnImpact="false"
-            triggerTimeAfterTargetHitMsec="1000"
-            physicsDetonationForce="0"
-            audibleLaunchSoundRadius="0"
-            audibleDetonationSoundRadius="0">
+    <Grenade name="suppress_per_second_9"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundOnSpawn=""
+                    soundExplosion=""
+                    soundHitFloor="none"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0">
             <FX />
-            <Shrapnel projectileSource="suppress_per_second_10" min="1" max="1" spreadRadius="0" />
+            <Shrapnel projectileSource="suppress_per_second_10"
+                      min="1"
+                      max="1"
+                      spreadRadius="0" />
             <EffectRange radiusMeters="5">
                 <SuppressEffect amount="35" />
             </EffectRange>
         </Projectile>
     </Grenade>
-
-    <Grenade name="suppress_per_second_10" inventoryBinding="UtilityPouch" animationSet="grenade">
-        <Projectile
-            bodyTemplate="InvisibleBodyTemplate"
-            trailParticles=""
-            pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
-            soundOnSpawn=""
-            soundExplosion=""
-            soundHitFloor="none"
-            mass="10.0"
-            friendlyFire="true"
-            triggerOnImpact="false"
-            triggerTimeAfterTargetHitMsec="1000"
-            physicsDetonationForce="0"
-            audibleLaunchSoundRadius="0"
-            audibleDetonationSoundRadius="0">
+    <Grenade name="suppress_per_second_10"
+             inventoryBinding="UtilityPouch"
+             animationSet="grenade">
+        <Projectile bodyTemplate="hand_entity_Invisiblebody"
+                    trailParticles=""
+                    pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+                    soundOnSpawn=""
+                    soundExplosion=""
+                    soundHitFloor="none"
+                    mass="10.0"
+                    friendlyFire="true"
+                    triggerOnImpact="false"
+                    triggerTimeAfterTargetHitMsec="1000"
+                    physicsDetonationForce="0"
+                    audibleLaunchSoundRadius="0"
+                    audibleDetonationSoundRadius="0">
             <FX />
             <EffectRange radiusMeters="5">
                 <SuppressEffect amount="35" />
             </EffectRange>
         </Projectile>
     </Grenade>
-
-
 </Equipment>

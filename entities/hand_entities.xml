@@ -15,9 +15,11 @@
 			sizeY="1" />
 	</Entity>
 
-	<Entity name="hand_entity_Invisiblebody" type="Projectile" editorAutoHeight="false" initialHeight="1.0">
+	<Entity name="hand_entity_Invisiblebody" type="Projectile" editorAutoHeight="false"
+		initialHeight="1.0">
 		<PhysicalParams solid="false" />
-		<RenderObject3D model="data/models/equipment/invisible.khm" />
+		<RenderObject3D model="data/models/equipment/invisible.khm" skipGOSSAO="true"
+			disableDecals="true" diffuseTex="" />
 	</Entity>
 
 	<Entity name="hand_entity_Lightsun" type="Light" editorAutoHeight="false"
